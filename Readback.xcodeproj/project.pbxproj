@@ -11,6 +11,8 @@
 		DE44828116A0C13800E36814 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828016A0C13800E36814 /* vor.png */; };
 		DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828216A0C5AD00E36814 /* buttonLarge.png */; };
 		DE44828516A0C5AD00E36814 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828316A0C5AD00E36814 /* button.png */; };
+		DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */; };
+		DE44829416A0D96000E36814 /* cmd-speed.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44829316A0D96000E36814 /* cmd-speed.png */; };
 		DE46E641169CBFDA00C90F72 /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E640169CBFDA00C90F72 /* gray.png */; };
 		DE46E649169CC6F500C90F72 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E648169CC6F500C90F72 /* right.png */; };
 		DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E64E169CC7AD00C90F72 /* left-button.png */; };
@@ -39,6 +41,9 @@
 		DE44828016A0C13800E36814 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
 		DE44828216A0C5AD00E36814 /* buttonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLarge.png; sourceTree = "<group>"; };
 		DE44828316A0C5AD00E36814 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelpViewController.h; sourceTree = "<group>"; };
+		DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelpViewController.m; sourceTree = "<group>"; };
+		DE44829316A0D96000E36814 /* cmd-speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmd-speed.png"; sourceTree = "<group>"; };
 		DE46E640169CBFDA00C90F72 /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray.png; sourceTree = "<group>"; };
 		DE46E648169CC6F500C90F72 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		DE46E64E169CC7AD00C90F72 /* left-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-button.png"; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		DE46E63F169CBE3C00C90F72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DE44829316A0D96000E36814 /* cmd-speed.png */,
 				DE44828216A0C5AD00E36814 /* buttonLarge.png */,
 				DE44828316A0C5AD00E36814 /* button.png */,
 				DE44828016A0C13800E36814 /* vor.png */,
@@ -138,6 +144,8 @@
 				DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */,
 				DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */,
 				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
+				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
+				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
 				DEEEAB76169A726A00AEFC99 /* Supporting Files */,
 			);
 			path = Readback;
@@ -228,6 +236,7 @@
 				DE44828116A0C13800E36814 /* vor.png in Resources */,
 				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
 				DE44828516A0C5AD00E36814 /* button.png in Resources */,
+				DE44829416A0D96000E36814 /* cmd-speed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
+				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

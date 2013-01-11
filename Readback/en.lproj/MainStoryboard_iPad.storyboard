@@ -12,18 +12,13 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="rRe-6X-zNe">
-                                <rect key="frame" x="0.0" y="237" width="1024" height="67"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            </view>
                             <view contentMode="scaleToFill" id="waS-h5-7Qt">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="235"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="242"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IJU-eU-gFV">
-                                <rect key="frame" x="604" y="312.5" width="65" height="65"/>
+                                <rect key="frame" x="747.5" y="456.5" width="90" height="65"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="climb.png" backgroundImage="button.png">
@@ -38,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gan-TW-2cV">
-                                <rect key="frame" x="748" y="312.5" width="65" height="65"/>
+                                <rect key="frame" x="933.5" y="456.5" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="descend.png" backgroundImage="button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FxO-s2-a6x">
-                                <rect key="frame" x="676" y="384.5" width="65" height="65"/>
+                                <rect key="frame" x="840.5" y="528.5" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="hold-short.png" backgroundImage="button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -66,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kGP-cO-7p7">
-                                <rect key="frame" x="676" y="312.5" width="65" height="65"/>
+                                <rect key="frame" x="840.5" y="456.5" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="cross.png" backgroundImage="button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xij-sb-a1q">
-                                <rect key="frame" x="604" y="384.5" width="65" height="65"/>
+                                <rect key="frame" x="747.5" y="528.5" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="left-button.png" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xmz-0i-0J9">
-                                <rect key="frame" x="748" y="384.5" width="65" height="65"/>
+                                <rect key="frame" x="933.5" y="528.5" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="right.png" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,10 +102,10 @@
                                     <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="Nbc-ym-lJb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="89r-Ov-6Mu">
-                                <rect key="frame" x="604" y="672" width="65" height="66"/>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="89r-Ov-6Mu">
+                                <rect key="frame" x="840" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
-                                <state key="normal" image="ndb.png" backgroundImage="button.png">
+                                <state key="normal" image="vor.png" backgroundImage="button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -121,8 +116,22 @@
                                     <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="Edq-zI-xTO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tOC-qU-u9T">
+                                <rect key="frame" x="747" y="672" width="90" height="66"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                                <state key="normal" image="ils.png" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="aXk-fA-47U"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dBr-O5-3gu">
-                                <rect key="frame" x="676" y="456.5" width="65" height="65"/>
+                                <rect key="frame" x="933" y="672" width="90" height="65"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
                                 <state key="normal" image="cat.png" backgroundImage="button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NGE-DN-vwa">
-                                <rect key="frame" x="5" y="384" width="65" height="66"/>
+                                <rect key="frame" x="1.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="1" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -150,7 +159,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbw-L4-VKO">
-                                <rect key="frame" x="77" y="384" width="65" height="66"/>
+                                <rect key="frame" x="94.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="2" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,7 +173,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UzI-up-kk6">
-                                <rect key="frame" x="149" y="384" width="65" height="66"/>
+                                <rect key="frame" x="188" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="3" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,7 +187,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p6T-Cd-brA">
-                                <rect key="frame" x="222" y="312" width="65" height="66"/>
+                                <rect key="frame" x="281.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="A" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -192,7 +201,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Nv-Xv-8uD">
-                                <rect key="frame" x="149" y="310" width="65" height="66"/>
+                                <rect key="frame" x="187.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="@" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -206,7 +215,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fif-Yb-V3h">
-                                <rect key="frame" x="294" y="312" width="65" height="66"/>
+                                <rect key="frame" x="374.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="B" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N0X-kP-aIu">
-                                <rect key="frame" x="366" y="312" width="65" height="66"/>
+                                <rect key="frame" x="467.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="C" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,7 +243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qt7-M5-X1H">
-                                <rect key="frame" x="438" y="312" width="65" height="66"/>
+                                <rect key="frame" x="560.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="D" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -247,8 +256,8 @@
                                     <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="d4S-Mf-rpf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hKV-X1-HkC">
-                                <rect key="frame" x="510" y="312" width="65" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hKV-X1-HkC">
+                                <rect key="frame" x="653.5" y="312" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="E" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -262,7 +271,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KtU-z4-H3I">
-                                <rect key="frame" x="222" y="384" width="65" height="66"/>
+                                <rect key="frame" x="281" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="F" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -276,7 +285,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TgE-3M-3As">
-                                <rect key="frame" x="294" y="384" width="65" height="66"/>
+                                <rect key="frame" x="374.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="G" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -290,7 +299,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rwg-jB-RnI">
-                                <rect key="frame" x="366" y="384" width="65" height="66"/>
+                                <rect key="frame" x="467.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="H" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -304,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IEi-1q-AJJ">
-                                <rect key="frame" x="438" y="384" width="65" height="66"/>
+                                <rect key="frame" x="560.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="I" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -318,7 +327,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DeE-u9-bNe">
-                                <rect key="frame" x="510" y="384" width="65" height="66"/>
+                                <rect key="frame" x="653.5" y="384" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="J" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -332,7 +341,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iEO-Ft-1bD">
-                                <rect key="frame" x="222" y="456" width="65" height="66"/>
+                                <rect key="frame" x="281.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="K" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -346,7 +355,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8jR-pr-Myg">
-                                <rect key="frame" x="294" y="456" width="65" height="66"/>
+                                <rect key="frame" x="374.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="L" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -360,7 +369,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQR-hE-t2K">
-                                <rect key="frame" x="366" y="456" width="65" height="66"/>
+                                <rect key="frame" x="467.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="M" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -374,7 +383,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qIK-jy-bOo">
-                                <rect key="frame" x="438" y="456" width="65" height="66"/>
+                                <rect key="frame" x="560.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="N" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -388,7 +397,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3GE-ge-kZI">
-                                <rect key="frame" x="510" y="456" width="65" height="66"/>
+                                <rect key="frame" x="653.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="O" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -402,7 +411,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dii-Vo-uif">
-                                <rect key="frame" x="222" y="528" width="65" height="66"/>
+                                <rect key="frame" x="281.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="P" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -416,7 +425,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PYc-Q3-a5j">
-                                <rect key="frame" x="294" y="528" width="65" height="66"/>
+                                <rect key="frame" x="374.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="Q" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -430,7 +439,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xw4-2z-I9t">
-                                <rect key="frame" x="366" y="528" width="65" height="66"/>
+                                <rect key="frame" x="467.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="R" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -444,7 +453,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3LJ-w9-Wpb">
-                                <rect key="frame" x="438" y="527" width="65" height="66"/>
+                                <rect key="frame" x="560.5" y="527" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="S" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -458,7 +467,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bmW-u1-JAk">
-                                <rect key="frame" x="510" y="528" width="65" height="66"/>
+                                <rect key="frame" x="653.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="T" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -472,7 +481,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H0R-tJ-OsG">
-                                <rect key="frame" x="222" y="600" width="65" height="66"/>
+                                <rect key="frame" x="281.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="U" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -486,7 +495,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5E9-f3-fGg">
-                                <rect key="frame" x="294" y="600" width="65" height="66"/>
+                                <rect key="frame" x="374.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="V" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -500,7 +509,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rbq-18-270">
-                                <rect key="frame" x="366" y="600" width="65" height="66"/>
+                                <rect key="frame" x="467.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="W" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -514,7 +523,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zsG-oq-jdT">
-                                <rect key="frame" x="438" y="600" width="65" height="66"/>
+                                <rect key="frame" x="560.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="X" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -528,7 +537,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qIU-5Y-gX5">
-                                <rect key="frame" x="510" y="600" width="65" height="66"/>
+                                <rect key="frame" x="653.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="Y" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -542,7 +551,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rGc-qt-fxp">
-                                <rect key="frame" x="222" y="672" width="65" height="66"/>
+                                <rect key="frame" x="281.5" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="Z" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -556,7 +565,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L1B-RT-TEg">
-                                <rect key="frame" x="149" y="672" width="65" height="66"/>
+                                <rect key="frame" x="187.5" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="-" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -570,7 +579,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QMH-cG-wqT">
-                                <rect key="frame" x="295" y="672" width="136" height="66"/>
+                                <rect key="frame" x="560" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
                                 <state key="normal" title="DEL" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -583,8 +592,22 @@
                                     <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="yHH-E2-EJV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qB6-LA-SN2">
+                                <rect key="frame" x="374" y="672" width="183.5" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="34"/>
+                                <state key="normal" title="SPACE" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="WiN-oq-7YA"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="09y-jm-m9V">
-                                <rect key="frame" x="438" y="672" width="65" height="66"/>
+                                <rect key="frame" x="94" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="/" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -597,8 +620,22 @@
                                     <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="ngz-Bf-8yy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XRS-yo-ruo">
+                                <rect key="frame" x="1" y="672" width="90" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                                <state key="normal" image="call.png" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="2" eventType="touchUpInside" id="SZm-e5-arX"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hEc-pQ-ecG">
-                                <rect key="frame" x="510" y="672" width="65" height="66"/>
+                                <rect key="frame" x="653.5" y="672" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
                                 <state key="normal" title="CLR" backgroundImage="button.png">
                                     <color key="titleColor" red="0.70315351280000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -612,7 +649,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kjD-Eh-bzT">
-                                <rect key="frame" x="5" y="456" width="65" height="66"/>
+                                <rect key="frame" x="1.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="4" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -626,7 +663,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="udY-ZI-SH6">
-                                <rect key="frame" x="77" y="456" width="65" height="66"/>
+                                <rect key="frame" x="94.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="5" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -640,7 +677,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QLi-JV-pXj">
-                                <rect key="frame" x="149" y="456" width="65" height="66"/>
+                                <rect key="frame" x="188.5" y="456" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="6" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -654,7 +691,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DxS-74-mfa">
-                                <rect key="frame" x="5" y="528" width="65" height="66"/>
+                                <rect key="frame" x="1.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="7" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -668,7 +705,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q7T-1r-4EK">
-                                <rect key="frame" x="77" y="528" width="65" height="66"/>
+                                <rect key="frame" x="94.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="8" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -682,7 +719,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iLY-Fc-jSi">
-                                <rect key="frame" x="149" y="528" width="65" height="66"/>
+                                <rect key="frame" x="187.5" y="528" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="9" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -696,8 +733,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AhE-fv-QsH">
-                                <rect key="frame" x="149" y="600" width="65" height="66"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                                <rect key="frame" x="187.5" y="600" width="90" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="." backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -710,7 +747,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jpi-9H-a3h">
-                                <rect key="frame" x="5" y="600" width="65" height="66"/>
+                                <rect key="frame" x="1.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="38"/>
                                 <state key="normal" title="000" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -724,7 +761,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wyf-1N-bQz">
-                                <rect key="frame" x="77" y="600" width="65" height="66"/>
+                                <rect key="frame" x="94.5" y="600" width="90" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <state key="normal" title="0" backgroundImage="button.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -738,10 +775,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Bc-bB-6Cc">
-                                <rect key="frame" x="873" y="351" width="98" height="58"/>
+                                <rect key="frame" x="814" y="341" width="152" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="DONE" backgroundImage="button.png">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="DONE" backgroundImage="buttonLarge.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -752,6 +789,18 @@
                                     <action selector="done:" destination="2" eventType="touchUpInside" id="06E-Vg-62Z"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="rRe-6X-zNe">
+                                <rect key="frame" x="0.0" y="242" width="1024" height="67"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00:00 Z" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6hN-yD-MYr">
+                                <rect key="frame" x="873" y="254" width="149" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -759,6 +808,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="clearanceView" destination="rRe-6X-zNe" id="A5v-vk-adI"/>
+                        <outlet property="historyView" destination="waS-h5-7Qt" id="nSs-Zb-VCP"/>
+                        <outlet property="labelZuluTime" destination="6hN-yD-MYr" id="Qc7-rj-zL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -766,15 +817,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button.png" width="65" height="65"/>
+        <image name="button.png" width="89" height="66"/>
+        <image name="buttonLarge.png" width="152" height="66"/>
+        <image name="call.png" width="65" height="65"/>
         <image name="cat.png" width="65" height="65"/>
         <image name="climb.png" width="65" height="65"/>
         <image name="cross.png" width="65" height="65"/>
         <image name="descend.png" width="65" height="65"/>
         <image name="hold-short.png" width="65" height="65"/>
+        <image name="ils.png" width="65" height="65"/>
         <image name="left-button.png" width="65" height="65"/>
-        <image name="ndb.png" width="65" height="65"/>
         <image name="right.png" width="65" height="65"/>
+        <image name="vor.png" width="65" height="65"/>
     </resources>
     <classes>
         <class className="ReadbackViewController" superclassName="UIViewController">
@@ -783,6 +837,8 @@
                 <relationship kind="action" name="buttonPushed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="done:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="clearanceView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="historyView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="labelZuluTime" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

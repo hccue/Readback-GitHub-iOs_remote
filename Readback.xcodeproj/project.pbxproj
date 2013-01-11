@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
+		DE44828116A0C13800E36814 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828016A0C13800E36814 /* vor.png */; };
+		DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828216A0C5AD00E36814 /* buttonLarge.png */; };
+		DE44828516A0C5AD00E36814 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828316A0C5AD00E36814 /* button.png */; };
 		DE46E641169CBFDA00C90F72 /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E640169CBFDA00C90F72 /* gray.png */; };
-		DE46E643169CC1E500C90F72 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E642169CC1E500C90F72 /* button.png */; };
 		DE46E649169CC6F500C90F72 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E648169CC6F500C90F72 /* right.png */; };
 		DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E64E169CC7AD00C90F72 /* left-button.png */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -17,6 +20,7 @@
 		DE857FF2169DA37C005E8F96 /* ndb.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF1169DA37C005E8F96 /* ndb.png */; };
 		DE857FF4169DA45D005E8F96 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF3169DA45D005E8F96 /* cat.png */; };
 		DE857FF6169DA510005E8F96 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF5169DA510005E8F96 /* cross.png */; };
+		DEB95321169F01380081E734 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB95320169F01380081E734 /* call.png */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
@@ -26,14 +30,16 @@
 		DEEEAB82169A726A00AEFC99 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB81169A726A00AEFC99 /* Default.png */; };
 		DEEEAB84169A726A00AEFC99 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB83169A726A00AEFC99 /* Default@2x.png */; };
 		DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */; };
-		DEEEAB89169A726A00AEFC99 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB87169A726A00AEFC99 /* MainStoryboard_iPhone.storyboard */; };
 		DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */; };
 		DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
+		DE44828016A0C13800E36814 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
+		DE44828216A0C5AD00E36814 /* buttonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLarge.png; sourceTree = "<group>"; };
+		DE44828316A0C5AD00E36814 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DE46E640169CBFDA00C90F72 /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray.png; sourceTree = "<group>"; };
-		DE46E642169CC1E500C90F72 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DE46E648169CC6F500C90F72 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		DE46E64E169CC7AD00C90F72 /* left-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-button.png"; sourceTree = "<group>"; };
 		DE857FE9169D939C005E8F96 /* hold-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hold-short.png"; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 		DE857FF1169DA37C005E8F96 /* ndb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ndb.png; sourceTree = "<group>"; };
 		DE857FF3169DA45D005E8F96 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		DE857FF5169DA510005E8F96 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		DEB95320169F01380081E734 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,7 +62,6 @@
 		DEEEAB81169A726A00AEFC99 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DEEEAB83169A726A00AEFC99 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DEEEAB88169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		DEEEAB8B169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackViewController.h; sourceTree = "<group>"; };
 		DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadbackViewController.m; sourceTree = "<group>"; };
@@ -78,6 +84,11 @@
 		DE46E63F169CBE3C00C90F72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DE44828216A0C5AD00E36814 /* buttonLarge.png */,
+				DE44828316A0C5AD00E36814 /* button.png */,
+				DE44828016A0C13800E36814 /* vor.png */,
+				DEB95320169F01380081E734 /* call.png */,
+				DE396A57169E0DDC0093C773 /* ils.png */,
 				DE857FF5169DA510005E8F96 /* cross.png */,
 				DE857FF3169DA45D005E8F96 /* cat.png */,
 				DE857FF1169DA37C005E8F96 /* ndb.png */,
@@ -85,7 +96,6 @@
 				DE46E64E169CC7AD00C90F72 /* left-button.png */,
 				DE46E648169CC6F500C90F72 /* right.png */,
 				DE46E640169CBFDA00C90F72 /* gray.png */,
-				DE46E642169CC1E500C90F72 /* button.png */,
 				DE857FEB169D94C2005E8F96 /* climb.png */,
 				DE857FEC169D94C2005E8F96 /* descend.png */,
 			);
@@ -125,7 +135,6 @@
 			children = (
 				DEEEAB7E169A726A00AEFC99 /* ReadbackAppDelegate.h */,
 				DEEEAB7F169A726A00AEFC99 /* ReadbackAppDelegate.m */,
-				DEEEAB87169A726A00AEFC99 /* MainStoryboard_iPhone.storyboard */,
 				DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */,
 				DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */,
 				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
@@ -204,10 +213,8 @@
 				DEEEAB82169A726A00AEFC99 /* Default.png in Resources */,
 				DEEEAB84169A726A00AEFC99 /* Default@2x.png in Resources */,
 				DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */,
-				DEEEAB89169A726A00AEFC99 /* MainStoryboard_iPhone.storyboard in Resources */,
 				DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */,
 				DE46E641169CBFDA00C90F72 /* gray.png in Resources */,
-				DE46E643169CC1E500C90F72 /* button.png in Resources */,
 				DE46E649169CC6F500C90F72 /* right.png in Resources */,
 				DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */,
 				DE857FEA169D939C005E8F96 /* hold-short.png in Resources */,
@@ -216,6 +223,11 @@
 				DE857FF2169DA37C005E8F96 /* ndb.png in Resources */,
 				DE857FF4169DA45D005E8F96 /* cat.png in Resources */,
 				DE857FF6169DA510005E8F96 /* cross.png in Resources */,
+				DE396A58169E0DDC0093C773 /* ils.png in Resources */,
+				DEB95321169F01380081E734 /* call.png in Resources */,
+				DE44828116A0C13800E36814 /* vor.png in Resources */,
+				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
+				DE44828516A0C5AD00E36814 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,14 +253,6 @@
 				DEEEAB79169A726A00AEFC99 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DEEEAB87169A726A00AEFC99 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEEEAB88169A726A00AEFC99 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */ = {
@@ -322,6 +326,7 @@
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -334,6 +339,7 @@
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

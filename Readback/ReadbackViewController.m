@@ -92,6 +92,13 @@ int global_clearanceXPosition;
         case CALL:
             [self addImageToClearance:@"call.png"];
             break;
+        
+        case DIRECT:
+            [self addImageToClearance:@"direct.png"];
+            break;
+        case HOLDING:
+            [self addImageToClearance:@"holding.png"];
+            break;
         default:
             break;
     }

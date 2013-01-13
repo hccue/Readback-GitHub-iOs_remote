@@ -51,6 +51,9 @@
 #define SPACE       11
 #define CALL        14
 
+#define DIRECT      15
+#define HOLDING     16
+
 @interface ReadbackViewController : UIViewController
 
 @end

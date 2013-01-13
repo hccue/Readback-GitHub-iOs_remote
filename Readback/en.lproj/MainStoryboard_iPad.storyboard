@@ -1054,6 +1054,23 @@
         <image name="right.png" width="65" height="65"/>
         <image name="vor.png" width="65" height="65"/>
     </resources>
+    <classes>
+        <class className="ReadbackHelpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackHelpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ReadbackViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPushed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clearanceView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="historyView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="labelZuluTime" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

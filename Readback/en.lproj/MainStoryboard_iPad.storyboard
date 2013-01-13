@@ -1034,7 +1034,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="push" id="Rqe-Q4-JT9"/>
+                                    <action selector="goBack:" destination="3O0-3b-yfX" eventType="touchUpInside" id="Zsv-32-Xlw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1075,7 +1075,7 @@
         <class className="ReadbackHelpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackHelpViewController.h"/>
             <relationships>
-                <relationship kind="action" name="return:" candidateClass="UIButton"/>
+                <relationship kind="action" name="goBack:" candidateClass="UIButton"/>
                 <relationship kind="action" name="visitFriendApp:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
             </relationships>
@@ -1084,8 +1084,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPushed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clearHistory:" candidateClass="UIButton"/>
-                <relationship kind="action" name="done:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="clearanceView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="historyView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="labelZuluTime" candidateClass="UILabel"/>
@@ -1097,7 +1095,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Rqe-Q4-JT9"/>
-    </inferredMetricsTieBreakers>
 </document>

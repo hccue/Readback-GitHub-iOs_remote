@@ -15,7 +15,7 @@
 @implementation ReadbackHelpViewController
 @synthesize versionLabel = _versionLabel;
 
-- (IBAction)return:(UIButton *)sender {
+- (IBAction)goBack:(UIButton *)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

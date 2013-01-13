@@ -32,6 +32,10 @@ int global_clearanceXPosition;
     }
 }
 
+- (IBAction)clearHistory:(UIButton *)sender {
+    [self.historyView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+
 - (IBAction)buttonPushed:(UIButton *)sender {
     //Cannot introduce new scope inside switch statement
     UIView *lastView = (UIView *)[self.clearanceView.subviews lastObject];
@@ -220,6 +224,14 @@ int global_clearanceXPosition;
 -(void)stopClock
 {
     [self.clockTimer invalidate];
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        return YES;
+    }
+    return NO;
 }
 
 

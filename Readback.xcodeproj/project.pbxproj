@@ -28,6 +28,7 @@
 		DE857FF4169DA45D005E8F96 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF3169DA45D005E8F96 /* cat.png */; };
 		DE857FF6169DA510005E8F96 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF5169DA510005E8F96 /* cross.png */; };
 		DEB95321169F01380081E734 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB95320169F01380081E734 /* call.png */; };
+		DEDBF47016A370B200AC2B4D /* ReadbackPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
@@ -64,6 +65,8 @@
 		DE857FF3169DA45D005E8F96 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		DE857FF5169DA510005E8F96 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		DEB95320169F01380081E734 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		DEDBF46E16A370B200AC2B4D /* ReadbackPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPurchaseViewController.h; sourceTree = "<group>"; };
+		DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPurchaseViewController.m; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
 				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
 				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
+				DEDBF46E16A370B200AC2B4D /* ReadbackPurchaseViewController.h */,
+				DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */,
 				DEEEAB76169A726A00AEFC99 /* Supporting Files */,
 			);
 			path = Readback;
@@ -287,6 +292,7 @@
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
 				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
+				DEDBF47016A370B200AC2B4D /* ReadbackPurchaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

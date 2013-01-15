@@ -14,6 +14,7 @@
 @interface ReadbackKeypad : NSObject
 
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic, strong) NSString *detail;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSNumber *price;

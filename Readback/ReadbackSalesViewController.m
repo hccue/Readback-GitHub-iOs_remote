@@ -8,6 +8,7 @@
 
 #import "ReadbackSalesViewController.h"
 #import "ReadbackKeypad.h"
+#import "ReadbackPreviewViewController.h"
 
 @interface ReadbackSalesViewController ()
 
@@ -99,19 +100,21 @@
         
         ReadbackKeypad *standardKeypad = [[ReadbackKeypad alloc] init];
         standardKeypad.title = @"Standard Keypad";
-        standardKeypad.detail = @"Suits any pilot, anywhere.";
+        standardKeypad.subtitle = @"Suits any pilot, anywhere.";
         standardKeypad.priority = [NSNumber numberWithInt:1];
         standardKeypad.purchased = [NSNumber numberWithBool:YES];
         standardKeypad.imageURL = @"standard.png";
         standardKeypad.price = [NSNumber numberWithFloat:0.00];
+        standardKeypad.detail = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
         
         ReadbackKeypad *oceanicKeypad = [[ReadbackKeypad alloc] init];
         oceanicKeypad.title = @"Oceanic Keypad";
-        oceanicKeypad.detail = @"Extended Range Package.";
+        oceanicKeypad.subtitle = @"Extended Range Package.";
         oceanicKeypad.priority = [NSNumber numberWithInt:2];
         oceanicKeypad.purchased = [NSNumber numberWithBool:NO];
         oceanicKeypad.imageURL = @"standard.png";
         oceanicKeypad.price = [NSNumber numberWithFloat:3.99];
+        standardKeypad.detail = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
         
         _storeKeypads = [NSArray arrayWithObjects:standardKeypad, oceanicKeypad, nil];
     }
@@ -150,6 +153,16 @@
     [self setPurchasedKeypadsTableView:nil];
     [self setStoreKeypadsTableView:nil];
     [super viewDidUnload];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController respondsToSelector:@selector(setKeypad:)]) {
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        //TODO Get the correct cell:
+        [segue.destinationViewController setKeypad:[self.storeKeypads objectAtIndex:0]];
+        
+    }
 }
 
 @end

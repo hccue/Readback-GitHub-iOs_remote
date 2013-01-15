@@ -10,6 +10,7 @@
 
 @implementation ReadbackKeypad
 @synthesize title = _title;
+@synthesize subtitle = _subtitle;
 @synthesize detail = _detail;
 @synthesize imageURL = _imageURL;
 @synthesize price = _price;

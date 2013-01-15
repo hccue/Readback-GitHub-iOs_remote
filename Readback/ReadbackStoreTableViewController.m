@@ -28,7 +28,7 @@
     ReadbackKeypad *myKeypad = (ReadbackKeypad *)[self.dataSource storeItemAtIndex:indexPath.row];
     
     cell.textLabel.text = myKeypad.title;
-    cell.detailTextLabel.text = myKeypad.detail;
+    cell.detailTextLabel.text = myKeypad.subtitle;
     
     if (![myKeypad.purchased boolValue]) {
         UILabel *price = [[UILabel alloc] init];

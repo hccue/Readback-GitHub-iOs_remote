@@ -23,6 +23,12 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP]];
 }
 
+- (IBAction)rateApp:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:URL_RATE, APP_ID]]];
+}
+
+#pragma mark UIViewController Lifecycle
+
 -(void)viewWillAppear:(BOOL)animated
 {
     self.versionLabel.text = [NSString stringWithFormat:PATTERN_VERSION, [[NSBundle mainBundle] objectForInfoDictionaryKey:STRING_BUNDLE_VERSION ]];

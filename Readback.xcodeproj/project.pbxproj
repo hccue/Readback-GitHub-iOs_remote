@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DE09CD2216A348C100483034 /* direct.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2116A348C100483034 /* direct.png */; };
 		DE09CD2916A34DEE00483034 /* holding.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2816A34DEE00483034 /* holding.png */; };
+		DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */; };
+		DE18D65216A4C2B600FB779B /* ReadbackPurchasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65116A4C2B600FB779B /* ReadbackPurchasesViewController.m */; };
+		DE18D65516A4C94900FB779B /* ReadbackStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */; };
 		DE28A65C16A25FC200429C46 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65A16A25FC200429C46 /* clear.png */; };
 		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
@@ -28,7 +31,6 @@
 		DE857FF4169DA45D005E8F96 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF3169DA45D005E8F96 /* cat.png */; };
 		DE857FF6169DA510005E8F96 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF5169DA510005E8F96 /* cross.png */; };
 		DEB95321169F01380081E734 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB95320169F01380081E734 /* call.png */; };
-		DEDBF47016A370B200AC2B4D /* ReadbackPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
@@ -45,6 +47,12 @@
 /* Begin PBXFileReference section */
 		DE09CD2116A348C100483034 /* direct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direct.png; sourceTree = "<group>"; };
 		DE09CD2816A34DEE00483034 /* holding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holding.png; sourceTree = "<group>"; };
+		DE18D64516A4BF0500FB779B /* ReadbackPurchasesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPurchasesTableViewController.h; sourceTree = "<group>"; };
+		DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPurchasesTableViewController.m; sourceTree = "<group>"; };
+		DE18D65016A4C2B600FB779B /* ReadbackPurchasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPurchasesViewController.h; sourceTree = "<group>"; };
+		DE18D65116A4C2B600FB779B /* ReadbackPurchasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPurchasesViewController.m; sourceTree = "<group>"; };
+		DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackStoreTableViewController.h; sourceTree = "<group>"; };
+		DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackStoreTableViewController.m; sourceTree = "<group>"; };
 		DE28A65A16A25FC200429C46 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		DE28A65B16A25FC200429C46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
@@ -65,8 +73,6 @@
 		DE857FF3169DA45D005E8F96 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		DE857FF5169DA510005E8F96 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		DEB95320169F01380081E734 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
-		DEDBF46E16A370B200AC2B4D /* ReadbackPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPurchaseViewController.h; sourceTree = "<group>"; };
-		DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPurchaseViewController.m; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,8 +186,12 @@
 				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
 				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
 				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
-				DEDBF46E16A370B200AC2B4D /* ReadbackPurchaseViewController.h */,
-				DEDBF46F16A370B200AC2B4D /* ReadbackPurchaseViewController.m */,
+				DE18D65016A4C2B600FB779B /* ReadbackPurchasesViewController.h */,
+				DE18D65116A4C2B600FB779B /* ReadbackPurchasesViewController.m */,
+				DE18D64516A4BF0500FB779B /* ReadbackPurchasesTableViewController.h */,
+				DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */,
+				DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */,
+				DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */,
 				DEEEAB76169A726A00AEFC99 /* Supporting Files */,
 			);
 			path = Readback;
@@ -292,7 +302,9 @@
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
 				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
-				DEDBF47016A370B200AC2B4D /* ReadbackPurchaseViewController.m in Sources */,
+				DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */,
+				DE18D65216A4C2B600FB779B /* ReadbackPurchasesViewController.m in Sources */,
+				DE18D65516A4C94900FB779B /* ReadbackStoreTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

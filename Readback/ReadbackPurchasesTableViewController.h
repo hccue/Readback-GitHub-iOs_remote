@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class ReadbackPurchasesTableViewController;
+#define PURCHASED_CELL @"PurchasedKeypadCell"
 
 @protocol ReadbackPurchasesTableViewControllerDataSource <NSObject>
--(NSInteger)numberOfItems;
--(NSDictionary *)itemAtIndex:(NSInteger)row;
+-(NSInteger)numberOfPurchasedItems;
+-(NSDictionary *)purchasedItemAtIndex:(NSInteger)row;
 @end
 
 @protocol ReadbackPurchasesTableViewControllerDelegate <NSObject>
--(void)itemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
+-(void)purchasedItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
 

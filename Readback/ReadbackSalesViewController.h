@@ -1,5 +1,5 @@
 //
-//  ReadbackPurchasesViewController.h
+//  ReadbackSalesViewController.h
 //  Readback
 //
 //  Created by Santiago Borja on 1/14/13.
@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ReadbackPurchasesTableViewController.h"
+#import "ReadbackStoreTableViewController.h"
 
-#define KEYPAD_KEY_TITLE @"Title"
-#define KEYPAD_KEY_SUBTITLE @"Subtitle"
+#define PRICE_FORMAT @"$%1.2f"
 
-@interface ReadbackPurchasesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackPurchasesTableViewControllerDelegate>
+@interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackPurchasesTableViewControllerDelegate, ReadbackStoreTableViewControllerDataSource, ReadbackStoreTableViewControllerDelegate>
+
 @property (strong, nonatomic) NSArray *purchasedKeypads;
 @property (strong, nonatomic) NSArray *storeKeypads;
 

@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class ReadbackStoreTableViewController;
+#define STORE_CELL @"StoreKeypadCell"
 
 @protocol ReadbackStoreTableViewControllerDataSource <NSObject>
--(NSInteger)numberOfItems;
--(NSDictionary *)itemAtIndex:(NSInteger)row;
+-(NSInteger)numberOfStoreItems;
+-(NSDictionary *)storeItemAtIndex:(NSInteger)row;
 @end
 
 @protocol ReadbackStoreTableViewControllerDelegate <NSObject>
--(void)itemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
+-(void)storeItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
 

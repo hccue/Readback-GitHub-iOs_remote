@@ -11,7 +11,6 @@
 #import "ReadbackSalesViewController.h"
 
 @implementation ReadbackStoreTableViewController
-@synthesize delegate = _delegate;
 @synthesize dataSource = _dataSource;
 
 #pragma mark - TableView Data Source
@@ -30,21 +29,17 @@
     cell.textLabel.text = myKeypad.title;
     cell.detailTextLabel.text = myKeypad.subtitle;
     
-    if (![myKeypad.purchased boolValue]) {
-        UILabel *price = [[UILabel alloc] init];
+    //Set price or "purchased" label as accessory:
+    UILabel *price = [[UILabel alloc] init];
+    price.text = TEXT_PURCHASED;
+    if (![ReadbackSalesManager keypadIsPurchased:myKeypad]) {
         price.text = [NSString stringWithFormat:PRICE_FORMAT, [myKeypad.price floatValue]];
-        price.textColor = [UIColor blackColor];
-        [price sizeToFit];
-        cell.accessoryView = price;
-    }//else we keep the checkmark
+    }
+    price.textColor = [UIColor blackColor];
+    [price sizeToFit];
+    cell.accessoryView = price;
     
     return cell;
-}
-
-#pragma mark - TableView Delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.delegate storeItemWasSelectedAtIndexPath:indexPath];
 }
 
 @end

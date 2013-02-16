@@ -9,6 +9,7 @@
 #import "ReadbackSalesViewController.h"
 #import "ReadbackKeypad.h"
 #import "ReadbackPreviewViewController.h"
+#import "ReadbackSalesManager.h"
 
 @interface ReadbackSalesViewController ()
 
@@ -35,7 +36,6 @@
 {
     if (!_purchasedTableViewController) {
         _purchasedTableViewController = [[ReadbackPurchasesTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-        _purchasedTableViewController.delegate = self;
         _purchasedTableViewController.dataSource = self;
     }
     return  _purchasedTableViewController;
@@ -45,18 +45,19 @@
 {
     if (!_storeTableViewController) {
         _storeTableViewController = [[ReadbackStoreTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-        _storeTableViewController.delegate = self;
         _storeTableViewController.dataSource = self;
     }
     return _storeTableViewController;
 }
+
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)restorePurchases:(UIButton *)sender {
-    //TODO Restore Purchases
+    [ReadbackSalesManager restoreAllPurchases];
+    //TODO Restore all purchases in the UI ?
 }
 
 
@@ -65,15 +66,6 @@
 #pragma mark UITableViewControllers implementation
 
 //ReadbackPurchasesTableViewController:
-
--(NSArray *)purchasedKeypads
-{
-    if (_purchasedKeypads) {
-        //TODO Check for purchases
-        //_purchasedKeypads = ;
-    }
-    return _purchasedKeypads;
-}
 
 -(NSInteger)numberOfPurchasedItems
 {
@@ -85,41 +77,7 @@
     return [self.purchasedKeypads objectAtIndex:row];
 }
 
--(void)purchasedItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (!_purchasedKeypads) {
-        //TODO Check for purchases
-    }
-}
-
 //ReadbackStoreTableViewController:
-
--(NSArray *)storeKeypads
-{
-    if (!_storeKeypads) { //Fixed set of Keypads:
-        
-        ReadbackKeypad *standardKeypad = [[ReadbackKeypad alloc] init];
-        standardKeypad.title = @"Standard Keypad";
-        standardKeypad.subtitle = @"Suits any pilot, anywhere.";
-        standardKeypad.priority = [NSNumber numberWithInt:1];
-        standardKeypad.purchased = [NSNumber numberWithBool:YES];
-        standardKeypad.imageURL = @"standard.png";
-        standardKeypad.price = [NSNumber numberWithFloat:0.00];
-        standardKeypad.detail = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
-        
-        ReadbackKeypad *oceanicKeypad = [[ReadbackKeypad alloc] init];
-        oceanicKeypad.title = @"Oceanic Keypad";
-        oceanicKeypad.subtitle = @"Extended Range Package.";
-        oceanicKeypad.priority = [NSNumber numberWithInt:2];
-        oceanicKeypad.purchased = [NSNumber numberWithBool:NO];
-        oceanicKeypad.imageURL = @"standard.png";
-        oceanicKeypad.price = [NSNumber numberWithFloat:3.99];
-        standardKeypad.detail = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
-        
-        _storeKeypads = [NSArray arrayWithObjects:standardKeypad, oceanicKeypad, nil];
-    }
-    return _storeKeypads;
-}
 
 -(NSInteger)numberOfStoreItems
 {
@@ -131,22 +89,28 @@
     return [self.storeKeypads objectAtIndex:row];
 }
 
--(void)storeItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath
-{
-    //TODO Implement
-}
 
 
 
 #pragma mark UITableView Lifecycle
 
--(void)viewWillAppear:(BOOL)animated
+-(void)viewDidLoad //Only once:
 {
     self.purchasedKeypadsTableView.delegate = self.purchasedTableViewController;
     self.purchasedKeypadsTableView.dataSource = self.purchasedTableViewController;
     
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    //Refresh in case we are returning from a purchase:
+    self.purchasedKeypads =[ReadbackSalesManager getPurchasedKeypads];
+    self.storeKeypads = [ReadbackSalesManager getStoreKeypads];
+
+    [self.purchasedKeypadsTableView reloadData];
+    [self.storeKeypadsTableView reloadData];
 }
 
 - (void)viewDidUnload {
@@ -157,11 +121,10 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //Set Store keypad to display:
     if ([segue.destinationViewController respondsToSelector:@selector(setKeypad:)]) {
-        UITableViewCell *cell = (UITableViewCell *)sender;
-        //TODO Get the correct cell:
-        [segue.destinationViewController setKeypad:[self.storeKeypads objectAtIndex:0]];
-        
+        NSIndexPath *indexPath = [self.storeKeypadsTableView indexPathForCell:sender];
+        [segue.destinationViewController setKeypad:[self.storeKeypads objectAtIndex:indexPath.row]];
     }
 }
 

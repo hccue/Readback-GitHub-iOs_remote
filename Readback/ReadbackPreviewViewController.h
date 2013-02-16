@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ReadbackKeypad.h"
 
+#define LABEL_PURCHASED @"Already Purchased"
+#define LABEL_RETURN    @"Return"
+
 @interface ReadbackPreviewViewController : UIViewController
 
 @property (nonatomic, strong) ReadbackKeypad *keypad;

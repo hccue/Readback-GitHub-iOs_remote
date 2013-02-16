@@ -15,12 +15,7 @@
 -(NSDictionary *)purchasedItemAtIndex:(NSInteger)row;
 @end
 
-@protocol ReadbackPurchasesTableViewControllerDelegate <NSObject>
--(void)purchasedItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
-@end
-
 
 @interface ReadbackPurchasesTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (strong, nonatomic) id <ReadbackPurchasesTableViewControllerDelegate> delegate;
 @property (strong, nonatomic) id <ReadbackPurchasesTableViewControllerDataSource> dataSource;
 @end

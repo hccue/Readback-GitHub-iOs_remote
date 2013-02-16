@@ -11,7 +11,6 @@
 #import "ReadbackSalesViewController.h"
 
 @implementation ReadbackPurchasesTableViewController
-@synthesize delegate = _delegate;
 @synthesize dataSource = _dataSource;
 
 #pragma mark - TableView Data Source
@@ -25,18 +24,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    NSDictionary *myKeypad = [self.dataSource purchasedItemAtIndex:indexPath.row];
     
-    cell.textLabel.text = [myKeypad objectForKey:KEYPAD_KEY_TITLE];
-    cell.detailTextLabel.text = [myKeypad objectForKey:KEYPAD_KEY_SUBTITLE];
+    ReadbackKeypad *myKeypad = (ReadbackKeypad *)[self.dataSource purchasedItemAtIndex:indexPath.row];
+    
+    cell.textLabel.text = myKeypad.title;
+    cell.detailTextLabel.text = myKeypad.subtitle;
     
     return cell;
-}
-
-#pragma mark - TableView Delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.delegate purchasedItemWasSelectedAtIndexPath:indexPath];
 }
 
 @end

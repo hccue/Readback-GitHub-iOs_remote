@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ReadbackPurchasesTableViewController.h"
 #import "ReadbackStoreTableViewController.h"
+#import "ReadbackSalesManager.h"
 
 #define PRICE_FORMAT @"$%1.2f"
 
-@interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackPurchasesTableViewControllerDelegate, ReadbackStoreTableViewControllerDataSource, ReadbackStoreTableViewControllerDelegate>
+@interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackStoreTableViewControllerDataSource>
 
 @property (strong, nonatomic) NSArray *purchasedKeypads;
 @property (strong, nonatomic) NSArray *storeKeypads;

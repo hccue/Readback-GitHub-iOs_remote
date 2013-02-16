@@ -9,19 +9,15 @@
 #import <UIKit/UIKit.h>
 
 #define STORE_CELL @"StoreKeypadCell"
+#define TEXT_PURCHASED @"Purchased"
 
 @protocol ReadbackStoreTableViewControllerDataSource <NSObject>
 -(NSInteger)numberOfStoreItems;
 -(NSDictionary *)storeItemAtIndex:(NSInteger)row;
 @end
 
-@protocol ReadbackStoreTableViewControllerDelegate <NSObject>
--(void)storeItemWasSelectedAtIndexPath:(NSIndexPath *)indexPath;
-@end
-
 
 @interface ReadbackStoreTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (strong, nonatomic) id <ReadbackStoreTableViewControllerDelegate> delegate;
 @property (strong, nonatomic) id <ReadbackStoreTableViewControllerDataSource> dataSource;
 
 @end

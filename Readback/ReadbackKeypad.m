@@ -9,14 +9,14 @@
 #import "ReadbackKeypad.h"
 
 @implementation ReadbackKeypad
+
+@synthesize identifier = _identifier;
+@synthesize name = _name;
 @synthesize title = _title;
 @synthesize subtitle = _subtitle;
 @synthesize detail = _detail;
 @synthesize imageURL = _imageURL;
 @synthesize price = _price;
-@synthesize purchased = _purchased;
 @synthesize priority = _priority;
-
-
 
 @end

@@ -1,19 +1,19 @@
 //
-//  KeypadSuperViewController.m
+//  KeypadViewController.m
 //  Readback
 //
-//  Created by Santiago Borja on 2/15/13.
+//  Created by Santiago Borja on 2/16/13.
 //  Copyright (c) 2013 Santiago Borja. All rights reserved.
 //
 
-#import "KeypadSuperViewController.h"
-#import "ReadbackContainerViewController.h"
+#import "KeypadViewController.h"
+#import "ReadbackViewController.h"
 
-@interface KeypadSuperViewController ()
+@interface KeypadViewController ()
 
 @end
 
-@implementation KeypadSuperViewController
+@implementation KeypadViewController
 @synthesize delegate = _delegate;
 
 -(void)didMoveToParentViewController:(UIViewController *)parent
@@ -21,7 +21,7 @@
     [self addButtonActions];
     
     [super didMoveToParentViewController:parent];
-    ReadbackContainerViewController *container = (ReadbackContainerViewController *)parent;
+    ReadbackViewController *container = (ReadbackViewController *)parent;
     self.delegate = container;
 }
 
@@ -30,7 +30,7 @@
     
     for (UIView *view in self.view.subviews) {
         if ([view isKindOfClass:[UIButton class]]) {
-            [((UIButton *)view) addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
+            [((UIButton *)view) addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
 }

@@ -10,6 +10,7 @@
 #import "ReadbackKeypad.h"
 #import "ReadbackPreviewViewController.h"
 #import "ReadbackSalesManager.h"
+#import "KeypadGenerator.h"
 
 @interface ReadbackSalesViewController ()
 
@@ -62,7 +63,6 @@
 
 
 
-
 #pragma mark UITableViewControllers implementation
 
 //ReadbackPurchasesTableViewController:
@@ -106,7 +106,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     //Refresh in case we are returning from a purchase:
-    self.purchasedKeypads =[ReadbackSalesManager getPurchasedKeypads];
+    self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedKeypadsIdentifiers]];
     self.storeKeypads = [ReadbackSalesManager getStoreKeypads];
 
     [self.purchasedKeypadsTableView reloadData];

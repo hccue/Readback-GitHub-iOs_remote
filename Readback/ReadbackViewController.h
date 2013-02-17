@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeypadViewController.h"
 
 #define TEXT_SPACE @"   "
 #define CLEARANCE_GAP 2
 #define IMAGE_SCALE_FACTOR 0.65
 #define CLEARANCE_FONT_SIZE 30
 #define CLEARANCE_FONT_FAMILY @"Avenir Next"
+
+#define KEYPAD_SWAP_ANIMATION_DURATION 0.5
 
 #define HISTORY_ANIMATION_DURATION 0.5
 #define HISTORY_IMAGE_SCALE_FACTOR 0.45
@@ -32,27 +35,8 @@
 #define COLOR_TEXT [UIColor greenColor]
 #define COLOR_BACKGROUND_TEXT_COLOR [UIColor clearColor]
 
-//Tag constants
-#define LEFT        1
-#define RIGHT       2
-#define CLIMB       3
-#define DESCEND     4
-#define CROSS       5
-#define DELETE      6
-#define CLEAR       7
 
-#define NDB         8
-#define VOR         13
-#define ILS         12
-#define HOLDSHORT   9
-#define HOLDCAT     10
 
-#define SPACE       11
-#define CALL        14
-
-#define DIRECT      15
-#define HOLDING     16
-
-@interface ReadbackViewController : UIViewController
-
+@interface ReadbackViewController : UIViewController <KeypadDelegate>
+-(IBAction)buttonPressed:(UIButton *)button;
 @end

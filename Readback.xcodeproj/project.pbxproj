@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DE09CD2216A348C100483034 /* direct.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2116A348C100483034 /* direct.png */; };
 		DE09CD2916A34DEE00483034 /* holding.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2816A34DEE00483034 /* holding.png */; };
-		DE0D1F2216CEF3A200C32368 /* KeypadSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D1F2016CEF3A200C32368 /* KeypadSuperViewController.m */; };
 		DE17668016A610A000760990 /* ReadbackPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */; };
 		DE17668416A6173300760990 /* standard.png in Resources */ = {isa = PBXBuildFile; fileRef = DE17668316A6173300760990 /* standard.png */; };
 		DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */; };
@@ -20,7 +19,10 @@
 		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
-		DE41D72A16BA166B00883B68 /* ReadbackContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41D72816BA166B00883B68 /* ReadbackContainerViewController.m */; };
+		DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D1E16D1321F006E743A /* KeyInterpreter.m */; };
+		DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2316D13506006E743A /* QwertyKeypadVC.xib */; };
+		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
+		DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */; };
 		DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */; };
 		DE44828116A0C13800E36814 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828016A0C13800E36814 /* vor.png */; };
 		DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828216A0C5AD00E36814 /* buttonLarge.png */; };
@@ -36,6 +38,7 @@
 		DE4C581616B32BF3004AC4D7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581416B32BF3004AC4D7 /* forward.png */; };
 		DE4C581816B32CAC004AC4D7 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581716B32CAC004AC4D7 /* plus.png */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
+		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
 		DE857FED169D94C2005E8F96 /* climb.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FEB169D94C2005E8F96 /* climb.png */; };
 		DE857FEE169D94C2005E8F96 /* descend.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FEC169D94C2005E8F96 /* descend.png */; };
@@ -59,8 +62,6 @@
 /* Begin PBXFileReference section */
 		DE09CD2116A348C100483034 /* direct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direct.png; sourceTree = "<group>"; };
 		DE09CD2816A34DEE00483034 /* holding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holding.png; sourceTree = "<group>"; };
-		DE0D1F1F16CEF3A200C32368 /* KeypadSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadSuperViewController.h; sourceTree = "<group>"; };
-		DE0D1F2016CEF3A200C32368 /* KeypadSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadSuperViewController.m; sourceTree = "<group>"; };
 		DE17667E16A610A000760990 /* ReadbackPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPreviewViewController.h; sourceTree = "<group>"; };
 		DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPreviewViewController.m; sourceTree = "<group>"; };
 		DE17668316A6173300760990 /* standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standard.png; sourceTree = "<group>"; };
@@ -77,8 +78,12 @@
 		DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackSalesManager.h; sourceTree = "<group>"; };
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
 		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
-		DE41D72716BA166B00883B68 /* ReadbackContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackContainerViewController.h; sourceTree = "<group>"; };
-		DE41D72816BA166B00883B68 /* ReadbackContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackContainerViewController.m; sourceTree = "<group>"; };
+		DE413D1D16D1321F006E743A /* KeyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInterpreter.h; sourceTree = "<group>"; };
+		DE413D1E16D1321F006E743A /* KeyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyInterpreter.m; sourceTree = "<group>"; };
+		DE413D2316D13506006E743A /* QwertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QwertyKeypadVC.xib; sourceTree = "<group>"; };
+		DE413D2616D1389C006E743A /* KeypadGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadGenerator.h; sourceTree = "<group>"; };
+		DE413D2716D1389C006E743A /* KeypadGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadGenerator.m; sourceTree = "<group>"; };
+		DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClearanceKeypadVC.xib; sourceTree = "<group>"; };
 		DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandardKeypadVC.xib; sourceTree = "<group>"; };
 		DE44828016A0C13800E36814 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
 		DE44828216A0C5AD00E36814 /* buttonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLarge.png; sourceTree = "<group>"; };
@@ -95,6 +100,8 @@
 		DE4C581416B32BF3004AC4D7 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		DE4C581716B32CAC004AC4D7 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
+		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
+		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 		DE857FE9169D939C005E8F96 /* hold-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hold-short.png"; sourceTree = "<group>"; };
 		DE857FEB169D94C2005E8F96 /* climb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = climb.png; sourceTree = "<group>"; };
 		DE857FEC169D94C2005E8F96 /* descend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descend.png; sourceTree = "<group>"; };
@@ -137,13 +144,14 @@
 		DE17668216A610A800760990 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */,
-				DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */,
 				DE234B2F16A5C86400C99AE6 /* ReadbackKeypad.h */,
 				DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */,
+				DE413D1D16D1321F006E743A /* KeyInterpreter.h */,
+				DE413D1E16D1321F006E743A /* KeyInterpreter.m */,
+				DE413D2616D1389C006E743A /* KeypadGenerator.h */,
+				DE413D2716D1389C006E743A /* KeypadGenerator.m */,
 			);
 			name = Entities;
-			path = Readback;
 			sourceTree = "<group>";
 		};
 		DE17668516A6173600760990 /* Keypad Images */ = {
@@ -170,15 +178,69 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		DE41D73216BA197E00883B68 /* VCs */ = {
+		DE413D2E16D1474F006E743A /* Purchasing */ = {
 			isa = PBXGroup;
 			children = (
-				DE0D1F1F16CEF3A200C32368 /* KeypadSuperViewController.h */,
-				DE0D1F2016CEF3A200C32368 /* KeypadSuperViewController.m */,
-				DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */,
-				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
+				DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */,
+				DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */,
 			);
-			name = VCs;
+			name = Purchasing;
+			sourceTree = "<group>";
+		};
+		DE413D2F16D14767006E743A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */,
+				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
+				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
+				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
+				DE413D3016D14779006E743A /* Purchasing VCs */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DE413D3016D14779006E743A /* Purchasing VCs */ = {
+			isa = PBXGroup;
+			children = (
+				DE18D65016A4C2B600FB779B /* ReadbackSalesViewController.h */,
+				DE18D65116A4C2B600FB779B /* ReadbackSalesViewController.m */,
+				DE413D3216D1479A006E743A /* Table Views */,
+				DE413D3116D1478B006E743A /* Preview Purchase */,
+			);
+			name = "Purchasing VCs";
+			sourceTree = "<group>";
+		};
+		DE413D3116D1478B006E743A /* Preview Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				DE17667E16A610A000760990 /* ReadbackPreviewViewController.h */,
+				DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */,
+			);
+			name = "Preview Purchase";
+			sourceTree = "<group>";
+		};
+		DE413D3216D1479A006E743A /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE18D64516A4BF0500FB779B /* ReadbackPurchasesTableViewController.h */,
+				DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */,
+				DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */,
+				DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */,
+			);
+			name = "Table Views";
+			sourceTree = "<group>";
+		};
+		DE41D73216BA197E00883B68 /* Keypads */ = {
+			isa = PBXGroup;
+			children = (
+				DE68E4EF16CFF89A0031123E /* KeypadViewController.h */,
+				DE68E4F016CFF89A0031123E /* KeypadViewController.m */,
+				DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */,
+				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
+				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
+				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
+			);
+			name = Keypads;
 			sourceTree = "<group>";
 		};
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
@@ -214,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				DEEEAB75169A726A00AEFC99 /* Readback */,
-				DE17668216A610A800760990 /* Entities */,
 				DE17668516A6173600760990 /* Keypad Images */,
 				DEEEAB76169A726A00AEFC99 /* Supporting Files */,
 				DEEEAB6E169A726A00AEFC99 /* Frameworks */,
@@ -249,21 +310,10 @@
 				DEEEAB7E169A726A00AEFC99 /* ReadbackAppDelegate.h */,
 				DEEEAB7F169A726A00AEFC99 /* ReadbackAppDelegate.m */,
 				DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */,
-				DE41D73216BA197E00883B68 /* VCs */,
-				DE41D72716BA166B00883B68 /* ReadbackContainerViewController.h */,
-				DE41D72816BA166B00883B68 /* ReadbackContainerViewController.m */,
-				DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */,
-				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
-				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
-				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
-				DE18D65016A4C2B600FB779B /* ReadbackSalesViewController.h */,
-				DE18D65116A4C2B600FB779B /* ReadbackSalesViewController.m */,
-				DE18D64516A4BF0500FB779B /* ReadbackPurchasesTableViewController.h */,
-				DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */,
-				DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */,
-				DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */,
-				DE17667E16A610A000760990 /* ReadbackPreviewViewController.h */,
-				DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */,
+				DE413D2F16D14767006E743A /* ViewControllers */,
+				DE41D73216BA197E00883B68 /* Keypads */,
+				DE413D2E16D1474F006E743A /* Purchasing */,
+				DE17668216A610A800760990 /* Entities */,
 			);
 			path = Readback;
 			sourceTree = "<group>";
@@ -367,6 +417,8 @@
 				DE4C581816B32CAC004AC4D7 /* plus.png in Resources */,
 				DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */,
 				DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */,
+				DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */,
+				DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +439,9 @@
 				DE234B3116A5C86400C99AE6 /* ReadbackKeypad.m in Sources */,
 				DE17668016A610A000760990 /* ReadbackPreviewViewController.m in Sources */,
 				DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */,
-				DE41D72A16BA166B00883B68 /* ReadbackContainerViewController.m in Sources */,
-				DE0D1F2216CEF3A200C32368 /* KeypadSuperViewController.m in Sources */,
+				DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */,
+				DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */,
+				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +489,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +511,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

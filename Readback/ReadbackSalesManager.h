@@ -9,25 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "ReadbackKeypad.h"
 
-#define USER_KEY_KEYPADS @"user_keypads"
-
-#define STANDARD_KEYPAD 1
-#define OCEANIC_KEYPAD 2
-
-#define KEY_IDENTIFIER @"Identifier"
-#define KEY_TITLE @"Title"
-#define KEY_NAME @"Name"
-#define KEY_SUBTITLE @"Subtitle"
-#define KEY_DETAIL @"Detail"
-#define KEY_IMAGE @"image_url"
-#define KEY_PRICE @"Price"
-#define KEY_PRIORITY @"Priority"
+#define USERKEY_KEYPADS @"user_keypads"
 
 @interface ReadbackSalesManager : NSObject
 
-+ (NSArray *)getPurchasedKeypads;
-+ (NSArray *)getStoreKeypads;
++ (NSArray *)getPurchasedKeypadsIdentifiers; //Array of NSNumber
++ (NSArray *)getStoreKeypads; //All keypads available for purchasing
 + (void)restoreAllPurchases;
 + (void)performPurchaseOfKeypad:(ReadbackKeypad *)keypad;
 + (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad;
+
 @end

@@ -1,8 +1,8 @@
 //
-//  KeypadSuperViewController.h
+//  KeypadViewController.h
 //  Readback
 //
-//  Created by Santiago Borja on 2/15/13.
+//  Created by Santiago Borja on 2/16/13.
 //  Copyright (c) 2013 Santiago Borja. All rights reserved.
 //
 
@@ -12,6 +12,6 @@
 -(void)buttonPressed:(UIButton *)button;
 @end
 
-@interface KeypadSuperViewController : UIViewController
+@interface KeypadViewController : UIViewController
 @property (nonatomic, strong) id <KeypadDelegate> delegate;
 @end

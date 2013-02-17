@@ -7,16 +7,23 @@
 //
 
 #import "ReadbackViewController.h"
+#import "ReadbackSalesManager.h"
+#import "KeyInterpreter.h"
+#import "KeypadGenerator.h"
 
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
 
 @interface ReadbackViewController ()
-- (IBAction)buttonPushed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIView *clearanceView;
 @property (weak, nonatomic) IBOutlet UIView *historyView;
 @property (weak, nonatomic) IBOutlet UILabel *labelZuluTime;
 @property (strong, nonatomic) NSTimer *clockTimer;
+
+@property (nonatomic, strong) NSArray *subViewControllers;
+@property (nonatomic, strong) UIViewController *selectedViewController;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
 @end
 
 
@@ -26,83 +33,88 @@ int global_clearanceXPosition;
 @synthesize labelZuluTime = _labelZuluTime;
 @synthesize clockTimer = _clockTimer;
 
-- (IBAction)done:(UIButton *)sender {
+@synthesize subViewControllers = _subViewControllers;
+@synthesize selectedViewController = _selectedViewController;
+@synthesize containerView = _containerView;
+
+
+#pragma mark Button Action Handle
+
+- (IBAction)clearHistory:(UIButton *)sender {
+    [self.historyView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+- (IBAction)clearScratchpad:(UIButton *)sender {
+    [self.clearanceView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    global_clearanceXPosition = 0;
+}
+- (IBAction)clearanceTapped:(UITapGestureRecognizer *)sender {
     if ([self.clearanceView.subviews count] > 0) {
         [self moveClearanceToHistory];
     }
 }
 
-- (IBAction)clearHistory:(UIButton *)sender {
-    [self.historyView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-}
-
-- (IBAction)buttonPushed:(UIButton *)sender {
+- (void)buttonPressed:(UIButton *)sender {
     //Cannot introduce new scope inside switch statement
     UIView *lastView = (UIView *)[self.clearanceView.subviews lastObject];
 
     switch (sender.tag) {
-        case 0://All text buttons
+        case NO_TAG://All text buttons
             [self addTextToClearance:sender.titleLabel.text];
             break;
         case SPACE:
             [self addTextToClearance:TEXT_SPACE];
             break;
-            
-        case CLEAR:
-            [self.clearanceView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-            global_clearanceXPosition = 0;
-            break;
         case DELETE:
             global_clearanceXPosition = MAX(0,(global_clearanceXPosition - lastView.frame.size.width - CLEARANCE_GAP));
             [lastView removeFromSuperview];
             break;
-            
-        case LEFT:
-            [self addImageToClearance:@"left-button.png"];
-            break;
-        case RIGHT:
-            [self addImageToClearance:@"right.png"];
-            break;
-        case CLIMB:
-            [self addImageToClearance:@"climb.png"];
-            break;
-        case DESCEND:
-            [self addImageToClearance:@"descend.png"];
-            break;
-        case CROSS:
-            [self addImageToClearance:@"cross.png"];
-            break;
-            
-        case NDB://deprecated
-            [self addImageToClearance:@"ndb.png"];
-            break;
-        case VOR:
-            [self addImageToClearance:@"vor.png"];
-            break;
-        case ILS:
-            [self addImageToClearance:@"ils.png"];
-            break;
-        case HOLDSHORT:
-            [self addImageToClearance:@"hold-short.png"];
-            break;
-        case HOLDCAT:
-            [self addImageToClearance:@"cat.png"];
-            break;
-            
-        case CALL:
-            [self addImageToClearance:@"call.png"];
-            break;
         
-        case DIRECT:
-            [self addImageToClearance:@"direct.png"];
-            break;
-        case HOLDING:
-            [self addImageToClearance:@"holding.png"];
-            break;
         default:
+            [self addImageToClearance:[KeyInterpreter getSymbolForTag:sender.tag]];
             break;
     }
 }
+
+
+#pragma mark UIView Lifecycle implementation
+
+-(void)viewDidLoad
+{
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.containerView addGestureRecognizer:swipeLeft];
+    
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.containerView addGestureRecognizer:swipeRight];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    //Refresh in case we are returning from a purchase:
+    [self loadPurchasedKeypads];
+    
+    
+    [super viewWillAppear:animated];
+    [self startClock];
+    [self loadChildViewController];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self stopClock];
+}
+
+- (void)viewDidUnload {
+    [self setClearanceView:nil];
+    [self setHistoryView:nil];
+    [self setLabelZuluTime:nil];
+    [super viewDidUnload];
+}
+
+
+#pragma mark Controller Logic implementation
 
 -(void)addImageToClearance:(NSString *)imageName
 {
@@ -201,6 +213,7 @@ int global_clearanceXPosition;
     
 }
 
+//Reduce size of symbols for log display
 -(UIView *)reduceView:(UIView *)view toScale:(float)scale
 {
     CGRect frame = view.frame;
@@ -241,26 +254,54 @@ int global_clearanceXPosition;
     return NO;
 }
 
-
-#pragma mark UIView Lifecycle implementation
-
--(void)viewWillAppear:(BOOL)animated
+-(void)loadPurchasedKeypads
 {
-    [super viewWillAppear:animated];
-    [self startClock];
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [self stopClock];
+    NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
+    
+    //Get each keypad's ViewController
+    NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
+    for (NSNumber *keypadIdentifier in purchasedKeypadsIdentifiers) {
+        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:keypadIdentifier.intValue];
+        KeypadViewController *correspondingVC = [[KeypadViewController alloc] initWithNibName:keypad.name bundle:nil];
+        [keypadsViewControllers addObject: correspondingVC];
+    }
+    
+    [self setSubViewControllers:keypadsViewControllers];
 }
 
-- (void)viewDidUnload {
-    [self setClearanceView:nil];
-    [self setHistoryView:nil];
-    [self setLabelZuluTime:nil];
-    [super viewDidUnload];
+- (void)setSubViewControllers:(NSArray *)subViewControllers
+{
+	_subViewControllers = [subViewControllers copy];
+	self.selectedViewController = [subViewControllers objectAtIndex:0];
+	// cannot add here because the view might not have been loaded yet
 }
+
+-(void)loadChildViewController
+{
+    if (self.selectedViewController.parentViewController == self)
+	{
+        NSLog(@"nothing to do");
+		// nowthing to do
+		return;
+	}
+    
+	// adjust the frame to fit in the container view
+	self.selectedViewController.view.frame = self.containerView.bounds;
+    
+	// make sure that it resizes on rotation automatically
+	self.selectedViewController.view.autoresizingMask = self.containerView.autoresizingMask;
+    
+	// add as child VC
+	[self addChildViewController:self.selectedViewController];
+    
+	// add it to container view, calls willMoveToParentViewController for us
+	[self.containerView addSubview:self.selectedViewController.view];
+    
+	// notify it that move is done
+	[self.selectedViewController didMoveToParentViewController:self];
+    
+}
+
 
 #pragma mark Utilities
 
@@ -272,6 +313,61 @@ int global_clearanceXPosition;
     [dateFormatter setTimeZone:timeZone];
     [dateFormatter setDateFormat:format];
     return [dateFormatter stringFromDate:localDate];
+}
+
+
+#pragma mark UIGestureRecognizer Swipe
+
+- (void)swipe:(UISwipeGestureRecognizer *)gesture
+{
+	if (gesture.state == UIGestureRecognizerStateRecognized)
+	{
+		NSInteger index = [self.subViewControllers indexOfObject:self.selectedViewController];
+		
+        UIViewAnimationOptions *option;
+        if (gesture.direction == UISwipeGestureRecognizerDirectionLeft) {
+            index = MIN(index+1, [self.subViewControllers count]-1);
+            option = UIViewAnimationOptionTransitionCrossDissolve;
+        }else{
+            index = MAX(index-1, 0);
+            option = UIViewAnimationOptionTransitionCrossDissolve;
+        }
+        
+		UIViewController *newSubViewController = [self.subViewControllers objectAtIndex:index];
+		[self transitionFromViewController:self.selectedViewController
+                          toViewController:newSubViewController
+                             withAnimation:UIViewAnimationOptionTransitionCrossDissolve];
+	}
+}
+
+- (void)transitionFromViewController:(UIViewController *)fromViewController
+                    toViewController:(UIViewController *)toViewController
+                       withAnimation:(UIViewAnimationOptions *)animation
+{
+    // cannot transition to same
+	if (fromViewController == toViewController) return;
+    
+	// animation setup
+	toViewController.view.frame = self.containerView.bounds;
+	toViewController.view.autoresizingMask = self.containerView.autoresizingMask;
+    
+	// notify
+	[fromViewController willMoveToParentViewController:nil];
+	[self addChildViewController:toViewController];
+    
+	// transition
+	[self transitionFromViewController:fromViewController
+					  toViewController:toViewController
+							  duration:KEYPAD_SWAP_ANIMATION_DURATION
+							   options:animation
+							animations:^{
+							}
+							completion:^(BOOL finished) {
+								[toViewController didMoveToParentViewController:self];
+								[fromViewController removeFromParentViewController];
+							}];
+    
+    self.selectedViewController = toViewController;
 }
 
 @end

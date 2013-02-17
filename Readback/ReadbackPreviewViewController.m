@@ -29,11 +29,9 @@
     }
 }
 
-
-
 -(void)loadKeypadInformation
 {
-    self.keypadTitle.text = [NSString stringWithFormat:@"%@, %@", self.keypad.title, self.keypad.subtitle];
+    self.keypadTitle.text = [NSString stringWithFormat:STRING_FORMAT_TITLE, self.keypad.title, self.keypad.subtitle];
     self.keypadDetail.text = self.keypad.detail;
     self.keypadImageView.image = [UIImage imageNamed:self.keypad.imageURL];
     
@@ -41,6 +39,8 @@
         [self.purchaseButton setTitle:LABEL_PURCHASED forState:UIControlStateNormal];
         self.purchaseButton.enabled = NO;
         [self.returnButton setTitle:LABEL_RETURN forState:UIControlStateNormal];
+    } else {
+        [self.purchaseButton setTitle:[NSString stringWithFormat:STRING_FORMAT_PURCHASE_BUTTON, self.keypad.price.doubleValue] forState:UIControlStateNormal];
     }
 }
 
@@ -50,6 +50,14 @@
 
 - (IBAction)performPurchase:(UIButton *)sender {
     if (![ReadbackSalesManager keypadIsPurchased:self.keypad]) [ReadbackSalesManager performPurchaseOfKeypad:self.keypad];
+    
+    UIAlertView* message = [[UIAlertView alloc] initWithTitle:PURCHASED_MESSAGE_TITLE
+                                                  message:PURCHASED_MESSAGE_BODY
+                                                 delegate:self
+                                        cancelButtonTitle:PURCHASED_MESSAGE_BUTTON
+                                        otherButtonTitles: nil];
+    [message show];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated

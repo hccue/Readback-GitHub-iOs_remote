@@ -15,6 +15,7 @@
 
 @implementation KeypadViewController
 @synthesize delegate = _delegate;
+@synthesize keypad = _keypad;
 
 -(void)didMoveToParentViewController:(UIViewController *)parent
 {

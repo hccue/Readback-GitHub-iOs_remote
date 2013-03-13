@@ -11,6 +11,7 @@
 #import "KeyInterpreter.h"
 #import "KeypadGenerator.h"
 
+
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
 
@@ -23,6 +24,9 @@ int global_clearanceXPosition;
 @property (nonatomic, strong) NSArray *subViewControllers;
 @property (nonatomic, strong) UIViewController *selectedViewController;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UILabel *activeKeypadLabel;
 
 @end
 
@@ -37,6 +41,8 @@ int global_clearanceXPosition;
 @synthesize selectedViewController = _selectedViewController;
 @synthesize containerView = _containerView;
 
+@synthesize pageControl = _pageControl;
+@synthesize activeKeypadLabel = _activeKeypadLabel;
 
 #pragma mark Button Action Handle
 
@@ -91,11 +97,11 @@ int global_clearanceXPosition;
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     //Refresh in case we are returning from a purchase:
     [self loadPurchasedKeypads];
     
-    
-    [super viewWillAppear:animated];
     [self startClock];
     [self loadChildViewController];
 }
@@ -110,8 +116,19 @@ int global_clearanceXPosition;
     [self setClearanceView:nil];
     [self setHistoryView:nil];
     [self setLabelZuluTime:nil];
+    [self setPageControl:nil];
+    [self setActiveKeypadLabel:nil];
     [super viewDidUnload];
 }
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        return YES;
+    }
+    return NO;
+}
+
 
 
 #pragma mark Controller Logic implementation
@@ -227,6 +244,10 @@ int global_clearanceXPosition;
     return view;
 }
 
+
+
+#pragma mark Clock implementation
+
 -(void)startClock
 {
     self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:CLOCK_TIMER_DURATION
@@ -246,13 +267,43 @@ int global_clearanceXPosition;
     [self.clockTimer invalidate];
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        return YES;
-    }
-    return NO;
+
+
+#pragma mark UIPageControl 
+
+- (IBAction)changePage:(UIPageControl *)pageControl {
+    UIViewController *newSubViewController = [self.subViewControllers objectAtIndex:pageControl.currentPage];
+    
+    [self transitionFromViewController:self.selectedViewController
+                      toViewController:newSubViewController
+                         withAnimation:UIViewAnimationOptionTransitionFlipFromBottom];
+
 }
+
+
+
+#pragma mark Help Image
+
+- (IBAction)helpTapped:(UIButton *)sender {
+    UIImage *image = [UIImage imageNamed:@"key-help.png"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+        
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissHelpView:)];
+    [imageView setUserInteractionEnabled:YES];
+    [imageView addGestureRecognizer:tap];
+    [self.view addSubview:imageView];
+}
+
+-(void)dismissHelpView:(UITapGestureRecognizer *)tap
+{
+    [tap.view removeFromSuperview];
+}
+
+
+
 
 -(void)loadPurchasedKeypads
 {
@@ -261,26 +312,29 @@ int global_clearanceXPosition;
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
     for (NSNumber *keypadIdentifier in purchasedKeypadsIdentifiers) {
-        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:keypadIdentifier.intValue];
+        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:[keypadIdentifier intValue]];
         KeypadViewController *correspondingVC = [[KeypadViewController alloc] initWithNibName:keypad.name bundle:nil];
+        correspondingVC.title = keypad.title;
+        correspondingVC.keypad = keypad;
         [keypadsViewControllers addObject: correspondingVC];
     }
     
     [self setSubViewControllers:keypadsViewControllers];
+    self.pageControl.numberOfPages = [keypadsViewControllers count];
+    self.pageControl.currentPage = [self.subViewControllers indexOfObject:self.selectedViewController];
 }
 
 - (void)setSubViewControllers:(NSArray *)subViewControllers
 {
 	_subViewControllers = [subViewControllers copy];
 	self.selectedViewController = [subViewControllers objectAtIndex:0];
-	// cannot add here because the view might not have been loaded yet
 }
 
 -(void)loadChildViewController
 {
     if (self.selectedViewController.parentViewController == self)
 	{
-        NSLog(@"nothing to do");
+        NSLog(@"nothing to do, selected vc is the visible one");
 		// nowthing to do
 		return;
 	}
@@ -327,16 +381,16 @@ int global_clearanceXPosition;
         UIViewAnimationOptions *option;
         if (gesture.direction == UISwipeGestureRecognizerDirectionLeft) {
             index = MIN(index+1, [self.subViewControllers count]-1);
-            option = UIViewAnimationOptionTransitionCrossDissolve;
+            option = UIViewAnimationOptionTransitionFlipFromRight;
         }else{
             index = MAX(index-1, 0);
-            option = UIViewAnimationOptionTransitionCrossDissolve;
+            option = UIViewAnimationOptionTransitionFlipFromLeft;
         }
         
 		UIViewController *newSubViewController = [self.subViewControllers objectAtIndex:index];
 		[self transitionFromViewController:self.selectedViewController
                           toViewController:newSubViewController
-                             withAnimation:UIViewAnimationOptionTransitionCrossDissolve];
+                             withAnimation:option];
 	}
 }
 
@@ -352,7 +406,10 @@ int global_clearanceXPosition;
 	toViewController.view.autoresizingMask = self.containerView.autoresizingMask;
     
 	// notify
+    //TODO check why we pass nil here
 	[fromViewController willMoveToParentViewController:nil];
+    
+    //TODO why we add child here?
 	[self addChildViewController:toViewController];
     
 	// transition
@@ -367,7 +424,33 @@ int global_clearanceXPosition;
 								[fromViewController removeFromParentViewController];
 							}];
     
-    self.selectedViewController = toViewController;
+    [self setSelectedKeypad:toViewController];
+}
+
+-(void)setSelectedKeypad:(UIViewController *)viewController
+{
+    self.selectedViewController = viewController;
+    self.activeKeypadLabel.text = viewController.title;
+    self.pageControl.currentPage = [self.subViewControllers indexOfObject:viewController];
+}
+
+-(void)setKeypadWithIdentifier:(NSNumber *)tag;
+{
+    for (KeypadViewController *keypadVC in self.subViewControllers) {
+        ReadbackKeypad *keypad = keypadVC.keypad;
+        if (keypad.identifier == tag) {
+            [self transitionFromViewController:self.selectedViewController toViewController:keypadVC withAnimation:UIViewAnimationOptionTransitionCurlDown];
+        }
+    }
+    
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"CustomizeSegue"]) {
+        [((ReadbackSalesViewController *)segue.destinationViewController) setDelegate:self];
+    }
 }
 
 @end

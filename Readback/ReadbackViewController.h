@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "KeypadViewController.h"
+#import "ReadbackSalesViewController.h"
 
 #define TEXT_SPACE @"   "
 #define CLEARANCE_GAP 2
@@ -37,6 +38,6 @@
 
 
 
-@interface ReadbackViewController : UIViewController <KeypadDelegate>
--(IBAction)buttonPressed:(UIButton *)button;
+@interface ReadbackViewController : UIViewController <KeypadDelegate, UIGestureRecognizerDelegate, ReadbackSalesViewControllerDelegate>
+//TODO REMOVED DEPRECATED ACTION -(IBAction)buttonPressed:(UIButton *)button;
 @end

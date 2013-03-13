@@ -11,11 +11,15 @@
 #define PURCHASED_CELL @"PurchasedKeypadCell"
 
 @protocol ReadbackPurchasesTableViewControllerDataSource <NSObject>
--(NSInteger)numberOfPurchasedItems;
--(NSDictionary *)purchasedItemAtIndex:(NSInteger)row;
+-(NSInteger) numberOfPurchasedItems;
+-(NSDictionary *) purchasedItemAtIndex:(NSInteger)row;
 @end
 
+@protocol ReadbackPurchasesTableViewControllerDelegate <NSObject>
+-(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
+@end
 
 @interface ReadbackPurchasesTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) id <ReadbackPurchasesTableViewControllerDataSource> dataSource;
+@property (strong, nonatomic) id <ReadbackPurchasesTableViewControllerDelegate> delegate;
 @end

@@ -28,6 +28,8 @@
 #define DIRECT      15
 #define HOLDING     16
 
+#define VECTORS     17
+
 @interface KeyInterpreter : NSObject
 + (NSString *)getSymbolForTag:(int)tag;
 @end

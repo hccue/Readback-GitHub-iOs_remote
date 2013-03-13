@@ -6,6 +6,15 @@
 //  Copyright (c) 2013 Santiago Borja. All rights reserved.
 //
 
+
+/*
+ ADD KEYPAD STEPS:
+ 1. Add file, new VC targeted for ipad with XIB
+ 2. Copy Standard Keypad
+ 3. Uncheck first tab > use autolayout
+*/
+ 
+ 
 #import "KeypadGenerator.h"
 
 @implementation KeypadGenerator
@@ -22,7 +31,7 @@
 {
     NSMutableArray *keypads = [NSMutableArray arrayWithCapacity:[identifiers count]];
     for (NSNumber *identifier in identifiers) {
-        [keypads addObject:[KeypadGenerator generateKeypadWithIdentifier:identifier.intValue]];
+        [keypads addObject:[KeypadGenerator generateKeypadWithIdentifier:[identifier intValue]]];
     }
     return keypads;
 }
@@ -43,6 +52,16 @@
             keypad.detail = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
             break;
             
+        case CLEARANCE_KEYPAD:
+            keypad.identifier = [NSNumber numberWithInt:QWERTY_KEYPAD];
+            keypad.name = @"ClearanceKeypadVC";
+            keypad.title = @"Clearance Keypad";
+            keypad.subtitle = @"Designed to catch even those light speed clearances.";
+            keypad.priority = [NSNumber numberWithInt:4];
+            keypad.imageURL = @"standard.png";
+            keypad.price = [NSNumber numberWithFloat:1.99];
+            keypad.detail = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
+            break;
             
         case OCEANIC_KEYPAD:
             keypad.identifier = [NSNumber numberWithInt:OCEANIC_KEYPAD];
@@ -51,7 +70,7 @@
             keypad.subtitle = @"Extended Range Package.";
             keypad.priority = [NSNumber numberWithInt:2];
             keypad.imageURL = @"standard.png";
-            keypad.price = [NSNumber numberWithFloat:2.99];
+            keypad.price = [NSNumber numberWithFloat:1.99];
             keypad.detail = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
             break;
             
@@ -61,8 +80,8 @@
             keypad.title = @"Qwerty Keypad";
             keypad.subtitle = @"A worldwide favourite.";
             keypad.priority = [NSNumber numberWithInt:3];
-            keypad.imageURL = @"qwerty.png";
-            keypad.price = [NSNumber numberWithFloat:3.99];
+            keypad.imageURL = @"standard.png";
+            keypad.price = [NSNumber numberWithFloat:1.99];
             keypad.detail = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
             break;
             

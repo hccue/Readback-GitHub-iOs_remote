@@ -32,12 +32,15 @@
 @synthesize purchasedKeypads = _purchasedKeypads;
 @synthesize storeKeypads = _storeKeypads;
 
+@synthesize delegate = _delegate;
+
 
 -(UITableViewController *)purchasedTableViewController
 {
     if (!_purchasedTableViewController) {
         _purchasedTableViewController = [[ReadbackPurchasesTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
         _purchasedTableViewController.dataSource = self;
+        _purchasedTableViewController.delegate = self;
     }
     return  _purchasedTableViewController;
 }
@@ -75,6 +78,15 @@
 -(NSDictionary *)purchasedItemAtIndex:(NSInteger)row
 {
     return [self.purchasedKeypads objectAtIndex:row];
+}
+
+-(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    //TODO set correct keypad to display
+    [self.delegate setKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
+    
 }
 
 //ReadbackStoreTableViewController:
@@ -126,6 +138,14 @@
         NSIndexPath *indexPath = [self.storeKeypadsTableView indexPathForCell:sender];
         [segue.destinationViewController setKeypad:[self.storeKeypads objectAtIndex:indexPath.row]];
     }
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

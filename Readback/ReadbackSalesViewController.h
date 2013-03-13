@@ -13,11 +13,16 @@
 
 #define PRICE_FORMAT @"$%1.2f"
 
-@interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackStoreTableViewControllerDataSource>
+@protocol ReadbackSalesViewControllerDelegate <NSObject>
+-(void) setKeypadWithIdentifier:(NSNumber *)tag;
+@end
 
-@property (strong, nonatomic) NSArray *purchasedKeypads;
-@property (strong, nonatomic) NSArray *storeKeypads;
+@interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackPurchasesTableViewControllerDelegate, ReadbackStoreTableViewControllerDataSource>
+
+@property (strong, nonatomic) NSArray *purchasedKeypads; //Array of ReadbackKeypads
+@property (strong, nonatomic) NSArray *storeKeypads;     //Array of ReadbackKeypads
+
+@property (strong, nonatomic) id<ReadbackSalesViewControllerDelegate> delegate;
 
 - (IBAction)restorePurchases:(UIButton *)sender;
-
 @end

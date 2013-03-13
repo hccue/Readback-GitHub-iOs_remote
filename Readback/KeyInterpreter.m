@@ -29,7 +29,7 @@
             return @"cross.png";
             break;
             
-        case NDB://deprecated
+        case NDB:
             return @"ndb.png";
             break;
         case VOR:
@@ -55,6 +55,11 @@
         case HOLDING:
             return @"holding.png";
             break;
+            
+        case VECTORS:
+            return @"vectors.png";
+            break;
+            
         default:
             NSLog(@"BAD TAG");
             break;

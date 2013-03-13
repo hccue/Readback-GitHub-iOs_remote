@@ -36,7 +36,7 @@
     NSMutableArray *keypadsArray = [NSMutableArray arrayWithCapacity:[keypadsIdentifiers count]];
     
     for (NSNumber *identifier in keypadsIdentifiers) {
-        [keypadsArray addObject:[KeypadGenerator generateKeypadWithIdentifier:identifier.intValue]];
+        [keypadsArray addObject:[KeypadGenerator generateKeypadWithIdentifier:[identifier intValue]]];
     }
     return keypadsArray;
 }
@@ -50,7 +50,7 @@
 {
     NSMutableArray *purchasedKeypadsIdentifiers = [[ReadbackSalesManager getPurchasedKeypadsIdentifiers] mutableCopy];
     for (NSNumber *identifier in purchasedKeypadsIdentifiers) {
-        if (keypad.identifier.intValue == identifier.intValue) return YES;
+        if ([keypad.identifier intValue] == [identifier intValue]) return YES;
     }
     return NO;
 }

@@ -12,6 +12,7 @@
 
 @implementation ReadbackPurchasesTableViewController
 @synthesize dataSource = _dataSource;
+@synthesize delegate = _delegate;
 
 #pragma mark - TableView Data Source
 
@@ -31,6 +32,12 @@
     cell.detailTextLabel.text = myKeypad.subtitle;
     
     return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.delegate purchasedKeypadSelectedAtIndexPath:indexPath];
 }
 
 @end

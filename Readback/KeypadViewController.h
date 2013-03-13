@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReadbackKeypad.h"
 
 @protocol KeypadDelegate <NSObject>
 -(void)buttonPressed:(UIButton *)button;
@@ -14,4 +15,5 @@
 
 @interface KeypadViewController : UIViewController
 @property (nonatomic, strong) id <KeypadDelegate> delegate;
+@property (nonatomic, strong) ReadbackKeypad *keypad; //Kepyad associated with VC
 @end

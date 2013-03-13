@@ -48,17 +48,74 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)performPurchase:(UIButton *)sender {
-    if (![ReadbackSalesManager keypadIsPurchased:self.keypad]) [ReadbackSalesManager performPurchaseOfKeypad:self.keypad];
+- (IBAction)purchaseTapped:(UIButton *)sender {
     
-    UIAlertView* message = [[UIAlertView alloc] initWithTitle:PURCHASED_MESSAGE_TITLE
-                                                  message:PURCHASED_MESSAGE_BODY
-                                                 delegate:self
-                                        cancelButtonTitle:PURCHASED_MESSAGE_BUTTON
-                                        otherButtonTitles: nil];
-    [message show];
-    [self.navigationController popViewControllerAnimated:YES];
+    UIAlertView* confirmMessage = [[UIAlertView alloc] initWithTitle:CONFIRM_PURCHASE_MESSAGE_TITLE
+                                                      message:CONFIRM_PURCHASE_MESSAGE_BODY
+                                                     delegate:self
+                                            cancelButtonTitle:CONFIRM_PURCHASE_MESSAGE_BUTTON_OK
+                                            otherButtonTitles: CONFIRM_PURCHASE_MESSAGE_BUTTON_CANCEL, nil];
+    confirmMessage.tag = ALERT_CONFIRM_PURCHASE;
+    [confirmMessage show];
 }
+
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (alertView.tag) {
+        case ALERT_CONFIRM_PURCHASE:
+            if ((int)buttonIndex == 0) {//Purchase Confirmed
+                [self performPurchase];
+            }//else remain on page
+            break;
+            
+        case ALERT_PURCHASED_OK:
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+            
+        case ALERT_ALREADY_PURCHASED: //this should never happen, just in case
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(void)performPurchase//already confirmed
+{
+    if (![ReadbackSalesManager keypadIsPurchased:self.keypad]){
+        [ReadbackSalesManager performPurchaseOfKeypad:self.keypad];
+        [self alertPurchaseSuccess];
+        
+    }else{
+        [self alertPurchasedAlready];
+    }
+}
+
+-(void)alertPurchaseSuccess
+{
+    UIAlertView* message = [[UIAlertView alloc] initWithTitle:PURCHASED_MESSAGE_TITLE
+                                                      message:PURCHASED_MESSAGE_BODY
+                                                     delegate:self
+                                            cancelButtonTitle:PURCHASED_MESSAGE_BUTTON
+                                            otherButtonTitles: nil];
+    message.tag = ALERT_PURCHASED_OK;
+    [message show];
+}
+
+-(void)alertPurchasedAlready
+{
+    UIAlertView* message = [[UIAlertView alloc] initWithTitle:ALREADY_PURCHASED_MESSAGE_TITLE
+                                                      message:ALREADY_PURCHASED_MESSAGE_BODY
+                                                     delegate:self
+                                            cancelButtonTitle:ALREADY_PURCHASED_MESSAGE_BUTTON
+                                            otherButtonTitles: nil];
+    message.tag = ALERT_ALREADY_PURCHASED;
+    [message show];
+}
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -73,4 +130,13 @@
     [self setReturnButton:nil];
     [super viewDidUnload];
 }
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

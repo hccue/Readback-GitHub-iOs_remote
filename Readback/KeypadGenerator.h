@@ -10,9 +10,10 @@
 #import "ReadbackKeypad.h"
 
 //Keypad Unique Identifier:
-#define STANDARD_KEYPAD 1
-#define OCEANIC_KEYPAD  2
-#define QWERTY_KEYPAD   3
+#define STANDARD_KEYPAD     1
+#define CLEARANCE_KEYPAD    2
+#define QWERTY_KEYPAD       3
+#define OCEANIC_KEYPAD      4
 
 @interface KeypadGenerator : NSObject
 

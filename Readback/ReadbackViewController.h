@@ -11,6 +11,7 @@
 #import "ReadbackSalesViewController.h"
 
 #define TEXT_SPACE @"   "
+#define TEXT_TAG_FORMAT @"%@   "
 #define CLEARANCE_GAP 2
 #define IMAGE_SCALE_FACTOR 0.65
 #define CLEARANCE_FONT_SIZE 30

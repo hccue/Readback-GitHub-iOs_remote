@@ -38,6 +38,9 @@
 		DE4C581516B32BF3004AC4D7 /* backwards.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581316B32BF3004AC4D7 /* backwards.png */; };
 		DE4C581616B32BF3004AC4D7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581416B32BF3004AC4D7 /* forward.png */; };
 		DE4C581816B32CAC004AC4D7 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581716B32CAC004AC4D7 /* plus.png */; };
+		DE4F52D216F268D700A3D842 /* 10-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D116F268D700A3D842 /* 10-min.png */; };
+		DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D316F26EB100A3D842 /* sqawk.png */; };
+		DE4F52D816F274CD00A3D842 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D716F274CD00A3D842 /* call.png */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -47,7 +50,6 @@
 		DE857FF4169DA45D005E8F96 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF3169DA45D005E8F96 /* cat.png */; };
 		DE857FF6169DA510005E8F96 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FF5169DA510005E8F96 /* cross.png */; };
 		DE9057C616F12BDA0012B709 /* intc.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9057C516F12BDA0012B709 /* intc.png */; };
-		DEB95321169F01380081E734 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB95320169F01380081E734 /* call.png */; };
 		DED941D616D7EA6500C0AC09 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941D416D7EA6500C0AC09 /* vor.png */; };
 		DED941DE16D7ECF500C0AC09 /* vectors.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941DD16D7ECF500C0AC09 /* vectors.png */; };
 		DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941E116D7EFBF00C0AC09 /* rwy.png */; };
@@ -105,6 +107,9 @@
 		DE4C581316B32BF3004AC4D7 /* backwards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backwards.png; sourceTree = "<group>"; };
 		DE4C581416B32BF3004AC4D7 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		DE4C581716B32CAC004AC4D7 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		DE4F52D116F268D700A3D842 /* 10-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min.png"; sourceTree = "<group>"; };
+		DE4F52D316F26EB100A3D842 /* sqawk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sqawk.png; path = Readback/sqawk.png; sourceTree = "<group>"; };
+		DE4F52D716F274CD00A3D842 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
@@ -115,7 +120,6 @@
 		DE857FF3169DA45D005E8F96 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		DE857FF5169DA510005E8F96 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		DE9057C516F12BDA0012B709 /* intc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intc.png; sourceTree = "<group>"; };
-		DEB95320169F01380081E734 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DED941D416D7EA6500C0AC09 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
 		DED941DD16D7ECF500C0AC09 /* vectors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vectors.png; sourceTree = "<group>"; };
 		DED941E116D7EFBF00C0AC09 /* rwy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rwy.png; sourceTree = "<group>"; };
@@ -247,10 +251,10 @@
 			children = (
 				DE68E4EF16CFF89A0031123E /* KeypadViewController.h */,
 				DE68E4F016CFF89A0031123E /* KeypadViewController.m */,
-				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */,
-				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
+				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
+				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
 			);
 			name = Keypads;
 			sourceTree = "<group>";
@@ -258,22 +262,24 @@
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
 			isa = PBXGroup;
 			children = (
+				DE4F52D116F268D700A3D842 /* 10-min.png */,
+				DE4F52D716F274CD00A3D842 /* call.png */,
+				DE857FF3169DA45D005E8F96 /* cat.png */,
+				DE857FEB169D94C2005E8F96 /* climb.png */,
+				DE857FF5169DA510005E8F96 /* cross.png */,
+				DE857FEC169D94C2005E8F96 /* descend.png */,
+				DE09CD2116A348C100483034 /* direct.png */,
+				DE857FE9169D939C005E8F96 /* hold-short.png */,
+				DE09CD2816A34DEE00483034 /* holding.png */,
+				DE396A57169E0DDC0093C773 /* ils.png */,
 				DE9057C516F12BDA0012B709 /* intc.png */,
+				DE46E64E169CC7AD00C90F72 /* left-button.png */,
+				DE857FF1169DA37C005E8F96 /* ndb.png */,
+				DE46E648169CC6F500C90F72 /* right.png */,
 				DED941E116D7EFBF00C0AC09 /* rwy.png */,
+				DE4F52D316F26EB100A3D842 /* sqawk.png */,
 				DED941DD16D7ECF500C0AC09 /* vectors.png */,
 				DED941D416D7EA6500C0AC09 /* vor.png */,
-				DE09CD2816A34DEE00483034 /* holding.png */,
-				DE09CD2116A348C100483034 /* direct.png */,
-				DEB95320169F01380081E734 /* call.png */,
-				DE396A57169E0DDC0093C773 /* ils.png */,
-				DE857FF5169DA510005E8F96 /* cross.png */,
-				DE857FF3169DA45D005E8F96 /* cat.png */,
-				DE857FF1169DA37C005E8F96 /* ndb.png */,
-				DE857FE9169D939C005E8F96 /* hold-short.png */,
-				DE46E64E169CC7AD00C90F72 /* left-button.png */,
-				DE46E648169CC6F500C90F72 /* right.png */,
-				DE857FEB169D94C2005E8F96 /* climb.png */,
-				DE857FEC169D94C2005E8F96 /* descend.png */,
 			);
 			name = keys;
 			sourceTree = "<group>";
@@ -414,7 +420,6 @@
 				DE857FF4169DA45D005E8F96 /* cat.png in Resources */,
 				DE857FF6169DA510005E8F96 /* cross.png in Resources */,
 				DE396A58169E0DDC0093C773 /* ils.png in Resources */,
-				DEB95321169F01380081E734 /* call.png in Resources */,
 				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
 				DE44828516A0C5AD00E36814 /* button.png in Resources */,
 				DE44829416A0D96000E36814 /* cmd-speed.png in Resources */,
@@ -439,6 +444,9 @@
 				DE1698AB16D97D7600AB45A7 /* help.png in Resources */,
 				DE23686916EFB27900C355C8 /* key-help.png in Resources */,
 				DE9057C616F12BDA0012B709 /* intc.png in Resources */,
+				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
+				DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */,
+				DE4F52D816F274CD00A3D842 /* call.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

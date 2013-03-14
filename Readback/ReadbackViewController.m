@@ -67,6 +67,10 @@ int global_clearanceXPosition;
         case NO_TAG://All text buttons
             [self addTextToClearance:sender.titleLabel.text];
             break;
+            
+        case TEXT_TAG://All text buttons
+            [self addTextToClearance:[NSString stringWithFormat:TEXT_TAG_FORMAT, sender.titleLabel.text]];
+            break;
         case SPACE:
             [self addTextToClearance:TEXT_SPACE];
             break;

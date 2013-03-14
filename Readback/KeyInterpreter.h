@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #define NO_TAG      0
+#define TEXT_TAG    7
+
 #define LEFT        1
 #define RIGHT       2
 #define CLIMB       3
@@ -29,6 +31,14 @@
 #define HOLDING     16
 
 #define VECTORS     17
+
+#define MIN10       18
+#define SQAWK       19
+#define INTC        20
+#define RUNWAY      21
+
+#define DEST        22
+#define VIA         23
 
 @interface KeyInterpreter : NSObject
 + (NSString *)getSymbolForTag:(int)tag;

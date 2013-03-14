@@ -14,55 +14,50 @@
 {
     switch (tag) {
         case LEFT:
-            return @"left-button.png";
-            break;
+            return @"left-button.png"; break;
         case RIGHT:
-            return @"right.png";
-            break;
+            return @"right.png"; break;
         case CLIMB:
-            return @"climb.png";
-            break;
+            return @"climb.png"; break;
         case DESCEND:
-            return @"descend.png";
-            break;
+            return @"descend.png"; break;
         case CROSS:
-            return @"cross.png";
-            break;
+            return @"cross.png"; break;
             
         case NDB:
-            return @"ndb.png";
-            break;
+            return @"ndb.png"; break;
         case VOR:
-            return @"vor.png";
-            break;
+            return @"vor.png"; break;
         case ILS:
-            return @"ils.png";
-            break;
+            return @"ils.png"; break;
         case HOLDSHORT:
-            return @"hold-short.png";
-            break;
+            return @"hold-short.png"; break;
         case HOLDCAT:
-            return @"cat.png";
-            break;
+            return @"cat.png"; break;
             
         case CALL:
-            return @"call.png";
-            break;
+            return @"call.png"; break;
             
         case DIRECT:
-            return @"direct.png";
-            break;
+            return @"direct.png"; break;
         case HOLDING:
-            return @"holding.png";
-            break;
+            return @"holding.png"; break;
             
         case VECTORS:
-            return @"vectors.png";
-            break;
+            return @"vectors.png"; break;
+        case MIN10:
+            return @"10-min.png"; break;
+        case SQAWK:
+            return @"sqawk.png"; break;
+        case INTC:
+            return @"intc.png"; break;
+        case RUNWAY:
+            return @"rwy.png"; break;
+            
+            
             
         default:
-            NSLog(@"BAD TAG");
-            break;
+            NSLog(@"BAD TAG"); break;
     }
     
     //TODO default not found image

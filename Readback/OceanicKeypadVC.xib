@@ -140,7 +140,7 @@
 						<reference key="NSNextResponder" ref="455425575"/>
 						<int key="NSvFlags">1320</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{1, 5}, {90, 66}}</string>
+						<string key="NSFrame">{{933, 5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="455425575"/>
 						<reference key="NSNextKeyView" ref="346036001"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -224,7 +224,7 @@
 						<reference key="NSNextResponder" ref="455425575"/>
 						<int key="NSvFlags">1320</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{653, 352}, {90, 66}}</string>
+						<string key="NSFrame">{{1, 352}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="455425575"/>
 						<reference key="NSNextKeyView" ref="351880782"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -241,7 +241,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="956996496">
 							<string key="name">AvenirNext-Regular</string>
 							<string key="family">Avenir Next</string>
 							<int key="traits">0</int>
@@ -653,7 +653,7 @@
 						<reference key="NSNextResponder" ref="455425575"/>
 						<int key="NSvFlags">1320</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{374, 352}, {183, 66}}</string>
+						<string key="NSFrame">{{374, 352}, {369, 66}}</string>
 						<reference key="NSSuperview" ref="455425575"/>
 						<reference key="NSNextKeyView" ref="625262844"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -667,12 +667,7 @@
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<string key="name">AvenirNext-UltraLight</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
-							<double key="pointSize">34</double>
-						</object>
+						<reference key="IBUIFontDescription" ref="956996496"/>
 						<reference key="IBUIFont" ref="861400626"/>
 					</object>
 					<object class="IBUIButton" id="305627498">
@@ -932,7 +927,7 @@
 						<reference key="NSNextResponder" ref="455425575"/>
 						<int key="NSvFlags">1320</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{1, 352}, {90, 66}}</string>
+						<string key="NSFrame">{{840, 5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="455425575"/>
 						<reference key="NSNextKeyView" ref="802950237"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1322,11 +1317,9 @@
 							<reference ref="848940540"/>
 							<reference ref="802950237"/>
 							<reference ref="472412524"/>
-							<reference ref="11267276"/>
 							<reference ref="828733302"/>
 							<reference ref="367498430"/>
 							<reference ref="972701852"/>
-							<reference ref="625262844"/>
 							<reference ref="30603099"/>
 							<reference ref="389898960"/>
 							<reference ref="924386626"/>
@@ -1357,7 +1350,6 @@
 							<reference ref="848045739"/>
 							<reference ref="370666534"/>
 							<reference ref="760564494"/>
-							<reference ref="702583091"/>
 							<reference ref="544046667"/>
 							<reference ref="594744680"/>
 							<reference ref="550638019"/>
@@ -1373,6 +1365,9 @@
 							<reference ref="757376400"/>
 							<reference ref="351880782"/>
 							<reference ref="57633905"/>
+							<reference ref="702583091"/>
+							<reference ref="625262844"/>
+							<reference ref="11267276"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>

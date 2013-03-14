@@ -11,7 +11,9 @@
  ADD KEYPAD STEPS:
  1. Add file, new VC targeted for ipad with XIB
  2. Copy Standard Keypad
+ 3. Set properties, CAUTION: set identifier to corresponding (switch) case!
  3. Uncheck first tab > use autolayout
+ 4. Add identifier to getAvailableKeypadsIdentifiers
 */
  
  
@@ -23,6 +25,7 @@
 {
     return [NSArray arrayWithObjects:
             [NSNumber numberWithInt:STANDARD_KEYPAD],
+            [NSNumber numberWithInt:CLEARANCE_KEYPAD],
             [NSNumber numberWithInt:OCEANIC_KEYPAD],
             [NSNumber numberWithInt:QWERTY_KEYPAD], nil];
 }
@@ -53,7 +56,7 @@
             break;
             
         case CLEARANCE_KEYPAD:
-            keypad.identifier = [NSNumber numberWithInt:QWERTY_KEYPAD];
+            keypad.identifier = [NSNumber numberWithInt:CLEARANCE_KEYPAD];
             keypad.name = @"ClearanceKeypadVC";
             keypad.title = @"Clearance Keypad";
             keypad.subtitle = @"Designed to catch even those light speed clearances.";

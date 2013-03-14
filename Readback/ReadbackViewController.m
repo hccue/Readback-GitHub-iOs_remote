@@ -308,7 +308,6 @@ int global_clearanceXPosition;
 -(void)loadPurchasedKeypads
 {
     NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
-    
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
     for (NSNumber *keypadIdentifier in purchasedKeypadsIdentifiers) {
@@ -321,7 +320,7 @@ int global_clearanceXPosition;
     
     [self setSubViewControllers:keypadsViewControllers];
     self.pageControl.numberOfPages = [keypadsViewControllers count];
-    self.pageControl.currentPage = [self.subViewControllers indexOfObject:self.selectedViewController];
+    [self setSelectedKeypad:self.selectedViewController];
 }
 
 - (void)setSubViewControllers:(NSArray *)subViewControllers
@@ -334,8 +333,7 @@ int global_clearanceXPosition;
 {
     if (self.selectedViewController.parentViewController == self)
 	{
-        NSLog(@"nothing to do, selected vc is the visible one");
-		// nowthing to do
+		// nowthing to do, selected vc is the visible one
 		return;
 	}
     
@@ -357,6 +355,7 @@ int global_clearanceXPosition;
 }
 
 
+
 #pragma mark Utilities
 
 -(NSString *)getCurrentZuluTimeWithFormat:(NSString *)format
@@ -368,6 +367,7 @@ int global_clearanceXPosition;
     [dateFormatter setDateFormat:format];
     return [dateFormatter stringFromDate:localDate];
 }
+
 
 
 #pragma mark UIGestureRecognizer Swipe

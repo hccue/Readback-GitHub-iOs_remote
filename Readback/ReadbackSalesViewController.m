@@ -12,6 +12,9 @@
 #import "ReadbackSalesManager.h"
 #import "KeypadGenerator.h"
 
+#define BUTTON_LABEL_SORT @"Sort"
+#define BUTTON_LABEL_DONE @"Done"
+
 @interface ReadbackSalesViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *purchasedKeypadsTableView;
@@ -82,12 +85,32 @@
 
 -(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
 {
-    
     [self.navigationController popViewControllerAnimated:YES];
-    //TODO set correct keypad to display
     [self.delegate setKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
     
 }
+
+- (IBAction)editTapped:(UIButton *)sender {
+    if ([self.purchasedKeypadsTableView isEditing]) {
+        [sender setTitle: BUTTON_LABEL_SORT forState: UIControlStateNormal];
+        [self.purchasedKeypadsTableView setEditing:NO animated:YES];
+    }else{
+        [sender setTitle: BUTTON_LABEL_DONE forState: UIControlStateNormal];
+        [self.purchasedKeypadsTableView setEditing:YES animated:YES];
+    }
+}
+
+-(void) moveRowAtIndex:(int)sourceIndex toIndex:(int)destinationIndex
+{
+    NSMutableArray *purchasedKeypadsMutable = [self.purchasedKeypads mutableCopy];
+    ReadbackKeypad *sourceKeypad = [purchasedKeypadsMutable objectAtIndex:sourceIndex];
+    [purchasedKeypadsMutable removeObjectAtIndex:sourceIndex];
+    [purchasedKeypadsMutable insertObject:sourceKeypad atIndex:destinationIndex];
+    self.purchasedKeypads = purchasedKeypadsMutable;
+    [ReadbackSalesManager savePurchasedKeypadsSorted:self.purchasedKeypads];
+}
+
+
 
 //ReadbackStoreTableViewController:
 

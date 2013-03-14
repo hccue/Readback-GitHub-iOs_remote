@@ -55,6 +55,20 @@
     return NO;
 }
 
++ (void)savePurchasedKeypadsSorted:(NSArray *)keypadsSorted
+{
+    NSLog(@"saving %@", keypadsSorted);
+    NSArray *purchasedIdentifiersUnsorted = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
+    NSMutableArray *purchasedIdentifiersSorted = [NSMutableArray arrayWithCapacity:[purchasedIdentifiersUnsorted count]];
+    
+    //verify only purchased keypads are saved for safety:
+    for (ReadbackKeypad *keypad in keypadsSorted) {
+        if ([purchasedIdentifiersUnsorted containsObject:keypad.identifier]) {
+            [purchasedIdentifiersSorted addObject:keypad.identifier];
+        }
+    }
+    [ReadbackSalesManager savePurchasedKeypads:purchasedIdentifiersSorted];
+}
 
 
 #pragma mark User Defaults Communication
@@ -78,7 +92,7 @@
 
 + (void)savePurchasedKeypads:(NSArray *)keypadIdentifiers
 {
-    NSLog(@"SAVING USER PURCHASED KEYPADS");
+    NSLog(@"SAVING USER PURCHASED KEYPADS %@", keypadIdentifiers);
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:keypadIdentifiers forKey:USERKEY_KEYPADS];
     [defaults synchronize];

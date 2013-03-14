@@ -18,5 +18,5 @@
 + (void)restoreAllPurchases;
 + (void)performPurchaseOfKeypad:(ReadbackKeypad *)keypad;
 + (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad;
-
++ (void)savePurchasedKeypadsSorted:(NSArray *)keypadsSorted;
 @end

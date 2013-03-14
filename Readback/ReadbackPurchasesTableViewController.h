@@ -17,6 +17,7 @@
 
 @protocol ReadbackPurchasesTableViewControllerDelegate <NSObject>
 -(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
+-(void) moveRowAtIndex:(int)sourceIndex toIndex:(int)destinationIndex;
 @end
 
 @interface ReadbackPurchasesTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>

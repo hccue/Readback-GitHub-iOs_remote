@@ -235,7 +235,10 @@
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">DEL</string>
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
-						<reference key="IBUINormalTitleColor" ref="958062644"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAwLjExMjk4MTAxMTUgMC4xNDU1NDM0NTE0AA</bytes>
+						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">

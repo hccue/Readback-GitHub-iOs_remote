@@ -40,6 +40,10 @@
 #define DEST        22
 #define VIA         23
 
+#define BY_TIME     24
+#define SID         25
+#define ALTIMETER   26
+
 @interface KeyInterpreter : NSObject
 + (NSString *)getSymbolForTag:(int)tag;
 @end

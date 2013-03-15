@@ -41,6 +41,9 @@
 		DE4F52D216F268D700A3D842 /* 10-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D116F268D700A3D842 /* 10-min.png */; };
 		DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D316F26EB100A3D842 /* sqawk.png */; };
 		DE4F52D816F274CD00A3D842 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D716F274CD00A3D842 /* call.png */; };
+		DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D916F2C18100A3D842 /* by-time.png */; };
+		DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DD16F2CB0900A3D842 /* sid.png */; };
+		DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DF16F2D05D00A3D842 /* altimeter.png */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -110,6 +113,9 @@
 		DE4F52D116F268D700A3D842 /* 10-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min.png"; sourceTree = "<group>"; };
 		DE4F52D316F26EB100A3D842 /* sqawk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sqawk.png; path = Readback/sqawk.png; sourceTree = "<group>"; };
 		DE4F52D716F274CD00A3D842 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		DE4F52D916F2C18100A3D842 /* by-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "by-time.png"; sourceTree = "<group>"; };
+		DE4F52DD16F2CB0900A3D842 /* sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sid.png; sourceTree = "<group>"; };
+		DE4F52DF16F2D05D00A3D842 /* altimeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = altimeter.png; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
@@ -262,7 +268,10 @@
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
 			isa = PBXGroup;
 			children = (
+				DE4F52DD16F2CB0900A3D842 /* sid.png */,
+				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
 				DE4F52D116F268D700A3D842 /* 10-min.png */,
+				DE4F52D916F2C18100A3D842 /* by-time.png */,
 				DE4F52D716F274CD00A3D842 /* call.png */,
 				DE857FF3169DA45D005E8F96 /* cat.png */,
 				DE857FEB169D94C2005E8F96 /* climb.png */,
@@ -447,6 +456,9 @@
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
 				DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */,
 				DE4F52D816F274CD00A3D842 /* call.png in Resources */,
+				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
+				DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */,
+				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

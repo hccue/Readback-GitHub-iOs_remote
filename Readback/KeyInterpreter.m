@@ -53,7 +53,13 @@
             return @"intc.png"; break;
         case RUNWAY:
             return @"rwy.png"; break;
+        case BY_TIME:
+            return @"by-time.png"; break;
             
+        case SID:
+            return @"sid.png"; break;
+        case ALTIMETER:
+            return @"altimeter.png"; break;
             
             
         default:

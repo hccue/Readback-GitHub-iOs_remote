@@ -63,7 +63,7 @@
             keypad.priority = [NSNumber numberWithInt:4];
             keypad.imageURL = @"standard.png";
             keypad.price = [NSNumber numberWithFloat:1.99];
-            keypad.detail = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
+            keypad.detail = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
             break;
             
         case OCEANIC_KEYPAD:

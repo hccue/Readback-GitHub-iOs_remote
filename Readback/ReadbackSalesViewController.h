@@ -14,7 +14,7 @@
 #define PRICE_FORMAT @"$%1.2f"
 
 @protocol ReadbackSalesViewControllerDelegate <NSObject>
--(void) setKeypadWithIdentifier:(NSNumber *)tag;
+-(void) loadKeypadWithIdentifier:(NSString *)identifier;
 @end
 
 @interface ReadbackSalesViewController : UIViewController <ReadbackPurchasesTableViewControllerDataSource, ReadbackPurchasesTableViewControllerDelegate, ReadbackStoreTableViewControllerDataSource>

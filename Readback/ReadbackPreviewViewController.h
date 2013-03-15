@@ -34,6 +34,13 @@
 #define ALREADY_PURCHASED_MESSAGE_BODY      @"You have already purchased this keypad. No transaction was performed."
 #define ALREADY_PURCHASED_MESSAGE_BUTTON    @"Ok"
 
+
+
+
+
+//TODO check purchase button text for price.
+
+
 @interface ReadbackPreviewViewController : UIViewController
 
 @property (nonatomic, strong) ReadbackKeypad *keypad;

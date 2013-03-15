@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "ReadbackKeypad.h"
+#import "IAPHelper.h"
 
-#define USERKEY_KEYPADS @"user_keypads"
 
-@interface ReadbackSalesManager : NSObject
 
-+ (NSArray *)getPurchasedKeypadsIdentifiers; //Array of NSNumber
-+ (NSArray *)getStoreKeypads; //All keypads available for purchasing
+@interface ReadbackSalesManager : IAPHelper
+
++ (ReadbackSalesManager *)sharedInstance;
+
++ (NSArray *)getPurchasedKeypadsIdentifiers; //Array of NSString IAP identifiers    TODO: refactor to IAP
++ (NSArray *)getStoreKeypadIdentifiers;                //All available keypads for purchasing TODO: remove this?
 + (void)restoreAllPurchases;
 + (void)performPurchaseOfKeypad:(ReadbackKeypad *)keypad;
 + (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad;

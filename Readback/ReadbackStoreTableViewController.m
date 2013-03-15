@@ -24,7 +24,7 @@
     
     if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellAccessoryCheckmark reuseIdentifier:STORE_CELL];
     
-    ReadbackKeypad *myKeypad = (ReadbackKeypad *)[self.dataSource storeItemAtIndex:indexPath.row];
+    ReadbackKeypad *myKeypad = [self.dataSource storeItemAtIndex:indexPath.row];
     
     cell.textLabel.text = myKeypad.title;
     cell.detailTextLabel.text = myKeypad.subtitle;

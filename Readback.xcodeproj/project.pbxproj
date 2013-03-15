@@ -44,6 +44,9 @@
 		DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D916F2C18100A3D842 /* by-time.png */; };
 		DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DD16F2CB0900A3D842 /* sid.png */; };
 		DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DF16F2D05D00A3D842 /* altimeter.png */; };
+		DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE52DE3816F351D3001D307E /* StoreKit.framework */; };
+		DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52DE3B16F35437001D307E /* IAPHelper.m */; };
+		DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE52DE3F16F36590001D307E /* StandardKeypad.plist */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -116,6 +119,10 @@
 		DE4F52D916F2C18100A3D842 /* by-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "by-time.png"; sourceTree = "<group>"; };
 		DE4F52DD16F2CB0900A3D842 /* sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sid.png; sourceTree = "<group>"; };
 		DE4F52DF16F2D05D00A3D842 /* altimeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = altimeter.png; sourceTree = "<group>"; };
+		DE52DE3816F351D3001D307E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DE52DE3A16F35437001D307E /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		DE52DE3B16F35437001D307E /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		DE52DE3F16F36590001D307E /* StandardKeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StandardKeypad.plist; path = ../StandardKeypad.plist; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */,
 				DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */,
 				DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */,
 				DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */,
@@ -203,6 +211,8 @@
 		DE413D2E16D1474F006E743A /* Purchasing */ = {
 			isa = PBXGroup;
 			children = (
+				DE52DE3A16F35437001D307E /* IAPHelper.h */,
+				DE52DE3B16F35437001D307E /* IAPHelper.m */,
 				DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */,
 				DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */,
 			);
@@ -258,6 +268,7 @@
 				DE68E4EF16CFF89A0031123E /* KeypadViewController.h */,
 				DE68E4F016CFF89A0031123E /* KeypadViewController.m */,
 				DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */,
+				DE52DE3F16F36590001D307E /* StandardKeypad.plist */,
 				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
 				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
@@ -305,6 +316,7 @@
 		DEEEAB60169A726A00AEFC99 = {
 			isa = PBXGroup;
 			children = (
+				DE52DE3816F351D3001D307E /* StoreKit.framework */,
 				DEEEAB75169A726A00AEFC99 /* Readback */,
 				DE17668516A6173600760990 /* Previews */,
 				DE28A65E16A25FCE00429C46 /* Images */,
@@ -459,6 +471,7 @@
 				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
 				DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */,
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
+				DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +495,7 @@
 				DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */,
 				DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */,
 				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
+				DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

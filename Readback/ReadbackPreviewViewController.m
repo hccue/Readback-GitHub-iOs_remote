@@ -10,6 +10,8 @@
 #import "ReadbackSalesManager.h"
 
 @interface ReadbackPreviewViewController ()
+
+//Outlets:
 @property (weak, nonatomic) IBOutlet UILabel *keypadTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *keypadImageView;
 @property (weak, nonatomic) IBOutlet UILabel *keypadDetail;
@@ -51,10 +53,10 @@
 - (IBAction)purchaseTapped:(UIButton *)sender {
     
     UIAlertView* confirmMessage = [[UIAlertView alloc] initWithTitle:CONFIRM_PURCHASE_MESSAGE_TITLE
-                                                      message:CONFIRM_PURCHASE_MESSAGE_BODY
-                                                     delegate:self
-                                            cancelButtonTitle:CONFIRM_PURCHASE_MESSAGE_BUTTON_OK
-                                            otherButtonTitles: CONFIRM_PURCHASE_MESSAGE_BUTTON_CANCEL, nil];
+                                                             message:CONFIRM_PURCHASE_MESSAGE_BODY
+                                                            delegate:self
+                                                   cancelButtonTitle:CONFIRM_PURCHASE_MESSAGE_BUTTON_OK
+                                                   otherButtonTitles:CONFIRM_PURCHASE_MESSAGE_BUTTON_CANCEL, nil];
     confirmMessage.tag = ALERT_CONFIRM_PURCHASE;
     [confirmMessage show];
 }
@@ -65,7 +67,7 @@
 {
     switch (alertView.tag) {
         case ALERT_CONFIRM_PURCHASE:
-            if ((int)buttonIndex == 0) {//Purchase Confirmed
+            if ((int)buttonIndex == 0) {//Confirm Tapped
                 [self performPurchase];
             }//else remain on page
             break;
@@ -74,7 +76,7 @@
             [self.navigationController popViewControllerAnimated:YES];
             break;
             
-        case ALERT_ALREADY_PURCHASED: //this should never happen, just in case
+        case ALERT_ALREADY_PURCHASED: //this should never happen
             [self.navigationController popViewControllerAnimated:YES];
             break;
             

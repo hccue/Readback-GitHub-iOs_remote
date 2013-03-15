@@ -9,8 +9,10 @@
 #import "ReadbackSalesViewController.h"
 #import "ReadbackKeypad.h"
 #import "ReadbackPreviewViewController.h"
-#import "ReadbackSalesManager.h"
 #import "KeypadGenerator.h"
+
+#import "ReadbackSalesManager.h"
+#import <StoreKit/StoreKit.h>
 
 #define BUTTON_LABEL_SORT @"Sort"
 #define BUTTON_LABEL_DONE @"Done"
@@ -78,7 +80,7 @@
     return [self.purchasedKeypads count];
 }
 
--(NSDictionary *)purchasedItemAtIndex:(NSInteger)row
+-(ReadbackKeypad *)purchasedItemAtIndex:(NSInteger)row
 {
     return [self.purchasedKeypads objectAtIndex:row];
 }
@@ -86,7 +88,7 @@
 -(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
 {
     [self.navigationController popViewControllerAnimated:YES];
-    [self.delegate setKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
+    [self.delegate loadKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
     
 }
 
@@ -119,7 +121,7 @@
     return [self.storeKeypads count];
 }
 
--(NSDictionary *)storeItemAtIndex:(NSInteger)row
+-(ReadbackKeypad *)storeItemAtIndex:(NSInteger)row
 {
     return [self.storeKeypads objectAtIndex:row];
 }
@@ -136,16 +138,20 @@
     
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
+    
+    //IAP
+    [self reloadStoreProducts];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     //Refresh in case we are returning from a purchase:
     self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedKeypadsIdentifiers]];
-    self.storeKeypads = [ReadbackSalesManager getStoreKeypads];
-
     [self.purchasedKeypadsTableView reloadData];
-    [self.storeKeypadsTableView reloadData];
+    
+    //IAP
+    //self.storeKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getStoreKeypadIdentifiers]];
+    //[self.storeKeypadsTableView reloadData];
 }
 
 - (void)viewDidUnload {
@@ -156,7 +162,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    //Set Store keypad to display:
+    //Preview Segue: Set Store keypad to display:
     if ([segue.destinationViewController respondsToSelector:@selector(setKeypad:)]) {
         NSIndexPath *indexPath = [self.storeKeypadsTableView indexPathForCell:sender];
         [segue.destinationViewController setKeypad:[self.storeKeypads objectAtIndex:indexPath.row]];
@@ -169,6 +175,25 @@
         return YES;
     }
     return NO;
+}
+
+
+
+
+#pragma mark In-App Purchases
+
+
+- (void)reloadStoreProducts {
+    self.storeKeypads = nil;
+    [self.storeKeypadsTableView reloadData];
+    [[ReadbackSalesManager sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
+        if (success) {
+            self.storeKeypads = products;
+            [self.storeKeypadsTableView reloadData];
+        }
+        //TODO solve this:
+        //[self.refreshControl endRefreshing];
+    }];
 }
 
 @end

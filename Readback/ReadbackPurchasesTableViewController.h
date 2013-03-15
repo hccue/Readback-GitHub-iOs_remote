@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReadbackKeypad.h"
 
 #define PURCHASED_CELL @"PurchasedKeypadCell"
 
 @protocol ReadbackPurchasesTableViewControllerDataSource <NSObject>
 -(NSInteger) numberOfPurchasedItems;
--(NSDictionary *) purchasedItemAtIndex:(NSInteger)row;
+-(ReadbackKeypad *) purchasedItemAtIndex:(NSInteger)row;
 @end
 
 @protocol ReadbackPurchasesTableViewControllerDelegate <NSObject>

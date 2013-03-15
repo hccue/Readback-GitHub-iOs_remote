@@ -10,6 +10,8 @@
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
 
+#define SEGUE_CUSTOMIZE @"CustomizeSegue"
+
 #define TEXT_SPACE @"   "
 #define TEXT_TAG_FORMAT @"%@   "
 #define CLEARANCE_GAP 2

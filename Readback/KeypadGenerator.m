@@ -21,77 +21,66 @@
 
 @implementation KeypadGenerator
 
+
+//TODO REMOVE THIS WITH IAP
 + (NSArray *)getAvailableKeypadsIdentifiers
 {
     return [NSArray arrayWithObjects:
-            [NSNumber numberWithInt:STANDARD_KEYPAD],
-            [NSNumber numberWithInt:CLEARANCE_KEYPAD],
-            [NSNumber numberWithInt:OCEANIC_KEYPAD],
-            [NSNumber numberWithInt:QWERTY_KEYPAD], nil];
+            [NSNumber numberWithInt:STANDARD_KEYPAD_IDENTIFIER],
+            [NSNumber numberWithInt:CLEARANCE_KEYPAD_IDENTIFIER],
+            [NSNumber numberWithInt:OCEANIC_KEYPAD_IDENTIFIER],
+            [NSNumber numberWithInt:QWERTY_KEYPAD_IDENTIFIER], nil];
 }
 
 +(NSArray *)getKeypadsForIdentifiers:(NSArray *)identifiers
 {
     NSMutableArray *keypads = [NSMutableArray arrayWithCapacity:[identifiers count]];
-    for (NSNumber *identifier in identifiers) {
-        [keypads addObject:[KeypadGenerator generateKeypadWithIdentifier:[identifier intValue]]];
+    for (NSString *identifier in identifiers) {
+        [keypads addObject:[KeypadGenerator generateKeypadWithIdentifier:identifier]];
     }
     return keypads;
 }
 
-+(ReadbackKeypad *)generateKeypadWithIdentifier:(int)identifier
++(ReadbackKeypad *)generateKeypadWithIdentifier:(NSString *)identifier
 {
     ReadbackKeypad *keypad = [[ReadbackKeypad alloc] init];
+    keypad.identifier = identifier;
     
-    switch (identifier) {
-        case STANDARD_KEYPAD:
-            keypad.identifier = [NSNumber numberWithInt:STANDARD_KEYPAD];
-            keypad.name = @"StandardKeypadVC";
-            keypad.title = @"Standard Keypad";
-            keypad.subtitle = @"Suits any pilot, anywhere.";
-            keypad.priority = [NSNumber numberWithInt:1];
-            keypad.imageURL = @"standard.png";
-            keypad.price = [NSNumber numberWithFloat:0.00];
-            keypad.detail = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
-            break;
-            
-        case CLEARANCE_KEYPAD:
-            keypad.identifier = [NSNumber numberWithInt:CLEARANCE_KEYPAD];
-            keypad.name = @"ClearanceKeypadVC";
-            keypad.title = @"Clearance Keypad";
-            keypad.subtitle = @"Designed to catch even those light speed clearances.";
-            keypad.priority = [NSNumber numberWithInt:4];
-            keypad.imageURL = @"standard.png";
-            keypad.price = [NSNumber numberWithFloat:1.99];
-            keypad.detail = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
-            break;
-            
-        case OCEANIC_KEYPAD:
-            keypad.identifier = [NSNumber numberWithInt:OCEANIC_KEYPAD];
-            keypad.name = @"OceanicKeypadVC";
-            keypad.title = @"Oceanic Keypad";
-            keypad.subtitle = @"Extended Range Package.";
-            keypad.priority = [NSNumber numberWithInt:2];
-            keypad.imageURL = @"standard.png";
-            keypad.price = [NSNumber numberWithFloat:1.99];
-            keypad.detail = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
-            break;
-            
-        case QWERTY_KEYPAD:
-            keypad.identifier = [NSNumber numberWithInt:QWERTY_KEYPAD];
-            keypad.name = @"QwertyKeypadVC";
-            keypad.title = @"Qwerty Keypad";
-            keypad.subtitle = @"A worldwide favourite.";
-            keypad.priority = [NSNumber numberWithInt:3];
-            keypad.imageURL = @"standard.png";
-            keypad.price = [NSNumber numberWithFloat:1.99];
-            keypad.detail = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
-            break;
-            
-        default:
-            break;
+    //TODO init with plist
+    //NSDictionary *properties = [[NSDictionary alloc] initWithContentsOfFile:@"StandardKeypad.plist"];
+    
+    if ([identifier isEqualToString:STANDARD_KEYPAD_IDENTIFIER]) {
+        keypad.name = @"StandardKeypadVC";
+        keypad.title = @"Standard Keypad";
+        keypad.subtitle = @"Suits any pilot, anywhere.";
+        keypad.imageURL = @"standard.png";
+        keypad.detail = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
     }
     
+    if ([identifier isEqualToString:CLEARANCE_KEYPAD_IDENTIFIER]) {
+        keypad.name = @"ClearanceKeypadVC";
+        keypad.title = @"Clearance Keypad";
+        keypad.subtitle = @"Designed to catch even those light speed clearances.";
+        keypad.imageURL = @"standard.png";
+        keypad.detail = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
+    }
+    
+    if ([identifier isEqualToString:QWERTY_KEYPAD_IDENTIFIER]) {
+        keypad.name = @"QwertyKeypadVC";
+        keypad.title = @"Qwerty Keypad";
+        keypad.subtitle = @"A worldwide favourite.";
+        keypad.imageURL = @"standard.png";
+        keypad.detail = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
+    }
+    
+    if ([identifier isEqualToString:OCEANIC_KEYPAD_IDENTIFIER]) {
+        keypad.name = @"OceanicKeypadVC";
+        keypad.title = @"Oceanic Keypad";
+        keypad.subtitle = @"Extended Range Package.";
+        keypad.imageURL = @"standard.png";
+        keypad.detail = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
+    }
+   
     return keypad;
 }
 

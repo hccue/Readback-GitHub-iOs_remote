@@ -86,10 +86,12 @@ int global_clearanceXPosition;
 }
 
 
+
 #pragma mark UIView Lifecycle implementation
 
 -(void)viewDidLoad
 {
+    //Add gesture recognizers for swipe
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.containerView addGestureRecognizer:swipeLeft];
@@ -314,8 +316,8 @@ int global_clearanceXPosition;
     NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
-    for (NSNumber *keypadIdentifier in purchasedKeypadsIdentifiers) {
-        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:[keypadIdentifier intValue]];
+    for (NSString *keypadIdentifier in purchasedKeypadsIdentifiers) {
+        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:keypadIdentifier];
         KeypadViewController *correspondingVC = [[KeypadViewController alloc] initWithNibName:keypad.name bundle:nil];
         correspondingVC.title = keypad.title;
         correspondingVC.keypad = keypad;
@@ -438,21 +440,20 @@ int global_clearanceXPosition;
     self.pageControl.currentPage = [self.subViewControllers indexOfObject:viewController];
 }
 
--(void)setKeypadWithIdentifier:(NSNumber *)tag;
+-(void)loadKeypadWithIdentifier:(NSString *)identifier;
 {
     for (KeypadViewController *keypadVC in self.subViewControllers) {
         ReadbackKeypad *keypad = keypadVC.keypad;
-        if (keypad.identifier == tag) {
+        if ([keypad.identifier isEqualToString:identifier]) {
             [self transitionFromViewController:self.selectedViewController toViewController:keypadVC withAnimation:UIViewAnimationOptionTransitionCurlDown];
         }
     }
     
 }
 
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"CustomizeSegue"]) {
+    if ([segue.identifier isEqualToString:SEGUE_CUSTOMIZE]) {
         [((ReadbackSalesViewController *)segue.destinationViewController) setDelegate:self];
     }
 }

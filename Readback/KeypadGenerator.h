@@ -9,21 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "ReadbackKeypad.h"
 
-//Keypad Unique Identifier:
-#define STANDARD_KEYPAD     1
-#define CLEARANCE_KEYPAD    2
-#define QWERTY_KEYPAD       3
-#define OCEANIC_KEYPAD      4
+//Itunes Connect and Application unique Keypad identifiers:
+#define STANDARD_KEYPAD_IDENTIFIER      @"standardkeypad"
+#define CLEARANCE_KEYPAD_IDENTIFIER     @"com.cuesoft.readback.clearancekeypad"
+#define QWERTY_KEYPAD_IDENTIFIER        @"com.cuesoft.readback.qwertykeypad"
+#define OCEANIC_KEYPAD_IDENTIFIER       @"com.cuesoft.readback.oceanickeypad"
 
 @interface KeypadGenerator : NSObject
 
 //Main Keypad Source
-+ (NSArray *)getAvailableKeypadsIdentifiers;
++ (NSArray *)getAvailableKeypadsIdentifiers;//TODO remove with IAP
 
-//(Array of ReadbackKeypads):Array of NSNumber
+//(Array of ReadbackKeypads):Array of NSString
 +(NSArray *)getKeypadsForIdentifiers:(NSArray *)identifiers;
 
 //Static information of each keypad
-+ (ReadbackKeypad *)generateKeypadWithIdentifier:(int)identifier;
++ (ReadbackKeypad *)generateKeypadWithIdentifier:(NSString *)identifier;
 
 @end

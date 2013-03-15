@@ -8,20 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-#define KEYPAD_KEY_TITLE @"Title"
-#define KEYPAD_KEY_SUBTITLE @"Subtitle"
-
 //No values can be nil
-
 @interface ReadbackKeypad : NSObject
-
-@property (nonatomic, strong) NSNumber *identifier; //SalesManager Identifier
+@property (nonatomic, strong) NSString *identifier; //IAP Identifier
 @property (nonatomic, strong) NSString *name;       //VC Xib File Name
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic, strong) NSString *detail;
 @property (nonatomic, strong) NSString *imageURL;
-@property (nonatomic, strong) NSNumber *price;
-@property (nonatomic, strong) NSNumber *priority; //On the list of keypads
+@property (nonatomic, strong) NSNumber *price;          //TODO delete
 
 @end

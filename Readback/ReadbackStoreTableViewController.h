@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReadbackKeypad.h"
 
 #define STORE_CELL @"StoreKeypadCell"
 #define TEXT_PURCHASED @"Purchased"
 
 @protocol ReadbackStoreTableViewControllerDataSource <NSObject>
 -(NSInteger)numberOfStoreItems;
--(NSDictionary *)storeItemAtIndex:(NSInteger)row;
+-(ReadbackKeypad *)storeItemAtIndex:(NSInteger)row;
 @end
 
 

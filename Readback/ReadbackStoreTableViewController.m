@@ -33,7 +33,7 @@
     UILabel *price = [[UILabel alloc] init];
     price.text = TEXT_PURCHASED;
     if (![ReadbackSalesManager keypadIsPurchased:myKeypad]) {
-        price.text = [NSString stringWithFormat:PRICE_FORMAT, [myKeypad.price floatValue]];
+        price.text = [NSString stringWithFormat:PRICE_FORMAT, [myKeypad.product.price floatValue]];
     }
     price.textColor = [UIColor blackColor];
     [price sizeToFit];

@@ -19,7 +19,7 @@
 + (NSArray *)getPurchasedKeypadsIdentifiers; //Array of NSString IAP identifiers    TODO: refactor to IAP
 + (NSArray *)getStoreKeypadIdentifiers;                //All available keypads for purchasing TODO: remove this?
 + (void)restoreAllPurchases;
-+ (void)performPurchaseOfKeypad:(ReadbackKeypad *)keypad;
 + (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad;
-+ (void)savePurchasedKeypadsSorted:(NSArray *)keypadsSorted;
+
++ (void)savePurchasedKeypads:(NSArray *)keypadIdentifiers;
 @end

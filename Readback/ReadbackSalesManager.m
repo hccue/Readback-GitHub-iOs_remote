@@ -19,6 +19,7 @@
     static ReadbackSalesManager * sharedInstance;
     dispatch_once(&once, ^{
         NSSet * productIdentifiers = [NSSet setWithObjects:
+                                      STANDARD_KEYPAD_IDENTIFIER,
                                       CLEARANCE_KEYPAD_IDENTIFIER,
                                       QWERTY_KEYPAD_IDENTIFIER,
                                       nil];
@@ -27,25 +28,17 @@
     return sharedInstance;
 }
 
-
 #pragma mark Purchasing API
 
-+ (void)performPurchaseOfKeypad:(ReadbackKeypad *)keypad
-{
-    //TODO: Perform purchase with apple
-    
-    [ReadbackSalesManager unlockKeypadIdentifier:keypad.identifier];
+
+//TODO SOLVE ALERT BUT ON RESTORE DO NOT ALERT ALL THE TIME
+- (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
+    [super provideContentForProductIdentifier:productIdentifier];
+    [ReadbackSalesManager unlockKeypadWithIdentifier:productIdentifier];
 }
 
-+ (void)unlockKeypadIdentifier:(NSString *)identifier
-{
-    NSLog(@"Unlocking %@", identifier);
-    //TODO check purchasing same item again?
-    
-    NSMutableArray *purchasedKeypadsIdentifiers = [[ReadbackSalesManager getPurchasedKeypadsIdentifiers] mutableCopy];
-    [purchasedKeypadsIdentifiers addObject:identifier];
-    [ReadbackSalesManager savePurchasedKeypads:purchasedKeypadsIdentifiers];
-}
+
+
 
 
 //TODO implement IAP
@@ -77,51 +70,51 @@
 }
 
 
-//TODO test this actually works
-+ (void)savePurchasedKeypadsSorted:(NSArray *)keypadsSorted
-{
-    NSLog(@"saving sorted %@", keypadsSorted.description);
-    NSArray *purchasedIdentifiersUnsorted = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
-    NSMutableArray *purchasedIdentifiersSorted = [NSMutableArray arrayWithCapacity:[purchasedIdentifiersUnsorted count]];
-    
-    NSLog(@"saving from unsorted %@", purchasedIdentifiersUnsorted.description);
-    
-    //verify only purchased keypads are saved for safety:
-    for (ReadbackKeypad *keypad in keypadsSorted) {
-        if ([purchasedIdentifiersUnsorted containsObject:keypad.identifier]) {
-            [purchasedIdentifiersSorted addObject:keypad.identifier];
-        }
-    }
-    [ReadbackSalesManager savePurchasedKeypads:purchasedIdentifiersSorted];
-}
 
+#pragma mark User Defaults
 
-#pragma mark User Defaults Communication
-
-//standard keypad is always already purchased.
-//Get from user defaults, independently from IAP
+//Gets from user defaults, independently from IAP - Standard keypad auto-load.
 + (NSArray *)getPurchasedKeypadsIdentifiers
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSMutableArray *purchasedKeypadsIdentifiers = [[defaults objectForKey:USERKEY_KEYPADS] mutableCopy];
     
-    //First App use:
     if(!purchasedKeypadsIdentifiers){
-        //manually unlock keypad and ask again
+        //First App use, manually unlock keypad and ask again
         NSLog(@"purchasing standard");
-        purchasedKeypadsIdentifiers = [NSMutableArray arrayWithObject:STANDARD_KEYPAD_IDENTIFIER];
-        [ReadbackSalesManager savePurchasedKeypads:purchasedKeypadsIdentifiers];
+        [ReadbackSalesManager unlockKeypadWithIdentifier:STANDARD_KEYPAD_IDENTIFIER];
+        purchasedKeypadsIdentifiers = [[defaults objectForKey:USERKEY_KEYPADS] mutableCopy];
     }
     
     return purchasedKeypadsIdentifiers;
 }
 
-+ (void)savePurchasedKeypads:(NSArray *)keypadIdentifiers
+
++ (void) unlockKeypadWithIdentifier:(NSString *)identifier
 {
-    NSLog(@"SAVING USER PURCHASED KEYPADS %@", keypadIdentifiers);
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:keypadIdentifiers forKey:USERKEY_KEYPADS];
-    [defaults synchronize];
+    NSLog(@"Unlocking Keypad %@", identifier);
+    NSMutableArray *purchasedKeypadIdentifiers = [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] mutableCopy];
+    if (!purchasedKeypadIdentifiers) purchasedKeypadIdentifiers = [NSMutableArray arrayWithCapacity:1];
+    [purchasedKeypadIdentifiers addObject:identifier];
+    [[NSUserDefaults standardUserDefaults] setObject:purchasedKeypadIdentifiers forKey:USERKEY_KEYPADS];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+
+//Used when saving sorted keypads
++ (void)savePurchasedKeypads:(NSArray *)keypads
+{
+    NSMutableArray *identifiers = [NSMutableArray arrayWithCapacity:[keypads count]];
+    for (ReadbackKeypad *keypad in keypads) {
+        [identifiers addObject:keypad.identifier];
+    }
+    
+    NSLog(@"SAVING USER KEYPADS %@", identifiers);
+    if ([identifiers count] != [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] count]) {
+        NSLog(@"Inconsistency while saving sorted keypads");
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:identifiers forKey:USERKEY_KEYPADS];
+    [defaults synchronize];
+}
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <StoreKit/StoreKit.h>
 
 //No values can be nil
 @interface ReadbackKeypad : NSObject
@@ -14,8 +15,8 @@
 @property (nonatomic, strong) NSString *name;       //VC Xib File Name
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subtitle;
-@property (nonatomic, strong) NSString *detail;
+@property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *imageURL;
-@property (nonatomic, strong) NSNumber *price;          //TODO delete
+@property (nonatomic, strong) SKProduct *product;
 
 @end

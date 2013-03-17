@@ -85,12 +85,17 @@
     return [self.purchasedKeypads objectAtIndex:row];
 }
 
+//Load selected keypad on main View Controller
 -(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
 {
     [self.navigationController popViewControllerAnimated:YES];
     [self.delegate loadKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
     
 }
+
+
+
+#pragma mark Sorting
 
 - (IBAction)editTapped:(UIButton *)sender {
     if ([self.purchasedKeypadsTableView isEditing]) {
@@ -109,8 +114,9 @@
     [purchasedKeypadsMutable removeObjectAtIndex:sourceIndex];
     [purchasedKeypadsMutable insertObject:sourceKeypad atIndex:destinationIndex];
     self.purchasedKeypads = purchasedKeypadsMutable;
-    [ReadbackSalesManager savePurchasedKeypadsSorted:self.purchasedKeypads];
+    [ReadbackSalesManager savePurchasedKeypads:self.purchasedKeypads];
 }
+
 
 
 
@@ -133,25 +139,18 @@
 
 -(void)viewDidLoad //Only once:
 {
+    //Set delegates and dataSources:
     self.purchasedKeypadsTableView.delegate = self.purchasedTableViewController;
     self.purchasedKeypadsTableView.dataSource = self.purchasedTableViewController;
-    
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
-    
-    //IAP
-    [self reloadStoreProducts];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    //Refresh in case we are returning from a purchase:
-    self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedKeypadsIdentifiers]];
-    [self.purchasedKeypadsTableView reloadData];
-    
-    //IAP
-    //self.storeKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getStoreKeypadIdentifiers]];
-    //[self.storeKeypadsTableView reloadData];
+    //Load here to refresh after purchasing:
+    [self reloadPurchasedProducts];
+    [self reloadStoreProducts];
 }
 
 - (void)viewDidUnload {
@@ -180,6 +179,13 @@
 
 
 
+-(void)reloadPurchasedProducts
+{
+//    Unable to use Helper list due to:private, no refresh, no sorting.
+    self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedKeypadsIdentifiers]];
+    [self.purchasedKeypadsTableView reloadData];
+}
+
 #pragma mark In-App Purchases
 
 
@@ -188,7 +194,14 @@
     [self.storeKeypadsTableView reloadData];
     [[ReadbackSalesManager sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
         if (success) {
-            self.storeKeypads = products;
+            //Generate array of local keypads based on IAP identifier.
+            NSMutableArray *storeKeypads = [NSMutableArray arrayWithCapacity:[products count]];
+            for (SKProduct *product in products) {
+                ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier: product.productIdentifier];
+                keypad.product = product;
+                [storeKeypads addObject:keypad];
+            }
+            self.storeKeypads = storeKeypads;
             [self.storeKeypadsTableView reloadData];
         }
         //TODO solve this:

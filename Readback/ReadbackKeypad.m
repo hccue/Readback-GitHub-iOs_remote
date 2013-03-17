@@ -13,8 +13,8 @@
 @synthesize name = _name;
 @synthesize title = _title;
 @synthesize subtitle = _subtitle;
-@synthesize detail = _detail;
+@synthesize description = _description;
 @synthesize imageURL = _imageURL;
-@synthesize price = _price;
+@synthesize product = _product;
 
 @end

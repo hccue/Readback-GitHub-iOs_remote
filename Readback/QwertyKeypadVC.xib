@@ -41,7 +41,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{560.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="856528334"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -83,7 +82,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{280.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="473425638"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -104,7 +102,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 213}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="626467738"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -125,7 +122,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{188.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="278846756"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -146,7 +142,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 144}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="344026079"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">16</int>
@@ -171,7 +166,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{374.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="764178901"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -192,7 +186,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{653.5, 211.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="167163305"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -213,7 +206,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{1, 352}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">6</int>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -246,7 +238,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{144.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="326456607"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -267,7 +258,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{797, 143}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="932302283"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -288,7 +278,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{840, 213}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="926848066"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -309,7 +298,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{467.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="500287502"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -330,7 +318,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{94.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="734942502"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -351,7 +338,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{94, 282}, {90, 65}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="583646358"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">15</int>
@@ -385,7 +371,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{747, 353}, {90, 65}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="56730834"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">4</int>
@@ -413,7 +398,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{1, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="225901"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -434,7 +418,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{1.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="897501313"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -455,7 +438,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{94, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="774078542"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -476,7 +458,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{467.5, 3.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="148355594"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -497,7 +478,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{703.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1027374561"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -518,7 +498,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{374.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="273197473"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -539,7 +518,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{280, 281}, {369, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="974355822"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">11</int>
@@ -561,7 +539,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{747, 282}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="746622111"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="617651250">
 							<int key="NSColorSpace">1</int>
@@ -594,7 +571,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{281, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="136161258"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -615,7 +591,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{517.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="158599605"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -636,7 +611,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{840, 353}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="317600058"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">1</int>
@@ -661,7 +635,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{467.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="289797134"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -682,7 +655,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{840, 283}, {90, 65}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="913595212"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">5</int>
@@ -710,7 +682,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{747, 212}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="938185963"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -736,7 +707,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{653.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="927605261"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -757,7 +727,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{610.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="509171815"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -778,7 +747,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{51.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="400755913"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -799,7 +767,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 74}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="912533496"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">14</int>
@@ -824,7 +791,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{653, 353}, {90, 65}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="465185007"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">9</int>
@@ -852,7 +818,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{238.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1027222651"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -873,7 +838,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{94.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="165246280"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -894,7 +858,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{747.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="787119360"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -915,7 +878,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{840.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1024152425"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -936,7 +898,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{187.5, 212.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="665532782"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -957,7 +918,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{188, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="488658744"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -978,7 +938,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{331.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="704289489"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -999,7 +958,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{840, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="529976920"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1020,7 +978,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 353}, {90, 65}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1023927524"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">2</int>
@@ -1045,7 +1002,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{281.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="30104948"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1066,7 +1022,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{375, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="13041818"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1088,7 +1043,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{747.5, 3.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="882882251"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1109,7 +1063,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{560.5, 3.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="827460065"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1130,7 +1083,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{653.5, 3.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="120644131"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1152,7 +1104,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{560.5, 73.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="833290853"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1173,8 +1124,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 282}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">20</int>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1201,7 +1150,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{424.5, 143.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1060315833"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1222,7 +1170,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{933, 4}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">7</int>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1252,7 +1199,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{1, 213}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
-						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -1269,7 +1215,6 @@
 				</array>
 				<string key="NSFrameSize">{1024, 421}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="777434954"/>
 				<reference key="IBUIBackgroundColor" ref="617651250"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>

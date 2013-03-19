@@ -11,9 +11,10 @@
  ADD KEYPAD STEPS:
  1. Add file, new VC targeted for ipad with XIB
  2. Copy Standard Keypad
- 3. Set properties, CAUTION: set identifier to corresponding (switch) case!
+ 3. Set properties, set preview image png file
  3. Uncheck first tab > use autolayout
  4. Add identifier to getAvailableKeypadsIdentifiers
+ 5. add image sized 995x410
 */
  
  
@@ -61,7 +62,7 @@
         keypad.name = @"ClearanceKeypadVC";
         keypad.title = @"Clearance Keypad";
         keypad.subtitle = @"For light speed clearances.";
-        keypad.imageURL = @"standard.png";
+        keypad.imageURL = @"qwerty.png";
         keypad.description = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
     }
     
@@ -69,7 +70,7 @@
         keypad.name = @"QwertyKeypadVC";
         keypad.title = @"Qwerty Keypad";
         keypad.subtitle = @"A worldwide favourite.";
-        keypad.imageURL = @"standard.png";
+        keypad.imageURL = @"qwerty.png";
         keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
     }
     

@@ -15,6 +15,7 @@
 		DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */; };
 		DE18D65216A4C2B600FB779B /* ReadbackSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65116A4C2B600FB779B /* ReadbackSalesViewController.m */; };
 		DE18D65516A4C94900FB779B /* ReadbackStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */; };
+		DE213ED916F8B4360004599F /* qwerty.png in Resources */ = {isa = PBXBuildFile; fileRef = DE213ED816F8B4360004599F /* qwerty.png */; };
 		DE234B3116A5C86400C99AE6 /* ReadbackKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */; };
 		DE23686916EFB27900C355C8 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE23686816EFB27900C355C8 /* key-help.png */; };
 		DE28A65C16A25FC200429C46 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65A16A25FC200429C46 /* clear.png */; };
@@ -85,6 +86,7 @@
 		DE18D65116A4C2B600FB779B /* ReadbackSalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesViewController.m; sourceTree = "<group>"; };
 		DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackStoreTableViewController.h; sourceTree = "<group>"; };
 		DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackStoreTableViewController.m; sourceTree = "<group>"; };
+		DE213ED816F8B4360004599F /* qwerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qwerty.png; sourceTree = "<group>"; };
 		DE234B2F16A5C86400C99AE6 /* ReadbackKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackKeypad.h; sourceTree = "<group>"; };
 		DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackKeypad.m; sourceTree = "<group>"; };
 		DE23686816EFB27900C355C8 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		DE17668516A6173600760990 /* Previews */ = {
 			isa = PBXGroup;
 			children = (
+				DE213ED816F8B4360004599F /* qwerty.png */,
 				DE17668316A6173300760990 /* standard.png */,
 			);
 			name = Previews;
@@ -472,6 +475,7 @@
 				DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */,
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
 				DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */,
+				DE213ED916F8B4360004599F /* qwerty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

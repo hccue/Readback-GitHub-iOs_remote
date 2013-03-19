@@ -14,7 +14,7 @@
  3. Set properties, set preview image png file
  3. Uncheck first tab > use autolayout
  4. Add identifier to getAvailableKeypadsIdentifiers
- 5. add image sized 995x410
+ 5. add image sized 2048x1013
 */
  
  
@@ -54,7 +54,7 @@
         keypad.name = @"StandardKeypadVC";
         keypad.title = @"Standard Keypad";
         keypad.subtitle = @"Suits any pilot, anywhere.";
-        keypad.imageURL = @"standard.png";
+        keypad.imageURL = @"standard.png";//this will never show up.
         keypad.description = @"This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight";
     }
     
@@ -62,7 +62,7 @@
         keypad.name = @"ClearanceKeypadVC";
         keypad.title = @"Clearance Keypad";
         keypad.subtitle = @"For light speed clearances.";
-        keypad.imageURL = @"qwerty.png";
+        keypad.imageURL = @"clearance.png";
         keypad.description = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
     }
     
@@ -71,7 +71,7 @@
         keypad.title = @"Qwerty Keypad";
         keypad.subtitle = @"A worldwide favourite.";
         keypad.imageURL = @"qwerty.png";
-        keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available for those moments when all you need is a comfortable place to write down that clearance.";
+        keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available when all you need is a comfortable way to write it down.";
     }
     
     if ([identifier isEqualToString:OCEANIC_KEYPAD_IDENTIFIER]) {

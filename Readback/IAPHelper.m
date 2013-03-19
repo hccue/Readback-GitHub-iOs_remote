@@ -15,6 +15,11 @@
 #define PURCHASED_MESSAGE_BODY      @"You just purchased a new Keypad"
 #define PURCHASED_MESSAGE_BUTTON    @"Thanks"
 
+//Restore success
+#define RESTORED_MESSAGE_TITLE     @"Congratulations!"
+#define RESTORED_MESSAGE_BODY      @"You just restored your purchased Keypads"
+#define RESTORED_MESSAGE_BUTTON    @"Thanks"
+
 //Purchase error
 #define ALERT_PURCHASE_ERROR_TITLE     @"In-App-Purchase Error:"
 #define ALERT_PURCHASE_ERROR_BUTTON    @"Understood"
@@ -118,7 +123,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 
-//TODO CHECK FOR SANDBOX OR PRODUCTION ENVIRONMENT!!?
+//TODO CHECK FOR SANDBOX OR PRODUCTION ENVIRONMENT!!? - maybe only in my server
 - (void)buyProduct:(SKProduct *)product {
     NSLog(@"Buying %@...", product.productIdentifier);
     SKPayment * payment = [SKPayment paymentWithProduct:product];
@@ -126,7 +131,9 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
 }
 
-
+- (void)restoreCompletedTransactions {
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
+}
 
 
 #pragma mark Transaction Caller Methods
@@ -161,7 +168,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
     NSLog(@"restore Transaction...");
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
-    //TODO alert somehow that restore was successful?
+    [self alertRestoreSuccess];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
@@ -214,6 +221,16 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
                                                       message:PURCHASED_MESSAGE_BODY
                                                      delegate:self
                                             cancelButtonTitle:PURCHASED_MESSAGE_BUTTON
+                                            otherButtonTitles: nil];
+    [message show];
+}
+
+-(void)alertRestoreSuccess
+{
+    UIAlertView* message = [[UIAlertView alloc] initWithTitle:RESTORED_MESSAGE_TITLE
+                                                      message:RESTORED_MESSAGE_BODY
+                                                     delegate:self
+                                            cancelButtonTitle:RESTORED_MESSAGE_BUTTON
                                             otherButtonTitles: nil];
     [message show];
 }

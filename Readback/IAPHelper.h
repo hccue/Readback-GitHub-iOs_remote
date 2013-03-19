@@ -26,6 +26,7 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 
 - (void)buyProduct:(SKProduct *)product;
 - (BOOL)productPurchased:(NSString *)productIdentifier;
+- (void)restoreCompletedTransactions;
 
 //Override to provide contents.
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier;

@@ -31,10 +31,10 @@
 
 #pragma mark Purchasing API
 
-//Overriding parent implementation
+//Overriding parent implementation, super called last to notify after delivery.
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
-    [super provideContentForProductIdentifier:productIdentifier];
     [ReadbackSalesManager unlockKeypadWithIdentifier:productIdentifier];
+    [super provideContentForProductIdentifier:productIdentifier];
 }
 
 + (void)restoreAllPurchases

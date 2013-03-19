@@ -65,8 +65,7 @@
 }
 
 - (IBAction)restorePurchases:(UIButton *)sender {
-    [ReadbackSalesManager restoreAllPurchases];
-    //TODO Restore all purchases in the UI ?
+    [[ReadbackSalesManager sharedInstance] restoreCompletedTransactions];
 }
 
 
@@ -153,14 +152,13 @@
     self.purchasedKeypadsTableView.dataSource = self.purchasedTableViewController;
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
-    
-    //Load here to refresh after purchasing:
-    [self reloadPurchasedProducts];
-    [self reloadStoreProducts];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    //Load here to refresh after purchasing:
+    [self reloadPurchasedProducts];
+    [self reloadStoreProducts];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
 }
 
@@ -199,6 +197,7 @@
 {
 //    Unable to use Helper list due to:private, no refresh, no sorting.
     self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedIdentifiersFromMemory]];
+    NSLog(@"reloading data");
     [self.purchasedKeypadsTableView reloadData];
 }
 
@@ -230,6 +229,7 @@
 
 //Notification Listener
 - (void)productPurchased:(NSNotification *)notification {
+    NSLog(@"listenging ");
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];
 }

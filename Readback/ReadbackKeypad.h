@@ -19,4 +19,6 @@
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) SKProduct *product;
 
+
++ (NSNumberFormatter *)priceFormatter;
 @end

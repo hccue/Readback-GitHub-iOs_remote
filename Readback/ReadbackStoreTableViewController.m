@@ -30,10 +30,13 @@
     cell.detailTextLabel.text = myKeypad.subtitle;
     
     //Set price or "purchased" label as accessory:
+    NSNumberFormatter *priceFormatter = [ReadbackKeypad priceFormatter];
+    [priceFormatter setLocale:myKeypad.product.priceLocale];
+    
     UILabel *price = [[UILabel alloc] init];
     price.text = TEXT_PURCHASED;
-    if (![ReadbackSalesManager keypadIsPurchased:myKeypad]) {
-        price.text = [NSString stringWithFormat:PRICE_FORMAT, [myKeypad.product.price floatValue]];
+    if (![[ReadbackSalesManager sharedInstance] productPurchased:myKeypad.product.productIdentifier]) {
+        price.text = [priceFormatter stringFromNumber:myKeypad.product.price];
     }
     price.textColor = [UIColor blackColor];
     [price sizeToFit];

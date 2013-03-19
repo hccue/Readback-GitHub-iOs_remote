@@ -10,10 +10,11 @@
 #import <StoreKit/StoreKit.h>
 
 UIKIT_EXTERN NSString *const IAPHelperProductPurchasedNotification;
+
 #define USERKEY_KEYPADS @"purchasesIdentifiers"
 
-typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * products);
 
+typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * products);
 
 
 @interface IAPHelper : NSObject
@@ -26,5 +27,6 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 - (void)buyProduct:(SKProduct *)product;
 - (BOOL)productPurchased:(NSString *)productIdentifier;
 
+//Override to provide contents.
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier;
 @end

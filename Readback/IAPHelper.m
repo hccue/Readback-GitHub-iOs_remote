@@ -9,14 +9,17 @@
 #import "IAPHelper.h"
 #import <StoreKit/StoreKit.h>
 
-#define ALERT_PURCHASED_OK 1 //Tag to identify button action
+
+//Purchase success
 #define PURCHASED_MESSAGE_TITLE     @"Congratulations!"
 #define PURCHASED_MESSAGE_BODY      @"You just purchased a new Keypad"
 #define PURCHASED_MESSAGE_BUTTON    @"Thanks"
 
+//Purchase error
 #define ALERT_PURCHASE_ERROR_TITLE     @"In-App-Purchase Error:"
 #define ALERT_PURCHASE_ERROR_BUTTON    @"Understood"
 
+//Unable to load products
 #define ALERT_LOAD_ERROR_TITLE     @"Cannot Load Products"
 #define ALERT_LOAD_ERROR_MESSAGE   @"Maybe your internet connection is down, please try again."
 #define ALERT_LOAD_ERROR_BUTTON     @"Understood"
@@ -37,6 +40,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 
 //Init with list of local available product identifiers
+//TODO identify if we can get rid of self.purchasedProductIdentifiers
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
     
     if ((self = [super init])) {
@@ -48,6 +52,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         self.purchasedProductIdentifiers = [NSMutableSet set];
         for (NSString * productIdentifier in self.productIdentifiers) {
 
+            //TODO do not interact with USer Defaults
             NSSet *purchasedProducts = [[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS];
             BOOL productPurchased = [purchasedProducts containsObject:productIdentifier];
             if (productPurchased) {
@@ -69,7 +74,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     self.productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:self.productIdentifiers];
     self.productsRequest.delegate = self;
     [self.productsRequest start];
-    
 }
 
 
@@ -93,10 +97,9 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
 }
 
-- (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
-    
+- (void)request:(SKRequest *)request didFailWithError:(NSError *)error
+{    
     NSLog(@"Failed to load list of products.");
-    
     UIAlertView* message = [[UIAlertView alloc] initWithTitle:ALERT_LOAD_ERROR_TITLE
                                                       message:ALERT_LOAD_ERROR_MESSAGE
                                                      delegate:self
@@ -110,8 +113,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
 }
 
-//TODO will work after something was purchased?
-//TODO not used anywhere so far
 - (BOOL)productPurchased:(NSString *)productIdentifier {
     return [self.purchasedProductIdentifiers containsObject:productIdentifier];
 }
@@ -151,7 +152,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"complete Transaction...");
+    NSLog(@"complete Transaction parent...");
     [self provideContentForProductIdentifier:transaction.payment.productIdentifier];
     [self alertPurchaseSuccess];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
@@ -162,6 +163,11 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
     //TODO alert somehow that restore was successful?
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+}
+
+- (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
+    [self.purchasedProductIdentifiers addObject:productIdentifier];
+    [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
 }
 
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
@@ -200,36 +206,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 }
 
-
-
-#pragma mark provideContentForProductIdentifier
-
-
-//Subclassing must implement providing actual content
-- (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
-    [self.purchasedProductIdentifiers addObject:productIdentifier];
-    [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
-}
-
-
-
-
-
-
-
 #pragma mark Alert Messages
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    switch (alertView.tag) {
-        case ALERT_PURCHASED_OK:
-            //TODO return to store VC
-            break;
-            
-        default:
-            break;
-    }
-}
 
 -(void)alertPurchaseSuccess
 {
@@ -238,9 +215,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
                                                      delegate:self
                                             cancelButtonTitle:PURCHASED_MESSAGE_BUTTON
                                             otherButtonTitles: nil];
-    message.tag = ALERT_PURCHASED_OK;
     [message show];
 }
-
 
 @end

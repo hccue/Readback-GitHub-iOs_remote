@@ -10,7 +10,7 @@
 #import "ReadbackKeypad.h"
 
 #define STRING_FORMAT_TITLE @"%@, %@"
-#define STRING_FORMAT_PURCHASE_BUTTON @"Purchase for $%1.2f"
+#define STRING_FORMAT_PURCHASE_BUTTON @"Purchase for %@"
 
 #define LABEL_PURCHASED @"Already Purchased"
 #define LABEL_RETURN    @"Return"

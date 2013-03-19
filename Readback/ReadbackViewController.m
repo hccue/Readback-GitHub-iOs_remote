@@ -313,7 +313,8 @@ int global_clearanceXPosition;
 
 -(void)loadPurchasedKeypads
 {
-    NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedKeypadsIdentifiers];
+    NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedIdentifiersFromMemory];
+    NSLog(@"loading %@", purchasedKeypadsIdentifiers);
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
     for (NSString *keypadIdentifier in purchasedKeypadsIdentifiers) {

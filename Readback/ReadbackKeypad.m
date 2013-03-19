@@ -17,4 +17,14 @@
 @synthesize imageURL = _imageURL;
 @synthesize product = _product;
 
+
++ (NSNumberFormatter *)priceFormatter
+{
+    NSNumberFormatter *priceFormatter;
+    priceFormatter = [[NSNumberFormatter alloc] init];
+    [priceFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+    [priceFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    return priceFormatter;
+}
+
 @end

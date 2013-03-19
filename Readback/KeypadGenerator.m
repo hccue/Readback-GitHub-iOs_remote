@@ -23,13 +23,13 @@
 
 
 //TODO REMOVE THIS WITH IAP
-+ (NSArray *)getAvailableKeypadsIdentifiers
++ (NSSet *)getAvailableKeypadsIdentifiers
 {
-    return [NSArray arrayWithObjects:
-            [NSNumber numberWithInt:STANDARD_KEYPAD_IDENTIFIER],
-            [NSNumber numberWithInt:CLEARANCE_KEYPAD_IDENTIFIER],
-            [NSNumber numberWithInt:OCEANIC_KEYPAD_IDENTIFIER],
-            [NSNumber numberWithInt:QWERTY_KEYPAD_IDENTIFIER], nil];
+    return [NSSet setWithObjects:
+            STANDARD_KEYPAD_IDENTIFIER,
+            CLEARANCE_KEYPAD_IDENTIFIER,
+            QWERTY_KEYPAD_IDENTIFIER,
+            nil];
 }
 
 +(NSArray *)getKeypadsForIdentifiers:(NSArray *)identifiers

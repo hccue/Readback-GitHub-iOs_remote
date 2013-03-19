@@ -114,7 +114,16 @@
     [purchasedKeypadsMutable removeObjectAtIndex:sourceIndex];
     [purchasedKeypadsMutable insertObject:sourceKeypad atIndex:destinationIndex];
     self.purchasedKeypads = purchasedKeypadsMutable;
-    [ReadbackSalesManager savePurchasedKeypads:self.purchasedKeypads];
+    
+    
+    
+    NSMutableArray *identifiers = [NSMutableArray arrayWithCapacity:[self.purchasedKeypads count]];
+    for (ReadbackKeypad *keypad in self.purchasedKeypads) {
+        [identifiers addObject:keypad.identifier];
+    }
+    
+    [ReadbackSalesManager savePurchasedIdentifiersToMemory:identifiers];
+    
 }
 
 
@@ -144,13 +153,20 @@
     self.purchasedKeypadsTableView.dataSource = self.purchasedTableViewController;
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
+    
+    //Load here to refresh after purchasing:
+    [self reloadPurchasedProducts];
+    [self reloadStoreProducts];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    //Load here to refresh after purchasing:
-    [self reloadPurchasedProducts];
-    [self reloadStoreProducts];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidUnload {
@@ -182,7 +198,7 @@
 -(void)reloadPurchasedProducts
 {
 //    Unable to use Helper list due to:private, no refresh, no sorting.
-    self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedKeypadsIdentifiers]];
+    self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedIdentifiersFromMemory]];
     [self.purchasedKeypadsTableView reloadData];
 }
 
@@ -207,6 +223,15 @@
         //TODO solve this:
         //[self.refreshControl endRefreshing];
     }];
+}
+
+
+#pragma mark Notification Listening
+
+//Notification Listener
+- (void)productPurchased:(NSNotification *)notification {
+    [self reloadPurchasedProducts];
+    [self reloadStoreProducts];
 }
 
 @end

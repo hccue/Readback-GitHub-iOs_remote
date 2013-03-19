@@ -11,8 +11,6 @@
 #import "ReadbackStoreTableViewController.h"
 #import "ReadbackSalesManager.h"
 
-#define PRICE_FORMAT @"$%1.2f"
-
 @protocol ReadbackSalesViewControllerDelegate <NSObject>
 -(void) loadKeypadWithIdentifier:(NSString *)identifier;
 @end

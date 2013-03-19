@@ -18,7 +18,7 @@
 @interface KeypadGenerator : NSObject
 
 //Main Keypad Source
-+ (NSArray *)getAvailableKeypadsIdentifiers;//TODO remove with IAP
++ (NSSet *)getAvailableKeypadsIdentifiers;
 
 //(Array of ReadbackKeypads):Array of NSString
 +(NSArray *)getKeypadsForIdentifiers:(NSArray *)identifiers;

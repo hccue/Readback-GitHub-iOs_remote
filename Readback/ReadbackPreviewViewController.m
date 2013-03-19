@@ -37,13 +37,21 @@
     self.keypadDetail.text = self.keypad.description;
     self.keypadImageView.image = [UIImage imageNamed:self.keypad.imageURL];
     
-    if ([ReadbackSalesManager keypadIsPurchased:self.keypad]) {
-        [self.purchaseButton setTitle:LABEL_PURCHASED forState:UIControlStateNormal];
-        self.purchaseButton.enabled = NO;
-        [self.returnButton setTitle:LABEL_RETURN forState:UIControlStateNormal];
+    if ([[ReadbackSalesManager sharedInstance] productPurchased:self.keypad.product.productIdentifier]) {
+        [self disablePurchaseButton];
     } else {
-        [self.purchaseButton setTitle:[NSString stringWithFormat:STRING_FORMAT_PURCHASE_BUTTON, self.keypad.product.price.doubleValue] forState:UIControlStateNormal];
+        NSNumberFormatter *priceFormatter = [ReadbackKeypad priceFormatter];
+        [priceFormatter setLocale:self.keypad.product.priceLocale];
+            
+        [self.purchaseButton setTitle:[NSString stringWithFormat:STRING_FORMAT_PURCHASE_BUTTON, [priceFormatter stringFromNumber:self.keypad.product.price]] forState:UIControlStateNormal];
     }
+}
+
+-(void)disablePurchaseButton
+{
+    [self.purchaseButton setTitle:LABEL_PURCHASED forState:UIControlStateNormal];
+    self.purchaseButton.enabled = NO;
+    [self.returnButton setTitle:LABEL_RETURN forState:UIControlStateNormal];
 }
 
 - (IBAction)goBack:(UIButton *)sender {
@@ -53,9 +61,19 @@
 - (IBAction)purchaseTapped:(UIButton *)sender {
     //Perform Purchase!!
     [[ReadbackSalesManager sharedInstance] buyProduct: self.keypad.product];
+    //TODO listen to notification of purchasing success to return to previous VC
 }
 
 
+
+
+
+//Notification Listener
+- (void)productPurchased:(NSNotification *)notification {
+    if ([self.keypad.product.productIdentifier isEqualToString:notification.object]) {
+        [self disablePurchaseButton];
+    }
+}
 
 
 #pragma mark UIView Lifecycle
@@ -63,6 +81,12 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [self loadKeypadInformation];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidUnload {

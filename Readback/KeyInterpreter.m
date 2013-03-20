@@ -61,12 +61,9 @@
         case ALTIMETER:
             return @"altimeter.png"; break;
             
-            
         default:
             NSLog(@"BAD TAG"); break;
     }
-    
-    //TODO default not found image
     return @"not-found.png";
 }
 @end

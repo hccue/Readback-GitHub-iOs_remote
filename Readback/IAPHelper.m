@@ -41,7 +41,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 @synthesize productsRequest = _productsRequest;
 @synthesize completionHandler = _completionHandler;
 @synthesize productIdentifiers = _productIdentifiers;
-@synthesize purchasedProductIdentifiers = _purchasedProductIdentifiers;
+//@synthesize purchasedProductIdentifiers = _purchasedProductIdentifiers;
 
 
 //Init with list of local available product identifiers
@@ -54,14 +54,12 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         self.productIdentifiers = productIdentifiers;
         
         // Check for previously purchased products
-        self.purchasedProductIdentifiers = [NSMutableSet set];
+        //self.purchasedProductIdentifiers = [NSMutableSet set];
         for (NSString * productIdentifier in self.productIdentifiers) {
-
-            //TODO do not interact with USer Defaults
-            NSSet *purchasedProducts = [[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS];
+            NSSet *purchasedProducts = [NSSet setWithArray:[[self class] getPurchasedIdentifiersFromMemory]];
             BOOL productPurchased = [purchasedProducts containsObject:productIdentifier];
             if (productPurchased) {
-                [self.purchasedProductIdentifiers addObject:productIdentifier];
+                //[self.purchasedProductIdentifiers addObject:productIdentifier];
                 NSLog(@"Previously purchased: %@", productIdentifier);
             } else {
                 NSLog(@"Not purchased: %@", productIdentifier);
@@ -72,6 +70,8 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
     return self;
 }
+
++ (NSMutableArray *)getPurchasedIdentifiersFromMemory {return nil;}//Implemented in subclass
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler
 {
@@ -98,12 +98,8 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
               skProduct.price.floatValue);
     }
     
-    ////Generate array of local keypads based on IAP identifier.
+    ////SalesVC: Generate List of Products to display in store.
     self.completionHandler(YES, skProducts);
-    
-    //TODO this is crashing app due to a second call getting here with nil handler.
-    //self.completionHandler = nil;
-    
 }
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error
@@ -118,13 +114,11 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
     self.productsRequest = nil;
     self.completionHandler(NO, nil);
-    self.completionHandler = nil;
-    
 }
 
-- (BOOL)productPurchased:(NSString *)productIdentifier {
-    return [self.purchasedProductIdentifiers containsObject:productIdentifier];
-}
+//- (BOOL)productPurchased:(NSString *)productIdentifier {
+    //return [self.purchasedProductIdentifiers containsObject:productIdentifier];
+//}
 
 
 //TODO CHECK FOR SANDBOX OR PRODUCTION ENVIRONMENT!!? - maybe only in my server
@@ -179,7 +173,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
-    [self.purchasedProductIdentifiers addObject:productIdentifier];
+    //[self.purchasedProductIdentifiers addObject:productIdentifier];
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
 }
 
@@ -189,7 +183,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     if (transaction.error.code != SKErrorPaymentCancelled)
     {
         NSString *errorMessage = @"There was an error purchasing this item please try again.";
-        
         
         if(transaction.error.code == SKErrorUnknown) {
             NSLog(@"Unknown Error (%d), product: %@", (int)transaction.error.code, transaction.payment.productIdentifier);

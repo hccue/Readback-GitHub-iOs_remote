@@ -159,7 +159,7 @@
     //Load here to refresh after purchasing:
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productWasPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -195,9 +195,8 @@
 
 -(void)reloadPurchasedProducts
 {
-//    Unable to use Helper list due to:private, no refresh, no sorting.
+    //Unable to use Helper list due to:no sorting.
     self.purchasedKeypads = [KeypadGenerator getKeypadsForIdentifiers:[ReadbackSalesManager getPurchasedIdentifiersFromMemory]];
-    NSLog(@"reloading data");
     [self.purchasedKeypadsTableView reloadData];
 }
 
@@ -205,7 +204,6 @@
 
 
 - (void)reloadStoreProducts {
-    NSLog(@"reloading products");
     self.storeKeypads = nil;
     [self.storeKeypadsTableView reloadData];
     [[ReadbackSalesManager sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
@@ -229,7 +227,7 @@
 #pragma mark Notification Listening
 
 //Notification Listener
-- (void)productPurchased:(NSNotification *)notification {
+- (void)productWasPurchased:(NSNotification *)notification {
     NSLog(@"listenging ");
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];

@@ -14,6 +14,8 @@
 
 + (ReadbackSalesManager *)sharedInstance;
 
-+ (NSMutableArray *)getPurchasedIdentifiersFromMemory; //Array of NSString IAP identifiers    TODO: refactor to IAP
++ (NSMutableArray *)getPurchasedIdentifiersFromMemory; //Array of NSString IAP identifiers, desirable to get from my own server.
 +(void)savePurchasedIdentifiersToMemory:(NSArray *)purcahsedIdentifiers;
+
++ (BOOL)keypadIdentifierIsPurchased:(NSString *)identifier;
 @end

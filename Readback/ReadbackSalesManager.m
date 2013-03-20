@@ -37,18 +37,6 @@
     [super provideContentForProductIdentifier:productIdentifier];
 }
 
-
-//TODO REDEFINE WITH IAP
-//+ (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad
-//{
-//    NSMutableArray *purchasedKeypadsIdentifiers = [[ReadbackSalesManager getPurchasedIdentifiersFromMemory] mutableCopy];
-//    for (NSString *identifier in purchasedKeypadsIdentifiers) {
-//        if ([keypad.identifier isEqualToString:identifier]) return YES;
-//    }
-//    return NO;
-//}
-
-
 + (void) unlockKeypadWithIdentifier:(NSString *)identifier
 {
     NSLog(@"Unlocking Keypad %@", identifier);
@@ -57,15 +45,24 @@
     [ReadbackSalesManager savePurchasedIdentifiersToMemory:purchasedKeypadIdentifiers];
 }
 
-
+//TODO REDEFINE WITH IAP
++ (BOOL)keypadIdentifierIsPurchased:(NSString *)identifier;
+{
+    NSMutableArray *purchasedKeypadsIdentifiers = [[ReadbackSalesManager getPurchasedIdentifiersFromMemory] mutableCopy];
+    for (NSString *purchasedIdentifier in purchasedKeypadsIdentifiers) {
+        if ([identifier isEqualToString:purchasedIdentifier]) return YES;
+    }
+    return NO;
+}
 
 
 #pragma mark User Defaults
 
 +(NSMutableArray *)getPurchasedIdentifiersFromMemory
 {
-    NSMutableArray *purchasedKeypadIdentifiers = [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] mutableCopy];
+    [super getPurchasedIdentifiersFromMemory];
     
+    NSMutableArray *purchasedKeypadIdentifiers = [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] mutableCopy];
     if(!purchasedKeypadIdentifiers){
         //First App use, unlock Standard keypad
         NSLog(@"purchasing standard");
@@ -89,9 +86,5 @@
     [[NSUserDefaults standardUserDefaults] setObject:cleanArray forKey:USERKEY_KEYPADS];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
-
-
-
-
 
 @end

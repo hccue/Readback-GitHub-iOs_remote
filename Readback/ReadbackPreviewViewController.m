@@ -37,7 +37,7 @@
     self.keypadDetail.text = self.keypad.description;
     self.keypadImageView.image = [UIImage imageNamed:self.keypad.imageURL];
     
-    if ([[ReadbackSalesManager sharedInstance] productPurchased:self.keypad.product.productIdentifier]) {
+    if ([ReadbackSalesManager keypadIdentifierIsPurchased:self.keypad.product.productIdentifier]) {
         [self disablePurchaseButton];
     } else {
         NSNumberFormatter *priceFormatter = [ReadbackKeypad priceFormatter];
@@ -64,7 +64,7 @@
 }
 
 //Notification Listener
-- (void)productPurchased:(NSNotification *)notification {
+- (void)productWasPurchased:(NSNotification *)notification {
     //change layout
     if ([self.keypad.product.productIdentifier isEqualToString:notification.object]) {
         [self disablePurchaseButton];
@@ -81,7 +81,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [self loadKeypadInformation];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productWasPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated

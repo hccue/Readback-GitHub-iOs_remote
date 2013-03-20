@@ -49,6 +49,7 @@
 		DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE52DE3816F351D3001D307E /* StoreKit.framework */; };
 		DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52DE3B16F35437001D307E /* IAPHelper.m */; };
 		DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE52DE3F16F36590001D307E /* StandardKeypad.plist */; };
+		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -127,6 +128,7 @@
 		DE52DE3A16F35437001D307E /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		DE52DE3B16F35437001D307E /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		DE52DE3F16F36590001D307E /* StandardKeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StandardKeypad.plist; path = ../StandardKeypad.plist; sourceTree = "<group>"; };
+		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
@@ -285,9 +287,8 @@
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
 			isa = PBXGroup;
 			children = (
-				DE4F52DD16F2CB0900A3D842 /* sid.png */,
-				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
 				DE4F52D116F268D700A3D842 /* 10-min.png */,
+				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
 				DE4F52D916F2C18100A3D842 /* by-time.png */,
 				DE4F52D716F274CD00A3D842 /* call.png */,
 				DE857FF3169DA45D005E8F96 /* cat.png */,
@@ -301,8 +302,10 @@
 				DE9057C516F12BDA0012B709 /* intc.png */,
 				DE46E64E169CC7AD00C90F72 /* left-button.png */,
 				DE857FF1169DA37C005E8F96 /* ndb.png */,
+				DE5B0CA616FA7473007C54C0 /* not-found.png */,
 				DE46E648169CC6F500C90F72 /* right.png */,
 				DED941E116D7EFBF00C0AC09 /* rwy.png */,
+				DE4F52DD16F2CB0900A3D842 /* sid.png */,
 				DE4F52D316F26EB100A3D842 /* sqawk.png */,
 				DED941DD16D7ECF500C0AC09 /* vectors.png */,
 				DED941D416D7EA6500C0AC09 /* vor.png */,
@@ -480,6 +483,7 @@
 				DE213EDB16F90BC40004599F /* clearance.png in Resources */,
 				DE213EDD16F90D4A0004599F /* qwerty.png in Resources */,
 				DE213F2D16F91DAB0004599F /* background.png in Resources */,
+				DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

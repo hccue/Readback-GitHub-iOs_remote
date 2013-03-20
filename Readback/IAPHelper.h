@@ -19,15 +19,16 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 
 @interface IAPHelper : NSObject
 @property (nonatomic, strong) NSSet * productIdentifiers;
-@property (nonatomic, strong) NSMutableSet * purchasedProductIdentifiers;
+//@property (nonatomic, strong) NSMutableSet * purchasedProductIdentifiers;
 
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers;
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler;
 
 - (void)buyProduct:(SKProduct *)product;
-- (BOOL)productPurchased:(NSString *)productIdentifier;
+//- (BOOL)productPurchased:(NSString *)productIdentifier;
 - (void)restoreCompletedTransactions;
 
 //Override to provide contents.
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier;
++ (NSMutableArray *)getPurchasedIdentifiersFromMemory;
 @end

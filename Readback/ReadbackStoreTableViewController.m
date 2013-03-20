@@ -35,7 +35,7 @@
     
     UILabel *price = [[UILabel alloc] init];
     price.text = TEXT_PURCHASED;
-    if (![[ReadbackSalesManager sharedInstance] productPurchased:myKeypad.product.productIdentifier]) {
+    if (![ReadbackSalesManager keypadIdentifierIsPurchased:myKeypad.product.productIdentifier]) {
         price.text = [priceFormatter stringFromNumber:myKeypad.product.price];
     }
     price.textColor = [UIColor blackColor];

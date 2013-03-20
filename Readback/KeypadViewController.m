@@ -28,7 +28,6 @@
 
 -(void)addButtonActions
 {
-    
     for (UIView *view in self.view.subviews) {
         if ([view isKindOfClass:[UIButton class]]) {
             [((UIButton *)view) addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];

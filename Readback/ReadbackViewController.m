@@ -55,13 +55,11 @@ int global_clearanceXPosition;
 }
 - (IBAction)clearanceTapped:(UITapGestureRecognizer *)sender {
     if ([self.clearanceView.subviews count] > 0) {
-        [self moveClearanceToHistory];
+        [self moveClearanceToLog];
     }
 }
 
-//TODO Outlet declaration was removed, check status
 - (void)buttonPressed:(UIButton *)sender {
-    //Cannot introduce new scope inside switch statement
     UIView *lastView = (UIView *)[self.clearanceView.subviews lastObject];
 
     switch (sender.tag) {
@@ -92,7 +90,6 @@ int global_clearanceXPosition;
 
 -(void)viewDidLoad
 {
-    //Add gesture recognizers for swipe
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.containerView addGestureRecognizer:swipeLeft];
@@ -106,7 +103,7 @@ int global_clearanceXPosition;
 {
     [super viewWillAppear:animated];
     
-    //Refresh in case we are returning from a purchase:
+    //Always check for updated list of purchases
     [self loadPurchasedKeypads];
     
     [self startClock];
@@ -178,7 +175,7 @@ int global_clearanceXPosition;
     global_clearanceXPosition += view.frame.size.width + CLEARANCE_GAP;
 }
 
--(void)moveClearanceToHistory
+-(void)moveClearanceToLog
 {
     //Create the history row's frame
     CGRect frame = CGRectMake(0, self.historyView.frame.size.height, self.clearanceView.frame.size.width, HISTORY_ROW_HEIGHT);

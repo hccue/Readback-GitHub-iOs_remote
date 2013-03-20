@@ -58,22 +58,22 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)purchaseTapped:(UIButton *)sender {
-    //Perform Purchase!!
+- (IBAction)purchaseTapped:(UIButton *)sender
+{   //Perform Purchase!!
     [[ReadbackSalesManager sharedInstance] buyProduct: self.keypad.product];
-    //TODO listen to notification of purchasing success to return to previous VC
 }
-
-
-
-
 
 //Notification Listener
 - (void)productPurchased:(NSNotification *)notification {
+    //change layout
     if ([self.keypad.product.productIdentifier isEqualToString:notification.object]) {
         [self disablePurchaseButton];
     }
+    
+    //Return to store VC
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 
 #pragma mark UIView Lifecycle

@@ -22,8 +22,6 @@
 
 @implementation KeypadGenerator
 
-
-//TODO REMOVE THIS WITH IAP
 + (NSSet *)getAvailableKeypadsIdentifiers
 {
     return [NSSet setWithObjects:
@@ -71,7 +69,7 @@
         keypad.title = @"Qwerty Keypad";
         keypad.subtitle = @"A worldwide favourite.";
         keypad.imageURL = @"qwerty.png";
-        keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available when all you need is a comfortable way to write it down.";
+        keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available when all you need is a comfortable way to write things down.";
     }
     
     if ([identifier isEqualToString:OCEANIC_KEYPAD_IDENTIFIER]) {

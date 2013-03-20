@@ -205,6 +205,7 @@
 
 
 - (void)reloadStoreProducts {
+    NSLog(@"reloading products");
     self.storeKeypads = nil;
     [self.storeKeypadsTableView reloadData];
     [[ReadbackSalesManager sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {

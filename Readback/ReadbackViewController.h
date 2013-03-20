@@ -42,5 +42,4 @@
 
 
 @interface ReadbackViewController : UIViewController <KeypadDelegate, UIGestureRecognizerDelegate, ReadbackSalesViewControllerDelegate>
-//TODO REMOVED DEPRECATED ACTION -(IBAction)buttonPressed:(UIButton *)button;
 @end

@@ -37,11 +37,6 @@
     [super provideContentForProductIdentifier:productIdentifier];
 }
 
-+ (void)restoreAllPurchases
-{
-    //TODO Implement
-}
-
 
 //TODO REDEFINE WITH IAP
 //+ (BOOL)keypadIsPurchased:(ReadbackKeypad *)keypad

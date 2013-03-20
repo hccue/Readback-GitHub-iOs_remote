@@ -12,12 +12,12 @@
 
 //Purchase success
 #define PURCHASED_MESSAGE_TITLE     @"Congratulations!"
-#define PURCHASED_MESSAGE_BODY      @"You just purchased a new Keypad"
+#define PURCHASED_MESSAGE_BODY      @"You just purchased a new Keypad."
 #define PURCHASED_MESSAGE_BUTTON    @"Thanks"
 
 //Restore success
-#define RESTORED_MESSAGE_TITLE     @"Congratulations!"
-#define RESTORED_MESSAGE_BODY      @"You just restored your purchased Keypads"
+#define RESTORED_MESSAGE_TITLE     @"Success!"
+#define RESTORED_MESSAGE_BODY      @"You just restored your purchased Keypads."
 #define RESTORED_MESSAGE_BUTTON    @"Thanks"
 
 //Purchase error
@@ -86,6 +86,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
 {
+    //TODO this is called once per each product whilst it should only be called once at all.
     NSLog(@"Loaded list of products from internet...");
     self.productsRequest = nil;
     
@@ -97,8 +98,11 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
               skProduct.price.floatValue);
     }
     
+    ////Generate array of local keypads based on IAP identifier.
     self.completionHandler(YES, skProducts);
-    self.completionHandler = nil;
+    
+    //TODO this is crashing app due to a second call getting here with nil handler.
+    //self.completionHandler = nil;
     
 }
 
@@ -134,7 +138,10 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 - (void)restoreCompletedTransactions {
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
-
+-(void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
+{
+    [self alertRestoreSuccess];
+}
 
 #pragma mark Transaction Caller Methods
 
@@ -166,9 +173,8 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"restore Transaction...");
+    NSLog(@"RESTORING Transaction...");
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
-    [self alertRestoreSuccess];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 

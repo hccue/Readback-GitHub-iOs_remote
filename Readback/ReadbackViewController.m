@@ -59,6 +59,7 @@ int global_clearanceXPosition;
     }
 }
 
+//TODO Outlet declaration was removed, check status
 - (void)buttonPressed:(UIButton *)sender {
     //Cannot introduce new scope inside switch statement
     UIView *lastView = (UIView *)[self.clearanceView.subviews lastObject];
@@ -405,7 +406,7 @@ int global_clearanceXPosition;
                     toViewController:(UIViewController *)toViewController
                        withAnimation:(UIViewAnimationOptions *)animation
 {
-    // cannot transition to same
+    // cannot transition to same VC
 	if (fromViewController == toViewController) return;
     
 	// animation setup

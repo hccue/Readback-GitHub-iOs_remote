@@ -386,7 +386,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" id="ngF-Li-m7Y">
+                            <imageView userInteractionEnabled="NO" alpha="0.50000000000000011" contentMode="scaleToFill" image="background.png" id="ngF-Li-m7Y">
                                 <rect key="frame" x="-1" y="108" width="1024" height="532"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>

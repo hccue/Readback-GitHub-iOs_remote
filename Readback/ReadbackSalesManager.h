@@ -16,6 +16,4 @@
 
 + (NSMutableArray *)getPurchasedIdentifiersFromMemory; //Array of NSString IAP identifiers    TODO: refactor to IAP
 +(void)savePurchasedIdentifiersToMemory:(NSArray *)purcahsedIdentifiers;
-
-+ (void)restoreAllPurchases;
 @end

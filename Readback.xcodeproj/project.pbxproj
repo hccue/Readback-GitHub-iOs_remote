@@ -23,6 +23,7 @@
 		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
+		DE3E9D4516FB3C0600931511 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3E9D4416FB3C0600931511 /* call.png */; };
 		DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D1E16D1321F006E743A /* KeyInterpreter.m */; };
 		DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2316D13506006E743A /* QwertyKeypadVC.xib */; };
 		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
@@ -42,7 +43,6 @@
 		DE4C581816B32CAC004AC4D7 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581716B32CAC004AC4D7 /* plus.png */; };
 		DE4F52D216F268D700A3D842 /* 10-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D116F268D700A3D842 /* 10-min.png */; };
 		DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D316F26EB100A3D842 /* sqawk.png */; };
-		DE4F52D816F274CD00A3D842 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D716F274CD00A3D842 /* call.png */; };
 		DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D916F2C18100A3D842 /* by-time.png */; };
 		DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DD16F2CB0900A3D842 /* sid.png */; };
 		DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DF16F2D05D00A3D842 /* altimeter.png */; };
@@ -50,6 +50,8 @@
 		DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52DE3B16F35437001D307E /* IAPHelper.m */; };
 		DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE52DE3F16F36590001D307E /* StandardKeypad.plist */; };
 		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
+		DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA816FA7DA1007C54C0 /* star.png */; };
+		DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CAA16FA7EE1007C54C0 /* up.png */; };
 		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -98,6 +100,7 @@
 		DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackSalesManager.h; sourceTree = "<group>"; };
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
 		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
+		DE3E9D4416FB3C0600931511 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE413D1D16D1321F006E743A /* KeyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInterpreter.h; sourceTree = "<group>"; };
 		DE413D1E16D1321F006E743A /* KeyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyInterpreter.m; sourceTree = "<group>"; };
 		DE413D2316D13506006E743A /* QwertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QwertyKeypadVC.xib; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		DE4C581716B32CAC004AC4D7 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		DE4F52D116F268D700A3D842 /* 10-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min.png"; sourceTree = "<group>"; };
 		DE4F52D316F26EB100A3D842 /* sqawk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sqawk.png; path = Readback/sqawk.png; sourceTree = "<group>"; };
-		DE4F52D716F274CD00A3D842 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE4F52D916F2C18100A3D842 /* by-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "by-time.png"; sourceTree = "<group>"; };
 		DE4F52DD16F2CB0900A3D842 /* sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sid.png; sourceTree = "<group>"; };
 		DE4F52DF16F2D05D00A3D842 /* altimeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = altimeter.png; sourceTree = "<group>"; };
@@ -129,6 +131,8 @@
 		DE52DE3B16F35437001D307E /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		DE52DE3F16F36590001D307E /* StandardKeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StandardKeypad.plist; path = ../StandardKeypad.plist; sourceTree = "<group>"; };
 		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
+		DE5B0CA816FA7DA1007C54C0 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		DE5B0CAA16FA7EE1007C54C0 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
@@ -276,10 +280,10 @@
 				DE68E4EF16CFF89A0031123E /* KeypadViewController.h */,
 				DE68E4F016CFF89A0031123E /* KeypadViewController.m */,
 				DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */,
-				DE52DE3F16F36590001D307E /* StandardKeypad.plist */,
 				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
 				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
+				DE52DE3F16F36590001D307E /* StandardKeypad.plist */,
 			);
 			name = Keypads;
 			sourceTree = "<group>";
@@ -287,10 +291,10 @@
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
 			isa = PBXGroup;
 			children = (
+				DE3E9D4416FB3C0600931511 /* call.png */,
 				DE4F52D116F268D700A3D842 /* 10-min.png */,
 				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
 				DE4F52D916F2C18100A3D842 /* by-time.png */,
-				DE4F52D716F274CD00A3D842 /* call.png */,
 				DE857FF3169DA45D005E8F96 /* cat.png */,
 				DE857FEB169D94C2005E8F96 /* climb.png */,
 				DE857FF5169DA510005E8F96 /* cross.png */,
@@ -301,11 +305,13 @@
 				DE396A57169E0DDC0093C773 /* ils.png */,
 				DE9057C516F12BDA0012B709 /* intc.png */,
 				DE46E64E169CC7AD00C90F72 /* left-button.png */,
+				DE5B0CAA16FA7EE1007C54C0 /* up.png */,
 				DE857FF1169DA37C005E8F96 /* ndb.png */,
 				DE5B0CA616FA7473007C54C0 /* not-found.png */,
 				DE46E648169CC6F500C90F72 /* right.png */,
 				DED941E116D7EFBF00C0AC09 /* rwy.png */,
 				DE4F52DD16F2CB0900A3D842 /* sid.png */,
+				DE5B0CA816FA7DA1007C54C0 /* star.png */,
 				DE4F52D316F26EB100A3D842 /* sqawk.png */,
 				DED941DD16D7ECF500C0AC09 /* vectors.png */,
 				DED941D416D7EA6500C0AC09 /* vor.png */,
@@ -475,7 +481,6 @@
 				DE9057C616F12BDA0012B709 /* intc.png in Resources */,
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
 				DE4F52D416F26EB100A3D842 /* sqawk.png in Resources */,
-				DE4F52D816F274CD00A3D842 /* call.png in Resources */,
 				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
 				DE4F52DE16F2CB0900A3D842 /* sid.png in Resources */,
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
@@ -484,6 +489,9 @@
 				DE213EDD16F90D4A0004599F /* qwerty.png in Resources */,
 				DE213F2D16F91DAB0004599F /* background.png in Resources */,
 				DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */,
+				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
+				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
+				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

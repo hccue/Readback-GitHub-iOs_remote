@@ -61,6 +61,12 @@
         case ALTIMETER:
             return @"altimeter.png"; break;
             
+        case STAR:
+            return @"star.png"; break;
+            
+        case UP:
+            return @"up.png"; break;
+            
         default:
             NSLog(@"BAD TAG"); break;
     }

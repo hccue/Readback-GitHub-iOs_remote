@@ -41,37 +41,17 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 @synthesize productsRequest = _productsRequest;
 @synthesize completionHandler = _completionHandler;
 @synthesize productIdentifiers = _productIdentifiers;
-//@synthesize purchasedProductIdentifiers = _purchasedProductIdentifiers;
 
 
-//Init with list of local available product identifiers
-//TODO identify if we can get rid of self.purchasedProductIdentifiers
+//Init with local list of available product identifiers
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
     
     if ((self = [super init])) {
-        
-        // Store product identifiers
         self.productIdentifiers = productIdentifiers;
-        
-        // Check for previously purchased products
-        //self.purchasedProductIdentifiers = [NSMutableSet set];
-        for (NSString * productIdentifier in self.productIdentifiers) {
-            NSSet *purchasedProducts = [NSSet setWithArray:[[self class] getPurchasedIdentifiersFromMemory]];
-            BOOL productPurchased = [purchasedProducts containsObject:productIdentifier];
-            if (productPurchased) {
-                //[self.purchasedProductIdentifiers addObject:productIdentifier];
-                NSLog(@"Previously purchased: %@", productIdentifier);
-            } else {
-                NSLog(@"Not purchased: %@", productIdentifier);
-            }
-        }
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     }
-    
     return self;
 }
-
-+ (NSMutableArray *)getPurchasedIdentifiersFromMemory {return nil;}//Implemented in subclass
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler
 {
@@ -116,11 +96,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     self.completionHandler(NO, nil);
 }
 
-//- (BOOL)productPurchased:(NSString *)productIdentifier {
-    //return [self.purchasedProductIdentifiers containsObject:productIdentifier];
-//}
-
-
 //TODO CHECK FOR SANDBOX OR PRODUCTION ENVIRONMENT!!? - maybe only in my server
 - (void)buyProduct:(SKProduct *)product {
     NSLog(@"Buying %@...", product.productIdentifier);
@@ -160,20 +135,19 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"complete Transaction parent...");
+    NSLog(@"complete Transaction...");
     [self provideContentForProductIdentifier:transaction.payment.productIdentifier];
     [self alertPurchaseSuccess];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"RESTORING Transaction...");
+    NSLog(@"Restoring Transaction...");
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
-    //[self.purchasedProductIdentifiers addObject:productIdentifier];
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
 }
 
@@ -206,7 +180,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
                                                 cancelButtonTitle: ALERT_PURCHASE_ERROR_BUTTON
                                                 otherButtonTitles: nil];
         [message show];
-
     }
     
     [[SKPaymentQueue defaultQueue] finishTransaction: transaction];

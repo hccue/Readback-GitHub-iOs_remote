@@ -43,6 +43,8 @@
 #define BY_TIME     24
 #define SID         25
 #define ALTIMETER   26
+#define STAR        27
+#define UP          28
 
 @interface KeyInterpreter : NSObject
 + (NSString *)getSymbolForTag:(int)tag;

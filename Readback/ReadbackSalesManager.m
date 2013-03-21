@@ -45,7 +45,6 @@
     [ReadbackSalesManager savePurchasedIdentifiersToMemory:purchasedKeypadIdentifiers];
 }
 
-//TODO REDEFINE WITH IAP
 + (BOOL)keypadIdentifierIsPurchased:(NSString *)identifier;
 {
     NSMutableArray *purchasedKeypadsIdentifiers = [[ReadbackSalesManager getPurchasedIdentifiersFromMemory] mutableCopy];
@@ -60,8 +59,6 @@
 
 +(NSMutableArray *)getPurchasedIdentifiersFromMemory
 {
-    [super getPurchasedIdentifiersFromMemory];
-    
     NSMutableArray *purchasedKeypadIdentifiers = [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] mutableCopy];
     if(!purchasedKeypadIdentifiers){
         //First App use, unlock Standard keypad
@@ -81,7 +78,7 @@
     NSOrderedSet *set = [NSOrderedSet orderedSetWithArray:purcahsedIdentifiers];
     NSArray *cleanArray = [set array];
     
-    NSLog(@"SAVING USER KEYPADS %@", cleanArray);
+    NSLog(@"Saving purchased kepads:%@", cleanArray);
     
     [[NSUserDefaults standardUserDefaults] setObject:cleanArray forKey:USERKEY_KEYPADS];
     [[NSUserDefaults standardUserDefaults] synchronize];

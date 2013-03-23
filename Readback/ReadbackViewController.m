@@ -268,12 +268,12 @@ int global_clearanceXPosition;
 -(void)addViewToLog:(UIView *)newRow
 {
     [self.logItems insertObject:newRow atIndex:0];
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
     
-//    NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-//    [self.tableView beginUpdates];
-//    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
-//    [self.tableView endUpdates];
+    NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView beginUpdates];
+    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+    [self.tableView endUpdates];
 }
 
 //Reduce size of symbols for log display

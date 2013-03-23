@@ -24,6 +24,7 @@
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
 		DE3E9D4516FB3C0600931511 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3E9D4416FB3C0600931511 /* call.png */; };
+		DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */; };
 		DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D1E16D1321F006E743A /* KeyInterpreter.m */; };
 		DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2316D13506006E743A /* QwertyKeypadVC.xib */; };
 		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
@@ -101,6 +102,8 @@
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
 		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
 		DE3E9D4416FB3C0600931511 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		DE3E9D7E16FB837000931511 /* ReadbackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackTableViewController.h; sourceTree = "<group>"; };
+		DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackTableViewController.m; sourceTree = "<group>"; };
 		DE413D1D16D1321F006E743A /* KeyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInterpreter.h; sourceTree = "<group>"; };
 		DE413D1E16D1321F006E743A /* KeyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyInterpreter.m; sourceTree = "<group>"; };
 		DE413D2316D13506006E743A /* QwertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QwertyKeypadVC.xib; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 			children = (
 				DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */,
 				DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */,
+				DE3E9D7E16FB837000931511 /* ReadbackTableViewController.h */,
+				DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */,
 				DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */,
 				DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */,
 				DE413D3016D14779006E743A /* Purchasing VCs */,
@@ -516,6 +521,7 @@
 				DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */,
 				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
 				DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */,
+				DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

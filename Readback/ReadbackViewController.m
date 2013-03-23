@@ -10,14 +10,16 @@
 #import "ReadbackSalesManager.h"
 #import "KeyInterpreter.h"
 #import "KeypadGenerator.h"
-
+#import "ReadbackTableViewController.h"
 
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
 
-@interface ReadbackViewController ()
+@interface ReadbackViewController () <ReadbackTableViewControllerDataSource>
 @property (weak, nonatomic) IBOutlet UIView *clearanceView;
-@property (weak, nonatomic) IBOutlet UIView *historyView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) ReadbackTableViewController *tableViewController;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelZuluTime;
 @property (strong, nonatomic) NSTimer *clockTimer;
 
@@ -28,12 +30,16 @@ int global_clearanceXPosition;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UILabel *activeKeypadLabel;
 
+@property (nonatomic, strong) NSMutableArray *logItems; //Array of UIView
+
 @end
 
 
 @implementation ReadbackViewController
 @synthesize clearanceView = _clearanceView;
-@synthesize historyView = _historyView;
+@synthesize tableView = _logTableView;
+@synthesize tableViewController = _tableViewController;
+
 @synthesize labelZuluTime = _labelZuluTime;
 @synthesize clockTimer = _clockTimer;
 
@@ -44,10 +50,32 @@ int global_clearanceXPosition;
 @synthesize pageControl = _pageControl;
 @synthesize activeKeypadLabel = _activeKeypadLabel;
 
+@synthesize logItems = _logItems;
+
+
+-(UITableViewController *)tableViewController
+{
+    if (!_tableViewController) {
+        _tableViewController = [[ReadbackTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        _tableViewController.dataSource = self;
+    }
+    return  _tableViewController;
+}
+
+-(NSMutableArray *)logItems
+{
+    NSLog(@"get");
+    if (!_logItems) {
+        _logItems = [NSMutableArray array];
+    }
+    return  _logItems;
+}
+
 #pragma mark Button Action Handle
 
-- (IBAction)clearHistory:(UIButton *)sender {
-    [self.historyView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+- (IBAction)clearLog:(UIButton *)sender {
+    //TODO implement this
+//    [self.logView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 - (IBAction)clearScratchpad:(UIButton *)sender {
     [self.clearanceView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -84,6 +112,19 @@ int global_clearanceXPosition;
     }
 }
 
+#pragma mark TableViewController dataSource
+
+-(NSInteger) numberOfLogItems
+{
+    return [self.logItems count];
+}
+
+-(UIView *) logViewAtIndex:(NSInteger)row
+{
+    //TODO return all the way a view element, not a string
+    return [self.logItems objectAtIndex:row];
+}
+
 
 
 #pragma mark UIView Lifecycle implementation
@@ -97,6 +138,9 @@ int global_clearanceXPosition;
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.containerView addGestureRecognizer:swipeRight];
+    
+    self.tableView.dataSource = self.tableViewController;
+    self.tableView.delegate = self.tableViewController;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -108,6 +152,9 @@ int global_clearanceXPosition;
     
     [self startClock];
     [self loadChildViewController];
+    
+    //Effect of bottom aligned cells
+    self.tableView.transform = CGAffineTransformMakeRotation(-M_PI);
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -118,10 +165,10 @@ int global_clearanceXPosition;
 
 - (void)viewDidUnload {
     [self setClearanceView:nil];
-    [self setHistoryView:nil];
     [self setLabelZuluTime:nil];
     [self setPageControl:nil];
     [self setActiveKeypadLabel:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
 }
 
@@ -177,61 +224,56 @@ int global_clearanceXPosition;
 
 -(void)moveClearanceToLog
 {
-    //Create the history row's frame
-    CGRect frame = CGRectMake(0, self.historyView.frame.size.height, self.clearanceView.frame.size.width, HISTORY_ROW_HEIGHT);
+    //Create the log row frame
+    CGRect frame = CGRectMake(0, 0, self.clearanceView.frame.size.width, LOG_ROW_HEIGHT);
     
-    //Create new view for history
-    UIView *historyRow = [[UIView alloc] initWithFrame:frame];
+    //Create new view for log
+    UIView *logRow = [[UIView alloc] initWithFrame:frame];
     
     //Move items to the new view
     NSMutableArray *clearanceItems = [self.clearanceView.subviews mutableCopy];
 
-    //Add Zulu time as first item in history
+    //Add Zulu time as first item in log
     UILabel *zuluTime = [[UILabel alloc] init];
-    zuluTime.text = [NSString stringWithFormat:HISTORY_TIME_FORMAT, [self getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_SHORT]];
+    zuluTime.text = [NSString stringWithFormat:LOG_TIME_FORMAT, [self getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_SHORT]];
     zuluTime.font = [UIFont systemFontOfSize:CLEARANCE_FONT_SIZE];
     zuluTime.backgroundColor = COLOR_BACKGROUND_TEXT_COLOR;
-    zuluTime.textColor = COLOR_HISTORY_TIME;
+    zuluTime.textColor = COLOR_LOG_TIME;
     [zuluTime sizeToFit];
     
     [clearanceItems insertObject:zuluTime atIndex:0];
     int xCoord = 0;
     for (int items = 0; items < [clearanceItems count]; items++) {//Unable fast ennumeration
         UIView *item = [clearanceItems objectAtIndex:items];
-        if (!xCoord) xCoord = HISTORY_CLEARANCE_GAP;
+        if (!xCoord) xCoord = LOG_CLEARANCE_GAP;
         
-        //Reduce item size for smaller display as history
+        //Reduce item size for smaller display as log
         item = [self reduceView:item toScale:IMAGE_SCALE_FACTOR];
         
-        //Adjust vertical position within history row
-        item.center = CGPointMake(xCoord + item.frame.size.width / 2, HISTORY_ROW_HEIGHT / 2);
+        //Adjust vertical position within log row
+        item.center = CGPointMake(xCoord + item.frame.size.width / 2, LOG_ROW_HEIGHT / 2);
         
-        //Add to history row and update x coordinate for next item
-        [historyRow addSubview:item];
-        xCoord += item.frame.size.width + HISTORY_CLEARANCE_GAP; //Updating clearance width for next item
+        //Add to log row and update x coordinate for next item
+        xCoord += item.frame.size.width + LOG_CLEARANCE_GAP; //Updating clearance width for next item
+        
+        [logRow addSubview:item];
     }
     
-    [self addHistoryRow:historyRow];
+    [self addViewToLog:logRow];
     global_clearanceXPosition = 0;
 }
 
--(void)addHistoryRow:(UIView *)newRow
+
+//TODO get rid of unused defined constants
+-(void)addViewToLog:(UIView *)newRow
 {
-    //Add view to superview and move other views up like a chat history
-    [self.historyView addSubview:newRow];
-    for (UIView *row in self.historyView.subviews) {
-        int newYCoord = row.center.y - HISTORY_ROW_HEIGHT;
-        //Move Up Animated
-        [UIView animateWithDuration:HISTORY_ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            row.center = CGPointMake(row.center.x, newYCoord);
-        } completion:^(BOOL finished) {
-            if (newYCoord < 0) {//View is out of... view
-                [row removeFromSuperview];
-            }
-        }];
-        
-    }
+    [self.logItems insertObject:newRow atIndex:0];
+    [self.tableView reloadData];
     
+//    NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView beginUpdates];
+//    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+//    [self.tableView endUpdates];
 }
 
 //Reduce size of symbols for log display
@@ -242,7 +284,7 @@ int global_clearanceXPosition;
     view.frame = frame;
     if ([view isKindOfClass:[UILabel class]]) {
         UILabel *label =(UILabel *)view;
-        [label setFont:[UIFont fontWithName:HISTORY_CLEARANCE_FONT_FAMILY size:HISTORY_CLEARANCE_FONT_SIZE]];
+        [label setFont:[UIFont fontWithName:LOG_CLEARANCE_FONT_FAMILY size:LOG_CLEARANCE_FONT_SIZE]];
         [label sizeToFit];
     }
     return view;

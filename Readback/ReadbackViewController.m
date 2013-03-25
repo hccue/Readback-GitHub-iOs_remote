@@ -73,8 +73,8 @@ int global_clearanceXPosition;
 #pragma mark Button Action Handle
 
 - (IBAction)clearLog:(UIButton *)sender {
-    //TODO implement this
-//    [self.logView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    self.logItems = [NSMutableArray array];
+    [self.tableView reloadData];
 }
 - (IBAction)clearScratchpad:(UIButton *)sender {
     [self.clearanceView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -120,7 +120,6 @@ int global_clearanceXPosition;
 
 -(UIView *) logViewAtIndex:(NSInteger)row
 {
-    //TODO return all the way a view element, not a string
     return [self.logItems objectAtIndex:row];
 }
 
@@ -264,8 +263,6 @@ int global_clearanceXPosition;
     global_clearanceXPosition = 0;
 }
 
-
-//TODO get rid of unused defined constants
 -(void)addViewToLog:(UIView *)newRow
 {
     [self.logItems insertObject:newRow atIndex:0];
@@ -373,7 +370,7 @@ int global_clearanceXPosition;
 -(void)loadPurchasedKeypads
 {
     NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedIdentifiersFromMemory];
-    NSLog(@"loading %@", purchasedKeypadsIdentifiers);
+    NSLog(@"loading purchased keypads %@", purchasedKeypadsIdentifiers);
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
     for (NSString *keypadIdentifier in purchasedKeypadsIdentifiers) {
@@ -472,10 +469,8 @@ int global_clearanceXPosition;
 	toViewController.view.autoresizingMask = self.containerView.autoresizingMask;
     
 	// notify
-    //TODO check why we pass nil here
-	[fromViewController willMoveToParentViewController:nil];
+	[fromViewController willMoveToParentViewController:nil];//No parent
     
-    //TODO why we add child here?
 	[self addChildViewController:toViewController];
     
 	// transition

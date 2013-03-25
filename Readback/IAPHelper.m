@@ -50,6 +50,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         self.productIdentifiers = productIdentifiers;
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     }
+    NSLog(@"initialization finished");
     return self;
 }
 
@@ -59,6 +60,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     self.productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:self.productIdentifiers];
     self.productsRequest.delegate = self;
     [self.productsRequest start];
+    NSLog(@"request was started");
 }
 
 
@@ -72,7 +74,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
     NSArray * skProducts = response.products;
     for (SKProduct * skProduct in skProducts) {
-        NSLog(@"Found product: %@ - %@ - %0.2f",
+        NSLog(@"loaded product from internet: %@ - %@ - %0.2f",
               skProduct.productIdentifier,
               skProduct.localizedTitle,
               skProduct.price.floatValue);
@@ -105,10 +107,12 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)restoreCompletedTransactions {
+    NSLog(@"restoring completed transactions");
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 -(void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
 {
+    NSLog(@"finished restoring completed transactions");
     [self alertRestoreSuccess];
 }
 
@@ -116,6 +120,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
 {
+    NSLog(@"updated transactions %@", transactions);
     for (SKPaymentTransaction * transaction in transactions) {
         switch (transaction.transactionState)
         {
@@ -148,6 +153,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
+    NSLog(@"providing content");
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
 }
 

@@ -152,6 +152,8 @@
     self.purchasedKeypadsTableView.dataSource = self.purchasedTableViewController;
     self.storeKeypadsTableView.delegate = self.storeTableViewController;
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -218,8 +220,6 @@
             self.storeKeypads = storeKeypads;
             [self.storeKeypadsTableView reloadData];
         }
-        //TODO solve this:
-        //[self.refreshControl endRefreshing];
     }];
 }
 
@@ -228,7 +228,7 @@
 
 //Notification Listener
 - (void)productWasPurchased:(NSNotification *)notification {
-    NSLog(@"listenging ");
+    NSLog(@"Sales VC was notified about a purchase");
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];
 }

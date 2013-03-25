@@ -79,7 +79,6 @@
     NSArray *cleanArray = [set array];
     
     NSLog(@"Saving purchased kepads:%@", cleanArray);
-    
     [[NSUserDefaults standardUserDefaults] setObject:cleanArray forKey:USERKEY_KEYPADS];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

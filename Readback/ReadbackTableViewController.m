@@ -24,9 +24,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //Not actually reusing cells due to overlapping of older cells over new ones.
     static NSString *CellIdentifier = LOG_REUSE_IDENTIFIER;
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     [cell.contentView addSubview:[self.dataSource logViewAtIndex:indexPath.row]];
     cell.transform = CGAffineTransformMakeRotation(M_PI);

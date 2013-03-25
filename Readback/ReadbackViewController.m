@@ -12,6 +12,8 @@
 #import "KeypadGenerator.h"
 #import "ReadbackTableViewController.h"
 
+#define USERKEY_FIRST_START @"firstStart"
+
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
 
@@ -64,10 +66,7 @@ int global_clearanceXPosition;
 
 -(NSMutableArray *)logItems
 {
-    NSLog(@"get");
-    if (!_logItems) {
-        _logItems = [NSMutableArray array];
-    }
+    if (!_logItems) _logItems = [NSMutableArray array];
     return  _logItems;
 }
 
@@ -146,6 +145,8 @@ int global_clearanceXPosition;
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [self showWhatIsNew];
     
     //Always check for updated list of purchases
     [self loadPurchasedKeypads];
@@ -334,7 +335,6 @@ int global_clearanceXPosition;
     UIImage *image = [UIImage imageNamed:@"key-help.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    
         
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissHelpView:)];
@@ -346,6 +346,25 @@ int global_clearanceXPosition;
 -(void)dismissHelpView:(UITapGestureRecognizer *)tap
 {
     [tap.view removeFromSuperview];
+}
+
+-(void)showWhatIsNew
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults objectForKey:USERKEY_FIRST_START])
+    {
+        [defaults setValue:@"YES" forKey:USERKEY_FIRST_START];
+        
+        UIImage *image = [UIImage imageNamed:@"what-new.png"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                              action:@selector(dismissHelpView:)];
+        [imageView setUserInteractionEnabled:YES];
+        [imageView addGestureRecognizer:tap];
+        [self.view addSubview:imageView];
+    }
 }
 
 

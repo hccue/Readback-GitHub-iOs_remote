@@ -22,6 +22,7 @@
 		DE28A65C16A25FC200429C46 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65A16A25FC200429C46 /* clear.png */; };
 		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
+		DE33F64516FF7F23004E4A16 /* what-new.png in Resources */ = {isa = PBXBuildFile; fileRef = DE33F64416FF7F23004E4A16 /* what-new.png */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
 		DE3E9D4516FB3C0600931511 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3E9D4416FB3C0600931511 /* call.png */; };
 		DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */; };
@@ -100,6 +101,7 @@
 		DE28A65B16A25FC200429C46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackSalesManager.h; sourceTree = "<group>"; };
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
+		DE33F64416FF7F23004E4A16 /* what-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "what-new.png"; sourceTree = "<group>"; };
 		DE396A57169E0DDC0093C773 /* ils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ils.png; sourceTree = "<group>"; };
 		DE3E9D4416FB3C0600931511 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE3E9D7E16FB837000931511 /* ReadbackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackTableViewController.h; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DE33F64416FF7F23004E4A16 /* what-new.png */,
 				DE23686816EFB27900C355C8 /* key-help.png */,
 				DE4C581716B32CAC004AC4D7 /* plus.png */,
 				DE1698AA16D97D7600AB45A7 /* help.png */,
@@ -497,6 +500,7 @@
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
 				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
+				DE33F64516FF7F23004E4A16 /* what-new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

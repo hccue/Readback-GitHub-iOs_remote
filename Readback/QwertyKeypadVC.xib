@@ -530,7 +530,10 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">button738.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="588907562"/>
 						<reference key="IBUIFont" ref="810159073"/>
 					</object>
@@ -1816,6 +1819,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="button.png">{89, 66}</string>
+			<string key="button738.png">{738, 132}</string>
 			<string key="call.png">{65, 65}</string>
 			<string key="climb.png">{65, 65}</string>
 			<string key="cross.png">{65, 65}</string>

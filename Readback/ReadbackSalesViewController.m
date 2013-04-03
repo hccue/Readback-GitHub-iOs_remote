@@ -228,7 +228,6 @@
 
 //Notification Listener
 - (void)productWasPurchased:(NSNotification *)notification {
-    NSLog(@"Sales VC was notified about a purchase");
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];
 }

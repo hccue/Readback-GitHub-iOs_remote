@@ -42,15 +42,18 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 @synthesize completionHandler = _completionHandler;
 @synthesize productIdentifiers = _productIdentifiers;
 
+//TODO IMPLEMENT:
+//skPaymentQueue canMakePayment
+//Check status 3
+
 
 //Init with local list of available product identifiers
-- (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
+- (id)initWithProductIdentifiers:(NSSet *)potentialProductIdentifiers {
     
     if ((self = [super init])) {
-        self.productIdentifiers = productIdentifiers;
+        self.productIdentifiers = potentialProductIdentifiers;
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     }
-    NSLog(@"initialization finished");
     return self;
 }
 
@@ -60,7 +63,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     self.productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:self.productIdentifiers];
     self.productsRequest.delegate = self;
     [self.productsRequest start];
-    NSLog(@"request was started");
 }
 
 
@@ -68,20 +70,11 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
 {
-    //TODO this is called once per each product whilst it should only be called once at all.
-    NSLog(@"Loaded list of products from internet...");
+    //Called (at least) each time reloadStoreProducts is called
     self.productsRequest = nil;
     
-    NSArray * skProducts = response.products;
-    for (SKProduct * skProduct in skProducts) {
-        NSLog(@"loaded product from internet: %@ - %@ - %0.2f",
-              skProduct.productIdentifier,
-              skProduct.localizedTitle,
-              skProduct.price.floatValue);
-    }
-    
     ////SalesVC: Generate List of Products to display in store.
-    self.completionHandler(YES, skProducts);
+    self.completionHandler(YES, response.products);
 }
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error
@@ -98,21 +91,17 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     self.completionHandler(NO, nil);
 }
 
-//TODO CHECK FOR SANDBOX OR PRODUCTION ENVIRONMENT!!? - maybe only in my server
 - (void)buyProduct:(SKProduct *)product {
-    NSLog(@"Buying %@...", product.productIdentifier);
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
     
 }
 
 - (void)restoreCompletedTransactions {
-    NSLog(@"restoring completed transactions");
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 -(void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
 {
-    NSLog(@"finished restoring completed transactions");
     [self alertRestoreSuccess];
 }
 
@@ -124,6 +113,9 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     for (SKPaymentTransaction * transaction in transactions) {
         switch (transaction.transactionState)
         {
+            case SKPaymentTransactionStatePurchasing:
+                //nothing to do
+                break;
             case SKPaymentTransactionStatePurchased:
                 [self completeTransaction:transaction];
                 break;
@@ -132,8 +124,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
                 break;
             case SKPaymentTransactionStateRestored:
                 [self restoreTransaction:transaction];
-            default:
-                break;
         }
     };
 }
@@ -153,7 +143,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
-    NSLog(@"providing content");
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
 }
 

@@ -62,7 +62,6 @@
     NSMutableArray *purchasedKeypadIdentifiers = [[[NSUserDefaults standardUserDefaults] objectForKey:USERKEY_KEYPADS] mutableCopy];
     if(!purchasedKeypadIdentifiers){
         //First App use, unlock Standard keypad
-        NSLog(@"purchasing standard");
         //Cannot call unlockKeypadWithIdentifier, deadlock!
         NSArray *array = [NSArray arrayWithObject:STANDARD_KEYPAD_IDENTIFIER];
         [ReadbackSalesManager savePurchasedIdentifiersToMemory:array];

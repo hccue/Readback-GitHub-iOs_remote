@@ -688,56 +688,6 @@
         <image name="sqawk.png" width="65" height="65"/>
         <image name="vectors.png" width="65" height="65"/>
     </resources>
-    <classes>
-        <class className="ReadbackHelpViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackHelpViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emailTapped:" candidateClass="UIButton"/>
-                <relationship kind="action" name="goBack:" candidateClass="UIButton"/>
-                <relationship kind="action" name="rateApp:" candidateClass="UIButton"/>
-                <relationship kind="action" name="visitFriendApp:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ReadbackPreviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackPreviewViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="goBack:" candidateClass="UIButton"/>
-                <relationship kind="action" name="purchaseTapped:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="keypadDetail" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="keypadImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="keypadTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="purchaseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="returnButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ReadbackSalesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackSalesViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="editTapped:" candidateClass="UIButton"/>
-                <relationship kind="action" name="goBack:"/>
-                <relationship kind="action" name="restorePurchases:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="purchasedKeypadsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="storeKeypadsTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ReadbackViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReadbackViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:" candidateClass="UIPageControl"/>
-                <relationship kind="action" name="clearLog:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clearScratchpad:" candidateClass="UIButton"/>
-                <relationship kind="action" name="clearanceTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="helpTapped:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="activeKeypadLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="clearanceView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="labelZuluTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

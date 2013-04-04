@@ -352,7 +352,7 @@ int global_clearanceXPosition;
     {
         [defaults setValue:@"YES" forKey:USERKEY_FIRST_START];
         
-        UIImage *image = [UIImage imageNamed:@"what-new.png"];
+        UIImage *image = [UIImage imageNamed:WHAT_IS_NEW_SCREEN_NAME];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         

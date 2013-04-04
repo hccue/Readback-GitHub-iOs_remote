@@ -10,6 +10,8 @@
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
 
+#define WHAT_IS_NEW_SCREEN_NAME @"what-is-new.png"
+
 #define SEGUE_CUSTOMIZE @"CustomizeSegue"
 
 #define TEXT_SPACE @"   "

@@ -12,7 +12,7 @@
 
 //Purchase success
 #define PURCHASED_MESSAGE_TITLE     @"Congratulations!"
-#define PURCHASED_MESSAGE_BODY      @"You just purchased a new Keypad."
+#define PURCHASED_MESSAGE_BODY      @"Enjoy your brand new Keypad."
 #define PURCHASED_MESSAGE_BUTTON    @"Thanks"
 
 //Restore success

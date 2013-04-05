@@ -20,8 +20,12 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
-- (IBAction)visitFriendApp:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP]];
+- (IBAction)visitFirendApp1:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP_1]];
+}
+
+- (IBAction)visitFriendApp2:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP_2]];
 }
 
 - (IBAction)rateApp:(UIButton *)sender {

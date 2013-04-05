@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #define PATTERN_VERSION @"Version %@"
-#define URL_FRIEND_APP @"https://itunes.apple.com/us/app/cmd-speed/id581569231?ls=1&mt=8"
+#define URL_FRIEND_APP_1 @"https://itunes.apple.com/us/app/cmd-speed/id581569231?ls=1&mt=8"
+#define URL_FRIEND_APP_2 @"https://itunes.apple.com/us/app/extended-rest-operations/id619262446?ls=1&mt=8"
 #define STRING_BUNDLE_VERSION @"CFBundleShortVersionString"
 
 #define APP_ID @"593334194"

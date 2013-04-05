@@ -48,7 +48,7 @@
         case MIN10:
             return @"10-min.png"; break;
         case SQAWK:
-            return @"sqawk.png"; break;
+            return @"xpdr.png"; break;
         case INTC:
             return @"intc.png"; break;
         case RUNWAY:

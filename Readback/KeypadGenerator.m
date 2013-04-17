@@ -62,6 +62,16 @@
         keypad.subtitle = @"For light speed clearances.";
         keypad.imageURL = @"clearance.png";
         keypad.description = @"A keypad carefully designed to copy ATC Clearances. Key sorting follows standard Clearance format making it very useful.";
+        
+        keypad.marketingKeys = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"SID, there is also a STAR.", @"sid.png",
+                                @"Vectors to FIX", @"vectors.png",
+                                @"Expect FL 10 min after", @"10-min.png",
+                                @"Call, Report, Switch to my Frequency, Contact...", @"call.png",
+                                @"Sqwawk code, Transponder.", @"xpdr.png",
+                                @"Altimeter Setting/QNH", @"altimeter.png",
+                                @"Intercept, join.", @"intc.png",
+                                      nil];
     }
     
     if ([identifier isEqualToString:QWERTY_KEYPAD_IDENTIFIER]) {
@@ -70,6 +80,16 @@
         keypad.subtitle = @"A worldwide favourite.";
         keypad.imageURL = @"qwerty.png";
         keypad.description = @"It doesn't need an introduction. The worldwide favourite set of keys is now available when all you need is a comfortable way to write things down.";
+        
+        keypad.marketingKeys = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Direct to FIX", @"direct.png",
+                                @"Hold Short of...", @"hold-short.png",
+                                @"Intercept, join.", @"intc.png",
+                                @"Holding instructions", @"holding.png",
+                                @"Call, Report, Switch to my Frequency, Contact...", @"call.png",
+                                @"Cross a FIX, a Runway...", @"cross.png",
+                                @"Direction Signs, very useful.", @"up.png",
+                                nil];
     }
     
     if ([identifier isEqualToString:OCEANIC_KEYPAD_IDENTIFIER]) {

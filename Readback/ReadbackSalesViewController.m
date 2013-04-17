@@ -61,7 +61,7 @@
 
 
 - (IBAction)goBack:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)restorePurchases:(UIButton *)sender {
@@ -87,7 +87,7 @@
 //Load selected keypad on main View Controller
 -(void) purchasedKeypadSelectedAtIndexPath:(NSIndexPath *)indexPath;
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
     [self.delegate loadKeypadWithIdentifier:((ReadbackKeypad *)[self.purchasedKeypads objectAtIndex:indexPath.row]).identifier];
     
 }
@@ -154,6 +154,8 @@
     self.storeKeypadsTableView.dataSource = self.storeTableViewController;
     
     
+    //Delegate is always rootViewController:
+    self.delegate = [[self.navigationController viewControllers] objectAtIndex:0];
 }
 
 -(void)viewWillAppear:(BOOL)animated

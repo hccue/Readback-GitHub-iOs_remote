@@ -42,11 +42,6 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 @synthesize completionHandler = _completionHandler;
 @synthesize productIdentifiers = _productIdentifiers;
 
-//TODO IMPLEMENT:
-//skPaymentQueue canMakePayment
-//Check status 3
-
-
 //Init with local list of available product identifiers
 - (id)initWithProductIdentifiers:(NSSet *)potentialProductIdentifiers {
     

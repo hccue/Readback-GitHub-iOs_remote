@@ -17,8 +17,8 @@
 @property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *imageURL;
-@property (nonatomic, strong) SKProduct *product;
-
+@property (nonatomic, strong) SKProduct *product;   //SKProduct received from IAP
+@property (nonatomic, strong) NSDictionary  *marketingKeys; //key: NSString image name, value: NSString description. 7 Items total.
 
 + (NSNumberFormatter *)priceFormatter;
 @end

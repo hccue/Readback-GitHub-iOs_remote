@@ -16,7 +16,7 @@
 @synthesize description = _description;
 @synthesize imageURL = _imageURL;
 @synthesize product = _product;
-
+@synthesize marketingKeys = _marketingKeys;
 
 + (NSNumberFormatter *)priceFormatter
 {

@@ -507,9 +507,7 @@ int global_clearanceXPosition;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:SEGUE_CUSTOMIZE]) {
-        [((ReadbackSalesViewController *)segue.destinationViewController) setDelegate:self];
-    }
+    //TODO remove
 }
 
 @end

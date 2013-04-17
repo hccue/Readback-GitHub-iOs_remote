@@ -45,6 +45,20 @@
             
         [self.purchaseButton setTitle:[NSString stringWithFormat:STRING_FORMAT_PURCHASE_BUTTON, [priceFormatter stringFromNumber:self.keypad.product.price]] forState:UIControlStateNormal];
     }
+    
+    
+    //Get UIImageViews and UILabels for each key
+    //UIImageView is multiple of 10, UILabel is Image's tag + 1
+    int tagValue = 10;
+    for (NSString *key in self.keypad.marketingKeys) {
+        UIImageView *imageView = (UIImageView *)[self.view viewWithTag:tagValue];
+        [imageView setImage:[UIImage imageNamed:key]];
+        
+        UILabel *keyLabel = (UILabel *)[self.view viewWithTag:tagValue + 1];
+        keyLabel.text = [self.keypad.marketingKeys objectForKey:key];
+        
+        tagValue += 10;
+    }
 }
 
 -(void)disablePurchaseButton

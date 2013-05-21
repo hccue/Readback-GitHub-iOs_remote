@@ -45,7 +45,7 @@
     ReadbackKeypad *keypad = [[ReadbackKeypad alloc] init];
     keypad.identifier = identifier;
     
-    //TODO init with plist
+    //Future implementation: init with plist
     //NSDictionary *properties = [[NSDictionary alloc] initWithContentsOfFile:@"StandardKeypad.plist"];
     
     if ([identifier isEqualToString:STANDARD_KEYPAD_IDENTIFIER]) {

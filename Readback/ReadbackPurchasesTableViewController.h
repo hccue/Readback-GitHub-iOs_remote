@@ -10,6 +10,7 @@
 #import "ReadbackKeypad.h"
 
 #define PURCHASED_CELL @"PurchasedKeypadCell"
+#define CELL_IMAGE_NAME @"keypadIcon.png"
 
 @protocol ReadbackPurchasesTableViewControllerDataSource <NSObject>
 -(NSInteger) numberOfPurchasedItems;

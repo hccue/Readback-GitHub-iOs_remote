@@ -63,11 +63,13 @@
 		DEA410EC170F979000149893 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410EB170F979000149893 /* cross.png */; };
 		DEA410EF170F993400149893 /* clearance.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410ED170F993400149893 /* clearance.png */; };
 		DEA410F0170F993400149893 /* qwerty.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410EE170F993400149893 /* qwerty.png */; };
-		DED5B3F3170BD40A0036CBC2 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DED5B3F1170BD40A0036CBC2 /* key-help.png */; };
 		DED5B3FA170BD9610036CBC2 /* sid.png in Resources */ = {isa = PBXBuildFile; fileRef = DED5B3F9170BD9610036CBC2 /* sid.png */; };
 		DED941D616D7EA6500C0AC09 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941D416D7EA6500C0AC09 /* vor.png */; };
 		DED941DE16D7ECF500C0AC09 /* vectors.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941DD16D7ECF500C0AC09 /* vectors.png */; };
 		DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941E116D7EFBF00C0AC09 /* rwy.png */; };
+		DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE2C174C1EED00221759 /* keypadIcon.png */; };
+		DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE30174C24DD00221759 /* buttonGray.png */; };
+		DEDDBE33174C289C00221759 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE32174C289C00221759 /* key-help.png */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
@@ -150,11 +152,13 @@
 		DEA410EB170F979000149893 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		DEA410ED170F993400149893 /* clearance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearance.png; sourceTree = "<group>"; };
 		DEA410EE170F993400149893 /* qwerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qwerty.png; sourceTree = "<group>"; };
-		DED5B3F1170BD40A0036CBC2 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
 		DED5B3F9170BD9610036CBC2 /* sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sid.png; sourceTree = "<group>"; };
 		DED941D416D7EA6500C0AC09 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
 		DED941DD16D7ECF500C0AC09 /* vectors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vectors.png; sourceTree = "<group>"; };
 		DED941E116D7EFBF00C0AC09 /* rwy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rwy.png; sourceTree = "<group>"; };
+		DEDDBE2C174C1EED00221759 /* keypadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keypadIcon.png; sourceTree = "<group>"; };
+		DEDDBE30174C24DD00221759 /* buttonGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonGray.png; sourceTree = "<group>"; };
+		DEDDBE32174C289C00221759 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -214,6 +218,9 @@
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DEDDBE32174C289C00221759 /* key-help.png */,
+				DEDDBE30174C24DD00221759 /* buttonGray.png */,
+				DEDDBE2C174C1EED00221759 /* keypadIcon.png */,
 				DE28A65B16A25FC200429C46 /* back.png */,
 				DE4C581316B32BF3004AC4D7 /* backwards.png */,
 				DE44828316A0C5AD00E36814 /* button.png */,
@@ -225,7 +232,6 @@
 				DEA410E8170F969A00149893 /* er-ops.png */,
 				DE4C581416B32BF3004AC4D7 /* forward.png */,
 				DE1698AA16D97D7600AB45A7 /* help.png */,
-				DED5B3F1170BD40A0036CBC2 /* key-help.png */,
 				DE4C581716B32CAC004AC4D7 /* plus.png */,
 				DE960EA7170DCE0A009CB12C /* what-is-new.png */,
 			);
@@ -499,7 +505,6 @@
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
 				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
-				DED5B3F3170BD40A0036CBC2 /* key-help.png in Resources */,
 				DED5B3FA170BD9610036CBC2 /* sid.png in Resources */,
 				DE6AFC9D170C715A00C45697 /* button738.png in Resources */,
 				DE960EA8170DCE0A009CB12C /* what-is-new.png in Resources */,
@@ -509,6 +514,9 @@
 				DEA410EC170F979000149893 /* cross.png in Resources */,
 				DEA410EF170F993400149893 /* clearance.png in Resources */,
 				DEA410F0170F993400149893 /* qwerty.png in Resources */,
+				DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */,
+				DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */,
+				DEDDBE33174C289C00221759 /* key-help.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

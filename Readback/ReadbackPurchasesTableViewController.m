@@ -30,6 +30,7 @@
     
     cell.textLabel.text = myKeypad.title;
     cell.detailTextLabel.text = myKeypad.subtitle;
+    cell.imageView.image = [UIImage imageNamed:CELL_IMAGE_NAME];
     return cell;
 }
 

@@ -409,7 +409,10 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="179232168">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">buttonGray.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -449,7 +452,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -469,7 +472,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -585,7 +588,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -932,7 +935,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -972,7 +975,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -982,6 +985,7 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{932, 352.5}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="135008670"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">2</int>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1028,7 +1032,6 @@
 						<reference key="NSNextKeyView" ref="13041818"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<bool key="IBUIHighlighted">YES</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
@@ -1036,7 +1039,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -1056,7 +1059,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -1076,7 +1079,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -1089,7 +1092,6 @@
 						<reference key="NSNextKeyView" ref="120644131"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<bool key="IBUIHighlighted">YES</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
@@ -1097,7 +1099,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<reference key="IBUIFontDescription" ref="71727453"/>
 						<reference key="IBUIFont" ref="812874599"/>
 					</object>
@@ -1185,7 +1187,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="192015159"/>
 						<reference key="IBUINormalTitleColor" ref="422184355"/>
 						<reference key="IBUINormalTitleShadowColor" ref="644721769"/>
-						<reference key="IBUINormalBackgroundImage" ref="153636876"/>
+						<reference key="IBUINormalBackgroundImage" ref="179232168"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">AvenirNext-Regular</string>
 							<string key="family">Avenir Next</string>
@@ -1820,6 +1822,7 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="button.png">{89, 66}</string>
 			<string key="button738.png">{738, 132}</string>
+			<string key="buttonGray.png">{89, 66}</string>
 			<string key="call.png">{65, 65}</string>
 			<string key="climb.png">{65, 65}</string>
 			<string key="cross.png">{65, 65}</string>

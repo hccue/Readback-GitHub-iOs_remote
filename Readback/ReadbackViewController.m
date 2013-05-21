@@ -505,9 +505,4 @@ int global_clearanceXPosition;
     
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    //TODO remove
-}
-
 @end

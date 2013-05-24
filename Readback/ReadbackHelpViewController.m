@@ -9,8 +9,14 @@
 #import "ReadbackHelpViewController.h"
 #import <MessageUI/MessageUI.h>
 
+//animation
+#import "ReadbackViewController.h"
+
 @interface ReadbackHelpViewController () <MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
+
+//animation
+@property (weak, nonatomic) IBOutlet UIButton *rateAppButton;
 @end
 
 @implementation ReadbackHelpViewController
@@ -81,8 +87,14 @@
     self.versionLabel.text = [NSString stringWithFormat:PATTERN_VERSION, [[NSBundle mainBundle] objectForInfoDictionaryKey:STRING_BUNDLE_VERSION ]];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [ReadbackViewController animateHighlightView:self.rateAppButton];
+}
+
 - (void)viewDidUnload {
     [self setVersionLabel:nil];
+    [self setRateAppButton:nil];
     [super viewDidUnload];
 }
 

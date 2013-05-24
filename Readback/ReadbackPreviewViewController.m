@@ -9,6 +9,9 @@
 #import "ReadbackPreviewViewController.h"
 #import "ReadbackSalesManager.h"
 
+//animation
+#import "ReadbackViewController.h"
+
 @interface ReadbackPreviewViewController ()
 
 //Outlets:
@@ -96,6 +99,11 @@
 {
     [self loadKeypadInformation];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productWasPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [ReadbackViewController animateHighlightView:self.purchaseButton];
 }
 
 -(void)viewWillDisappear:(BOOL)animated

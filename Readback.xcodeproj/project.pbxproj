@@ -17,6 +17,7 @@
 		DE234B3116A5C86400C99AE6 /* ReadbackKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */; };
 		DE28A65C16A25FC200429C46 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65A16A25FC200429C46 /* clear.png */; };
 		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
+		DE2E2227174F237200B551A5 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E2226174F237200B551A5 /* key-help.png */; };
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
 		DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3787F717008D3D0054C216 /* MessageUI.framework */; };
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
@@ -69,7 +70,6 @@
 		DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941E116D7EFBF00C0AC09 /* rwy.png */; };
 		DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE2C174C1EED00221759 /* keypadIcon.png */; };
 		DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE30174C24DD00221759 /* buttonGray.png */; };
-		DEDDBE33174C289C00221759 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE32174C289C00221759 /* key-help.png */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
@@ -99,6 +99,7 @@
 		DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackKeypad.m; sourceTree = "<group>"; };
 		DE28A65A16A25FC200429C46 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		DE28A65B16A25FC200429C46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		DE2E2226174F237200B551A5 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
 		DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackSalesManager.h; sourceTree = "<group>"; };
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
 		DE3787F717008D3D0054C216 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -158,7 +159,6 @@
 		DED941E116D7EFBF00C0AC09 /* rwy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rwy.png; sourceTree = "<group>"; };
 		DEDDBE2C174C1EED00221759 /* keypadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keypadIcon.png; sourceTree = "<group>"; };
 		DEDDBE30174C24DD00221759 /* buttonGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonGray.png; sourceTree = "<group>"; };
-		DEDDBE32174C289C00221759 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -218,7 +218,7 @@
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DEDDBE32174C289C00221759 /* key-help.png */,
+				DE2E2226174F237200B551A5 /* key-help.png */,
 				DEDDBE30174C24DD00221759 /* buttonGray.png */,
 				DEDDBE2C174C1EED00221759 /* keypadIcon.png */,
 				DE28A65B16A25FC200429C46 /* back.png */,
@@ -516,7 +516,7 @@
 				DEA410F0170F993400149893 /* qwerty.png in Resources */,
 				DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */,
 				DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */,
-				DEDDBE33174C289C00221759 /* key-help.png in Resources */,
+				DE2E2227174F237200B551A5 /* key-help.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

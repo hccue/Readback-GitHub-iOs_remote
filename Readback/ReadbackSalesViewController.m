@@ -14,6 +14,9 @@
 #import "ReadbackSalesManager.h"
 #import <StoreKit/StoreKit.h>
 
+//animation
+#import "ReadbackViewController.h"
+
 #define BUTTON_LABEL_SORT @"Sort"
 #define BUTTON_LABEL_DONE @"Done"
 
@@ -21,6 +24,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *purchasedKeypadsTableView;
 @property (weak, nonatomic) IBOutlet UITableView *storeKeypadsTableView;
+
+//animation
+@property (weak, nonatomic) IBOutlet UILabel *storeKeypadsLabel;
 
 @property (strong, nonatomic) ReadbackPurchasesTableViewController *purchasedTableViewController;
 @property (strong, nonatomic) ReadbackStoreTableViewController *storeTableViewController;
@@ -166,6 +172,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productWasPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [ReadbackViewController animateHighlightView:self.storeKeypadsLabel];
+}
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -174,6 +185,7 @@
 - (void)viewDidUnload {
     [self setPurchasedKeypadsTableView:nil];
     [self setStoreKeypadsTableView:nil];
+    [self setStoreKeypadsLabel:nil];
     [super viewDidUnload];
 }
 
@@ -233,5 +245,4 @@
     [self reloadPurchasedProducts];
     [self reloadStoreProducts];
 }
-
 @end

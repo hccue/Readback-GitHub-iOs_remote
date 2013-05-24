@@ -10,6 +10,9 @@
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
 
+#define USERKEY_FIRST_START @"firstStart"
+#define USERKEY_HELP_VIEWED @"helpButtonTapped"
+
 #define WHAT_IS_NEW_SCREEN_NAME @"what-is-new.png"
 
 #define SEGUE_CUSTOMIZE @"CustomizeSegue"
@@ -40,6 +43,14 @@
 #define COLOR_BACKGROUND_TEXT_COLOR [UIColor clearColor]
 
 
+//Help Button Animation
+#define HELP_BUTTON_TIMER_DURATION 2.5
+#define VIEW_ANIMATION_DURATION 0.05
+#define VIEW_ANIMATION_SCALE 1.8
+#define HELP_IMAGE_NAME @"key-help.png"
+
 
 @interface ReadbackViewController : UIViewController <KeypadDelegate, UIGestureRecognizerDelegate, ReadbackSalesViewControllerDelegate>
+
++(void)animateHighlightView:(UIView *)view;
 @end

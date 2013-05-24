@@ -12,8 +12,6 @@
 #import "KeypadGenerator.h"
 #import "ReadbackTableViewController.h"
 
-#define USERKEY_FIRST_START @"firstStart"
-
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
 
@@ -24,6 +22,7 @@ int global_clearanceXPosition;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelZuluTime;
 @property (strong, nonatomic) NSTimer *clockTimer;
+@property (strong, nonatomic) NSTimer *helpTimer;
 
 @property (nonatomic, strong) NSArray *subViewControllers;
 @property (nonatomic, strong) UIViewController *selectedViewController;
@@ -33,6 +32,8 @@ int global_clearanceXPosition;
 @property (weak, nonatomic) IBOutlet UILabel *activeKeypadLabel;
 
 @property (nonatomic, strong) NSMutableArray *logItems; //Array of UIView
+
+@property (weak, nonatomic) IBOutlet UIButton *helpButton;
 
 @end
 
@@ -44,6 +45,7 @@ int global_clearanceXPosition;
 
 @synthesize labelZuluTime = _labelZuluTime;
 @synthesize clockTimer = _clockTimer;
+@synthesize helpTimer = _helpTimer;
 
 @synthesize subViewControllers = _subViewControllers;
 @synthesize selectedViewController = _selectedViewController;
@@ -151,6 +153,7 @@ int global_clearanceXPosition;
     [self loadPurchasedKeypads];
     
     [self startClock];
+    [self launchHelpButtonAnimation];
     [self loadChildViewController];
     
     //Effect of bottom aligned cells
@@ -161,6 +164,7 @@ int global_clearanceXPosition;
 {
     [super viewWillDisappear:animated];
     [self stopClock];
+    [self stopHelpButtonAnimation];
 }
 
 - (void)viewDidUnload {
@@ -169,6 +173,7 @@ int global_clearanceXPosition;
     [self setPageControl:nil];
     [self setActiveKeypadLabel:nil];
     [self setTableView:nil];
+    [self setHelpButton:nil];
     [super viewDidUnload];
 }
 
@@ -299,6 +304,7 @@ int global_clearanceXPosition;
                                                      selector:@selector(updateClockDisplay)
                                                      userInfo:nil
                                                       repeats:YES];
+    
 }
 
 -(void)updateClockDisplay
@@ -326,24 +332,7 @@ int global_clearanceXPosition;
 
 
 
-#pragma mark Help Image
-
-- (IBAction)helpTapped:(UIButton *)sender {
-    UIImage *image = [UIImage imageNamed:@"key-help.png"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                          action:@selector(dismissHelpView:)];
-    [imageView setUserInteractionEnabled:YES];
-    [imageView addGestureRecognizer:tap];
-    [self.view addSubview:imageView];
-}
-
--(void)dismissHelpView:(UITapGestureRecognizer *)tap
-{
-    [tap.view removeFromSuperview];
-}
+#pragma mark What is New
 
 -(void)showWhatIsNew
 {
@@ -357,13 +346,17 @@ int global_clearanceXPosition;
         imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                              action:@selector(dismissHelpView:)];
+                                                                              action:@selector(dismissWhatIsNewView:)];
         [imageView setUserInteractionEnabled:YES];
         [imageView addGestureRecognizer:tap];
         [self.view addSubview:imageView];
     }
 }
 
+-(void)dismissWhatIsNewView:(UITapGestureRecognizer *)tap
+{
+    [tap.view removeFromSuperview];
+}
 
 
 
@@ -503,6 +496,66 @@ int global_clearanceXPosition;
         }
     }
     
+}
+
+
+#pragma mark Help Button
+
+- (IBAction)helpTapped:(UIButton *)sender {
+    UIImage *image = [UIImage imageNamed:HELP_IMAGE_NAME];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissHelpView:)];
+    [imageView setUserInteractionEnabled:YES];
+    [imageView addGestureRecognizer:tap];
+    [self.view addSubview:imageView];
+}
+
+-(void)dismissHelpView:(UITapGestureRecognizer *)tap
+{
+    [tap.view removeFromSuperview];
+    [self stopHelpButtonAnimation];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:USERKEY_HELP_VIEWED];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(void)stopHelpButtonAnimation
+{
+    [self.helpTimer invalidate];
+}
+
+-(void)launchHelpButtonAnimation
+{
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:USERKEY_HELP_VIEWED]) {
+        self.helpTimer = [NSTimer scheduledTimerWithTimeInterval:HELP_BUTTON_TIMER_DURATION
+                                                           target:self
+                                                         selector:@selector(animateHelpButton)
+                                                         userInfo:nil
+                                                          repeats:YES];
+    }
+}
+
+-(void)animateHelpButton
+{
+    [[self class] animateHighlightView:self.helpButton];
+    
+}
+
++(void)animateHighlightView:(UIView *)view
+{
+    UIViewAnimationOptions options = UIViewAnimationOptionCurveLinear;
+    [UIView animateWithDuration:VIEW_ANIMATION_DURATION delay:0 options:options animations:^{
+        view.transform = CGAffineTransformMakeScale(VIEW_ANIMATION_SCALE,VIEW_ANIMATION_SCALE);
+    } completion:^(BOOL finished) {
+        if (finished) {
+            UIViewAnimationOptions options = UIViewAnimationOptionCurveLinear;
+            [UIView animateWithDuration:VIEW_ANIMATION_DURATION * 10 delay:0 options:options animations:^{
+                view.transform = CGAffineTransformMakeScale(1.0,1.0);
+            } completion:^(BOOL finished) {}];
+        };
+    }];
 }
 
 @end

@@ -10,6 +10,9 @@
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
 
+#define APP_ID @"581569231"
+#define URL_RATE @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@"
+
 #define USERKEY_FIRST_START @"firstStart"
 #define USERKEY_HELP_VIEWED @"helpButtonTapped"
 
@@ -32,7 +35,6 @@
 #define LOG_CLEARANCE_FONT_FAMILY @"Avenir Next"
 #define LOG_TIME_FORMAT @"%@ :  "
 
-#define ZULU_TIMEZONE @"UTC"
 #define ZULU_TIME_FORMAT_SHORT @"HH:mm 'Z"
 #define ZULU_TIME_FORMAT_LONG @"HH:mm:ss 'Z"
 

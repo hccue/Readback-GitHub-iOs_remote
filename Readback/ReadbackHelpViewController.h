@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+#define FACEBOOK_ID @"244582409007424"
+
 #define PATTERN_VERSION @"Version %@"
 #define URL_FRIEND_APP_1 @"https://itunes.apple.com/us/app/cmd-speed/id581569231?ls=1&mt=8"
 #define URL_FRIEND_APP_2 @"https://itunes.apple.com/us/app/extended-rest-operations/id619262446?ls=1&mt=8"
 #define STRING_BUNDLE_VERSION @"CFBundleShortVersionString"
 
-#define APP_ID @"593334194"
-#define URL_RATE @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@"
+#define SUGGESTION_EMAIL_SUBJECT @"Readback App Suggestion!"
+#define SUGGESTION_EMAIL_TO @"cuesoftapps@gmail.com"
+#define SUGGESTION_EMAIL_BODY @"I have a suggestion about the App,\n\n"
 
 @interface ReadbackHelpViewController : UIViewController
 

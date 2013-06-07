@@ -8,6 +8,7 @@
 
 #import "ReadbackHelpViewController.h"
 #import <MessageUI/MessageUI.h>
+#import "CuesoftHelper.h"
 
 //animation
 #import "ReadbackViewController.h"
@@ -17,6 +18,7 @@
 
 //animation
 @property (weak, nonatomic) IBOutlet UIButton *rateAppButton;
+@property (weak, nonatomic) IBOutlet UIButton *fbLikeButton;
 @end
 
 @implementation ReadbackHelpViewController
@@ -42,16 +44,15 @@
     [self displayComposerSheet];
 }
 
-
 -(void)displayComposerSheet
 {
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     picker.mailComposeDelegate = self;
     
-    [picker setSubject:@"Readback App Suggestion!"];
+    [picker setSubject:SUGGESTION_EMAIL_SUBJECT];
     
     // Set up the recipients.
-    NSArray *toRecipients = [NSArray arrayWithObjects:@"cuesoftapps@gmail.com",
+    NSArray *toRecipients = [NSArray arrayWithObjects:SUGGESTION_EMAIL_TO,
                              nil];
     NSArray *ccRecipients = [NSArray arrayWithObjects: nil];
     NSArray *bccRecipients = [NSArray arrayWithObjects: nil];
@@ -62,7 +63,7 @@
     
      
     // Fill out the email body text.
-    NSString *emailBody = @"I have a suggestion about the App,\n\n";
+    NSString *emailBody = SUGGESTION_EMAIL_BODY;
     [picker setMessageBody:emailBody isHTML:NO];
     
     // Present the mail composition interface.
@@ -77,6 +78,9 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (IBAction)facebookLikeTapped:(UIButton *)sender {
+    [CuesoftHelper openFacebookID:FACEBOOK_ID];
+}
 
 
 
@@ -89,12 +93,13 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [ReadbackViewController animateHighlightView:self.rateAppButton];
+    [ReadbackViewController animateHighlightView:self.fbLikeButton];
 }
 
 - (void)viewDidUnload {
     [self setVersionLabel:nil];
     [self setRateAppButton:nil];
+    [self setFbLikeButton:nil];
     [super viewDidUnload];
 }
 

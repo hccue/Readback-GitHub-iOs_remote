@@ -224,7 +224,7 @@
     [self.storeKeypadsTableView reloadData];
     [[ReadbackSalesManager sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
         if (success) {
-            //Generate array of local keypads based on IAP identifier.
+            //List built from SKProducts:
             NSMutableArray *storeKeypads = [NSMutableArray arrayWithCapacity:[products count]];
             for (SKProduct *product in products) {
                 ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier: product.productIdentifier];

@@ -11,10 +11,15 @@
  ADD KEYPAD STEPS:
  1. Add file, new VC targeted for ipad with XIB
  2. Copy Standard Keypad
- 3. Set properties, set preview image png file
- 3. Uncheck first tab > use autolayout
- 4. Add identifier to getAvailableKeypadsIdentifiers
- 5. add image sized 2048x1013
+ 3. Set properties, set preview image png file - what properties?
+ 4. Set File's owner on xib
+ 5. Delete VC m and h files
+ 6. Uncheck first tab > use autolayout
+ 7. Add identifier to getAvailableKeypadsIdentifiers
+ 8. Add info to generateKeypadWithIdentifier
+ 5. Add png preview image sized 493x244
+ 
+ 5. add image sized 2048x1013 ??? dleete
 */
  
  
@@ -28,6 +33,7 @@
             STANDARD_KEYPAD_IDENTIFIER,
             CLEARANCE_KEYPAD_IDENTIFIER,
             QWERTY_KEYPAD_IDENTIFIER,
+            OCEANIC_KEYPAD_IDENTIFIER,
             nil];
 }
 
@@ -92,12 +98,32 @@
                                 nil];
     }
     
-    if ([identifier isEqualToString:OCEANIC_KEYPAD_IDENTIFIER]) {
+    
+    if ([identifier isEqualToString:AZERTY_KEYPAD_IDENTIFIER]) {
+        keypad.name = @"AzertyKeypadVC";
+        keypad.title = @"Azerty Keypad";
+        keypad.subtitle = @"As simple as Qwerty.";
+        keypad.imageURL = @"azerty.png";
+        keypad.description = @"Here we present the Azerty keypad, another useful keypad.";
+        
+        keypad.marketingKeys = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Direct to FIX", @"direct.png",
+                                @"Hold Short of...", @"hold-short.png",
+                                @"Intercept, join.", @"intc.png",
+                                @"Holding instructions", @"holding.png",
+                                @"Call, Report, Switch to my Frequency, Contact...", @"call.png",
+                                @"Cross a FIX, a Runway...", @"cross.png",
+                                @"Direction Signs, very useful.", @"up.png",
+                                nil];
+    }
+    
+    //TODO REPLACE OCEANIC_KEYPAD_IDENTIFIER
+    if ([identifier isEqualToString:CLEARANCE_KEYPAD_IDENTIFIER]) {
         keypad.name = @"OceanicKeypadVC";
         keypad.title = @"Oceanic Keypad";
         keypad.subtitle = @"Extended Range Tools.";
-        keypad.imageURL = @"standard.png";
-        keypad.description = @"This keypad was carefully designed to be your best ally while enroute on Extended Range flights. Werther you are inside the NAT getting New York's Oceanic Clearance or perhaps a SIGMET in the NOPAC, you won't miss a thing.";
+        keypad.imageURL = @"oceanic.png";
+        keypad.description = @"Use this keypad to copy your Oceanic Clearances, SIGMETs, Reroutes and all other important ATC comms during your flight through the NAT, NOPAC or any oceanic area. Keep your clearances logged by time. Avoid Gross Navigation Errors, Large Height Deviations, Erosion of Longitudinal Separation and improove your situational awareness.";
     }
    
     return keypad;

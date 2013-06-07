@@ -14,6 +14,7 @@
 #define CLEARANCE_KEYPAD_IDENTIFIER     @"com.cuesoft.readback.clearancekeypad"
 #define QWERTY_KEYPAD_IDENTIFIER        @"com.cuesoft.readback.qwertykeypad"
 #define OCEANIC_KEYPAD_IDENTIFIER       @"com.cuesoft.readback.oceanickeypad"
+#define AZERTY_KEYPAD_IDENTIFIER       @"com.cuesoft.readback.azertykeypad"
 
 @interface KeypadGenerator : NSObject
 

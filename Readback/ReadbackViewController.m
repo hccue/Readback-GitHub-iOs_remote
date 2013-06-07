@@ -11,6 +11,7 @@
 #import "KeyInterpreter.h"
 #import "KeypadGenerator.h"
 #import "ReadbackTableViewController.h"
+#import "CuesoftHelper.h"
 
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
@@ -141,6 +142,8 @@ int global_clearanceXPosition;
     
     self.tableView.dataSource = self.tableViewController;
     self.tableView.delegate = self.tableViewController;
+    
+    [CuesoftHelper popRateMeAlert];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -240,7 +243,7 @@ int global_clearanceXPosition;
 
     //Add Zulu time as first item in log
     UILabel *zuluTime = [[UILabel alloc] init];
-    zuluTime.text = [NSString stringWithFormat:LOG_TIME_FORMAT, [self getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_SHORT]];
+    zuluTime.text = [NSString stringWithFormat:LOG_TIME_FORMAT, [CuesoftHelper getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_SHORT]];
     zuluTime.font = [UIFont systemFontOfSize:CLEARANCE_FONT_SIZE];
     zuluTime.backgroundColor = COLOR_BACKGROUND_TEXT_COLOR;
     zuluTime.textColor = COLOR_LOG_TIME;
@@ -309,7 +312,7 @@ int global_clearanceXPosition;
 
 -(void)updateClockDisplay
 {
-    self.labelZuluTime.text = [self getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_LONG];
+    self.labelZuluTime.text = [CuesoftHelper getCurrentZuluTimeWithFormat:ZULU_TIME_FORMAT_LONG];
 }
 
 -(void)stopClock
@@ -411,20 +414,6 @@ int global_clearanceXPosition;
 
 
 
-#pragma mark Utilities
-
--(NSString *)getCurrentZuluTimeWithFormat:(NSString *)format
-{
-    NSDate *localDate = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:ZULU_TIMEZONE];
-    [dateFormatter setTimeZone:timeZone];
-    [dateFormatter setDateFormat:format];
-    return [dateFormatter stringFromDate:localDate];
-}
-
-
-
 #pragma mark UIGestureRecognizer Swipe
 
 - (void)swipe:(UISwipeGestureRecognizer *)gesture
@@ -496,6 +485,12 @@ int global_clearanceXPosition;
         }
     }
     
+}
+
+
+#pragma mark AlertView implementation
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [CuesoftHelper rateMeAlertAnswer:buttonIndex withUrl:URL_RATE forID:APP_ID];
 }
 
 

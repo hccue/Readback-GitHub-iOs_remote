@@ -92,7 +92,10 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="435830139">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">buttonGray.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -132,7 +135,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -154,7 +157,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">holding.png</string>
+							<string key="NSResourceName">call.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
@@ -269,7 +272,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -309,7 +312,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="18072555">
 							<string key="name">AvenirNext-Regular</string>
 							<string key="family">Avenir Next</string>
@@ -394,7 +397,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -416,7 +419,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">direct.png</string>
+							<string key="NSResourceName">up.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="376529016">
@@ -499,7 +502,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">vor.png</string>
+							<string key="NSResourceName">holding.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="376529016"/>
@@ -541,7 +544,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -581,7 +584,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -621,7 +624,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">AvenirNext-UltraLight</string>
 							<string key="family">Avenir Next</string>
@@ -789,9 +792,36 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
+						<object class="NSCustomResource" key="IBUINormalImage" id="788121087">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">cross.png</string>
+						</object>
+						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUIFontDescription" ref="376529016"/>
+						<reference key="IBUIFont" ref="892638111"/>
+					</object>
+					<object class="IBUIButton" id="654165900">
+						<reference key="NSNextResponder" ref="455425575"/>
+						<int key="NSvFlags">1320</int>
+						<object class="NSPSMatrix" key="NSFrameMatrix"/>
+						<string key="NSFrame">{{933, 74}, {90, 65}}</string>
+						<reference key="NSSuperview" ref="455425575"/>
+						<reference key="NSNextKeyView" ref="760564494"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<int key="IBUITag">10</int>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<int key="IBUIButtonType">1</int>
+						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">cat.png</string>
+							<string key="NSResourceName">direct.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="376529016"/>
@@ -838,7 +868,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">cross.png</string>
+							<string key="NSResourceName">intc.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="376529016"/>
@@ -875,7 +905,7 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{653, 74}, {90, 66}}</string>
 						<reference key="NSSuperview" ref="455425575"/>
-						<reference key="NSNextKeyView" ref="760564494"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -905,7 +935,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="18072555"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -925,7 +955,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -947,7 +977,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">call.png</string>
+							<string key="NSResourceName">by-time.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
@@ -969,10 +999,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">by-time.png</string>
-						</object>
+						<reference key="IBUINormalImage" ref="788121087"/>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
@@ -998,7 +1025,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">hold-short.png</string>
+							<string key="NSResourceName">xpdr.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="376529016"/>
@@ -1020,7 +1047,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -1040,7 +1067,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -1100,7 +1127,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="691549515"/>
 						<reference key="IBUINormalTitleColor" ref="958062644"/>
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
-						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
+						<reference key="IBUINormalBackgroundImage" ref="435830139"/>
 						<reference key="IBUIFontDescription" ref="915592158"/>
 						<reference key="IBUIFont" ref="959001298"/>
 					</object>
@@ -1270,7 +1297,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="1005079687"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ils.png</string>
+							<string key="NSResourceName">altimeter.png</string>
 						</object>
 						<reference key="IBUINormalBackgroundImage" ref="345044473"/>
 						<reference key="IBUIFontDescription" ref="376529016"/>
@@ -1399,6 +1426,7 @@
 							<reference ref="625262844"/>
 							<reference ref="11267276"/>
 							<reference ref="672539773"/>
+							<reference ref="654165900"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1682,6 +1710,11 @@
 						<reference key="object" ref="672539773"/>
 						<reference key="parent" ref="455425575"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">697</int>
+						<reference key="object" ref="654165900"/>
+						<reference key="parent" ref="455425575"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1858,12 +1891,15 @@
 				<string key="695.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<reference key="695.IBUserGuides" ref="0"/>
 				<boolean value="NO" key="695.showNotes"/>
+				<string key="697.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="697.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="697.showNotes"/>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">695</int>
+			<int key="maxID">697</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -1871,20 +1907,21 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="altimeter.png">{65, 65}</string>
 			<string key="button.png">{89, 66}</string>
+			<string key="buttonGray.png">{89, 66}</string>
 			<string key="by-time.png">{65, 65}</string>
 			<string key="call.png">{65, 65}</string>
-			<string key="cat.png">{65, 65}</string>
 			<string key="climb.png">{65, 65}</string>
 			<string key="cross.png">{65, 65}</string>
 			<string key="descend.png">{65, 65}</string>
 			<string key="direct.png">{65, 65}</string>
-			<string key="hold-short.png">{65, 65}</string>
 			<string key="holding.png">{65, 65}</string>
-			<string key="ils.png">{65, 65}</string>
+			<string key="intc.png">{65, 65}</string>
 			<string key="left-button.png">{65, 65}</string>
 			<string key="right.png">{65, 65}</string>
-			<string key="vor.png">{65, 65}</string>
+			<string key="up.png">{65, 65}</string>
+			<string key="xpdr.png">{65, 65}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>

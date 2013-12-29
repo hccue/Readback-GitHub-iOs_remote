@@ -74,7 +74,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error
 {    
-    NSLog(@"Failed to load list of products.");
+    NSLog(@"Failed to load list of products. %@", error.description);
     UIAlertView* message = [[UIAlertView alloc] initWithTitle:ALERT_LOAD_ERROR_TITLE
                                                       message:ALERT_LOAD_ERROR_MESSAGE
                                                      delegate:self
@@ -125,14 +125,12 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"complete Transaction...");
     [self provideContentForProductIdentifier:transaction.payment.productIdentifier];
     [self alertPurchaseSuccess];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
-    NSLog(@"Restoring Transaction...");
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }

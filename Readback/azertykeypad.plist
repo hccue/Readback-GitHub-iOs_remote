@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>AzertyKeypadVC</string>
+	<key>title</key>
+	<string>Azerty Keypad</string>
+	<key>subtitle</key>
+	<string>For our french buddies</string>
+	<key>imageURL</key>
+	<string>azerty.png</string>
+	<key>description</key>
+	<string>A very special layout for our very special French speaking buddies and those who want to learn to use this unique keyboard.</string>
+	<key>keys</key>
+	<dict>
+		<key>direct.png</key>
+		<string>Direct to FIX</string>
+		<key>hold-short.png</key>
+		<string>Hold Short of...</string>
+		<key>call.png</key>
+		<string>Call, Report, Switch to my Frequency, Contact...</string>
+		<key>holding.png</key>
+		<string>Holding instructions</string>
+		<key>cross.png</key>
+		<string>Cross a FIX, a Runway...</string>
+		<key>intc.png</key>
+		<string>Intercept, join.</string>
+		<key>up.png</key>
+		<string>Direction Signs, very useful.</string>
+	</dict>
+</dict>
+</plist>

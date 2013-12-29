@@ -9,6 +9,7 @@
 #import "ReadbackStoreTableViewController.h"
 #import "ReadbackKeypad.h"
 #import "ReadbackSalesViewController.h"
+#import "CuesoftHelper.h"
 
 @implementation ReadbackStoreTableViewController
 @synthesize dataSource = _dataSource;
@@ -30,7 +31,7 @@
     cell.detailTextLabel.text = myKeypad.subtitle;
     
     //Set price or "purchased" label as accessory:
-    NSNumberFormatter *priceFormatter = [ReadbackKeypad priceFormatter];
+    NSNumberFormatter *priceFormatter = [CuesoftHelper priceFormatter];
     [priceFormatter setLocale:myKeypad.product.priceLocale];
     
     UILabel *price = [[UILabel alloc] init];

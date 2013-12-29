@@ -7,6 +7,7 @@
 //
 
 #import "ReadbackKeypad.h"
+#import "CuesoftHelper.h"
 
 @implementation ReadbackKeypad
 @synthesize identifier = _identifier;
@@ -18,13 +19,16 @@
 @synthesize product = _product;
 @synthesize marketingKeys = _marketingKeys;
 
-+ (NSNumberFormatter *)priceFormatter
+- (void) loadDataFromPlistNamed:(NSString *)plistName
 {
-    NSNumberFormatter *priceFormatter;
-    priceFormatter = [[NSNumberFormatter alloc] init];
-    [priceFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
-    [priceFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    return priceFormatter;
+    NSDictionary *plist = [CuesoftHelper getPropertyListNamed:plistName];
+    self.name = [plist objectForKey:@"name"];
+    self.title = [plist objectForKey:@"title"];
+    self.subtitle = [plist objectForKey:@"subtitle"];
+    self.description = [plist objectForKey:@"description"];
+    self.imageURL = [plist objectForKey:@"imageURL"];
+    self.product = [plist objectForKey:@"product"];
+    self.marketingKeys = [NSMutableDictionary dictionaryWithDictionary:[plist objectForKey:@"keys"]];
 }
 
 @end

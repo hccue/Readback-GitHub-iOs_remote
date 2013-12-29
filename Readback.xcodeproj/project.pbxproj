@@ -7,17 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281D81858F268005F9B3D /* flightNumberTextField.png */; };
+		DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DB1858F55C005F9B3D /* 10-min-d.png */; };
+		DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DC1858F55C005F9B3D /* altimeter-d.png */; };
+		DE0281F51858F55C005F9B3D /* by-time-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DD1858F55C005F9B3D /* by-time-d.png */; };
+		DE0281F61858F55C005F9B3D /* call-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DE1858F55C005F9B3D /* call-d.png */; };
+		DE0281F71858F55C005F9B3D /* cat-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DF1858F55C005F9B3D /* cat-d.png */; };
+		DE0281F81858F55C005F9B3D /* climb-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E01858F55C005F9B3D /* climb-d.png */; };
+		DE0281F91858F55C005F9B3D /* cross-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E11858F55C005F9B3D /* cross-d.png */; };
+		DE0281FA1858F55C005F9B3D /* descend-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E21858F55C005F9B3D /* descend-d.png */; };
+		DE0281FB1858F55C005F9B3D /* direct-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E31858F55C005F9B3D /* direct-d.png */; };
+		DE0281FC1858F55C005F9B3D /* hold-short-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E41858F55C005F9B3D /* hold-short-d.png */; };
+		DE0281FD1858F55C005F9B3D /* holding-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E51858F55C005F9B3D /* holding-d.png */; };
+		DE0281FE1858F55C005F9B3D /* ils-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E61858F55C005F9B3D /* ils-d.png */; };
+		DE0281FF1858F55C005F9B3D /* intc-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E71858F55C005F9B3D /* intc-d.png */; };
+		DE0282001858F55C005F9B3D /* left-button-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E81858F55C005F9B3D /* left-button-d.png */; };
+		DE0282011858F55C005F9B3D /* ndb-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281E91858F55C005F9B3D /* ndb-d.png */; };
+		DE0282021858F55C005F9B3D /* not-found-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281EA1858F55C005F9B3D /* not-found-d.png */; };
+		DE0282031858F55C005F9B3D /* right-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281EB1858F55C005F9B3D /* right-d.png */; };
+		DE0282041858F55C005F9B3D /* rwy-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281EC1858F55C005F9B3D /* rwy-d.png */; };
+		DE0282051858F55C005F9B3D /* sid-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281ED1858F55C005F9B3D /* sid-d.png */; };
+		DE0282061858F55C005F9B3D /* star-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281EE1858F55C005F9B3D /* star-d.png */; };
+		DE0282071858F55C005F9B3D /* up-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281EF1858F55C005F9B3D /* up-d.png */; };
+		DE0282081858F55C005F9B3D /* vectors-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281F01858F55C005F9B3D /* vectors-d.png */; };
+		DE0282091858F55C005F9B3D /* vor-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281F11858F55C005F9B3D /* vor-d.png */; };
+		DE02820A1858F55C005F9B3D /* xpdr-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281F21858F55C005F9B3D /* xpdr-d.png */; };
 		DE09CD2216A348C100483034 /* direct.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2116A348C100483034 /* direct.png */; };
 		DE09CD2916A34DEE00483034 /* holding.png in Resources */ = {isa = PBXBuildFile; fileRef = DE09CD2816A34DEE00483034 /* holding.png */; };
-		DE1698AB16D97D7600AB45A7 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1698AA16D97D7600AB45A7 /* help.png */; };
 		DE17668016A610A000760990 /* ReadbackPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */; };
 		DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D64616A4BF0600FB779B /* ReadbackPurchasesTableViewController.m */; };
 		DE18D65216A4C2B600FB779B /* ReadbackSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65116A4C2B600FB779B /* ReadbackSalesViewController.m */; };
 		DE18D65516A4C94900FB779B /* ReadbackStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */; };
 		DE1DFCF3175E25D600F65736 /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1DFCF2175E25D600F65736 /* thumb.png */; };
+		DE204948176246CE005CCF01 /* standardkeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE204947176246CE005CCF01 /* standardkeypad.plist */; };
 		DE234B3116A5C86400C99AE6 /* ReadbackKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */; };
+		DE2775D517820850008D0F81 /* azertykeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2775D417820850008D0F81 /* azertykeypad.plist */; };
 		DE28A65C16A25FC200429C46 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65A16A25FC200429C46 /* clear.png */; };
-		DE28A65D16A25FC200429C46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE28A65B16A25FC200429C46 /* back.png */; };
+		DE2A65DF183A746C00A39C2C /* scratchpadBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2A65DE183A746C00A39C2C /* scratchpadBar.png */; };
 		DE2E2227174F237200B551A5 /* key-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E2226174F237200B551A5 /* key-help.png */; };
 		DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */; };
 		DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3787F717008D3D0054C216 /* MessageUI.framework */; };
@@ -34,6 +60,11 @@
 		DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */; };
 		DE46E649169CC6F500C90F72 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E648169CC6F500C90F72 /* right.png */; };
 		DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E64E169CC7AD00C90F72 /* left-button.png */; };
+		DE4A8E0218624B6C000EE4BD /* cmd-speed.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0118624B6C000EE4BD /* cmd-speed.png */; };
+		DE4A8E0418624F55000EE4BD /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0318624F55000EE4BD /* trash.png */; };
+		DE4A8E0818625EF2000EE4BD /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0718625EF2000EE4BD /* download.png */; };
+		DE4A8E0C186260AD000EE4BD /* pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0B186260AD000EE4BD /* pdf.png */; };
+		DE4A8E0E18626109000EE4BD /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0D18626109000EE4BD /* help.png */; };
 		DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C580816B31C1F004AC4D7 /* clear2.png */; };
 		DE4C581116B32A72004AC4D7 /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C580F16B32A72004AC4D7 /* Icon72.png */; };
 		DE4C581216B32A72004AC4D7 /* Icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581016B32A72004AC4D7 /* Icon144.png */; };
@@ -45,14 +76,16 @@
 		DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DF16F2D05D00A3D842 /* altimeter.png */; };
 		DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE52DE3816F351D3001D307E /* StoreKit.framework */; };
 		DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52DE3B16F35437001D307E /* IAPHelper.m */; };
-		DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE52DE3F16F36590001D307E /* StandardKeypad.plist */; };
+		DE57DB5A18707A4100870830 /* er-ops.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5918707A4100870830 /* er-ops.png */; };
+		DE57DB5E187082EB00870830 /* azerty.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5D187082EB00870830 /* azerty.png */; };
+		DE57DB601870841400870830 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5F1870841400870830 /* back.png */; };
 		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
 		DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA816FA7DA1007C54C0 /* star.png */; };
 		DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CAA16FA7EE1007C54C0 /* up.png */; };
-		DE5F478917609C89004DE042 /* CuesoftHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5F478817609C89004DE042 /* CuesoftHelper.m */; };
-		DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE6AFC9D170C715A00C45697 /* button738.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6AFC9C170C715A00C45697 /* button738.png */; };
+		DE7457831777718C0051BE86 /* clearancekeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE7457821777718C0051BE86 /* clearancekeypad.plist */; };
+		DE745785177777BB0051BE86 /* qwertykeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE745784177777BB0051BE86 /* qwertykeypad.plist */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
 		DE857FED169D94C2005E8F96 /* climb.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FEB169D94C2005E8F96 /* climb.png */; };
 		DE857FEE169D94C2005E8F96 /* descend.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FEC169D94C2005E8F96 /* descend.png */; };
@@ -61,13 +94,12 @@
 		DE9057C616F12BDA0012B709 /* intc.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9057C516F12BDA0012B709 /* intc.png */; };
 		DE960EA8170DCE0A009CB12C /* what-is-new.png in Resources */ = {isa = PBXBuildFile; fileRef = DE960EA7170DCE0A009CB12C /* what-is-new.png */; };
 		DEA410E6170F930900149893 /* xpdr.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410E5170F930900149893 /* xpdr.png */; };
-		DEA410E9170F969A00149893 /* cmd-speed.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410E7170F969A00149893 /* cmd-speed.png */; };
-		DEA410EA170F969A00149893 /* er-ops.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410E8170F969A00149893 /* er-ops.png */; };
 		DEA410EC170F979000149893 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410EB170F979000149893 /* cross.png */; };
 		DEA410EF170F993400149893 /* clearance.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410ED170F993400149893 /* clearance.png */; };
 		DEA410F0170F993400149893 /* qwerty.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA410EE170F993400149893 /* qwerty.png */; };
 		DED3AC08175965DB00233ED2 /* AzertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED3AC06175965DB00233ED2 /* AzertyKeypadVC.xib */; };
 		DED5B3FA170BD9610036CBC2 /* sid.png in Resources */ = {isa = PBXBuildFile; fileRef = DED5B3F9170BD9610036CBC2 /* sid.png */; };
+		DED5B5291854CAB30068B9BF /* CuesoftHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DED5B5281854CAB30068B9BF /* CuesoftHelper.m */; };
 		DED941D616D7EA6500C0AC09 /* vor.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941D416D7EA6500C0AC09 /* vor.png */; };
 		DED941DE16D7ECF500C0AC09 /* vectors.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941DD16D7ECF500C0AC09 /* vectors.png */; };
 		DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941E116D7EFBF00C0AC09 /* rwy.png */; };
@@ -87,9 +119,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0281D81858F268005F9B3D /* flightNumberTextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flightNumberTextField.png; sourceTree = "<group>"; };
+		DE0281DB1858F55C005F9B3D /* 10-min-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min-d.png"; sourceTree = "<group>"; };
+		DE0281DC1858F55C005F9B3D /* altimeter-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "altimeter-d.png"; sourceTree = "<group>"; };
+		DE0281DD1858F55C005F9B3D /* by-time-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "by-time-d.png"; sourceTree = "<group>"; };
+		DE0281DE1858F55C005F9B3D /* call-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-d.png"; sourceTree = "<group>"; };
+		DE0281DF1858F55C005F9B3D /* cat-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-d.png"; sourceTree = "<group>"; };
+		DE0281E01858F55C005F9B3D /* climb-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "climb-d.png"; sourceTree = "<group>"; };
+		DE0281E11858F55C005F9B3D /* cross-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross-d.png"; sourceTree = "<group>"; };
+		DE0281E21858F55C005F9B3D /* descend-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "descend-d.png"; sourceTree = "<group>"; };
+		DE0281E31858F55C005F9B3D /* direct-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "direct-d.png"; sourceTree = "<group>"; };
+		DE0281E41858F55C005F9B3D /* hold-short-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hold-short-d.png"; sourceTree = "<group>"; };
+		DE0281E51858F55C005F9B3D /* holding-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "holding-d.png"; sourceTree = "<group>"; };
+		DE0281E61858F55C005F9B3D /* ils-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ils-d.png"; sourceTree = "<group>"; };
+		DE0281E71858F55C005F9B3D /* intc-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intc-d.png"; sourceTree = "<group>"; };
+		DE0281E81858F55C005F9B3D /* left-button-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-button-d.png"; sourceTree = "<group>"; };
+		DE0281E91858F55C005F9B3D /* ndb-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ndb-d.png"; sourceTree = "<group>"; };
+		DE0281EA1858F55C005F9B3D /* not-found-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found-d.png"; sourceTree = "<group>"; };
+		DE0281EB1858F55C005F9B3D /* right-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-d.png"; sourceTree = "<group>"; };
+		DE0281EC1858F55C005F9B3D /* rwy-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rwy-d.png"; sourceTree = "<group>"; };
+		DE0281ED1858F55C005F9B3D /* sid-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sid-d.png"; sourceTree = "<group>"; };
+		DE0281EE1858F55C005F9B3D /* star-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-d.png"; sourceTree = "<group>"; };
+		DE0281EF1858F55C005F9B3D /* up-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-d.png"; sourceTree = "<group>"; };
+		DE0281F01858F55C005F9B3D /* vectors-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vectors-d.png"; sourceTree = "<group>"; };
+		DE0281F11858F55C005F9B3D /* vor-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vor-d.png"; sourceTree = "<group>"; };
+		DE0281F21858F55C005F9B3D /* xpdr-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xpdr-d.png"; sourceTree = "<group>"; };
 		DE09CD2116A348C100483034 /* direct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direct.png; sourceTree = "<group>"; };
 		DE09CD2816A34DEE00483034 /* holding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holding.png; sourceTree = "<group>"; };
-		DE1698AA16D97D7600AB45A7 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		DE17667E16A610A000760990 /* ReadbackPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPreviewViewController.h; sourceTree = "<group>"; };
 		DE17667F16A610A000760990 /* ReadbackPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackPreviewViewController.m; sourceTree = "<group>"; };
 		DE18D64516A4BF0500FB779B /* ReadbackPurchasesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackPurchasesTableViewController.h; sourceTree = "<group>"; };
@@ -99,10 +155,12 @@
 		DE18D65316A4C94900FB779B /* ReadbackStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackStoreTableViewController.h; sourceTree = "<group>"; };
 		DE18D65416A4C94900FB779B /* ReadbackStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackStoreTableViewController.m; sourceTree = "<group>"; };
 		DE1DFCF2175E25D600F65736 /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
+		DE204947176246CE005CCF01 /* standardkeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = standardkeypad.plist; sourceTree = "<group>"; };
 		DE234B2F16A5C86400C99AE6 /* ReadbackKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackKeypad.h; sourceTree = "<group>"; };
 		DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackKeypad.m; sourceTree = "<group>"; };
+		DE2775D417820850008D0F81 /* azertykeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = azertykeypad.plist; sourceTree = "<group>"; };
 		DE28A65A16A25FC200429C46 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
-		DE28A65B16A25FC200429C46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		DE2A65DE183A746C00A39C2C /* scratchpadBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scratchpadBar.png; sourceTree = "<group>"; };
 		DE2E2226174F237200B551A5 /* key-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-help.png"; sourceTree = "<group>"; };
 		DE31ACF916B87EFB00E5F7B3 /* ReadbackSalesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackSalesManager.h; sourceTree = "<group>"; };
 		DE31ACFA16B87EFB00E5F7B3 /* ReadbackSalesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackSalesManager.m; sourceTree = "<group>"; };
@@ -124,6 +182,11 @@
 		DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelpViewController.m; sourceTree = "<group>"; };
 		DE46E648169CC6F500C90F72 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		DE46E64E169CC7AD00C90F72 /* left-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-button.png"; sourceTree = "<group>"; };
+		DE4A8E0118624B6C000EE4BD /* cmd-speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmd-speed.png"; sourceTree = "<group>"; };
+		DE4A8E0318624F55000EE4BD /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		DE4A8E0718625EF2000EE4BD /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		DE4A8E0B186260AD000EE4BD /* pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdf.png; sourceTree = "<group>"; };
+		DE4A8E0D18626109000EE4BD /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		DE4C580816B31C1F004AC4D7 /* clear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear2.png; sourceTree = "<group>"; };
 		DE4C580F16B32A72004AC4D7 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
 		DE4C581016B32A72004AC4D7 /* Icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon144.png; sourceTree = "<group>"; };
@@ -136,16 +199,17 @@
 		DE52DE3816F351D3001D307E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DE52DE3A16F35437001D307E /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		DE52DE3B16F35437001D307E /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
-		DE52DE3F16F36590001D307E /* StandardKeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StandardKeypad.plist; path = ../StandardKeypad.plist; sourceTree = "<group>"; };
+		DE57DB5918707A4100870830 /* er-ops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "er-ops.png"; sourceTree = "<group>"; };
+		DE57DB5D187082EB00870830 /* azerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = azerty.png; sourceTree = "<group>"; };
+		DE57DB5F1870841400870830 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
 		DE5B0CA816FA7DA1007C54C0 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		DE5B0CAA16FA7EE1007C54C0 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
-		DE5F478717609C89004DE042 /* CuesoftHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuesoftHelper.h; sourceTree = "<group>"; };
-		DE5F478817609C89004DE042 /* CuesoftHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuesoftHelper.m; sourceTree = "<group>"; };
-		DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanicKeypadVC.xib; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 		DE6AFC9C170C715A00C45697 /* button738.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button738.png; path = Readback/button738.png; sourceTree = "<group>"; };
+		DE7457821777718C0051BE86 /* clearancekeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearancekeypad.plist; sourceTree = "<group>"; };
+		DE745784177777BB0051BE86 /* qwertykeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = qwertykeypad.plist; sourceTree = "<group>"; };
 		DE857FE9169D939C005E8F96 /* hold-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hold-short.png"; sourceTree = "<group>"; };
 		DE857FEB169D94C2005E8F96 /* climb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = climb.png; sourceTree = "<group>"; };
 		DE857FEC169D94C2005E8F96 /* descend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descend.png; sourceTree = "<group>"; };
@@ -154,13 +218,13 @@
 		DE9057C516F12BDA0012B709 /* intc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intc.png; sourceTree = "<group>"; };
 		DE960EA7170DCE0A009CB12C /* what-is-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "what-is-new.png"; sourceTree = "<group>"; };
 		DEA410E5170F930900149893 /* xpdr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xpdr.png; sourceTree = "<group>"; };
-		DEA410E7170F969A00149893 /* cmd-speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmd-speed.png"; sourceTree = "<group>"; };
-		DEA410E8170F969A00149893 /* er-ops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "er-ops.png"; sourceTree = "<group>"; };
 		DEA410EB170F979000149893 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		DEA410ED170F993400149893 /* clearance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearance.png; sourceTree = "<group>"; };
 		DEA410EE170F993400149893 /* qwerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qwerty.png; sourceTree = "<group>"; };
 		DED3AC06175965DB00233ED2 /* AzertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AzertyKeypadVC.xib; sourceTree = "<group>"; };
 		DED5B3F9170BD9610036CBC2 /* sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sid.png; sourceTree = "<group>"; };
+		DED5B5271854CAB30068B9BF /* CuesoftHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CuesoftHelper.h; path = ../../CuesoftHelper/CuesoftHelper.h; sourceTree = "<group>"; };
+		DED5B5281854CAB30068B9BF /* CuesoftHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CuesoftHelper.m; path = ../../CuesoftHelper/CuesoftHelper.m; sourceTree = "<group>"; };
 		DED941D416D7EA6500C0AC09 /* vor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vor.png; sourceTree = "<group>"; };
 		DED941DD16D7ECF500C0AC09 /* vectors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vectors.png; sourceTree = "<group>"; };
 		DED941E116D7EFBF00C0AC09 /* rwy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rwy.png; sourceTree = "<group>"; };
@@ -200,11 +264,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0281DA1858F40C005F9B3D /* Night */ = {
+			isa = PBXGroup;
+			children = (
+				DEA410EB170F979000149893 /* cross.png */,
+				DE4F52D116F268D700A3D842 /* 10-min.png */,
+				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
+				DE4F52D916F2C18100A3D842 /* by-time.png */,
+				DE3E9D4416FB3C0600931511 /* call.png */,
+				DE857FF3169DA45D005E8F96 /* cat.png */,
+				DE857FEB169D94C2005E8F96 /* climb.png */,
+				DE857FEC169D94C2005E8F96 /* descend.png */,
+				DE09CD2116A348C100483034 /* direct.png */,
+				DE857FE9169D939C005E8F96 /* hold-short.png */,
+				DE09CD2816A34DEE00483034 /* holding.png */,
+				DE396A57169E0DDC0093C773 /* ils.png */,
+				DE9057C516F12BDA0012B709 /* intc.png */,
+				DE46E64E169CC7AD00C90F72 /* left-button.png */,
+				DE857FF1169DA37C005E8F96 /* ndb.png */,
+				DE5B0CA616FA7473007C54C0 /* not-found.png */,
+				DE46E648169CC6F500C90F72 /* right.png */,
+				DED941E116D7EFBF00C0AC09 /* rwy.png */,
+				DED5B3F9170BD9610036CBC2 /* sid.png */,
+				DE5B0CA816FA7DA1007C54C0 /* star.png */,
+				DE5B0CAA16FA7EE1007C54C0 /* up.png */,
+				DED941DD16D7ECF500C0AC09 /* vectors.png */,
+				DED941D416D7EA6500C0AC09 /* vor.png */,
+				DEA410E5170F930900149893 /* xpdr.png */,
+			);
+			name = Night;
+			sourceTree = "<group>";
+		};
+		DE02820B1858F564005F9B3D /* day */ = {
+			isa = PBXGroup;
+			children = (
+				DE0281DB1858F55C005F9B3D /* 10-min-d.png */,
+				DE0281DC1858F55C005F9B3D /* altimeter-d.png */,
+				DE0281DD1858F55C005F9B3D /* by-time-d.png */,
+				DE0281DE1858F55C005F9B3D /* call-d.png */,
+				DE0281DF1858F55C005F9B3D /* cat-d.png */,
+				DE0281E01858F55C005F9B3D /* climb-d.png */,
+				DE0281E11858F55C005F9B3D /* cross-d.png */,
+				DE0281E21858F55C005F9B3D /* descend-d.png */,
+				DE0281E31858F55C005F9B3D /* direct-d.png */,
+				DE0281E41858F55C005F9B3D /* hold-short-d.png */,
+				DE0281E51858F55C005F9B3D /* holding-d.png */,
+				DE0281E61858F55C005F9B3D /* ils-d.png */,
+				DE0281E71858F55C005F9B3D /* intc-d.png */,
+				DE0281E81858F55C005F9B3D /* left-button-d.png */,
+				DE0281E91858F55C005F9B3D /* ndb-d.png */,
+				DE0281EA1858F55C005F9B3D /* not-found-d.png */,
+				DE0281EB1858F55C005F9B3D /* right-d.png */,
+				DE0281EC1858F55C005F9B3D /* rwy-d.png */,
+				DE0281ED1858F55C005F9B3D /* sid-d.png */,
+				DE0281EE1858F55C005F9B3D /* star-d.png */,
+				DE0281EF1858F55C005F9B3D /* up-d.png */,
+				DE0281F01858F55C005F9B3D /* vectors-d.png */,
+				DE0281F11858F55C005F9B3D /* vor-d.png */,
+				DE0281F21858F55C005F9B3D /* xpdr-d.png */,
+			);
+			name = day;
+			sourceTree = "<group>";
+		};
 		DE17668216A610A800760990 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				DE5F478717609C89004DE042 /* CuesoftHelper.h */,
-				DE5F478817609C89004DE042 /* CuesoftHelper.m */,
 				DE234B2F16A5C86400C99AE6 /* ReadbackKeypad.h */,
 				DE234B3016A5C86400C99AE6 /* ReadbackKeypad.m */,
 				DE413D1D16D1321F006E743A /* KeyInterpreter.h */,
@@ -219,29 +343,44 @@
 			isa = PBXGroup;
 			children = (
 				DEA410ED170F993400149893 /* clearance.png */,
+				DE57DB5D187082EB00870830 /* azerty.png */,
 				DEA410EE170F993400149893 /* qwerty.png */,
 			);
 			name = Previews;
 			sourceTree = "<group>";
 		};
+		DE20494617624637005CCF01 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DED5B5271854CAB30068B9BF /* CuesoftHelper.h */,
+				DED5B5281854CAB30068B9BF /* CuesoftHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A8E0718625EF2000EE4BD /* download.png */,
+				DE57DB5F1870841400870830 /* back.png */,
+				DE57DB5918707A4100870830 /* er-ops.png */,
+				DE4A8E0D18626109000EE4BD /* help.png */,
+				DE4A8E0B186260AD000EE4BD /* pdf.png */,
+				DE4A8E0318624F55000EE4BD /* trash.png */,
+				DE0281D81858F268005F9B3D /* flightNumberTextField.png */,
+				DE2A65DE183A746C00A39C2C /* scratchpadBar.png */,
 				DE1DFCF2175E25D600F65736 /* thumb.png */,
 				DE2E2226174F237200B551A5 /* key-help.png */,
 				DEDDBE30174C24DD00221759 /* buttonGray.png */,
 				DEDDBE2C174C1EED00221759 /* keypadIcon.png */,
-				DE28A65B16A25FC200429C46 /* back.png */,
 				DE4C581316B32BF3004AC4D7 /* backwards.png */,
 				DE44828316A0C5AD00E36814 /* button.png */,
 				DE6AFC9C170C715A00C45697 /* button738.png */,
 				DE44828216A0C5AD00E36814 /* buttonLarge.png */,
 				DE28A65A16A25FC200429C46 /* clear.png */,
 				DE4C580816B31C1F004AC4D7 /* clear2.png */,
-				DEA410E7170F969A00149893 /* cmd-speed.png */,
-				DEA410E8170F969A00149893 /* er-ops.png */,
+				DE4A8E0118624B6C000EE4BD /* cmd-speed.png */,
 				DE4C581416B32BF3004AC4D7 /* forward.png */,
-				DE1698AA16D97D7600AB45A7 /* help.png */,
 				DE4C581716B32CAC004AC4D7 /* plus.png */,
 				DE960EA7170DCE0A009CB12C /* what-is-new.png */,
 			);
@@ -313,8 +452,6 @@
 				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
 				DED3AC06175965DB00233ED2 /* AzertyKeypadVC.xib */,
-				DE68E4EC16CFF6B80031123E /* OceanicKeypadVC.xib */,
-				DE52DE3F16F36590001D307E /* StandardKeypad.plist */,
 			);
 			name = Keypads;
 			sourceTree = "<group>";
@@ -322,30 +459,8 @@
 		DE46E63F169CBE3C00C90F72 /* keys */ = {
 			isa = PBXGroup;
 			children = (
-				DEA410EB170F979000149893 /* cross.png */,
-				DE4F52D116F268D700A3D842 /* 10-min.png */,
-				DE4F52DF16F2D05D00A3D842 /* altimeter.png */,
-				DE4F52D916F2C18100A3D842 /* by-time.png */,
-				DE3E9D4416FB3C0600931511 /* call.png */,
-				DE857FF3169DA45D005E8F96 /* cat.png */,
-				DE857FEB169D94C2005E8F96 /* climb.png */,
-				DE857FEC169D94C2005E8F96 /* descend.png */,
-				DE09CD2116A348C100483034 /* direct.png */,
-				DE857FE9169D939C005E8F96 /* hold-short.png */,
-				DE09CD2816A34DEE00483034 /* holding.png */,
-				DE396A57169E0DDC0093C773 /* ils.png */,
-				DE9057C516F12BDA0012B709 /* intc.png */,
-				DE46E64E169CC7AD00C90F72 /* left-button.png */,
-				DE857FF1169DA37C005E8F96 /* ndb.png */,
-				DE5B0CA616FA7473007C54C0 /* not-found.png */,
-				DE46E648169CC6F500C90F72 /* right.png */,
-				DED941E116D7EFBF00C0AC09 /* rwy.png */,
-				DED5B3F9170BD9610036CBC2 /* sid.png */,
-				DE5B0CA816FA7DA1007C54C0 /* star.png */,
-				DE5B0CAA16FA7EE1007C54C0 /* up.png */,
-				DED941DD16D7ECF500C0AC09 /* vectors.png */,
-				DED941D416D7EA6500C0AC09 /* vor.png */,
-				DEA410E5170F930900149893 /* xpdr.png */,
+				DE02820B1858F564005F9B3D /* day */,
+				DE0281DA1858F40C005F9B3D /* Night */,
 			);
 			name = keys;
 			sourceTree = "<group>";
@@ -359,12 +474,23 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		DE745781177771270051BE86 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				DE2775D417820850008D0F81 /* azertykeypad.plist */,
+				DE7457821777718C0051BE86 /* clearancekeypad.plist */,
+				DE745784177777BB0051BE86 /* qwertykeypad.plist */,
+				DE204947176246CE005CCF01 /* standardkeypad.plist */,
+			);
+			name = "Property Lists";
+			path = Readback;
+			sourceTree = "<group>";
+		};
 		DEEEAB60169A726A00AEFC99 = {
 			isa = PBXGroup;
 			children = (
-				DE3787F717008D3D0054C216 /* MessageUI.framework */,
-				DE52DE3816F351D3001D307E /* StoreKit.framework */,
 				DEEEAB75169A726A00AEFC99 /* Readback */,
+				DE745781177771270051BE86 /* Property Lists */,
 				DE17668516A6173600760990 /* Previews */,
 				DE28A65E16A25FCE00429C46 /* Images */,
 				DE46E63F169CBE3C00C90F72 /* keys */,
@@ -386,6 +512,8 @@
 		DEEEAB6E169A726A00AEFC99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE3787F717008D3D0054C216 /* MessageUI.framework */,
+				DE52DE3816F351D3001D307E /* StoreKit.framework */,
 				DEEEAB6F169A726A00AEFC99 /* UIKit.framework */,
 				DEEEAB71169A726A00AEFC99 /* Foundation.framework */,
 				DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */,
@@ -401,6 +529,7 @@
 				DE41D73216BA197E00883B68 /* Keypads */,
 				DE413D2E16D1474F006E743A /* Purchasing */,
 				DE17668216A610A800760990 /* Entities */,
+				DE20494617624637005CCF01 /* Helpers */,
 			);
 			path = Readback;
 			sourceTree = "<group>";
@@ -451,6 +580,11 @@
 				CLASSPREFIX = Readback;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Santiago Borja";
+				TargetAttributes = {
+					DEEEAB6A169A726A00AEFC99 = {
+						DevelopmentTeam = DEX4P5QYYA;
+					};
+				};
 			};
 			buildConfigurationList = DEEEAB65169A726A00AEFC99 /* Build configuration list for PBXProject "Readback" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -478,9 +612,11 @@
 				DEEEAB82169A726A00AEFC99 /* Default.png in Resources */,
 				DEEEAB84169A726A00AEFC99 /* Default@2x.png in Resources */,
 				DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */,
+				DE0281F61858F55C005F9B3D /* call-d.png in Resources */,
 				DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */,
 				DE46E649169CC6F500C90F72 /* right.png in Resources */,
 				DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */,
+				DE0281F91858F55C005F9B3D /* cross-d.png in Resources */,
 				DE857FEA169D939C005E8F96 /* hold-short.png in Resources */,
 				DE857FED169D94C2005E8F96 /* climb.png in Resources */,
 				DE857FEE169D94C2005E8F96 /* descend.png in Resources */,
@@ -489,47 +625,77 @@
 				DE396A58169E0DDC0093C773 /* ils.png in Resources */,
 				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
 				DE44828516A0C5AD00E36814 /* button.png in Resources */,
+				DE4A8E0E18626109000EE4BD /* help.png in Resources */,
+				DE0281FE1858F55C005F9B3D /* ils-d.png in Resources */,
+				DE0282071858F55C005F9B3D /* up-d.png in Resources */,
 				DE28A65C16A25FC200429C46 /* clear.png in Resources */,
-				DE28A65D16A25FC200429C46 /* back.png in Resources */,
+				DE0282051858F55C005F9B3D /* sid-d.png in Resources */,
 				DE09CD2216A348C100483034 /* direct.png in Resources */,
+				DE2A65DF183A746C00A39C2C /* scratchpadBar.png in Resources */,
 				DE09CD2916A34DEE00483034 /* holding.png in Resources */,
+				DE0281FD1858F55C005F9B3D /* holding-d.png in Resources */,
+				DE0282081858F55C005F9B3D /* vectors-d.png in Resources */,
 				DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */,
 				DE4C581116B32A72004AC4D7 /* Icon72.png in Resources */,
 				DE4C581216B32A72004AC4D7 /* Icon144.png in Resources */,
 				DE4C581516B32BF3004AC4D7 /* backwards.png in Resources */,
 				DE4C581616B32BF3004AC4D7 /* forward.png in Resources */,
+				DE0281F71858F55C005F9B3D /* cat-d.png in Resources */,
+				DE02820A1858F55C005F9B3D /* xpdr-d.png in Resources */,
+				DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */,
+				DE57DB5E187082EB00870830 /* azerty.png in Resources */,
 				DE4C581816B32CAC004AC4D7 /* plus.png in Resources */,
 				DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */,
-				DE68E4EE16CFF6B80031123E /* OceanicKeypadVC.xib in Resources */,
 				DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */,
+				DE0282091858F55C005F9B3D /* vor-d.png in Resources */,
 				DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */,
 				DED941D616D7EA6500C0AC09 /* vor.png in Resources */,
 				DED941DE16D7ECF500C0AC09 /* vectors.png in Resources */,
+				DE0281FA1858F55C005F9B3D /* descend-d.png in Resources */,
 				DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */,
-				DE1698AB16D97D7600AB45A7 /* help.png in Resources */,
+				DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */,
+				DE4A8E0818625EF2000EE4BD /* download.png in Resources */,
+				DE4A8E0218624B6C000EE4BD /* cmd-speed.png in Resources */,
+				DE4A8E0418624F55000EE4BD /* trash.png in Resources */,
 				DE9057C616F12BDA0012B709 /* intc.png in Resources */,
+				DE0281FF1858F55C005F9B3D /* intc-d.png in Resources */,
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
 				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
+				DE0282041858F55C005F9B3D /* rwy-d.png in Resources */,
+				DE0281F81858F55C005F9B3D /* climb-d.png in Resources */,
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
-				DE52DE4016F36590001D307E /* StandardKeypad.plist in Resources */,
+				DE0282001858F55C005F9B3D /* left-button-d.png in Resources */,
 				DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */,
+				DE0282021858F55C005F9B3D /* not-found-d.png in Resources */,
+				DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */,
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
 				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
+				DE0282011858F55C005F9B3D /* ndb-d.png in Resources */,
 				DED5B3FA170BD9610036CBC2 /* sid.png in Resources */,
+				DE0281FB1858F55C005F9B3D /* direct-d.png in Resources */,
+				DE4A8E0C186260AD000EE4BD /* pdf.png in Resources */,
 				DE6AFC9D170C715A00C45697 /* button738.png in Resources */,
 				DE960EA8170DCE0A009CB12C /* what-is-new.png in Resources */,
 				DEA410E6170F930900149893 /* xpdr.png in Resources */,
-				DEA410E9170F969A00149893 /* cmd-speed.png in Resources */,
-				DEA410EA170F969A00149893 /* er-ops.png in Resources */,
+				DE0281F51858F55C005F9B3D /* by-time-d.png in Resources */,
 				DEA410EC170F979000149893 /* cross.png in Resources */,
 				DEA410EF170F993400149893 /* clearance.png in Resources */,
 				DEA410F0170F993400149893 /* qwerty.png in Resources */,
 				DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */,
 				DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */,
+				DE0281FC1858F55C005F9B3D /* hold-short-d.png in Resources */,
 				DE2E2227174F237200B551A5 /* key-help.png in Resources */,
+				DE0282061858F55C005F9B3D /* star-d.png in Resources */,
 				DED3AC08175965DB00233ED2 /* AzertyKeypadVC.xib in Resources */,
 				DE1DFCF3175E25D600F65736 /* thumb.png in Resources */,
+				DE204948176246CE005CCF01 /* standardkeypad.plist in Resources */,
+				DE7457831777718C0051BE86 /* clearancekeypad.plist in Resources */,
+				DE57DB5A18707A4100870830 /* er-ops.png in Resources */,
+				DE57DB601870841400870830 /* back.png in Resources */,
+				DE745785177777BB0051BE86 /* qwertykeypad.plist in Resources */,
+				DE2775D517820850008D0F81 /* azertykeypad.plist in Resources */,
+				DE0282031858F55C005F9B3D /* right-d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +709,7 @@
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
+				DED5B5291854CAB30068B9BF /* CuesoftHelper.m in Sources */,
 				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
 				DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */,
 				DE18D65216A4C2B600FB779B /* ReadbackSalesViewController.m in Sources */,
@@ -555,7 +722,6 @@
 				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
 				DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */,
 				DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */,
-				DE5F478917609C89004DE042 /* CuesoftHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

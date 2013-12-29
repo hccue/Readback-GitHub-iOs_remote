@@ -1,1820 +1,467 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">11G63</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1138.51</string>
-		<string key="IBDocument.HIToolboxVersion">569.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIButton</string>
-			<string>IBUIView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="841351856">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-			<object class="IBProxyObject" id="606714003">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-			<object class="IBUIView" id="410938377">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIButton" id="4854997">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{603.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="472300423"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">N</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor" id="872793035">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-						</object>
-						<object class="NSColor" key="IBUINormalTitleColor" id="165327010">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAxIDEAA</bytes>
-						</object>
-						<object class="NSColor" key="IBUINormalTitleShadowColor" id="944268968">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MC41AA</bytes>
-						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="709831739">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">button.png</string>
-						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="31061723">
-							<string key="name">AvenirNext-UltraLight</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
-							<double key="pointSize">65</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="635206695">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">65</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="932320367">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{323.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="643834089"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">C</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="957763207">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{882, 212}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="278512577"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">/</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="245009955">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{230.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="433217160"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">E</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="899078785">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{746, 284}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="207413067"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">16</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">holding.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="643834089">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{417.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="540428392"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">V</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="472300423">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{696.5, 210.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="48191008"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">M</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="88717827">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{2, 353}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="471883520"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">6</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">DEL</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAwLjExMjk4MTAxMTUgMC4xNDU1NDM0NTE0AA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="946129956">
-							<string key="name">AvenirNext-Regular</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
-							<double key="pointSize">34</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="656729809">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">34</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="280362848">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{188.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="979827415"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">S</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="473832530">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{840, 143}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="768573743"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">L</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="48191008">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{789, 212}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="957763207"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">-</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="540428392">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{510.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="4854997"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">B</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="813678279">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{137.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="687311412"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Z</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="471883520">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{137, 352.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="312841192"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">15</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">direct.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="352480779">
-							<string key="name">TrebuchetMS</string>
-							<string key="family">Trebuchet MS</string>
-							<int key="traits">0</int>
-							<double key="pointSize">65</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="1024208358">
-							<string key="NSName">TrebuchetMS</string>
-							<double key="NSSize">65</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="768012414">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{653, 352.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="278912913"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">4</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">descend.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="705842691">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{2, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="493916305"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">1</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="602936198">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">buttonGray.png</string>
-						</object>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="880507729">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{44.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="1027817281"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Q</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="493916305">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{95, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="22613663"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">2</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="964129654">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{467.5, 1.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="689092196"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">6</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="296129894">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{746.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="473832530"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">K</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="915336526">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{416.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="12898717"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">T</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="278512577">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{281, 284}, {369, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="26286750"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">11</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">SPACE</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">button738.png</string>
-						</object>
-						<reference key="IBUIFontDescription" ref="946129956"/>
-						<reference key="IBUIFont" ref="656729809"/>
-					</object>
-					<object class="IBUIButton" id="26286750">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{653, 284}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="899078785"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="248136173">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
-							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
-						</object>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">3</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">climb.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="964871991">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{281, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="37713143"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">4</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="506219747">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{560.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="527254954"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">H</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="278912913">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{746, 353}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="535166702"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">1</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">left-button.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="12898717">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{509.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="68773866"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Y</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="338037897">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{932, 283.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="88717827"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">5</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">cross.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="550178037">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{44, 212}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="813678279"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">.</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<string key="name">AvenirNext-Bold</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
-							<double key="pointSize">65</double>
-						</object>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="854221978">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{695.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="501988029"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">I</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="527254954">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{653.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="296129894"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">J</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="210424030">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{95.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="280362848"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">A</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="768573743">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{933, 143}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="550178037"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">14</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">call.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="312841192">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{560, 352.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="768012414"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">9</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">hold-short.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="979827415">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{281.5, 142.5}, {89.5, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="186448439"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">D</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="1027817281">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{137.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="245009955"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">W</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="501988029">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{788.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="652031799"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">O</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="652031799">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{881.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="191302436"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">P</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="687311412">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{230.5, 211.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="932320367"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">X</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="22613663">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{188, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="964871991"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">3</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="186448439">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{374.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="470214349"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">F</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="165132780">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{840, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="211057324"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">0</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="89205733">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{932, 352.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">2</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">right.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="433217160">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{323.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="915336526"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">R</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="37713143">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{374, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="964129654"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">5</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="493322030">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{746.5, 1.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="165132780"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">9</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="689092196">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{560.5, 1.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="937949189"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">7</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="937949189">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{653.5, 1.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="493322030"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">8</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="68773866">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{602.5, 73.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="854221978"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">U</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="207413067">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{839, 284}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="338037897"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">20</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">intc.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-					<object class="IBUIButton" id="470214349">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{467.5, 142.5}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="506219747"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">G</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="211057324">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{933, 2}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="880507729"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">7</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">000</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="602936198"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<string key="name">AvenirNext-Regular</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
-							<double key="pointSize">47</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">47</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="191302436">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{2, 142}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="210424030"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">@</string>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="31061723"/>
-						<reference key="IBUIFont" ref="635206695"/>
-					</object>
-					<object class="IBUIButton" id="535166702">
-						<reference key="NSNextResponder" ref="410938377"/>
-						<int key="NSvFlags">1320</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{839, 353}, {90, 66}}</string>
-						<reference key="NSSuperview" ref="410938377"/>
-						<reference key="NSNextKeyView" ref="89205733"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<int key="IBUITag">28</int>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<reference key="IBUIHighlightedTitleColor" ref="872793035"/>
-						<reference key="IBUINormalTitleColor" ref="165327010"/>
-						<reference key="IBUINormalTitleShadowColor" ref="944268968"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">up.png</string>
-						</object>
-						<reference key="IBUINormalBackgroundImage" ref="709831739"/>
-						<reference key="IBUIFontDescription" ref="352480779"/>
-						<reference key="IBUIFont" ref="1024208358"/>
-					</object>
-				</array>
-				<string key="NSFrameSize">{1024, 421}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="705842691"/>
-				<reference key="IBUIBackgroundColor" ref="248136173"/>
-				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
-					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
-					<string key="IBUIDisplayName">Freeform</string>
-				</object>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="410938377"/>
-					</object>
-					<int key="connectionID">470</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="841351856"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="606714003"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">415</int>
-						<reference key="object" ref="410938377"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="768573743"/>
-							<reference ref="471883520"/>
-							<reference ref="312841192"/>
-							<reference ref="550178037"/>
-							<reference ref="191302436"/>
-							<reference ref="88717827"/>
-							<reference ref="899078785"/>
-							<reference ref="338037897"/>
-							<reference ref="207413067"/>
-							<reference ref="535166702"/>
-							<reference ref="278512577"/>
-							<reference ref="48191008"/>
-							<reference ref="957763207"/>
-							<reference ref="278912913"/>
-							<reference ref="89205733"/>
-							<reference ref="768012414"/>
-							<reference ref="26286750"/>
-							<reference ref="211057324"/>
-							<reference ref="165132780"/>
-							<reference ref="937949189"/>
-							<reference ref="689092196"/>
-							<reference ref="493322030"/>
-							<reference ref="473832530"/>
-							<reference ref="652031799"/>
-							<reference ref="501988029"/>
-							<reference ref="964129654"/>
-							<reference ref="37713143"/>
-							<reference ref="22613663"/>
-							<reference ref="964871991"/>
-							<reference ref="493916305"/>
-							<reference ref="705842691"/>
-							<reference ref="470214349"/>
-							<reference ref="68773866"/>
-							<reference ref="433217160"/>
-							<reference ref="186448439"/>
-							<reference ref="687311412"/>
-							<reference ref="1027817281"/>
-							<reference ref="979827415"/>
-							<reference ref="210424030"/>
-							<reference ref="527254954"/>
-							<reference ref="854221978"/>
-							<reference ref="12898717"/>
-							<reference ref="506219747"/>
-							<reference ref="915336526"/>
-							<reference ref="296129894"/>
-							<reference ref="880507729"/>
-							<reference ref="813678279"/>
-							<reference ref="540428392"/>
-							<reference ref="280362848"/>
-							<reference ref="472300423"/>
-							<reference ref="643834089"/>
-							<reference ref="245009955"/>
-							<reference ref="932320367"/>
-							<reference ref="4854997"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">416</int>
-						<reference key="object" ref="768573743"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">417</int>
-						<reference key="object" ref="471883520"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">418</int>
-						<reference key="object" ref="312841192"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">419</int>
-						<reference key="object" ref="550178037"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">420</int>
-						<reference key="object" ref="191302436"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">421</int>
-						<reference key="object" ref="88717827"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">422</int>
-						<reference key="object" ref="899078785"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">423</int>
-						<reference key="object" ref="338037897"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">424</int>
-						<reference key="object" ref="207413067"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">425</int>
-						<reference key="object" ref="535166702"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">426</int>
-						<reference key="object" ref="278512577"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">427</int>
-						<reference key="object" ref="48191008"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">428</int>
-						<reference key="object" ref="957763207"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">429</int>
-						<reference key="object" ref="278912913"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">430</int>
-						<reference key="object" ref="89205733"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">431</int>
-						<reference key="object" ref="768012414"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">432</int>
-						<reference key="object" ref="26286750"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">433</int>
-						<reference key="object" ref="211057324"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">434</int>
-						<reference key="object" ref="165132780"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">435</int>
-						<reference key="object" ref="937949189"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">436</int>
-						<reference key="object" ref="689092196"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">437</int>
-						<reference key="object" ref="493322030"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">438</int>
-						<reference key="object" ref="473832530"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">439</int>
-						<reference key="object" ref="652031799"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">440</int>
-						<reference key="object" ref="501988029"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">441</int>
-						<reference key="object" ref="964129654"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">442</int>
-						<reference key="object" ref="37713143"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">443</int>
-						<reference key="object" ref="22613663"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">444</int>
-						<reference key="object" ref="964871991"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">445</int>
-						<reference key="object" ref="493916305"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">446</int>
-						<reference key="object" ref="705842691"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">447</int>
-						<reference key="object" ref="470214349"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">448</int>
-						<reference key="object" ref="68773866"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">449</int>
-						<reference key="object" ref="433217160"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">450</int>
-						<reference key="object" ref="186448439"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">451</int>
-						<reference key="object" ref="687311412"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">452</int>
-						<reference key="object" ref="1027817281"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">453</int>
-						<reference key="object" ref="979827415"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">454</int>
-						<reference key="object" ref="210424030"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">455</int>
-						<reference key="object" ref="527254954"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">456</int>
-						<reference key="object" ref="854221978"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">457</int>
-						<reference key="object" ref="12898717"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">458</int>
-						<reference key="object" ref="506219747"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">459</int>
-						<reference key="object" ref="915336526"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">460</int>
-						<reference key="object" ref="296129894"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">461</int>
-						<reference key="object" ref="880507729"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">462</int>
-						<reference key="object" ref="813678279"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">463</int>
-						<reference key="object" ref="540428392"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">464</int>
-						<reference key="object" ref="280362848"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">465</int>
-						<reference key="object" ref="472300423"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">466</int>
-						<reference key="object" ref="643834089"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">467</int>
-						<reference key="object" ref="245009955"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">468</int>
-						<reference key="object" ref="932320367"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">469</int>
-						<reference key="object" ref="4854997"/>
-						<reference key="parent" ref="410938377"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">AzertyKeypadVC</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="415.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="416.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="416.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="416.showNotes"/>
-				<string key="417.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="417.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="417.showNotes"/>
-				<string key="418.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="418.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="418.showNotes"/>
-				<string key="419.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="419.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="419.showNotes"/>
-				<string key="420.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="420.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="420.showNotes"/>
-				<string key="421.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="421.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="421.showNotes"/>
-				<string key="422.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="422.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="422.showNotes"/>
-				<string key="423.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="423.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="423.showNotes"/>
-				<string key="424.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="424.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="424.showNotes"/>
-				<string key="425.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="425.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="425.showNotes"/>
-				<string key="426.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="426.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="426.showNotes"/>
-				<string key="427.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="427.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="427.showNotes"/>
-				<string key="428.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="428.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="428.showNotes"/>
-				<string key="429.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="429.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="429.showNotes"/>
-				<string key="430.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="430.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="430.showNotes"/>
-				<string key="431.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="431.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="431.showNotes"/>
-				<string key="432.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="432.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="432.showNotes"/>
-				<string key="433.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="433.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="433.showNotes"/>
-				<string key="434.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="434.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="434.showNotes"/>
-				<string key="435.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="435.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="435.showNotes"/>
-				<string key="436.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="436.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="436.showNotes"/>
-				<string key="437.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="437.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="437.showNotes"/>
-				<string key="438.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="438.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="438.showNotes"/>
-				<string key="439.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="439.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="439.showNotes"/>
-				<string key="440.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="440.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="440.showNotes"/>
-				<string key="441.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="441.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="441.showNotes"/>
-				<string key="442.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="442.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="442.showNotes"/>
-				<string key="443.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="443.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="443.showNotes"/>
-				<string key="444.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="444.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="444.showNotes"/>
-				<string key="445.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="445.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="445.showNotes"/>
-				<string key="446.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="446.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="446.showNotes"/>
-				<string key="447.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="447.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="447.showNotes"/>
-				<string key="448.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="448.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="448.showNotes"/>
-				<string key="449.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="449.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="449.showNotes"/>
-				<string key="450.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="450.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="450.showNotes"/>
-				<string key="451.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="451.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="451.showNotes"/>
-				<string key="452.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="452.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="452.showNotes"/>
-				<string key="453.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="453.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="453.showNotes"/>
-				<string key="454.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="454.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="454.showNotes"/>
-				<string key="455.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="455.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="455.showNotes"/>
-				<string key="456.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="456.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="456.showNotes"/>
-				<string key="457.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="457.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="457.showNotes"/>
-				<string key="458.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="458.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="458.showNotes"/>
-				<string key="459.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="459.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="459.showNotes"/>
-				<string key="460.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="460.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="460.showNotes"/>
-				<string key="461.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="461.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="461.showNotes"/>
-				<string key="462.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="462.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="462.showNotes"/>
-				<string key="463.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="463.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="463.showNotes"/>
-				<string key="464.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="464.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="464.showNotes"/>
-				<string key="465.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="465.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="465.showNotes"/>
-				<string key="466.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="466.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="466.showNotes"/>
-				<string key="467.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="467.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="467.showNotes"/>
-				<string key="468.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="468.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="468.showNotes"/>
-				<string key="469.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="469.IBUserGuides" ref="0"/>
-				<boolean value="NO" key="469.showNotes"/>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">470</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="button.png">{89, 66}</string>
-			<string key="button738.png">{738, 132}</string>
-			<string key="buttonGray.png">{89, 66}</string>
-			<string key="call.png">{65, 65}</string>
-			<string key="climb.png">{65, 65}</string>
-			<string key="cross.png">{65, 65}</string>
-			<string key="descend.png">{65, 65}</string>
-			<string key="direct.png">{65, 65}</string>
-			<string key="hold-short.png">{65, 65}</string>
-			<string key="holding.png">{65, 65}</string>
-			<string key="intc.png">{65, 65}</string>
-			<string key="left-button.png">{65, 65}</string>
-			<string key="right.png">{65, 65}</string>
-			<string key="up.png">{65, 65}</string>
-		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AzertyKeypadVC">
+            <connections>
+                <outlet property="view" destination="415" id="470"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="415">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="421"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="469">
+                    <rect key="frame" x="604" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="N" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="468">
+                    <rect key="frame" x="324" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="C" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="428">
+                    <rect key="frame" x="882" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="/" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="467">
+                    <rect key="frame" x="231" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="E" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="422">
+                    <rect key="frame" x="746" y="284" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" image="holding.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="466">
+                    <rect key="frame" x="418" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="V" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="465">
+                    <rect key="frame" x="698" y="210" width="89" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" image="call.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="421">
+                    <rect key="frame" x="2" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
+                    <state key="normal" title="DEL" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="0.11298101150000001" blue="0.1455434514" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="464">
+                    <rect key="frame" x="189" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="S" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="438">
+                    <rect key="frame" x="840" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="L" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="427">
+                    <rect key="frame" x="789" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="-" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="463">
+                    <rect key="frame" x="511" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="B" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="462">
+                    <rect key="frame" x="138" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="W" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="417">
+                    <rect key="frame" x="137" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="direct.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="431">
+                    <rect key="frame" x="653" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="descend.png" backgroundImage="button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="446">
+                    <rect key="frame" x="2" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="1" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="461">
+                    <rect key="frame" x="45" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="A" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="445">
+                    <rect key="frame" x="95" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="2" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="441">
+                    <rect key="frame" x="468" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="6" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="460">
+                    <rect key="frame" x="747" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="K" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="459">
+                    <rect key="frame" x="417" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="T" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="426">
+                    <rect key="frame" x="281" y="284" width="369" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
+                    <state key="normal" title="SPACE" backgroundImage="button738.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="432">
+                    <rect key="frame" x="653" y="284" width="90" height="66"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="climb.png" backgroundImage="button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="444">
+                    <rect key="frame" x="281" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="4" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="458">
+                    <rect key="frame" x="561" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="H" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="429">
+                    <rect key="frame" x="746" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="left-button.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="457">
+                    <rect key="frame" x="510" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="Y" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="423">
+                    <rect key="frame" x="932" y="284" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="cross.png" backgroundImage="button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="419">
+                    <rect key="frame" x="44" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="." backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="456">
+                    <rect key="frame" x="696" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="I" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="455">
+                    <rect key="frame" x="654" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="J" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="454">
+                    <rect key="frame" x="96" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="Q" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="416">
+                    <rect key="frame" x="933" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="M" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="418">
+                    <rect key="frame" x="560" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="hold-short.png" backgroundImage="button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="453">
+                    <rect key="frame" x="282" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="D" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="452">
+                    <rect key="frame" x="138" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="Z" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="440">
+                    <rect key="frame" x="789" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="O" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="439">
+                    <rect key="frame" x="882" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="P" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="451">
+                    <rect key="frame" x="231" y="212" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="X" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="443">
+                    <rect key="frame" x="188" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="3" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="450">
+                    <rect key="frame" x="375" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="F" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="434">
+                    <rect key="frame" x="840" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="0" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="430">
+                    <rect key="frame" x="932" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="right.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="449">
+                    <rect key="frame" x="324" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="R" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="442">
+                    <rect key="frame" x="374" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="5" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="437">
+                    <rect key="frame" x="747" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="9" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="436">
+                    <rect key="frame" x="561" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="7" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="435">
+                    <rect key="frame" x="654" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="8" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="448">
+                    <rect key="frame" x="603" y="73" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="U" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="424">
+                    <rect key="frame" x="839" y="284" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="intc.png" backgroundImage="button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="447">
+                    <rect key="frame" x="468" y="143" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="G" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="433">
+                    <rect key="frame" x="933" y="2" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="47"/>
+                    <state key="normal" title="000" backgroundImage="buttonGray.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="420">
+                    <rect key="frame" x="2" y="142" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                    <state key="normal" title="@" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="425">
+                    <rect key="frame" x="839" y="353" width="90" height="66"/>
+                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                    <state key="normal" image="up.png" backgroundImage="button.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button.png" width="89" height="66"/>
+        <image name="button738.png" width="738" height="132"/>
+        <image name="buttonGray.png" width="89" height="66"/>
+        <image name="call.png" width="65" height="65"/>
+        <image name="climb.png" width="65" height="65"/>
+        <image name="cross.png" width="65" height="65"/>
+        <image name="descend.png" width="65" height="65"/>
+        <image name="direct.png" width="65" height="65"/>
+        <image name="hold-short.png" width="65" height="65"/>
+        <image name="holding.png" width="65" height="65"/>
+        <image name="intc.png" width="65" height="65"/>
+        <image name="left-button.png" width="65" height="65"/>
+        <image name="right.png" width="65" height="65"/>
+        <image name="up.png" width="65" height="65"/>
+    </resources>
+</document>

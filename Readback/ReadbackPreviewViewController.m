@@ -8,6 +8,7 @@
 
 #import "ReadbackPreviewViewController.h"
 #import "ReadbackSalesManager.h"
+#import "CuesoftHelper.h"
 
 //animation
 #import "ReadbackViewController.h"
@@ -43,7 +44,7 @@
     if ([ReadbackSalesManager keypadIdentifierIsPurchased:self.keypad.product.productIdentifier]) {
         [self disablePurchaseButton];
     } else {
-        NSNumberFormatter *priceFormatter = [ReadbackKeypad priceFormatter];
+        NSNumberFormatter *priceFormatter = [CuesoftHelper priceFormatter];
         [priceFormatter setLocale:self.keypad.product.priceLocale];
             
         [self.purchaseButton setTitle:[NSString stringWithFormat:STRING_FORMAT_PURCHASE_BUTTON, [priceFormatter stringFromNumber:self.keypad.product.price]] forState:UIControlStateNormal];

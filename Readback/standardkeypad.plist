@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>StandardKeypadVC</string>
+	<key>title</key>
+	<string>Standard Keypad</string>
+	<key>subtitle</key>
+	<string>Suits any pilot, anywhere.</string>
+	<key>imageURL</key>
+	<string>standard.png</string>
+	<key>description</key>
+	<string>This is the standard keypad, excellent as a handy tool in any phase of flight for short notes and simple clearances, however you may want to get a custom keypad for better performance in critical phases of flight</string>
+</dict>
+</plist>

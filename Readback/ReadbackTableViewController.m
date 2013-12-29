@@ -30,6 +30,7 @@
     
     [cell.contentView addSubview:[self.dataSource logViewAtIndex:indexPath.row]];
     cell.transform = CGAffineTransformMakeRotation(M_PI);
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

@@ -13,8 +13,10 @@
 #define STANDARD_KEYPAD_IDENTIFIER      @"standardkeypad"
 #define CLEARANCE_KEYPAD_IDENTIFIER     @"com.cuesoft.readback.clearancekeypad"
 #define QWERTY_KEYPAD_IDENTIFIER        @"com.cuesoft.readback.qwertykeypad"
-#define OCEANIC_KEYPAD_IDENTIFIER       @"com.cuesoft.readback.oceanickeypad"
 #define AZERTY_KEYPAD_IDENTIFIER       @"com.cuesoft.readback.azertykeypad"
+
+#define STRING_DOT @"."
+#define STRING_SLASH @"/"
 
 @interface KeypadGenerator : NSObject
 

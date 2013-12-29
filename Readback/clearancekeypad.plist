@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>ClearanceKeypadVC</string>
+	<key>title</key>
+	<string>Clearance Keypad</string>
+	<key>subtitle</key>
+	<string>For light speed clearances.</string>
+	<key>imageURL</key>
+	<string>clearance.png</string>
+	<key>description</key>
+	<string>A keypad carefully designed to copy ATC Clearances and check your ATIS. Key sorting follows standard Clearance format making it very useful.</string>
+	<key>keys</key>
+	<dict>
+		<key>sid.png</key>
+		<string>SID, there is also a STAR.</string>
+		<key>vectors.png</key>
+		<string>Vectors to FIX</string>
+		<key>10-min.png</key>
+		<string>Expect FL 10 min after</string>
+		<key>call.png</key>
+		<string>Call, Report, Switch to my Frequency, Contact...</string>
+		<key>xpdr.png</key>
+		<string>Sqwawk code, Transponder.</string>
+		<key>altimeter.png</key>
+		<string>Altimeter Setting/QNH</string>
+		<key>intc.png</key>
+		<string>Intercept, join.</string>
+	</dict>
+</dict>
+</plist>

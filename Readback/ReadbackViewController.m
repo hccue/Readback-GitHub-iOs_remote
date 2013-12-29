@@ -490,25 +490,44 @@ int global_clearanceXPosition;
 -(void)loadPurchasedKeypads
 {
     NSArray *purchasedKeypadsIdentifiers = [ReadbackSalesManager getPurchasedIdentifiersFromMemory];
+    
     //Get each keypad's ViewController
     NSMutableArray *keypadsViewControllers = [[NSMutableArray alloc] initWithCapacity:[purchasedKeypadsIdentifiers count]];
+
     for (NSString *keypadIdentifier in purchasedKeypadsIdentifiers) {
-        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:keypadIdentifier];
+
+        
+        ReadbackKeypad *keypad = [KeypadGenerator generateKeypadWithIdentifier:
+                                  keypadIdentifier];
         KeypadViewController *correspondingVC = [[KeypadViewController alloc] initWithNibName:keypad.name bundle:nil];
         correspondingVC.title = keypad.title;
         correspondingVC.keypad = keypad;
         [keypadsViewControllers addObject: correspondingVC];
+        
+        ReadbackKeypad *current = [(KeypadViewController *)self.selectedViewController keypad];
+        
+        //Fix: this generation renders different VCs for same previous Keypads.
+        //We load new set of VCs so we need to update curret VC
+        if ([current.identifier isEqualToString:keypad.identifier]) {
+            self.selectedViewController = correspondingVC;
+        }
+        
     }
     
     [self setSubViewControllers:keypadsViewControllers];
     self.pageControl.numberOfPages = [keypadsViewControllers count];
+    
     [self setSelectedKeypad:self.selectedViewController];
 }
 
 - (void)setSubViewControllers:(NSArray *)subViewControllers
 {
 	_subViewControllers = [subViewControllers copy];
-	self.selectedViewController = [subViewControllers objectAtIndex:0];
+    
+    if (!self.selectedViewController) {//IF added to FIX: Keypad not loading when tapped from store (purchased) list
+        self.selectedViewController = [subViewControllers objectAtIndex:0];
+    }
+	
 }
 
 -(void)loadChildViewController
@@ -621,7 +640,7 @@ int global_clearanceXPosition;
 #pragma mark Help Button
 
 - (IBAction)helpTapped:(UIButton *)sender {
-    UIImage *image = [UIImage imageNamed:HELP_IMAGE_NAME];
+    UIImage *image = sender.imageView.image;
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     

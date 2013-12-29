@@ -49,7 +49,6 @@
 #define HELP_BUTTON_TIMER_DURATION 2.5
 #define VIEW_ANIMATION_DURATION 0.05
 #define VIEW_ANIMATION_SCALE 1.8
-#define HELP_IMAGE_NAME @"key-help.png"
 
 
 //PDF display
@@ -67,9 +66,9 @@
 #define PDF_DEFAULT_TITLE @"Flight Log"
 #define PDF_FORMAT_TITLE @"%@ Summary"
 #define PDF_FORMAT_TITLE_PAGE @"Page %d"
-#define PDF_TIME_FORMAT @"yyyy/MM/dd 'at' HH:mm'Z"
+#define PDF_TIME_FORMAT @"MMM dd,yyyy 'at' HH:mm'Z"
 
-#define PDF_PAGE_DATE_GAP_RIGHT 180
+#define PDF_PAGE_DATE_GAP_RIGHT 190
 
 #define PDF_SEPARATOR_TOP_GAP 40
 #define PDF_SEPARATOR_HEIGHT 1

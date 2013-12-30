@@ -640,7 +640,7 @@ int global_clearanceXPosition;
 #pragma mark Help Button
 
 - (IBAction)helpTapped:(UIButton *)sender {
-    UIImage *image = sender.imageView.image;
+    UIImage *image = [UIImage imageNamed:HELP_IMAGE_NAME];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     

@@ -49,6 +49,7 @@
 #define HELP_BUTTON_TIMER_DURATION 2.5
 #define VIEW_ANIMATION_DURATION 0.05
 #define VIEW_ANIMATION_SCALE 1.8
+#define HELP_IMAGE_NAME @"help-slide.png"
 
 
 //PDF display

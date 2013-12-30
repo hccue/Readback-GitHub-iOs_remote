@@ -67,7 +67,7 @@
     [picker setMessageBody:emailBody isHTML:NO];
     
     // Present the mail composition interface.
-    [self presentModalViewController:picker animated:YES];
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 // The mail compose view controller delegate method
@@ -75,7 +75,7 @@
           didFinishWithResult:(MFMailComposeResult)result
                         error:(NSError *)error
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [[controller presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)facebookLikeTapped:(UIButton *)sender {

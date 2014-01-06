@@ -84,8 +84,6 @@
 		DE4A8E0E18626109000EE4BD /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0D18626109000EE4BD /* help.png */; };
 		DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C580816B31C1F004AC4D7 /* clear2.png */; };
 		DE4C581516B32BF3004AC4D7 /* backwards.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581316B32BF3004AC4D7 /* backwards.png */; };
-		DE4C581616B32BF3004AC4D7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581416B32BF3004AC4D7 /* forward.png */; };
-		DE4C581816B32CAC004AC4D7 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4C581716B32CAC004AC4D7 /* plus.png */; };
 		DE4F52D216F268D700A3D842 /* 10-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D116F268D700A3D842 /* 10-min.png */; };
 		DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52D916F2C18100A3D842 /* by-time.png */; };
 		DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4F52DF16F2D05D00A3D842 /* altimeter.png */; };
@@ -222,8 +220,6 @@
 		DE4A8E0D18626109000EE4BD /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		DE4C580816B31C1F004AC4D7 /* clear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear2.png; sourceTree = "<group>"; };
 		DE4C581316B32BF3004AC4D7 /* backwards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backwards.png; sourceTree = "<group>"; };
-		DE4C581416B32BF3004AC4D7 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
-		DE4C581716B32CAC004AC4D7 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		DE4F52D116F268D700A3D842 /* 10-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min.png"; sourceTree = "<group>"; };
 		DE4F52D916F2C18100A3D842 /* by-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "by-time.png"; sourceTree = "<group>"; };
 		DE4F52DF16F2D05D00A3D842 /* altimeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = altimeter.png; sourceTree = "<group>"; };
@@ -413,8 +409,6 @@
 				DE28A65A16A25FC200429C46 /* clear.png */,
 				DE4C580816B31C1F004AC4D7 /* clear2.png */,
 				DE4A8E0118624B6C000EE4BD /* cmd-speed.png */,
-				DE4C581416B32BF3004AC4D7 /* forward.png */,
-				DE4C581716B32CAC004AC4D7 /* plus.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -693,12 +687,10 @@
 				DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */,
 				DE41DE6B187114110061D6BD /* Icon-76@2x.png in Resources */,
 				DE4C581516B32BF3004AC4D7 /* backwards.png in Resources */,
-				DE4C581616B32BF3004AC4D7 /* forward.png in Resources */,
 				DE0281F71858F55C005F9B3D /* cat-d.png in Resources */,
 				DE02820A1858F55C005F9B3D /* xpdr-d.png in Resources */,
 				DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */,
 				DE57DB5E187082EB00870830 /* azerty.png in Resources */,
-				DE4C581816B32CAC004AC4D7 /* plus.png in Resources */,
 				DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */,
 				DE41DE65187114110061D6BD /* Icon-40@2x.png in Resources */,
 				DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */,

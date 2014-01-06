@@ -27,7 +27,7 @@
     self.subtitle = [plist objectForKey:@"subtitle"];
     self.description = [plist objectForKey:@"description"];
     self.imageURL = [plist objectForKey:@"imageURL"];
-    self.product = [plist objectForKey:@"product"];
+    self.product = [plist objectForKey:@"product"]; //TODO IS THIS REALLY NECESSARY?
     self.marketingKeys = [NSMutableDictionary dictionaryWithDictionary:[plist objectForKey:@"keys"]];
 }
 

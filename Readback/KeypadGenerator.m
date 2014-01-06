@@ -27,6 +27,8 @@
 
 @implementation KeypadGenerator
 
+
+//TODO GET THIS FROM A PLIST
 + (NSSet *)getAvailableKeypadsIdentifiers
 {
     return [NSSet setWithObjects:

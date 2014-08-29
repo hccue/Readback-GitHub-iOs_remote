@@ -130,6 +130,9 @@
 		DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */; };
 		DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */; };
 		DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */; };
+		DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD04F619B0DE84009FA808 /* Appirater.m */; };
+		DEFD04FA19B0DE84009FA808 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */; };
+		DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -274,6 +277,11 @@
 		DEEEAB8B169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackViewController.h; sourceTree = "<group>"; };
 		DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadbackViewController.m; sourceTree = "<group>"; };
+		DEFD04F519B0DE84009FA808 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		DEFD04F619B0DE84009FA808 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
+		DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AppiraterLocalizable.strings; sourceTree = "<group>"; };
+		DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +289,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */,
 				DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */,
 				DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */,
 				DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */,
@@ -382,6 +391,10 @@
 			children = (
 				DED5B5271854CAB30068B9BF /* CuesoftHelper.h */,
 				DED5B5281854CAB30068B9BF /* CuesoftHelper.m */,
+				DEFD04F519B0DE84009FA808 /* Appirater.h */,
+				DEFD04F619B0DE84009FA808 /* Appirater.m */,
+				DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */,
+				DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -553,6 +566,7 @@
 		DEEEAB6E169A726A00AEFC99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */,
 				DE3787F717008D3D0054C216 /* MessageUI.framework */,
 				DE52DE3816F351D3001D307E /* StoreKit.framework */,
 				DEEEAB6F169A726A00AEFC99 /* UIKit.framework */,
@@ -724,6 +738,7 @@
 				DE41DE68187114110061D6BD /* Icon-72.png in Resources */,
 				DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */,
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
+				DEFD04FA19B0DE84009FA808 /* AppiraterLocalizable.strings in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
 				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
 				DE0282011858F55C005F9B3D /* ndb-d.png in Resources */,
@@ -762,6 +777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */,
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,

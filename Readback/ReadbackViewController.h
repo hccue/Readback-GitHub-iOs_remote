@@ -11,7 +11,6 @@
 #import "ReadbackSalesViewController.h"
 
 #define APP_ID @"581569231"
-#define URL_RATE @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@"
 
 #define USERKEY_FIRST_START @"firstStart"
 #define USERKEY_HELP_VIEWED @"helpButtonTapped"

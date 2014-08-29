@@ -12,6 +12,7 @@
 #import "KeypadGenerator.h"
 #import "ReadbackTableViewController.h"
 #import "CuesoftHelper.h"
+#import "Appirater.h"
 
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
@@ -277,7 +278,13 @@ int global_clearanceXPosition;
     
     self.labelFlightNumber.delegate = self;
     
-    [CuesoftHelper popRateMeAlertFor:self];
+    [Appirater setAppId:APP_ID];
+    [Appirater setDaysUntilPrompt:3];
+    [Appirater setUsesUntilPrompt:3];
+    [Appirater setSignificantEventsUntilPrompt:-1];
+    [Appirater setTimeBeforeReminding:2];
+    [Appirater setDebug:NO];
+    [Appirater appLaunched:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -628,12 +635,6 @@ int global_clearanceXPosition;
         }
     }
     
-}
-
-
-#pragma mark AlertView implementation
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    [CuesoftHelper rateMeAlertAnswer:buttonIndex withUrl:URL_RATE forID:APP_ID];
 }
 
 

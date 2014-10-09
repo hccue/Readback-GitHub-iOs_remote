@@ -97,6 +97,7 @@
 		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
 		DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA816FA7DA1007C54C0 /* star.png */; };
 		DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CAA16FA7EE1007C54C0 /* up.png */; };
+		DE67277C19CCF7EC0020CB78 /* ReadbackHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE6AFC9D170C715A00C45697 /* button738.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6AFC9C170C715A00C45697 /* button738.png */; };
 		DE7457831777718C0051BE86 /* clearancekeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE7457821777718C0051BE86 /* clearancekeypad.plist */; };
@@ -130,8 +131,9 @@
 		DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */; };
 		DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */; };
 		DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */; };
+		DEF8795A19E6FE3500CE2360 /* FMCKeypadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */; };
+		DEF8795B19E6FE3500CE2360 /* FMCKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */; };
 		DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD04F619B0DE84009FA808 /* Appirater.m */; };
-		DEFD04FA19B0DE84009FA808 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */; };
 		DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +239,8 @@
 		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
 		DE5B0CA816FA7DA1007C54C0 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		DE5B0CAA16FA7EE1007C54C0 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		DE67277A19CCF7EC0020CB78 /* ReadbackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelper.h; sourceTree = "<group>"; };
+		DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelper.m; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 		DE6AFC9C170C715A00C45697 /* button738.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button738.png; path = Readback/button738.png; sourceTree = "<group>"; };
@@ -277,10 +281,12 @@
 		DEEEAB8B169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackViewController.h; sourceTree = "<group>"; };
 		DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadbackViewController.m; sourceTree = "<group>"; };
+		DEF8795719E6FE3500CE2360 /* FMCKeypadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCKeypadVC.h; sourceTree = "<group>"; };
+		DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCKeypadVC.m; sourceTree = "<group>"; };
+		DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMCKeypadVC.xib; sourceTree = "<group>"; };
 		DEFD04F519B0DE84009FA808 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		DEFD04F619B0DE84009FA808 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
-		DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AppiraterLocalizable.strings; sourceTree = "<group>"; };
 		DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -394,7 +400,8 @@
 				DEFD04F519B0DE84009FA808 /* Appirater.h */,
 				DEFD04F619B0DE84009FA808 /* Appirater.m */,
 				DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */,
-				DEFD04F819B0DE84009FA808 /* AppiraterLocalizable.strings */,
+				DE67277A19CCF7EC0020CB78 /* ReadbackHelper.h */,
+				DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -491,6 +498,9 @@
 				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
 				DED3AC06175965DB00233ED2 /* AzertyKeypadVC.xib */,
+				DEF8795719E6FE3500CE2360 /* FMCKeypadVC.h */,
+				DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */,
+				DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */,
 			);
 			name = Keypads;
 			sourceTree = "<group>";
@@ -738,7 +748,6 @@
 				DE41DE68187114110061D6BD /* Icon-72.png in Resources */,
 				DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */,
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
-				DEFD04FA19B0DE84009FA808 /* AppiraterLocalizable.strings in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
 				DE3E9D4516FB3C0600931511 /* call.png in Resources */,
 				DE0282011858F55C005F9B3D /* ndb-d.png in Resources */,
@@ -766,6 +775,7 @@
 				DE57DB601870841400870830 /* back.png in Resources */,
 				DE745785177777BB0051BE86 /* qwertykeypad.plist in Resources */,
 				DE2775D517820850008D0F81 /* azertykeypad.plist in Resources */,
+				DEF8795B19E6FE3500CE2360 /* FMCKeypadVC.xib in Resources */,
 				DE0282031858F55C005F9B3D /* right-d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,6 +791,7 @@
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
+				DE67277C19CCF7EC0020CB78 /* ReadbackHelper.m in Sources */,
 				DED5B5291854CAB30068B9BF /* CuesoftHelper.m in Sources */,
 				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
 				DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */,
@@ -793,6 +804,7 @@
 				DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */,
 				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
 				DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */,
+				DEF8795A19E6FE3500CE2360 /* FMCKeypadVC.m in Sources */,
 				DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

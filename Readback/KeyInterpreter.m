@@ -67,6 +67,9 @@
         case UP:
             return @"up.png"; break;
             
+        case DOWN:
+            return @"down.png"; break;
+            
         default:
             NSLog(@"BAD TAG"); break;
     }

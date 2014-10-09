@@ -7,16 +7,6 @@
 //
 
 
-//TODO
-#warning FINISH
-//WHAT'S NEW UPDATE
-//HELP SCREEN CHANGE TO FIT PORTRAIT
-//MY APPS LINKS CRASH ITUNES APP STORE
-//
-
-
-
-
 #import <UIKit/UIKit.h>
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
@@ -59,8 +49,8 @@
 #define HELP_BUTTON_TIMER_DURATION 2.5
 #define VIEW_ANIMATION_DURATION 0.05
 #define VIEW_ANIMATION_SCALE 1.8
-#define HELP_IMAGE_NAME @"help-slide.png"
-
+#define HELP_IMAGE_NAME_LANDSCAPE   @"help-slide.png"
+#define HELP_IMAGE_NAME_PORTRAIT    @"help-slide-p.png"
 
 @interface ReadbackViewController : UIViewController <KeypadDelegate, UIGestureRecognizerDelegate, ReadbackSalesViewControllerDelegate, UIDocumentInteractionControllerDelegate>
 

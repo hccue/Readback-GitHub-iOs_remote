@@ -45,6 +45,7 @@
 #define ALTIMETER   26
 #define STAR        27
 #define UP          28
+#define DOWN        29
 
 @interface KeyInterpreter : NSObject
 + (NSString *)getSymbolForTag:(int)tag;

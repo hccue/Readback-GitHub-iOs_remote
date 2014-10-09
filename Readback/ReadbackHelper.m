@@ -92,6 +92,8 @@
     const char *text = [title cStringUsingEncoding:NSASCIIStringEncoding];
     CGContextShowTextAtPoint (pdfContext, PDF_TITLE_LEFT_GAP, PDF_TITLE_TOP_GAP, text, strlen(text));
     
+    //[yourString drawAtPoint:aPoint withAttributes:dictOfAttributes];
+    
     //Write Page
     const char *pageNum = [[NSString stringWithFormat:PDF_FORMAT_TITLE_PAGE, page] cStringUsingEncoding:NSASCIIStringEncoding];
     CGContextShowTextAtPoint (pdfContext, PDF_PAGE_WIDTH_PX / 2, PDF_TITLE_TOP_GAP, pageNum, strlen(pageNum));

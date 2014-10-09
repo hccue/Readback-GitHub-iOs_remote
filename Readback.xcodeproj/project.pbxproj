@@ -92,8 +92,6 @@
 		DE57DB5A18707A4100870830 /* er-ops.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5918707A4100870830 /* er-ops.png */; };
 		DE57DB5E187082EB00870830 /* azerty.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5D187082EB00870830 /* azerty.png */; };
 		DE57DB601870841400870830 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB5F1870841400870830 /* back.png */; };
-		DE57DB661870AC5100870830 /* what-is-new.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB641870AC5100870830 /* what-is-new.png */; };
-		DE57DB6A1870B07F00870830 /* help-slide.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57DB691870B07F00870830 /* help-slide.png */; };
 		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
 		DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA816FA7DA1007C54C0 /* star.png */; };
 		DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CAA16FA7EE1007C54C0 /* up.png */; };
@@ -131,8 +129,13 @@
 		DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */; };
 		DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */; };
 		DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */; };
-		DEF8795A19E6FE3500CE2360 /* FMCKeypadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */; };
-		DEF8795B19E6FE3500CE2360 /* FMCKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */; };
+		DEF8795B19E6FE3500CE2360 /* CDUKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795919E6FE3500CE2360 /* CDUKeypadVC.xib */; };
+		DEF8795D19E7008000CE2360 /* cdukeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795C19E7008000CE2360 /* cdukeypad.plist */; };
+		DEF8796119E7062300CE2360 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8796019E7062300CE2360 /* down.png */; };
+		DEF8796B19E70CC600CE2360 /* cdukeypad.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8796A19E70CC600CE2360 /* cdukeypad.png */; };
+		DEF8796D19E7115800CE2360 /* what-is-new.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8796C19E7115800CE2360 /* what-is-new.png */; };
+		DEF8797119E7131900CE2360 /* help-slide.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8797019E7131900CE2360 /* help-slide.png */; };
+		DEF8797319E727E500CE2360 /* help-slide-p.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8797219E727E500CE2360 /* help-slide-p.png */; };
 		DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD04F619B0DE84009FA808 /* Appirater.m */; };
 		DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -234,8 +237,6 @@
 		DE57DB5918707A4100870830 /* er-ops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "er-ops.png"; sourceTree = "<group>"; };
 		DE57DB5D187082EB00870830 /* azerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = azerty.png; sourceTree = "<group>"; };
 		DE57DB5F1870841400870830 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		DE57DB641870AC5100870830 /* what-is-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "what-is-new.png"; sourceTree = "<group>"; };
-		DE57DB691870B07F00870830 /* help-slide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-slide.png"; sourceTree = "<group>"; };
 		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
 		DE5B0CA816FA7DA1007C54C0 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		DE5B0CAA16FA7EE1007C54C0 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
@@ -281,9 +282,13 @@
 		DEEEAB8B169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackViewController.h; sourceTree = "<group>"; };
 		DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadbackViewController.m; sourceTree = "<group>"; };
-		DEF8795719E6FE3500CE2360 /* FMCKeypadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCKeypadVC.h; sourceTree = "<group>"; };
-		DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCKeypadVC.m; sourceTree = "<group>"; };
-		DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMCKeypadVC.xib; sourceTree = "<group>"; };
+		DEF8795919E6FE3500CE2360 /* CDUKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDUKeypadVC.xib; sourceTree = "<group>"; };
+		DEF8795C19E7008000CE2360 /* cdukeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cdukeypad.plist; sourceTree = "<group>"; };
+		DEF8796019E7062300CE2360 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		DEF8796A19E70CC600CE2360 /* cdukeypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cdukeypad.png; sourceTree = "<group>"; };
+		DEF8796C19E7115800CE2360 /* what-is-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "what-is-new.png"; sourceTree = "<group>"; };
+		DEF8797019E7131900CE2360 /* help-slide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-slide.png"; sourceTree = "<group>"; };
+		DEF8797219E727E500CE2360 /* help-slide-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-slide-p.png"; sourceTree = "<group>"; };
 		DEFD04F519B0DE84009FA808 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		DEFD04F619B0DE84009FA808 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
@@ -330,6 +335,7 @@
 				DED941E116D7EFBF00C0AC09 /* rwy.png */,
 				DED5B3F9170BD9610036CBC2 /* sid.png */,
 				DE5B0CA816FA7DA1007C54C0 /* star.png */,
+				DEF8796019E7062300CE2360 /* down.png */,
 				DE5B0CAA16FA7EE1007C54C0 /* up.png */,
 				DED941DD16D7ECF500C0AC09 /* vectors.png */,
 				DED941D416D7EA6500C0AC09 /* vor.png */,
@@ -387,6 +393,7 @@
 			children = (
 				DEA410ED170F993400149893 /* clearance.png */,
 				DE57DB5D187082EB00870830 /* azerty.png */,
+				DEF8796A19E70CC600CE2360 /* cdukeypad.png */,
 				DEA410EE170F993400149893 /* qwerty.png */,
 			);
 			name = Previews;
@@ -409,8 +416,9 @@
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DE57DB691870B07F00870830 /* help-slide.png */,
-				DE57DB641870AC5100870830 /* what-is-new.png */,
+				DEF8796C19E7115800CE2360 /* what-is-new.png */,
+				DEF8797019E7131900CE2360 /* help-slide.png */,
+				DEF8797219E727E500CE2360 /* help-slide-p.png */,
 				DE4A8E0718625EF2000EE4BD /* download.png */,
 				DE57DB5F1870841400870830 /* back.png */,
 				DE57DB5918707A4100870830 /* er-ops.png */,
@@ -498,9 +506,7 @@
 				DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */,
 				DE413D2316D13506006E743A /* QwertyKeypadVC.xib */,
 				DED3AC06175965DB00233ED2 /* AzertyKeypadVC.xib */,
-				DEF8795719E6FE3500CE2360 /* FMCKeypadVC.h */,
-				DEF8795819E6FE3500CE2360 /* FMCKeypadVC.m */,
-				DEF8795919E6FE3500CE2360 /* FMCKeypadVC.xib */,
+				DEF8795919E6FE3500CE2360 /* CDUKeypadVC.xib */,
 			);
 			name = Keypads;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2775D417820850008D0F81 /* azertykeypad.plist */,
+				DEF8795C19E7008000CE2360 /* cdukeypad.plist */,
 				DE7457821777718C0051BE86 /* clearancekeypad.plist */,
 				DE745784177777BB0051BE86 /* qwertykeypad.plist */,
 				DE204947176246CE005CCF01 /* standardkeypad.plist */,
@@ -687,6 +694,7 @@
 				DE857FEA169D939C005E8F96 /* hold-short.png in Resources */,
 				DE857FED169D94C2005E8F96 /* climb.png in Resources */,
 				DE41DE6A187114110061D6BD /* Icon-76.png in Resources */,
+				DEF8795D19E7008000CE2360 /* cdukeypad.plist in Resources */,
 				DE857FEE169D94C2005E8F96 /* descend.png in Resources */,
 				DE857FF2169DA37C005E8F96 /* ndb.png in Resources */,
 				DE41DE74187114110061D6BD /* iTunesArtwork@2x.png in Resources */,
@@ -707,6 +715,7 @@
 				DE2A65DF183A746C00A39C2C /* scratchpadBar.png in Resources */,
 				DE09CD2916A34DEE00483034 /* holding.png in Resources */,
 				DE0281FD1858F55C005F9B3D /* holding-d.png in Resources */,
+				DEF8796D19E7115800CE2360 /* what-is-new.png in Resources */,
 				DE0282081858F55C005F9B3D /* vectors-d.png in Resources */,
 				DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */,
 				DE41DE6B187114110061D6BD /* Icon-76@2x.png in Resources */,
@@ -716,12 +725,13 @@
 				DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */,
 				DE57DB5E187082EB00870830 /* azerty.png in Resources */,
 				DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */,
+				DEF8797119E7131900CE2360 /* help-slide.png in Resources */,
 				DE41DE65187114110061D6BD /* Icon-40@2x.png in Resources */,
 				DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */,
 				DE0282091858F55C005F9B3D /* vor-d.png in Resources */,
-				DE57DB6A1870B07F00870830 /* help-slide.png in Resources */,
 				DE41DE67187114110061D6BD /* Icon-60@2x.png in Resources */,
 				DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */,
+				DEF8796119E7062300CE2360 /* down.png in Resources */,
 				DED941D616D7EA6500C0AC09 /* vor.png in Resources */,
 				DED941DE16D7ECF500C0AC09 /* vectors.png in Resources */,
 				DE0281FA1858F55C005F9B3D /* descend-d.png in Resources */,
@@ -734,6 +744,7 @@
 				DE9057C616F12BDA0012B709 /* intc.png in Resources */,
 				DE0281FF1858F55C005F9B3D /* intc-d.png in Resources */,
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
+				DEF8797319E727E500CE2360 /* help-slide-p.png in Resources */,
 				DE41DE69187114110061D6BD /* Icon-72@2x.png in Resources */,
 				DE41DE6C187114110061D6BD /* Icon-Small-50.png in Resources */,
 				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
@@ -762,11 +773,11 @@
 				DEA410EF170F993400149893 /* clearance.png in Resources */,
 				DEA410F0170F993400149893 /* qwerty.png in Resources */,
 				DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */,
+				DEF8796B19E70CC600CE2360 /* cdukeypad.png in Resources */,
 				DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */,
 				DE0281FC1858F55C005F9B3D /* hold-short-d.png in Resources */,
 				DE41DE66187114110061D6BD /* Icon-60.png in Resources */,
 				DE0282061858F55C005F9B3D /* star-d.png in Resources */,
-				DE57DB661870AC5100870830 /* what-is-new.png in Resources */,
 				DED3AC08175965DB00233ED2 /* AzertyKeypadVC.xib in Resources */,
 				DE1DFCF3175E25D600F65736 /* thumb.png in Resources */,
 				DE204948176246CE005CCF01 /* standardkeypad.plist in Resources */,
@@ -775,7 +786,7 @@
 				DE57DB601870841400870830 /* back.png in Resources */,
 				DE745785177777BB0051BE86 /* qwertykeypad.plist in Resources */,
 				DE2775D517820850008D0F81 /* azertykeypad.plist in Resources */,
-				DEF8795B19E6FE3500CE2360 /* FMCKeypadVC.xib in Resources */,
+				DEF8795B19E6FE3500CE2360 /* CDUKeypadVC.xib in Resources */,
 				DE0282031858F55C005F9B3D /* right-d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,7 +815,6 @@
 				DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */,
 				DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */,
 				DE52DE3C16F35437001D307E /* IAPHelper.m in Sources */,
-				DEF8795A19E6FE3500CE2360 /* FMCKeypadVC.m in Sources */,
 				DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

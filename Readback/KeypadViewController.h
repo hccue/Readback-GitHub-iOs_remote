@@ -26,6 +26,9 @@
 3. Copy view inside canvas from other keypad into current one
 4. at .xib ctrl-drag file's owner to view, select view.
 5. Delete empty white view
-4. delete .m & .h files
+6. delete .m & .h files
+7. Unckeck fisrt tab use autolayout
+8. add plist with named abc for identifier com.cuesoft.readback.abc. Configure plist
+9. Go to Entities/KeypadGenerator.h and follow instructions
  
 */

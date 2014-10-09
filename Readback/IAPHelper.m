@@ -109,6 +109,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
         switch (transaction.transactionState)
         {
             case SKPaymentTransactionStatePurchasing:
+            case SKPaymentTransactionStateDeferred:
                 //nothing to do
                 break;
             case SKPaymentTransactionStatePurchased:

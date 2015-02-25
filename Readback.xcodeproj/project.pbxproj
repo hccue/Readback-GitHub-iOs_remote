@@ -49,6 +49,8 @@
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
 		DE3E9D4516FB3C0600931511 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3E9D4416FB3C0600931511 /* call.png */; };
 		DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */; };
+		DE409C2B1A9BC4E500607F3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE409C291A9BC4E500607F3F /* Crashlytics.framework */; };
+		DE409C2C1A9BC4E500607F3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE409C2A1A9BC4E500607F3F /* Fabric.framework */; };
 		DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D1E16D1321F006E743A /* KeyInterpreter.m */; };
 		DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2316D13506006E743A /* QwertyKeypadVC.xib */; };
 		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
@@ -95,9 +97,10 @@
 		DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA616FA7473007C54C0 /* not-found.png */; };
 		DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CA816FA7DA1007C54C0 /* star.png */; };
 		DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5B0CAA16FA7EE1007C54C0 /* up.png */; };
-		DE67277C19CCF7EC0020CB78 /* ReadbackHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */; };
+		DE67277C19CCF7EC0020CB78 /* PDFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67277B19CCF7EC0020CB78 /* PDFHelper.m */; };
 		DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE68E4F016CFF89A0031123E /* KeypadViewController.m */; };
 		DE6AFC9D170C715A00C45697 /* button738.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6AFC9C170C715A00C45697 /* button738.png */; };
+		DE6D4B481A9E688800E6FD31 /* ReadbackHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D4B471A9E688800E6FD31 /* ReadbackHelper.m */; };
 		DE7457831777718C0051BE86 /* clearancekeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE7457821777718C0051BE86 /* clearancekeypad.plist */; };
 		DE745785177777BB0051BE86 /* qwertykeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE745784177777BB0051BE86 /* qwertykeypad.plist */; };
 		DE857FEA169D939C005E8F96 /* hold-short.png in Resources */ = {isa = PBXBuildFile; fileRef = DE857FE9169D939C005E8F96 /* hold-short.png */; };
@@ -190,6 +193,8 @@
 		DE3E9D4416FB3C0600931511 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE3E9D7E16FB837000931511 /* ReadbackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackTableViewController.h; sourceTree = "<group>"; };
 		DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackTableViewController.m; sourceTree = "<group>"; };
+		DE409C291A9BC4E500607F3F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		DE409C2A1A9BC4E500607F3F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DE413D1D16D1321F006E743A /* KeyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInterpreter.h; sourceTree = "<group>"; };
 		DE413D1E16D1321F006E743A /* KeyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyInterpreter.m; sourceTree = "<group>"; };
 		DE413D2316D13506006E743A /* QwertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QwertyKeypadVC.xib; sourceTree = "<group>"; };
@@ -240,11 +245,13 @@
 		DE5B0CA616FA7473007C54C0 /* not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-found.png"; sourceTree = "<group>"; };
 		DE5B0CA816FA7DA1007C54C0 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		DE5B0CAA16FA7EE1007C54C0 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
-		DE67277A19CCF7EC0020CB78 /* ReadbackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelper.h; sourceTree = "<group>"; };
-		DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelper.m; sourceTree = "<group>"; };
+		DE67277A19CCF7EC0020CB78 /* PDFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFHelper.h; sourceTree = "<group>"; };
+		DE67277B19CCF7EC0020CB78 /* PDFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFHelper.m; sourceTree = "<group>"; };
 		DE68E4EF16CFF89A0031123E /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
 		DE68E4F016CFF89A0031123E /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 		DE6AFC9C170C715A00C45697 /* button738.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button738.png; path = Readback/button738.png; sourceTree = "<group>"; };
+		DE6D4B461A9E688800E6FD31 /* ReadbackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelper.h; sourceTree = "<group>"; };
+		DE6D4B471A9E688800E6FD31 /* ReadbackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelper.m; sourceTree = "<group>"; };
 		DE7457821777718C0051BE86 /* clearancekeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearancekeypad.plist; sourceTree = "<group>"; };
 		DE745784177777BB0051BE86 /* qwertykeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = qwertykeypad.plist; sourceTree = "<group>"; };
 		DE857FE9169D939C005E8F96 /* hold-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hold-short.png"; sourceTree = "<group>"; };
@@ -303,9 +310,11 @@
 				DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */,
 				DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */,
 				DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */,
+				DE409C2C1A9BC4E500607F3F /* Fabric.framework in Frameworks */,
 				DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */,
 				DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */,
 				DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */,
+				DE409C2B1A9BC4E500607F3F /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +416,10 @@
 				DEFD04F519B0DE84009FA808 /* Appirater.h */,
 				DEFD04F619B0DE84009FA808 /* Appirater.m */,
 				DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */,
-				DE67277A19CCF7EC0020CB78 /* ReadbackHelper.h */,
-				DE67277B19CCF7EC0020CB78 /* ReadbackHelper.m */,
+				DE67277A19CCF7EC0020CB78 /* PDFHelper.h */,
+				DE67277B19CCF7EC0020CB78 /* PDFHelper.m */,
+				DE6D4B461A9E688800E6FD31 /* ReadbackHelper.h */,
+				DE6D4B471A9E688800E6FD31 /* ReadbackHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -583,6 +594,8 @@
 		DEEEAB6E169A726A00AEFC99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE409C291A9BC4E500607F3F /* Crashlytics.framework */,
+				DE409C2A1A9BC4E500607F3F /* Fabric.framework */,
 				DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */,
 				DE3787F717008D3D0054C216 /* MessageUI.framework */,
 				DE52DE3816F351D3001D307E /* StoreKit.framework */,
@@ -634,6 +647,7 @@
 				DEEEAB67169A726A00AEFC99 /* Sources */,
 				DEEEAB68169A726A00AEFC99 /* Frameworks */,
 				DEEEAB69169A726A00AEFC99 /* Resources */,
+				DE409C281A9BC42200607F3F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -793,6 +807,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE409C281A9BC42200607F3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 262b1dba1f809b1670360ea4f400b12f56becef2 6e34b9cc5bdd1910ba92aa874950277a3058d4692000e8f32f1bd584f74f458b";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEEEAB67169A726A00AEFC99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -802,13 +832,14 @@
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
-				DE67277C19CCF7EC0020CB78 /* ReadbackHelper.m in Sources */,
+				DE67277C19CCF7EC0020CB78 /* PDFHelper.m in Sources */,
 				DED5B5291854CAB30068B9BF /* CuesoftHelper.m in Sources */,
 				DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */,
 				DE18D64716A4BF0600FB779B /* ReadbackPurchasesTableViewController.m in Sources */,
 				DE18D65216A4C2B600FB779B /* ReadbackSalesViewController.m in Sources */,
 				DE18D65516A4C94900FB779B /* ReadbackStoreTableViewController.m in Sources */,
 				DE234B3116A5C86400C99AE6 /* ReadbackKeypad.m in Sources */,
+				DE6D4B481A9E688800E6FD31 /* ReadbackHelper.m in Sources */,
 				DE17668016A610A000760990 /* ReadbackPreviewViewController.m in Sources */,
 				DE31ACFB16B87EFB00E5F7B3 /* ReadbackSalesManager.m in Sources */,
 				DE68E4F216CFF89B0031123E /* KeypadViewController.m in Sources */,
@@ -902,6 +933,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readback/Readback-Prefix.pch";
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
@@ -919,6 +954,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readback/Readback-Prefix.pch";
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";

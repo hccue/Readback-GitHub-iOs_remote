@@ -10,69 +10,67 @@
 
 @implementation KeyInterpreter
 
-+ (NSString *)getSymbolForTag:(int)tag
++ (NSString *)getSymbolForTag:(int)tag isDaySymbol:(BOOL)isDaySymbol
 {
+    NSString *symbolName;
     switch (tag) {
         case LEFT:
-            return @"left-button.png"; break;
+            symbolName = @"left-button"; break;
         case RIGHT:
-            return @"right.png"; break;
+            symbolName = @"right"; break;
         case CLIMB:
-            return @"climb.png"; break;
+            symbolName = @"climb"; break;
         case DESCEND:
-            return @"descend.png"; break;
+            symbolName = @"descend"; break;
         case CROSS:
-            return @"cross.png"; break;
-            
+            symbolName = @"cross"; break;
         case NDB:
-            return @"ndb.png"; break;
+            symbolName = @"ndb"; break;
         case VOR:
-            return @"vor.png"; break;
+            symbolName = @"vor"; break;
         case ILS:
-            return @"ils.png"; break;
+            symbolName = @"ils"; break;
         case HOLDSHORT:
-            return @"hold-short.png"; break;
+            symbolName = @"hold-short"; break;
         case HOLDCAT:
-            return @"cat.png"; break;
-            
+            symbolName = @"cat"; break;
         case CALL:
-            return @"call.png"; break;
-            
+            symbolName = @"call"; break;
         case DIRECT:
-            return @"direct.png"; break;
+            symbolName = @"direct"; break;
         case HOLDING:
-            return @"holding.png"; break;
-            
+            symbolName = @"holding"; break;
         case VECTORS:
-            return @"vectors.png"; break;
+            symbolName = @"vectors"; break;
         case MIN10:
-            return @"10-min.png"; break;
+            symbolName = @"10-min"; break;
         case SQAWK:
-            return @"xpdr.png"; break;
+            symbolName = @"xpdr"; break;
         case INTC:
-            return @"intc.png"; break;
+            symbolName = @"intc"; break;
         case RUNWAY:
-            return @"rwy.png"; break;
+            symbolName = @"rwy"; break;
         case BY_TIME:
-            return @"by-time.png"; break;
-            
+            symbolName = @"by-time"; break;
         case SID:
-            return @"sid.png"; break;
+            symbolName = @"sid"; break;
         case ALTIMETER:
-            return @"altimeter.png"; break;
-            
+            symbolName = @"altimeter"; break;
         case STAR:
-            return @"star.png"; break;
-            
+            symbolName = @"star"; break;
         case UP:
-            return @"up.png"; break;
-            
+            symbolName = @"up"; break;
         case DOWN:
-            return @"down.png"; break;
-            
-        default:
-            NSLog(@"BAD TAG"); break;
+            symbolName = @"down"; break;
+            default:
+            symbolName = @"not-found"; break;
     }
-    return @"not-found.png";
+    
+    if (isDaySymbol) {
+        symbolName = [symbolName stringByAppendingString:@"-d.png"];
+    }else{
+        symbolName = [symbolName stringByAppendingString:@".png"];
+    }
+    return symbolName;
 }
 @end

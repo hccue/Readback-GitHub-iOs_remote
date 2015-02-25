@@ -9,12 +9,17 @@
 #import "ReadbackAppDelegate.h"
 #import "ReadbackSalesManager.h"
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
+
 @implementation ReadbackAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [ReadbackSalesManager sharedInstance];
     // Override point for customization after application launch.
+    [Fabric with:@[CrashlyticsKit]];
     return YES;
 }
 							

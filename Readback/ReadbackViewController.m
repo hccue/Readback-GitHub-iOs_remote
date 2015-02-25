@@ -13,7 +13,7 @@
 #import "ReadbackTableViewController.h"
 #import "CuesoftHelper.h"
 #import "Appirater.h"
-#import "ReadbackHelper.h"
+#import "PDFHelper.h"
 
 //Global property defined for horizontal tracking of items
 int global_clearanceXPosition;
@@ -124,7 +124,7 @@ int global_clearanceXPosition;
             break;
             
         default:
-            [self addImageToClearance:[KeyInterpreter getSymbolForTag:(int)sender.tag]];
+            [self addImageToClearance:(int)sender.tag];
             break;
     }
 }
@@ -135,7 +135,8 @@ int global_clearanceXPosition;
 #pragma mark Print PDF
 
 - (IBAction)printPdf:(UIButton *)sender {
-    NSURL *urlToDoc = [ReadbackHelper printPDFForFlight:self.labelFlightNumber.text withItems:self.logItems];
+    NSURL *urlToDoc = [PDFHelper printPDFForFlight:self.labelFlightNumber.text withItems:self.logItems];
+   
     self.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:urlToDoc];
     [self.documentInteractionController setDelegate:self];
     [self.documentInteractionController presentPreviewAnimated:YES];
@@ -233,11 +234,13 @@ int global_clearanceXPosition;
 
 #pragma mark Clearance Handling
 
--(void)addImageToClearance:(NSString *)imageName
+-(void)addImageToClearance:(int *)imageTag
 {
+    NSString *imageName = [KeyInterpreter getSymbolForTag:imageTag isDaySymbol:false];
     //Get the image, create it's view and scale it
     UIImage *image = [UIImage imageNamed:imageName];
-    UIImageView *imageView = (UIImageView *)[self reduceView:[[UIImageView alloc] initWithImage:image] toScale:IMAGE_SCALE_FACTOR];
+    UIImageView *imageView = (UIImageView *)[ReadbackHelper reduceView:[[UIImageView alloc] initWithImage:image] toScale:IMAGE_SCALE_FACTOR];
+    imageView.tag = imageTag;
     
     [self positionItem:imageView];
 }
@@ -297,7 +300,7 @@ int global_clearanceXPosition;
         if (!xCoord) xCoord = LOG_CLEARANCE_GAP;
         
         //Reduce item size for smaller display as log
-        item = [self reduceView:item toScale:IMAGE_SCALE_FACTOR];
+        item = [ReadbackHelper reduceView:item toScale:IMAGE_SCALE_FACTOR];
         
         //Adjust vertical position within log row
         item.center = CGPointMake(xCoord + item.frame.size.width / 2, LOG_ROW_HEIGHT / 2);
@@ -321,21 +324,6 @@ int global_clearanceXPosition;
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
     [self.tableView endUpdates];
 }
-
-//Reduce size of symbols for log display
--(UIView *)reduceView:(UIView *)view toScale:(float)scale
-{
-    CGRect frame = view.frame;
-    frame.size = CGSizeMake(frame.size.width * scale, frame.size.height * scale);
-    view.frame = frame;
-    if ([view isKindOfClass:[UILabel class]]) {
-        UILabel *label =(UILabel *)view;
-        [label setFont:[UIFont fontWithName:LOG_CLEARANCE_FONT_FAMILY size:LOG_CLEARANCE_FONT_SIZE]];
-        [label sizeToFit];
-    }
-    return view;
-}
-
 
 
 #pragma mark Clock implementation

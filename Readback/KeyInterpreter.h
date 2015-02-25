@@ -48,6 +48,6 @@
 #define DOWN        29
 
 @interface KeyInterpreter : NSObject
-+ (NSString *)getSymbolForTag:(int)tag;
++ (NSString *)getSymbolForTag:(int)tag isDaySymbol:(BOOL)isDaySymbol;
 @end
 

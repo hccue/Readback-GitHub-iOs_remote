@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "KeypadViewController.h"
 #import "ReadbackSalesViewController.h"
+#import "ReadbackHelper.h"
 
 #define APP_ID @"581569231"
 
@@ -23,7 +24,6 @@
 #define TEXT_SPACE @"   "
 #define TEXT_TAG_FORMAT @"%@   "
 #define CLEARANCE_GAP 2
-#define IMAGE_SCALE_FACTOR 0.65
 #define CLEARANCE_FONT_SIZE 30
 #define CLEARANCE_FONT_FAMILY @"Avenir Next"
 
@@ -31,8 +31,6 @@
 
 #define LOG_ROW_HEIGHT 30
 #define LOG_CLEARANCE_GAP 2
-#define LOG_CLEARANCE_FONT_SIZE 15
-#define LOG_CLEARANCE_FONT_FAMILY @"Avenir Next"
 #define LOG_TIME_FORMAT @"%@ :  "
 
 #define ZULU_TIME_FORMAT_SHORT @"HH:mm 'Z"

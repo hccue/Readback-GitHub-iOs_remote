@@ -19,6 +19,10 @@
 #define SUGGESTION_EMAIL_TO @"cuesoftapps@gmail.com"
 #define SUGGESTION_EMAIL_BODY @"I have a suggestion about the App,\n\n"
 
+#define ALERT_NOEMAIL_TITLE     @"Ooops"
+#define ALERT_NOEMAIL_MESSAGE   @"No fue posible enviar un correo, existe algún problema con tu configuración. Escríbenos desde tu computador a %@"
+#define ALERT_NOEMAIL_BUTTON @"Ok"
+
 @interface ReadbackHelpViewController : UIViewController
 
 @end

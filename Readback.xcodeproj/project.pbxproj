@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90569EE01AF2EF3B00C907AD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90569EDF1AF2EF3B00C907AD /* CoreData.framework */; };
+		90569EE41AF2F0B900C907AD /* readback.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90569EE31AF2F0B900C907AD /* readback.xcassets */; };
 		DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281D81858F268005F9B3D /* flightNumberTextField.png */; };
 		DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DB1858F55C005F9B3D /* 10-min-d.png */; };
 		DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DC1858F55C005F9B3D /* altimeter-d.png */; };
@@ -56,24 +58,6 @@
 		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
 		DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */; };
 		DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */; };
-		DE41DE64187114110061D6BD /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE53187114110061D6BD /* Icon-40.png */; };
-		DE41DE65187114110061D6BD /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE54187114110061D6BD /* Icon-40@2x.png */; };
-		DE41DE66187114110061D6BD /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE55187114110061D6BD /* Icon-60.png */; };
-		DE41DE67187114110061D6BD /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE56187114110061D6BD /* Icon-60@2x.png */; };
-		DE41DE68187114110061D6BD /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE57187114110061D6BD /* Icon-72.png */; };
-		DE41DE69187114110061D6BD /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE58187114110061D6BD /* Icon-72@2x.png */; };
-		DE41DE6A187114110061D6BD /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE59187114110061D6BD /* Icon-76.png */; };
-		DE41DE6B187114110061D6BD /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5A187114110061D6BD /* Icon-76@2x.png */; };
-		DE41DE6C187114110061D6BD /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5B187114110061D6BD /* Icon-Small-50.png */; };
-		DE41DE6D187114110061D6BD /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5C187114110061D6BD /* Icon-Small-50@2x.png */; };
-		DE41DE6E187114110061D6BD /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5D187114110061D6BD /* Icon-Small.png */; };
-		DE41DE6F187114110061D6BD /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5E187114110061D6BD /* Icon-Small@2x.png */; };
-		DE41DE70187114110061D6BD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE5F187114110061D6BD /* Icon.png */; };
-		DE41DE71187114110061D6BD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE60187114110061D6BD /* Icon@2x.png */; };
-		DE41DE72187114110061D6BD /* Icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE61187114110061D6BD /* Icon1024.png */; };
-		DE41DE73187114110061D6BD /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE62187114110061D6BD /* iTunesArtwork.png */; };
-		DE41DE74187114110061D6BD /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE63187114110061D6BD /* iTunesArtwork@2x.png */; };
-		DE41DE76187114210061D6BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE41DE75187114210061D6BD /* Images.xcassets */; };
 		DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828216A0C5AD00E36814 /* buttonLarge.png */; };
 		DE44828516A0C5AD00E36814 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE44828316A0C5AD00E36814 /* button.png */; };
 		DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */; };
@@ -144,6 +128,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90569EDC1AF2EC8A00C907AD /* DBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConfig.h; sourceTree = "<group>"; };
+		90569EDD1AF2EECD00C907AD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		90569EDF1AF2EF3B00C907AD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		90569EE31AF2F0B900C907AD /* readback.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = readback.xcassets; sourceTree = "<group>"; };
 		DE0281D81858F268005F9B3D /* flightNumberTextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flightNumberTextField.png; sourceTree = "<group>"; };
 		DE0281DB1858F55C005F9B3D /* 10-min-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min-d.png"; sourceTree = "<group>"; };
 		DE0281DC1858F55C005F9B3D /* altimeter-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "altimeter-d.png"; sourceTree = "<group>"; };
@@ -202,24 +190,6 @@
 		DE413D2716D1389C006E743A /* KeypadGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadGenerator.m; sourceTree = "<group>"; };
 		DE413D2B16D13B3E006E743A /* ClearanceKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClearanceKeypadVC.xib; sourceTree = "<group>"; };
 		DE41D72F16BA197A00883B68 /* StandardKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandardKeypadVC.xib; sourceTree = "<group>"; };
-		DE41DE53187114110061D6BD /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		DE41DE54187114110061D6BD /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		DE41DE55187114110061D6BD /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		DE41DE56187114110061D6BD /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		DE41DE57187114110061D6BD /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		DE41DE58187114110061D6BD /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		DE41DE59187114110061D6BD /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		DE41DE5A187114110061D6BD /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
-		DE41DE5B187114110061D6BD /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		DE41DE5C187114110061D6BD /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		DE41DE5D187114110061D6BD /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		DE41DE5E187114110061D6BD /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		DE41DE5F187114110061D6BD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		DE41DE60187114110061D6BD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		DE41DE61187114110061D6BD /* Icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon1024.png; sourceTree = "<group>"; };
-		DE41DE62187114110061D6BD /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		DE41DE63187114110061D6BD /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		DE41DE75187114210061D6BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE44828216A0C5AD00E36814 /* buttonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLarge.png; sourceTree = "<group>"; };
 		DE44828316A0C5AD00E36814 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelpViewController.h; sourceTree = "<group>"; };
@@ -307,6 +277,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90569EE01AF2EF3B00C907AD /* CoreData.framework in Frameworks */,
 				DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */,
 				DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */,
 				DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */,
@@ -411,6 +382,7 @@
 		DE20494617624637005CCF01 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				90569EDC1AF2EC8A00C907AD /* DBConfig.h */,
 				DED5B5271854CAB30068B9BF /* CuesoftHelper.h */,
 				DED5B5281854CAB30068B9BF /* CuesoftHelper.m */,
 				DEFD04F519B0DE84009FA808 /* Appirater.h */,
@@ -534,23 +506,6 @@
 		DE6602D016A1E6F400E8B5E2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				DE41DE53187114110061D6BD /* Icon-40.png */,
-				DE41DE54187114110061D6BD /* Icon-40@2x.png */,
-				DE41DE55187114110061D6BD /* Icon-60.png */,
-				DE41DE56187114110061D6BD /* Icon-60@2x.png */,
-				DE41DE57187114110061D6BD /* Icon-72.png */,
-				DE41DE58187114110061D6BD /* Icon-72@2x.png */,
-				DE41DE59187114110061D6BD /* Icon-76.png */,
-				DE41DE5A187114110061D6BD /* Icon-76@2x.png */,
-				DE41DE5B187114110061D6BD /* Icon-Small-50.png */,
-				DE41DE5C187114110061D6BD /* Icon-Small-50@2x.png */,
-				DE41DE5D187114110061D6BD /* Icon-Small.png */,
-				DE41DE5E187114110061D6BD /* Icon-Small@2x.png */,
-				DE41DE5F187114110061D6BD /* Icon.png */,
-				DE41DE60187114110061D6BD /* Icon@2x.png */,
-				DE41DE61187114110061D6BD /* Icon1024.png */,
-				DE41DE62187114110061D6BD /* iTunesArtwork.png */,
-				DE41DE63187114110061D6BD /* iTunesArtwork@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -594,6 +549,8 @@
 		DEEEAB6E169A726A00AEFC99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90569EDF1AF2EF3B00C907AD /* CoreData.framework */,
+				90569EDD1AF2EECD00C907AD /* CloudKit.framework */,
 				DE409C291A9BC4E500607F3F /* Crashlytics.framework */,
 				DE409C2A1A9BC4E500607F3F /* Fabric.framework */,
 				DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */,
@@ -610,12 +567,12 @@
 			isa = PBXGroup;
 			children = (
 				DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */,
+				90569EE31AF2F0B900C907AD /* readback.xcassets */,
 				DE413D2F16D14767006E743A /* ViewControllers */,
 				DE41D73216BA197E00883B68 /* Keypads */,
 				DE413D2E16D1474F006E743A /* Purchasing */,
 				DE17668216A610A800760990 /* Entities */,
 				DE20494617624637005CCF01 /* Helpers */,
-				DE41DE75187114210061D6BD /* Images.xcassets */,
 			);
 			path = Readback;
 			sourceTree = "<group>";
@@ -703,36 +660,29 @@
 				DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */,
 				DE46E649169CC6F500C90F72 /* right.png in Resources */,
 				DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */,
-				DE41DE6E187114110061D6BD /* Icon-Small.png in Resources */,
 				DE0281F91858F55C005F9B3D /* cross-d.png in Resources */,
 				DE857FEA169D939C005E8F96 /* hold-short.png in Resources */,
 				DE857FED169D94C2005E8F96 /* climb.png in Resources */,
-				DE41DE6A187114110061D6BD /* Icon-76.png in Resources */,
 				DEF8795D19E7008000CE2360 /* cdukeypad.plist in Resources */,
 				DE857FEE169D94C2005E8F96 /* descend.png in Resources */,
 				DE857FF2169DA37C005E8F96 /* ndb.png in Resources */,
-				DE41DE74187114110061D6BD /* iTunesArtwork@2x.png in Resources */,
 				DE857FF4169DA45D005E8F96 /* cat.png in Resources */,
+				90569EE41AF2F0B900C907AD /* readback.xcassets in Resources */,
 				DE396A58169E0DDC0093C773 /* ils.png in Resources */,
 				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
-				DE41DE73187114110061D6BD /* iTunesArtwork.png in Resources */,
 				DE44828516A0C5AD00E36814 /* button.png in Resources */,
-				DE41DE6D187114110061D6BD /* Icon-Small-50@2x.png in Resources */,
 				DE4A8E0E18626109000EE4BD /* help.png in Resources */,
 				DE0281FE1858F55C005F9B3D /* ils-d.png in Resources */,
 				DE0282071858F55C005F9B3D /* up-d.png in Resources */,
 				DE28A65C16A25FC200429C46 /* clear.png in Resources */,
 				DE0282051858F55C005F9B3D /* sid-d.png in Resources */,
 				DE09CD2216A348C100483034 /* direct.png in Resources */,
-				DE41DE64187114110061D6BD /* Icon-40.png in Resources */,
-				DE41DE6F187114110061D6BD /* Icon-Small@2x.png in Resources */,
 				DE2A65DF183A746C00A39C2C /* scratchpadBar.png in Resources */,
 				DE09CD2916A34DEE00483034 /* holding.png in Resources */,
 				DE0281FD1858F55C005F9B3D /* holding-d.png in Resources */,
 				DEF8796D19E7115800CE2360 /* what-is-new.png in Resources */,
 				DE0282081858F55C005F9B3D /* vectors-d.png in Resources */,
 				DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */,
-				DE41DE6B187114110061D6BD /* Icon-76@2x.png in Resources */,
 				DE4C581516B32BF3004AC4D7 /* backwards.png in Resources */,
 				DE0281F71858F55C005F9B3D /* cat-d.png in Resources */,
 				DE02820A1858F55C005F9B3D /* xpdr-d.png in Resources */,
@@ -740,10 +690,8 @@
 				DE57DB5E187082EB00870830 /* azerty.png in Resources */,
 				DE41D73116BA197A00883B68 /* StandardKeypadVC.xib in Resources */,
 				DEF8797119E7131900CE2360 /* help-slide.png in Resources */,
-				DE41DE65187114110061D6BD /* Icon-40@2x.png in Resources */,
 				DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */,
 				DE0282091858F55C005F9B3D /* vor-d.png in Resources */,
-				DE41DE67187114110061D6BD /* Icon-60@2x.png in Resources */,
 				DE413D2D16D13B3E006E743A /* ClearanceKeypadVC.xib in Resources */,
 				DEF8796119E7062300CE2360 /* down.png in Resources */,
 				DED941D616D7EA6500C0AC09 /* vor.png in Resources */,
@@ -751,7 +699,6 @@
 				DE0281FA1858F55C005F9B3D /* descend-d.png in Resources */,
 				DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */,
 				DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */,
-				DE41DE72187114110061D6BD /* Icon1024.png in Resources */,
 				DE4A8E0818625EF2000EE4BD /* download.png in Resources */,
 				DE4A8E0218624B6C000EE4BD /* cmd-speed.png in Resources */,
 				DE4A8E0418624F55000EE4BD /* trash.png in Resources */,
@@ -759,18 +706,13 @@
 				DE0281FF1858F55C005F9B3D /* intc-d.png in Resources */,
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
 				DEF8797319E727E500CE2360 /* help-slide-p.png in Resources */,
-				DE41DE69187114110061D6BD /* Icon-72@2x.png in Resources */,
-				DE41DE6C187114110061D6BD /* Icon-Small-50.png in Resources */,
 				DE4F52DA16F2C18100A3D842 /* by-time.png in Resources */,
 				DE0282041858F55C005F9B3D /* rwy-d.png in Resources */,
-				DE41DE70187114110061D6BD /* Icon.png in Resources */,
 				DE0281F81858F55C005F9B3D /* climb-d.png in Resources */,
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
 				DE0282001858F55C005F9B3D /* left-button-d.png in Resources */,
 				DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */,
 				DE0282021858F55C005F9B3D /* not-found-d.png in Resources */,
-				DE41DE71187114110061D6BD /* Icon@2x.png in Resources */,
-				DE41DE68187114110061D6BD /* Icon-72.png in Resources */,
 				DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */,
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
 				DE5B0CAB16FA7EE1007C54C0 /* up.png in Resources */,
@@ -778,7 +720,6 @@
 				DE0282011858F55C005F9B3D /* ndb-d.png in Resources */,
 				DED5B3FA170BD9610036CBC2 /* sid.png in Resources */,
 				DE0281FB1858F55C005F9B3D /* direct-d.png in Resources */,
-				DE41DE76187114210061D6BD /* Images.xcassets in Resources */,
 				DE4A8E0C186260AD000EE4BD /* pdf.png in Resources */,
 				DE6AFC9D170C715A00C45697 /* button738.png in Resources */,
 				DEA410E6170F930900149893 /* xpdr.png in Resources */,
@@ -790,7 +731,6 @@
 				DEF8796B19E70CC600CE2360 /* cdukeypad.png in Resources */,
 				DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */,
 				DE0281FC1858F55C005F9B3D /* hold-short-d.png in Resources */,
-				DE41DE66187114110061D6BD /* Icon-60.png in Resources */,
 				DE0282061858F55C005F9B3D /* star-d.png in Resources */,
 				DED3AC08175965DB00233ED2 /* AzertyKeypadVC.xib in Resources */,
 				DE1DFCF3175E25D600F65736 /* thumb.png in Resources */,
@@ -930,9 +870,10 @@
 		DEEEAB93169A726A00AEFC99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Santiago Borja Lopez (VXKPB354LB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santiago Borja Lopez (VXKPB354LB)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -942,7 +883,7 @@
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b22e589c-56f5-4558-a2bc-98d87b001184";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -951,9 +892,10 @@
 		DEEEAB94169A726A00AEFC99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Santiago Borja Lopez (DEX4P5QYYA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Santiago Borja Lopez (DEX4P5QYYA)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -963,8 +905,8 @@
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFD2FF9D-28C6-410D-A0FA-77913EC71449";
+				PROVISIONING_PROFILE = "237f15df-5ce5-4486-8470-2cc0846d43cf";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "237f15df-5ce5-4486-8470-2cc0846d43cf";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

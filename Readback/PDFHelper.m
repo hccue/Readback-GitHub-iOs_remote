@@ -25,7 +25,7 @@
     NSString * fileName = [PDFHelper getPdfNameForFlight:flightNumber];
     
     //Configure PDF
-    NSString * newFilePath = [[CuesoftHelper getDocumentsPath] stringByAppendingPathComponent:fileName];
+    NSString * newFilePath = [[CuesoftHelper getDocumentsURL].path stringByAppendingPathComponent:fileName];
     CGRect pageRect = CGRectMake(0, 0, PDF_PAGE_WIDTH_PX, PDF_PAGE_HEIGHT_PX);
     path = CFStringCreateWithCString (NULL, [newFilePath UTF8String], kCFStringEncodingUTF8);
     url = CFURLCreateWithFileSystemPath (NULL, path, kCFURLPOSIXPathStyle, 0);

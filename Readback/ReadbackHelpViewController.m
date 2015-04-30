@@ -46,28 +46,40 @@
 
 -(void)displayComposerSheet
 {
-    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
-    picker.mailComposeDelegate = self;
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+        picker.mailComposeDelegate = self;
+        
+        picker.navigationBar.tintColor = [UIColor whiteColor];
+        [picker setSubject:SUGGESTION_EMAIL_SUBJECT];
+        
+        // Set up the recipients.
+        NSArray *toRecipients = [NSArray arrayWithObjects:SUGGESTION_EMAIL_TO,
+                                 nil];
+        NSArray *ccRecipients = [NSArray arrayWithObjects: nil];
+        NSArray *bccRecipients = [NSArray arrayWithObjects: nil];
+        
+        [picker setToRecipients:toRecipients];
+        [picker setCcRecipients:ccRecipients];
+        [picker setBccRecipients:bccRecipients];
+        
+        
+        // Fill out the email body text.
+        NSString *emailBody = SUGGESTION_EMAIL_BODY;
+        [picker setMessageBody:emailBody isHTML:NO];
+        
+        // Present the mail composition interface.
+        
+        [self presentViewController:picker animated:YES completion:nil];
+    }else{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:ALERT_NOEMAIL_TITLE
+                                                            message:[NSString stringWithFormat:ALERT_NOEMAIL_MESSAGE, SUGGESTION_EMAIL_TO]
+                                                           delegate:self
+                                                  cancelButtonTitle:ALERT_NOEMAIL_BUTTON
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
     
-    [picker setSubject:SUGGESTION_EMAIL_SUBJECT];
-    
-    // Set up the recipients.
-    NSArray *toRecipients = [NSArray arrayWithObjects:SUGGESTION_EMAIL_TO,
-                             nil];
-    NSArray *ccRecipients = [NSArray arrayWithObjects: nil];
-    NSArray *bccRecipients = [NSArray arrayWithObjects: nil];
-    
-    [picker setToRecipients:toRecipients];
-    [picker setCcRecipients:ccRecipients];
-    [picker setBccRecipients:bccRecipients];
-    
-     
-    // Fill out the email body text.
-    NSString *emailBody = SUGGESTION_EMAIL_BODY;
-    [picker setMessageBody:emailBody isHTML:NO];
-    
-    // Present the mail composition interface.
-    [self presentViewController:picker animated:YES completion:nil];
 }
 
 // The mail compose view controller delegate method

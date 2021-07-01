@@ -21,9 +21,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:STORE_CELL];
     
-    if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellAccessoryCheckmark reuseIdentifier:STORE_CELL];
+    if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:STORE_CELL];
     
     ReadbackKeypad *myKeypad = [self.dataSource storeItemAtIndex:indexPath.row];
     

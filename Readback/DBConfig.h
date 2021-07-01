@@ -1,5 +1,5 @@
 //
-//  CuesoftHelper.h
+//  DBConfig.h
 //
 //  Created by Santiago Borja on 04/11/15.
 //  Copyright (c) 2015 Santiago Borja. All rights reserved.

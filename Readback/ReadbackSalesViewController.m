@@ -179,14 +179,11 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)viewDidUnload {
     [self setPurchasedKeypadsTableView:nil];
     [self setStoreKeypadsTableView:nil];
     [self setStoreKeypadsLabel:nil];
-    [super viewDidUnload];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -198,15 +195,13 @@
     }
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        return YES;
+- (BOOL)shouldAutorotate {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (UIInterfaceOrientationIsPortrait(orientation)) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
-
-
 
 
 -(void)reloadPurchasedProducts
@@ -232,7 +227,10 @@
                 [storeKeypads addObject:keypad];
             }
             self.storeKeypads = storeKeypads;
-            [self.storeKeypadsTableView reloadData];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.storeKeypadsTableView reloadData];
+            });
         }
     }];
 }

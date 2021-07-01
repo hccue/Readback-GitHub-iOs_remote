@@ -12,7 +12,6 @@
 #import "KeypadGenerator.h"
 #import "ReadbackTableViewController.h"
 #import "CuesoftHelper.h"
-#import "Appirater.h"
 #import "PDFHelper.h"
 
 //Global property defined for horizontal tracking of items
@@ -161,19 +160,6 @@ int global_clearanceXPosition;
     return [self.logItems objectAtIndex:row];
 }
 
--(void)setupAppirater
-{
-    [Appirater setAppId:APP_ID];
-    [Appirater setDaysUntilPrompt:3];
-    [Appirater setUsesUntilPrompt:3];
-    [Appirater setSignificantEventsUntilPrompt:-1];
-    [Appirater setTimeBeforeReminding:2];
-    [Appirater setDebug:NO];
-    [Appirater appLaunched:YES];
-}
-
-
-
 #pragma mark UIView Lifecycle implementation
 
 -(void)viewDidLoad
@@ -191,15 +177,14 @@ int global_clearanceXPosition;
     
     self.clearanceLog = [NSMutableArray array];
     self.labelFlightNumber.delegate = self;
-    
-    [self setupAppirater];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    [self showWhatIsNew];
+    //DISABLED, OUTDATED SCREEN
+    //[self showWhatIsNew];
     
     //Always check for updated list of purchases
     [self loadPurchasedKeypads];
@@ -217,24 +202,18 @@ int global_clearanceXPosition;
     [super viewWillDisappear:animated];
     [self stopClock];
     [self stopHelpButtonAnimation];
-}
-
-- (void)viewDidUnload {
     [self setClearanceView:nil];
     [self setLabelZuluTime:nil];
     [self setPageControl:nil];
     [self setActiveKeypadLabel:nil];
     [self setTableView:nil];
     [self setHelpButton:nil];
-    [super viewDidUnload];
 }
-
-
 
 
 #pragma mark Clearance Handling
 
--(void)addImageToClearance:(int *)imageTag
+-(void)addImageToClearance:(int)imageTag
 {
     NSString *imageName = [KeyInterpreter getSymbolForTag:imageTag isDaySymbol:false];
     //Get the image, create it's view and scale it
@@ -471,7 +450,7 @@ int global_clearanceXPosition;
 	{
 		NSInteger index = [self.subViewControllers indexOfObject:self.selectedViewController];
 		
-        UIViewAnimationOptions *option;
+        UIViewAnimationOptions option;
         if (gesture.direction == UISwipeGestureRecognizerDirectionLeft) {
             index = MIN(index+1, [self.subViewControllers count]-1);
             option = UIViewAnimationOptionTransitionFlipFromRight;
@@ -489,7 +468,7 @@ int global_clearanceXPosition;
 
 - (void)transitionFromViewController:(UIViewController *)fromViewController
                     toViewController:(UIViewController *)toViewController
-                       withAnimation:(UIViewAnimationOptions *)animation
+                       withAnimation:(UIViewAnimationOptions)animation
 {
     // cannot transition to same VC
 	if (fromViewController == toViewController) return;
@@ -507,7 +486,7 @@ int global_clearanceXPosition;
 	[self transitionFromViewController:fromViewController
 					  toViewController:toViewController
 							  duration:KEYPAD_SWAP_ANIMATION_DURATION
-							   options:animation
+                               options:animation
 							animations:^{
 							}
 							completion:^(BOOL finished) {

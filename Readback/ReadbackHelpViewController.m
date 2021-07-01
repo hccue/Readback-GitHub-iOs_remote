@@ -15,10 +15,7 @@
 
 @interface ReadbackHelpViewController () <MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
-
-//animation
 @property (weak, nonatomic) IBOutlet UIButton *rateAppButton;
-@property (weak, nonatomic) IBOutlet UIButton *fbLikeButton;
 @end
 
 @implementation ReadbackHelpViewController
@@ -28,16 +25,42 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
-- (IBAction)visitFirendApp1:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP_1]];
+- (IBAction)crewCurrencyAppTapped:(id)sender {
+    [[UIApplication sharedApplication]  openURL: [NSURL URLWithString:[NSString stringWithFormat:URL_APPSTORE_ANY_APP, APP_ID_CREW_CURRENCY]]
+                                        options:@{} completionHandler:^(BOOL success) {
+        if (success) {
+             NSLog(@"Opened url");
+        }
+    }];
 }
-
-- (IBAction)visitFriendApp2:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL_FRIEND_APP_2]];
+- (IBAction)appSpeedAppTapped:(id)sender {
+    [[UIApplication sharedApplication]  openURL: [NSURL URLWithString:[NSString stringWithFormat:URL_APPSTORE_ANY_APP, APP_ID_APP_SPEED]]
+                                        options:@{} completionHandler:^(BOOL success) {
+        if (success) {
+             NSLog(@"Opened url");
+        }
+    }];
+}
+- (IBAction)erOpsAppTapped:(id)sender {
+    [[UIApplication sharedApplication]  openURL: [NSURL URLWithString:[NSString stringWithFormat:URL_APPSTORE_ANY_APP, APP_ID_ER_OPS]]
+                                        options:@{} completionHandler:^(BOOL success) {
+        if (success) {
+             NSLog(@"Opened url");
+        }
+    }];
 }
 
 - (IBAction)rateApp:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:URL_RATE, APP_ID]]];
+    if([SKStoreReviewController class]){
+        [SKStoreReviewController requestReview] ;
+    }else{
+        [[UIApplication sharedApplication]  openURL: [NSURL URLWithString:[NSString stringWithFormat:URL_RATE, APP_ID]]
+                                            options:@{} completionHandler:^(BOOL success) {
+            if (success) {
+                 NSLog(@"Opened url");
+            }
+        }];
+    }
 }
 
 - (IBAction)emailTapped:(UIButton *)sender {
@@ -56,12 +79,10 @@
         // Set up the recipients.
         NSArray *toRecipients = [NSArray arrayWithObjects:SUGGESTION_EMAIL_TO,
                                  nil];
-        NSArray *ccRecipients = [NSArray arrayWithObjects: nil];
-        NSArray *bccRecipients = [NSArray arrayWithObjects: nil];
         
         [picker setToRecipients:toRecipients];
-        [picker setCcRecipients:ccRecipients];
-        [picker setBccRecipients:bccRecipients];
+        [picker setCcRecipients:nil];
+        [picker setBccRecipients:nil];
         
         
         // Fill out the email body text.
@@ -90,12 +111,6 @@
     [[controller presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)facebookLikeTapped:(UIButton *)sender {
-    [CuesoftHelper openFacebookID:FACEBOOK_ID];
-}
-
-
-
 #pragma mark UIViewController Lifecycle
 
 -(void)viewWillAppear:(BOOL)animated
@@ -103,24 +118,19 @@
     self.versionLabel.text = [NSString stringWithFormat:PATTERN_VERSION, [[NSBundle mainBundle] objectForInfoDictionaryKey:STRING_BUNDLE_VERSION ]];
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    [ReadbackViewController animateHighlightView:self.fbLikeButton];
-}
-
-- (void)viewDidUnload {
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     [self setVersionLabel:nil];
     [self setRateAppButton:nil];
-    [self setFbLikeButton:nil];
-    [super viewDidUnload];
+    
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        return YES;
+- (BOOL)shouldAutorotate {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (UIInterfaceOrientationIsPortrait(orientation)) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 @end

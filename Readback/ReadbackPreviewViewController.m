@@ -109,24 +109,21 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)viewDidUnload {
     [self setKeypadTitle:nil];
     [self setKeypadImageView:nil];
     [self setKeypadDetail:nil];
     [self setPurchaseButton:nil];
     [self setReturnButton:nil];
-    [super viewDidUnload];
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        return YES;
+- (BOOL)shouldAutorotate {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (UIInterfaceOrientationIsPortrait(orientation)) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 @end

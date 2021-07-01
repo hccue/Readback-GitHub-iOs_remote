@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		90569EE01AF2EF3B00C907AD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90569EDF1AF2EF3B00C907AD /* CoreData.framework */; };
-		90569EE41AF2F0B900C907AD /* readback.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90569EE31AF2F0B900C907AD /* readback.xcassets */; };
 		DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281D81858F268005F9B3D /* flightNumberTextField.png */; };
 		DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DB1858F55C005F9B3D /* 10-min-d.png */; };
 		DE0281F41858F55C005F9B3D /* altimeter-d.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0281DC1858F55C005F9B3D /* altimeter-d.png */; };
@@ -51,8 +50,6 @@
 		DE396A58169E0DDC0093C773 /* ils.png in Resources */ = {isa = PBXBuildFile; fileRef = DE396A57169E0DDC0093C773 /* ils.png */; };
 		DE3E9D4516FB3C0600931511 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3E9D4416FB3C0600931511 /* call.png */; };
 		DE3E9D8016FB837000931511 /* ReadbackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */; };
-		DE409C2B1A9BC4E500607F3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE409C291A9BC4E500607F3F /* Crashlytics.framework */; };
-		DE409C2C1A9BC4E500607F3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE409C2A1A9BC4E500607F3F /* Fabric.framework */; };
 		DE413D1F16D1321F006E743A /* KeyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D1E16D1321F006E743A /* KeyInterpreter.m */; };
 		DE413D2516D13506006E743A /* QwertyKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE413D2316D13506006E743A /* QwertyKeypadVC.xib */; };
 		DE413D2816D1389C006E743A /* KeypadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE413D2716D1389C006E743A /* KeypadGenerator.m */; };
@@ -63,7 +60,6 @@
 		DE44828C16A0D1BF00E36814 /* ReadbackHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */; };
 		DE46E649169CC6F500C90F72 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E648169CC6F500C90F72 /* right.png */; };
 		DE46E64F169CC7AD00C90F72 /* left-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DE46E64E169CC7AD00C90F72 /* left-button.png */; };
-		DE4A8E0218624B6C000EE4BD /* cmd-speed.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0118624B6C000EE4BD /* cmd-speed.png */; };
 		DE4A8E0418624F55000EE4BD /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0318624F55000EE4BD /* trash.png */; };
 		DE4A8E0818625EF2000EE4BD /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0718625EF2000EE4BD /* download.png */; };
 		DE4A8E0C186260AD000EE4BD /* pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4A8E0B186260AD000EE4BD /* pdf.png */; };
@@ -105,10 +101,13 @@
 		DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */ = {isa = PBXBuildFile; fileRef = DED941E116D7EFBF00C0AC09 /* rwy.png */; };
 		DEDDBE2D174C1EED00221759 /* keypadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE2C174C1EED00221759 /* keypadIcon.png */; };
 		DEDDBE31174C24DD00221759 /* buttonGray.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDDBE30174C24DD00221759 /* buttonGray.png */; };
+		DEE1D58A268922FE00F2EA34 /* cmdspeed.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE1D587268922FC00F2EA34 /* cmdspeed.png */; };
+		DEE1D58B268922FE00F2EA34 /* crewCurrencyIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE1D588268922FC00F2EA34 /* crewCurrencyIcon@2x.png */; };
+		DEE1D58C268922FE00F2EA34 /* cmdSpeedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE1D589268922FE00F2EA34 /* cmdSpeedIcon@2x.png */; };
+		DEE1D58E2689233700F2EA34 /* er_launcher_web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE1D58D2689233600F2EA34 /* er_launcher_web@2x.png */; };
 		DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB6F169A726A00AEFC99 /* UIKit.framework */; };
 		DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB71169A726A00AEFC99 /* Foundation.framework */; };
 		DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */; };
-		DEEEAB7A169A726A00AEFC99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB78169A726A00AEFC99 /* InfoPlist.strings */; };
 		DEEEAB7C169A726A00AEFC99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB7B169A726A00AEFC99 /* main.m */; };
 		DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB7F169A726A00AEFC99 /* ReadbackAppDelegate.m */; };
 		DEEEAB82169A726A00AEFC99 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB81169A726A00AEFC99 /* Default.png */; };
@@ -116,6 +115,7 @@
 		DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */; };
 		DEEEAB8C169A726A00AEFC99 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */; };
 		DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */; };
+		DEF54BB91F83D8ED0012FFFF /* readbackAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF54BB81F83D8EC0012FFFF /* readbackAssets.xcassets */; };
 		DEF8795B19E6FE3500CE2360 /* CDUKeypadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795919E6FE3500CE2360 /* CDUKeypadVC.xib */; };
 		DEF8795D19E7008000CE2360 /* cdukeypad.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF8795C19E7008000CE2360 /* cdukeypad.plist */; };
 		DEF8796119E7062300CE2360 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8796019E7062300CE2360 /* down.png */; };
@@ -123,7 +123,6 @@
 		DEF8796D19E7115800CE2360 /* what-is-new.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8796C19E7115800CE2360 /* what-is-new.png */; };
 		DEF8797119E7131900CE2360 /* help-slide.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8797019E7131900CE2360 /* help-slide.png */; };
 		DEF8797319E727E500CE2360 /* help-slide-p.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF8797219E727E500CE2360 /* help-slide-p.png */; };
-		DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD04F619B0DE84009FA808 /* Appirater.m */; };
 		DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,7 +130,6 @@
 		90569EDC1AF2EC8A00C907AD /* DBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConfig.h; sourceTree = "<group>"; };
 		90569EDD1AF2EECD00C907AD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		90569EDF1AF2EF3B00C907AD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		90569EE31AF2F0B900C907AD /* readback.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = readback.xcassets; sourceTree = "<group>"; };
 		DE0281D81858F268005F9B3D /* flightNumberTextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flightNumberTextField.png; sourceTree = "<group>"; };
 		DE0281DB1858F55C005F9B3D /* 10-min-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-min-d.png"; sourceTree = "<group>"; };
 		DE0281DC1858F55C005F9B3D /* altimeter-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "altimeter-d.png"; sourceTree = "<group>"; };
@@ -181,8 +179,6 @@
 		DE3E9D4416FB3C0600931511 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		DE3E9D7E16FB837000931511 /* ReadbackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackTableViewController.h; sourceTree = "<group>"; };
 		DE3E9D7F16FB837000931511 /* ReadbackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackTableViewController.m; sourceTree = "<group>"; };
-		DE409C291A9BC4E500607F3F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		DE409C2A1A9BC4E500607F3F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DE413D1D16D1321F006E743A /* KeyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInterpreter.h; sourceTree = "<group>"; };
 		DE413D1E16D1321F006E743A /* KeyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyInterpreter.m; sourceTree = "<group>"; };
 		DE413D2316D13506006E743A /* QwertyKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QwertyKeypadVC.xib; sourceTree = "<group>"; };
@@ -194,9 +190,9 @@
 		DE44828316A0C5AD00E36814 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DE44828A16A0D1BF00E36814 /* ReadbackHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadbackHelpViewController.h; sourceTree = "<group>"; };
 		DE44828B16A0D1BF00E36814 /* ReadbackHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadbackHelpViewController.m; sourceTree = "<group>"; };
+		DE4591FE22C6A36300038362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DE46E648169CC6F500C90F72 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		DE46E64E169CC7AD00C90F72 /* left-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-button.png"; sourceTree = "<group>"; };
-		DE4A8E0118624B6C000EE4BD /* cmd-speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmd-speed.png"; sourceTree = "<group>"; };
 		DE4A8E0318624F55000EE4BD /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
 		DE4A8E0718625EF2000EE4BD /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		DE4A8E0B186260AD000EE4BD /* pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdf.png; sourceTree = "<group>"; };
@@ -243,12 +239,15 @@
 		DED941E116D7EFBF00C0AC09 /* rwy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rwy.png; sourceTree = "<group>"; };
 		DEDDBE2C174C1EED00221759 /* keypadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keypadIcon.png; sourceTree = "<group>"; };
 		DEDDBE30174C24DD00221759 /* buttonGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonGray.png; sourceTree = "<group>"; };
+		DEE1D587268922FC00F2EA34 /* cmdspeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cmdspeed.png; sourceTree = "<group>"; };
+		DEE1D588268922FC00F2EA34 /* crewCurrencyIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crewCurrencyIcon@2x.png"; sourceTree = "<group>"; };
+		DEE1D589268922FE00F2EA34 /* cmdSpeedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmdSpeedIcon@2x.png"; sourceTree = "<group>"; };
+		DEE1D58D2689233600F2EA34 /* er_launcher_web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "er_launcher_web@2x.png"; sourceTree = "<group>"; };
 		DEEEAB6B169A726A00AEFC99 /* Readback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Readback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEAB6F169A726A00AEFC99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEEEAB71169A726A00AEFC99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEEEAB73169A726A00AEFC99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DEEEAB77169A726A00AEFC99 /* Readback-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Readback-Info.plist"; sourceTree = "<group>"; };
-		DEEEAB79169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEEEAB7B169A726A00AEFC99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEEEAB7D169A726A00AEFC99 /* Readback-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Readback-Prefix.pch"; sourceTree = "<group>"; };
 		DEEEAB7E169A726A00AEFC99 /* ReadbackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackAppDelegate.h; sourceTree = "<group>"; };
@@ -256,9 +255,9 @@
 		DEEEAB81169A726A00AEFC99 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DEEEAB83169A726A00AEFC99 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DEEEAB85169A726A00AEFC99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DEEEAB8B169A726A00AEFC99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DEEEAB8D169A726A00AEFC99 /* ReadbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadbackViewController.h; sourceTree = "<group>"; };
 		DEEEAB8E169A726A00AEFC99 /* ReadbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadbackViewController.m; sourceTree = "<group>"; };
+		DEF54BB81F83D8EC0012FFFF /* readbackAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = readbackAssets.xcassets; sourceTree = "<group>"; };
 		DEF8795919E6FE3500CE2360 /* CDUKeypadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDUKeypadVC.xib; sourceTree = "<group>"; };
 		DEF8795C19E7008000CE2360 /* cdukeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cdukeypad.plist; sourceTree = "<group>"; };
 		DEF8796019E7062300CE2360 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
@@ -266,8 +265,6 @@
 		DEF8796C19E7115800CE2360 /* what-is-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "what-is-new.png"; sourceTree = "<group>"; };
 		DEF8797019E7131900CE2360 /* help-slide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-slide.png"; sourceTree = "<group>"; };
 		DEF8797219E727E500CE2360 /* help-slide-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-slide-p.png"; sourceTree = "<group>"; };
-		DEFD04F519B0DE84009FA808 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
-		DEFD04F619B0DE84009FA808 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
 		DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -281,11 +278,9 @@
 				DEFD04FC19B0DEDD009FA808 /* SystemConfiguration.framework in Frameworks */,
 				DE3787F817008D3D0054C216 /* MessageUI.framework in Frameworks */,
 				DE52DE3916F351D3001D307E /* StoreKit.framework in Frameworks */,
-				DE409C2C1A9BC4E500607F3F /* Fabric.framework in Frameworks */,
 				DEEEAB70169A726A00AEFC99 /* UIKit.framework in Frameworks */,
 				DEEEAB72169A726A00AEFC99 /* Foundation.framework in Frameworks */,
 				DEEEAB74169A726A00AEFC99 /* CoreGraphics.framework in Frameworks */,
-				DE409C2B1A9BC4E500607F3F /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +380,6 @@
 				90569EDC1AF2EC8A00C907AD /* DBConfig.h */,
 				DED5B5271854CAB30068B9BF /* CuesoftHelper.h */,
 				DED5B5281854CAB30068B9BF /* CuesoftHelper.m */,
-				DEFD04F519B0DE84009FA808 /* Appirater.h */,
-				DEFD04F619B0DE84009FA808 /* Appirater.m */,
 				DEFD04F719B0DE84009FA808 /* AppiraterDelegate.h */,
 				DE67277A19CCF7EC0020CB78 /* PDFHelper.h */,
 				DE67277B19CCF7EC0020CB78 /* PDFHelper.m */,
@@ -399,6 +392,10 @@
 		DE28A65E16A25FCE00429C46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DEE1D587268922FC00F2EA34 /* cmdspeed.png */,
+				DEE1D589268922FE00F2EA34 /* cmdSpeedIcon@2x.png */,
+				DEE1D58D2689233600F2EA34 /* er_launcher_web@2x.png */,
+				DEE1D588268922FC00F2EA34 /* crewCurrencyIcon@2x.png */,
 				DEF8796C19E7115800CE2360 /* what-is-new.png */,
 				DEF8797019E7131900CE2360 /* help-slide.png */,
 				DEF8797219E727E500CE2360 /* help-slide-p.png */,
@@ -419,7 +416,6 @@
 				DE44828216A0C5AD00E36814 /* buttonLarge.png */,
 				DE28A65A16A25FC200429C46 /* clear.png */,
 				DE4C580816B31C1F004AC4D7 /* clear2.png */,
-				DE4A8E0118624B6C000EE4BD /* cmd-speed.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -551,8 +547,6 @@
 			children = (
 				90569EDF1AF2EF3B00C907AD /* CoreData.framework */,
 				90569EDD1AF2EECD00C907AD /* CloudKit.framework */,
-				DE409C291A9BC4E500607F3F /* Crashlytics.framework */,
-				DE409C2A1A9BC4E500607F3F /* Fabric.framework */,
 				DEFD04FB19B0DEDD009FA808 /* SystemConfiguration.framework */,
 				DE3787F717008D3D0054C216 /* MessageUI.framework */,
 				DE52DE3816F351D3001D307E /* StoreKit.framework */,
@@ -566,8 +560,8 @@
 		DEEEAB75169A726A00AEFC99 /* Readback */ = {
 			isa = PBXGroup;
 			children = (
+				DEF54BB81F83D8EC0012FFFF /* readbackAssets.xcassets */,
 				DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */,
-				90569EE31AF2F0B900C907AD /* readback.xcassets */,
 				DE413D2F16D14767006E743A /* ViewControllers */,
 				DE41D73216BA197E00883B68 /* Keypads */,
 				DE413D2E16D1474F006E743A /* Purchasing */,
@@ -583,7 +577,6 @@
 				DEEEAB7E169A726A00AEFC99 /* ReadbackAppDelegate.h */,
 				DEEEAB7F169A726A00AEFC99 /* ReadbackAppDelegate.m */,
 				DEEEAB77169A726A00AEFC99 /* Readback-Info.plist */,
-				DEEEAB78169A726A00AEFC99 /* InfoPlist.strings */,
 				DEEEAB7B169A726A00AEFC99 /* main.m */,
 				DEEEAB7D169A726A00AEFC99 /* Readback-Prefix.pch */,
 				DEEEAB81169A726A00AEFC99 /* Default.png */,
@@ -622,20 +615,22 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Readback;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Santiago Borja";
 				TargetAttributes = {
 					DEEEAB6A169A726A00AEFC99 = {
 						DevelopmentTeam = DEX4P5QYYA;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = DEEEAB65169A726A00AEFC99 /* Build configuration list for PBXProject "Readback" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DEEEAB60169A726A00AEFC99;
 			productRefGroup = DEEEAB6C169A726A00AEFC99 /* Products */;
@@ -652,7 +647,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEEAB7A169A726A00AEFC99 /* InfoPlist.strings in Resources */,
 				DEEEAB82169A726A00AEFC99 /* Default.png in Resources */,
 				DEEEAB84169A726A00AEFC99 /* Default@2x.png in Resources */,
 				DEEEAB86169A726A00AEFC99 /* Default-568h@2x.png in Resources */,
@@ -665,9 +659,9 @@
 				DE857FED169D94C2005E8F96 /* climb.png in Resources */,
 				DEF8795D19E7008000CE2360 /* cdukeypad.plist in Resources */,
 				DE857FEE169D94C2005E8F96 /* descend.png in Resources */,
+				DEE1D58A268922FE00F2EA34 /* cmdspeed.png in Resources */,
 				DE857FF2169DA37C005E8F96 /* ndb.png in Resources */,
 				DE857FF4169DA45D005E8F96 /* cat.png in Resources */,
-				90569EE41AF2F0B900C907AD /* readback.xcassets in Resources */,
 				DE396A58169E0DDC0093C773 /* ils.png in Resources */,
 				DE44828416A0C5AD00E36814 /* buttonLarge.png in Resources */,
 				DE44828516A0C5AD00E36814 /* button.png in Resources */,
@@ -680,6 +674,7 @@
 				DE2A65DF183A746C00A39C2C /* scratchpadBar.png in Resources */,
 				DE09CD2916A34DEE00483034 /* holding.png in Resources */,
 				DE0281FD1858F55C005F9B3D /* holding-d.png in Resources */,
+				DEF54BB91F83D8ED0012FFFF /* readbackAssets.xcassets in Resources */,
 				DEF8796D19E7115800CE2360 /* what-is-new.png in Resources */,
 				DE0282081858F55C005F9B3D /* vectors-d.png in Resources */,
 				DE4C580916B31C1F004AC4D7 /* clear2.png in Resources */,
@@ -699,10 +694,11 @@
 				DE0281FA1858F55C005F9B3D /* descend-d.png in Resources */,
 				DED941E216D7EFBF00C0AC09 /* rwy.png in Resources */,
 				DE0281F31858F55C005F9B3D /* 10-min-d.png in Resources */,
+				DEE1D58C268922FE00F2EA34 /* cmdSpeedIcon@2x.png in Resources */,
 				DE4A8E0818625EF2000EE4BD /* download.png in Resources */,
-				DE4A8E0218624B6C000EE4BD /* cmd-speed.png in Resources */,
 				DE4A8E0418624F55000EE4BD /* trash.png in Resources */,
 				DE9057C616F12BDA0012B709 /* intc.png in Resources */,
+				DEE1D58E2689233700F2EA34 /* er_launcher_web@2x.png in Resources */,
 				DE0281FF1858F55C005F9B3D /* intc-d.png in Resources */,
 				DE4F52D216F268D700A3D842 /* 10-min.png in Resources */,
 				DEF8797319E727E500CE2360 /* help-slide-p.png in Resources */,
@@ -712,6 +708,7 @@
 				DE4F52E016F2D05D00A3D842 /* altimeter.png in Resources */,
 				DE0282001858F55C005F9B3D /* left-button-d.png in Resources */,
 				DE5B0CA716FA7473007C54C0 /* not-found.png in Resources */,
+				DEE1D58B268922FE00F2EA34 /* crewCurrencyIcon@2x.png in Resources */,
 				DE0282021858F55C005F9B3D /* not-found-d.png in Resources */,
 				DE0281D91858F268005F9B3D /* flightNumberTextField.png in Resources */,
 				DE5B0CA916FA7DA1007C54C0 /* star.png in Resources */,
@@ -759,7 +756,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 262b1dba1f809b1670360ea4f400b12f56becef2 6e34b9cc5bdd1910ba92aa874950277a3058d4692000e8f32f1bd584f74f458b";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -768,7 +765,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFD04F919B0DE84009FA808 /* Appirater.m in Sources */,
 				DEEEAB7C169A726A00AEFC99 /* main.m in Sources */,
 				DEEEAB80169A726A00AEFC99 /* ReadbackAppDelegate.m in Sources */,
 				DEEEAB8F169A726A00AEFC99 /* ReadbackViewController.m in Sources */,
@@ -793,18 +789,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEEEAB78169A726A00AEFC99 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEEEAB79169A726A00AEFC99 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		DEEEAB8A169A726A00AEFC99 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEEEAB8B169A726A00AEFC99 /* en */,
+				DE4591FE22C6A36300038362 /* Base */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -816,25 +804,48 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -845,19 +856,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -872,8 +905,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Santiago Borja Lopez (VXKPB354LB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santiago Borja Lopez (VXKPB354LB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -881,9 +916,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readback/Readback-Prefix.pch";
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuesoft.readback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b22e589c-56f5-4558-a2bc-98d87b001184";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -894,8 +931,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Santiago Borja Lopez (DEX4P5QYYA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Santiago Borja Lopez (DEX4P5QYYA)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -903,10 +942,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readback/Readback-Prefix.pch";
 				INFOPLIST_FILE = "Readback/Readback-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuesoft.readback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "237f15df-5ce5-4486-8470-2cc0846d43cf";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "237f15df-5ce5-4486-8470-2cc0846d43cf";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
